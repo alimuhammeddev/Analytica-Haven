@@ -8,15 +8,16 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
   const [mobileBlogOpen, setMobileBlogOpen] = useState(false);
-
-  const companyDropdownRef = useRef(null);
-  const blogDropdownRef = useRef(null);
+  const [desktopCompanyOpen, setDesktopCompanyOpen] = useState(false);
+  const [desktopBlogOpen, setDesktopBlogOpen] = useState(false);
 
   const toggleMenu = () => setOpen(!open);
   const closeAllMenus = () => {
     setOpen(false);
     setMobileCompanyOpen(false);
     setMobileBlogOpen(false);
+    setDesktopCompanyOpen(false);
+    setDesktopBlogOpen(false);
   };
 
   const navLinks = [
@@ -68,56 +69,59 @@ const Header = () => {
             {navLinks.map((link, i) => {
               if (link.name === "COMPANY") {
                 return (
-                  <div
-                    key={i}
-                    className="relative flex items-center"
-                    onMouseEnter={() => companyDropdownRef.current.style.display = "block"}
-                    onMouseLeave={() => companyDropdownRef.current.style.display = "none"}
-                  >
-                    <span className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer">
+                  <div key={i} className="relative flex items-center">
+                    <span
+                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
+                      onClick={() => {
+                        setDesktopCompanyOpen(!desktopCompanyOpen);
+                        setDesktopBlogOpen(false);
+                      }}
+                    >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    <div
-                      ref={companyDropdownRef}
-                      style={{ display: "none" }}
-                      className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50"
-                    >
-                      <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</Link>
-                      <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Success Page</Link>
-                      <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Events & Programs</Link>
-                      <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our Community</Link>
-                    </div>
+                    {desktopCompanyOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
+                        <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</Link>
+                        <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Success Page</Link>
+                        <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Events & Programs</Link>
+                        <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our Community</Link>
+                      </div>
+                    )}
                   </div>
                 );
               }
 
               if (link.name === "BLOG") {
                 return (
-                  <div
-                    key={i}
-                    className="relative flex items-center"
-                    onMouseEnter={() => blogDropdownRef.current.style.display = "block"}
-                    onMouseLeave={() => blogDropdownRef.current.style.display = "none"}
-                  >
-                    <span className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer">
+                  <div key={i} className="relative flex items-center">
+                    <span
+                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
+                      onClick={() => {
+                        setDesktopBlogOpen(!desktopBlogOpen);
+                        setDesktopCompanyOpen(false);
+                      }}
+                    >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    <div
-                      ref={blogDropdownRef}
-                      style={{ display: "none" }}
-                      className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50"
-                    >
-                      <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Blog</Link>
-                      <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category</Link>
-                    </div>
+                    {desktopBlogOpen && (
+                      <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
+                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Blog</Link>
+                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category</Link>
+                      </div>
+                    )}
                   </div>
                 );
               }
 
               return (
-                <Link key={i} to={link.url} className="hover:text-[#176FB9] transition-colors text-sm" onClick={() => setOpen(false)}>
+                <Link
+                  key={i}
+                  to={link.url}
+                  className="hover:text-[#176FB9] transition-colors text-sm"
+                  onClick={closeAllMenus}
+                >
                   {link.name}
                 </Link>
               );
