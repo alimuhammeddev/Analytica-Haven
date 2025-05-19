@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Mail, Menu, Phone, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { logo } from "./assets";
@@ -6,23 +6,17 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
-  const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
+  const [mobileCompanyOpen, setMobileCompanyOpen] = useState(false);
+  const [mobileBlogOpen, setMobileBlogOpen] = useState(false);
 
   const companyDropdownRef = useRef(null);
   const blogDropdownRef = useRef(null);
 
   const toggleMenu = () => setOpen(!open);
-  const toggleCompanyDropdown = () =>
-    setCompanyDropdownOpen((prev) => !prev);
-  const toggleBlogDropdown = () =>
-    setBlogDropdownOpen((prev) => !prev);
-
-  // Function to close all menus
   const closeAllMenus = () => {
     setOpen(false);
-    setCompanyDropdownOpen(false);
-    setBlogDropdownOpen(false);
+    setMobileCompanyOpen(false);
+    setMobileBlogOpen(false);
   };
 
   const navLinks = [
@@ -33,28 +27,6 @@ const Header = () => {
     { name: "OUR TEAM", url: "/team" },
     { name: "CONTACT US", url: "/contact-us" },
   ];
-
-  // Close dropdowns when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        companyDropdownRef.current &&
-        !companyDropdownRef.current.contains(event.target)
-      ) {
-        setCompanyDropdownOpen(false);
-      }
-      if (
-        blogDropdownRef.current &&
-        !blogDropdownRef.current.contains(event.target)
-      ) {
-        setBlogDropdownOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
   return (
     <section>
@@ -99,47 +71,23 @@ const Header = () => {
                   <div
                     key={i}
                     className="relative flex items-center"
-                    ref={companyDropdownRef}
+                    onMouseEnter={() => companyDropdownRef.current.style.display = "block"}
+                    onMouseLeave={() => companyDropdownRef.current.style.display = "none"}
                   >
-                    <span
-                      onClick={toggleCompanyDropdown}
-                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
-                    >
+                    <span className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer">
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    {companyDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link
-                          to="/about-us"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                        >
-                          About Us
-                        </Link>
-                        <Link
-                          to="/success-page"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                        >
-                          Success Page
-                        </Link>
-                        <Link
-                          to="/events"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                        >
-                          Events & Programs
-                        </Link>
-                        <Link
-                          to="/community"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                        >
-                          Our Community
-                        </Link>
-                      </div>
-                    )}
+                    <div
+                      ref={companyDropdownRef}
+                      style={{ display: "none" }}
+                      className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50"
+                    >
+                      <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</Link>
+                      <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Success Page</Link>
+                      <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Events & Programs</Link>
+                      <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our Community</Link>
+                    </div>
                   </div>
                 );
               }
@@ -149,44 +97,27 @@ const Header = () => {
                   <div
                     key={i}
                     className="relative flex items-center"
-                    ref={blogDropdownRef}
+                    onMouseEnter={() => blogDropdownRef.current.style.display = "block"}
+                    onMouseLeave={() => blogDropdownRef.current.style.display = "none"}
                   >
-                    <span
-                      onClick={toggleBlogDropdown}
-                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
-                    >
+                    <span className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer">
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    {blogDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link
-                          to="/blog"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setBlogDropdownOpen(false)}
-                        >
-                          Blog
-                        </Link>
-                        <Link
-                          to="/category"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setBlogDropdownOpen(false)}
-                        >
-                          Category
-                        </Link>
-                      </div>
-                    )}
+                    <div
+                      ref={blogDropdownRef}
+                      style={{ display: "none" }}
+                      className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50"
+                    >
+                      <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Blog</Link>
+                      <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category</Link>
+                    </div>
                   </div>
                 );
               }
 
               return (
-                <Link
-                  key={i}
-                  to={link.url}
-                  className="hover:text-[#176FB9] transition-colors text-sm"
-                  onClick={() => setOpen(false)}
-                >
+                <Link key={i} to={link.url} className="hover:text-[#176FB9] transition-colors text-sm" onClick={() => setOpen(false)}>
                   {link.name}
                 </Link>
               );
@@ -195,18 +126,8 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex gap-5">
-            <Link
-              to="/donate"
-              className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium lg:text-lg font-campton"
-            >
-              Donate
-            </Link>
-            <Link
-              to="/join-community"
-              className="bg-white text-[#193D6F] border-[#193D6F] border-2 text-sm px-6 py-2 rounded-lg font-medium lg:text-lg font-campton"
-            >
-              Join our Community
-            </Link>
+            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium lg:text-lg font-campton">Donate</Link>
+            <Link to="/join-community" className="bg-white text-[#193D6F] border-[#193D6F] border-2 text-sm px-6 py-2 rounded-lg font-medium lg:text-lg font-campton">Join our Community</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -218,10 +139,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div
-          className={`fixed top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"
-            } md:hidden`}
-        >
+        <div className={`fixed top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
           <div className="px-4 py-4 flex justify-between items-center border-b">
             <span className="text-center">
               <Link to="/">
@@ -237,48 +155,17 @@ const Header = () => {
             {navLinks.map((link, i) => {
               if (link.name === "COMPANY") {
                 return (
-                  <div
-                    key={i}
-                    className="relative flex items-center"
-                    ref={companyDropdownRef}
-                  >
-                    <span
-                      onClick={toggleCompanyDropdown}
-                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
-                    >
+                  <div key={i} className="relative">
+                    <span onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)} className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer">
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    {companyDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link
-                          to="/about-us"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                        >
-                          About Us
-                        </Link>
-                        <Link
-                          to="/success-page"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                        >
-                          Success Page
-                        </Link>
-                        <Link
-                          to="/events"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                        >
-                          Events & Programs
-                        </Link>
-                        <Link
-                          to="/community"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setCompanyDropdownOpen(false)}
-                        >
-                          Our Community
-                        </Link>
+                    {mobileCompanyOpen && (
+                      <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
+                        <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>About Us</Link>
+                        <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Success Page</Link>
+                        <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Events & Programs</Link>
+                        <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Our Community</Link>
                       </div>
                     )}
                   </div>
@@ -287,34 +174,15 @@ const Header = () => {
 
               if (link.name === "BLOG") {
                 return (
-                  <div
-                    key={i}
-                    className="relative flex items-center"
-                    ref={blogDropdownRef}
-                  >
-                    <span
-                      onClick={toggleBlogDropdown}
-                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
-                    >
+                  <div key={i} className="relative">
+                    <span onClick={() => setMobileBlogOpen(!mobileBlogOpen)} className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer">
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
-                    {blogDropdownOpen && (
-                      <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link
-                          to="/blog"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setBlogDropdownOpen(false)}
-                        >
-                          Blog
-                        </Link>
-                        <Link
-                          to="/category"
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          onClick={() => setBlogDropdownOpen(false)}
-                        >
-                          Category
-                        </Link>
+                    {mobileBlogOpen && (
+                      <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
+                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Blog</Link>
+                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Category</Link>
                       </div>
                     )}
                   </div>
@@ -322,40 +190,23 @@ const Header = () => {
               }
 
               return (
-                <Link
-                  key={i}
-                  to={link.url}
-                  className="hover:text-[#176FB9] transition-colors text-sm"
-                  onClick={closeAllMenus}
-                >
+                <Link key={i} to={link.url} className="hover:text-[#176FB9] transition-colors text-sm" onClick={closeAllMenus}>
                   {link.name}
                 </Link>
               );
             })}
 
-            <Link
-              to="/donate"
-              className="bg-[#E0F780] text-[#193D6F] text-center px-6 py-3 text-sm rounded-lg font-semibold font-campton"
-              onClick={closeAllMenus}
-            >
+            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-center px-6 py-3 text-sm rounded-lg font-semibold font-campton" onClick={closeAllMenus}>
               Donate
             </Link>
-            <Link
-              to="/join-community"
-              className="bg-white text-[#193D6F] text-center border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-semibold font-campton"
-              onClick={closeAllMenus}
-            >
+            <Link to="/join-community" className="bg-white text-[#193D6F] text-center border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-semibold font-campton" onClick={closeAllMenus}>
               Join our Community
             </Link>
           </nav>
         </div>
 
-        {/* Backdrop for Mobile Menu */}
         {open && (
-          <div
-            className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden"
-            onClick={() => setOpen(false)}
-          />
+          <div className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden" onClick={() => setOpen(false)} />
         )}
       </header>
 

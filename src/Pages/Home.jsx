@@ -146,7 +146,7 @@ const Home = () => {
               <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
                 <img src={trusted} alt="" />
                 <div>
-                  <h1 className="text-[#080F10] text-xl font-semibold font-campton">
+                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
                     Trusted Insights
                   </h1>
                   <p className="text-[#575959] font-campton">
@@ -158,7 +158,7 @@ const Home = () => {
               <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
                 <img src={strategic} alt="" />
                 <div>
-                  <h1 className="text-[#080F10] text-xl font-semibold font-campton">
+                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
                     Strategic Advice
                   </h1>
                   <p className="text-[#575959] font-campton">
@@ -170,7 +170,7 @@ const Home = () => {
               <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
                 <img src={practical} alt="" />
                 <div>
-                  <h1 className="text-[#080F10] text-xl font-semibold font-campton">
+                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
                     Practical Tools
                   </h1>
                   <p className="text-[#575959] font-campton">
@@ -215,7 +215,7 @@ const Home = () => {
                 height="20"
                 viewBox="0 0 281 20"
                 fill="none"
-                className="lg:mx-auto lg:ml-[510px] lg:w-[500px] w-[80px] ml-[190px] -mt-2"
+                className="lg:mx-auto lg:ml-[510px] lg:w-[500px] w-[80px] ml-[140px] -mt-2"
               >
                 <path
                   fillRule="evenodd"
