@@ -50,7 +50,7 @@ const PricingPlan = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 lg:mt-16 mt-7">
-            <div className="bg-[#F9F9F9] p-12 space-y-7 lg:mt-16">
+            <div className="bg-[#F9F9F9] lg:p-12 p-5 space-y-7 lg:mt-16">
               <h1 className="text-[#080F10] font-campton text-lg font-medium">
                 Basic
               </h1>
@@ -99,7 +99,7 @@ const PricingPlan = () => {
                 Most Popular
               </div>
 
-              <div className="bg-[#F9F9F9] p-12 space-y-7 mt-16">
+              <div className="bg-[#F9F9F9] lg:p-12 p-5 space-y-7 mt-16">
                 <h1 className="text-[#080F10] font-campton text-lg">Startup</h1>
                 <h2 className="font-semibold font-campton lg:text-4xl text-xl mt-7">
                   $299
@@ -144,7 +144,7 @@ const PricingPlan = () => {
               </div>
             </div>
 
-            <div className="bg-[#F9F9F9] p-12 space-y-7 lg:mt-16">
+            <div className="bg-[#F9F9F9] lg:p-12 p-5 space-y-7 lg:mt-16">
               <h1 className="text-[#080F10] font-campton text-lg">
                 Enterprise
               </h1>

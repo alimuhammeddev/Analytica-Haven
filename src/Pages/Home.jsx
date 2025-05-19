@@ -143,7 +143,7 @@ const Home = () => {
 
           <div className="flex lg:flex-row flex-col items-center justify-between lg:mt-10 mt-5 mb-10">
             <div className="space-y-5">
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit p-10 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
                 <img src={trusted} alt="" />
                 <div>
                   <h1 className="text-[#080F10] text-xl font-semibold font-campton">
@@ -155,7 +155,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit p-10 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
                 <img src={strategic} alt="" />
                 <div>
                   <h1 className="text-[#080F10] text-xl font-semibold font-campton">
@@ -167,7 +167,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit p-10 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
                 <img src={practical} alt="" />
                 <div>
                   <h1 className="text-[#080F10] text-xl font-semibold font-campton">
