@@ -66,7 +66,7 @@ const PricingPlan = () => {
               </p>
               <p className="border border-[#E0E0E0]"></p>
 
-              <h1 className="font-campton lg:text-xl mt-5">What’s included?</h1>
+              <h1 className="font-campton lg:text-xl mt-5 font-semibold">What’s included?</h1>
 
               <div className="space-y-5">
                 <h1 className="text-[#575959] text-lg font-campton flex items-center gap-3">
@@ -113,7 +113,7 @@ const PricingPlan = () => {
                 </p>
                 <p className="border border-[#E0E0E0]"></p>
 
-                <h1 className="font-campton lg:text-xl mt-5">
+                <h1 className="font-campton lg:text-xl mt-5 font-semibold">
                   What’s included?
                 </h1>
 
@@ -160,7 +160,7 @@ const PricingPlan = () => {
               </p>
               <p className="border border-[#E0E0E0]"></p>
 
-              <h1 className="font-campton lg:text-xl mt-5">What’s included?</h1>
+              <h1 className="font-campton lg:text-xl mt-5 font-semibold">What’s included?</h1>
 
               <div className="space-y-5">
                 <h1 className="text-[#575959] text-lg font-campton flex items-center gap-3">

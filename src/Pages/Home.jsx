@@ -32,15 +32,15 @@ const Home = () => {
       </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="lg:text-6xl text-xl font-semibold lg:mt-20 text-center font-campton">
+        <h1 className="lg:text-5xl text-xl font-semibold lg:mt-20 text-center font-campton">
           Unlock the Power of Data & Innovation{" "}
           <br className="lg:block hidden" />
           <span className="lg:inline-block lg:relative">
             with Analytica Haven
-            <span className="block -mt-1 lg:ml-36 ml-36">
+            <span className="block -mt-1 lg:ml-28 ml-36">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-36 h-3 lg:w-[450px] lg:h-[14px]"
+                className="w-36 h-3 lg:w-[380px] lg:h-[14px]"
                 viewBox="0 0 493 14"
                 fill="none"
               >
@@ -66,7 +66,7 @@ const Home = () => {
         <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5 p-4">
           <input
             type="email"
-            className="w-full px-4 py-3 mt-1 border rounded-lg focus:ring-1 focus:ring-[#193D6F] focus:outline-none"
+            className="w-full px-4 py-3 mt-1 border-2 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-medium"
             placeholder="Enter your email"
             required
           />
@@ -117,7 +117,7 @@ const Home = () => {
           <h1 className="text-[#193D6F] font-campton font-semibold lg:mt-10">
             About us
           </h1>
-          <div className="flex  items-center justify-between lg:mt-5 mt-2">
+          <div className="flex  items-center justify-between mt-2">
             <h2 className="lg:text-4xl text-xl font-semibold font-campton">
               Get to know our purpose <br /> and Mission
               <div>
@@ -143,7 +143,7 @@ const Home = () => {
 
           <div className="flex lg:flex-row flex-col items-center justify-between lg:mt-10 mt-5 mb-10">
             <div className="space-y-5">
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
                 <img src={trusted} alt="" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
@@ -155,7 +155,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
                 <img src={strategic} alt="" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
@@ -167,7 +167,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
                 <img src={practical} alt="" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">

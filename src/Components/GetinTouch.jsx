@@ -36,17 +36,17 @@ const GetinTouch = () => {
           </button>
         </div>
 
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-7 mt-10 lg:p-7">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-7 mt-10 lg:p-7">
           <div>
             <img src={contact} alt="" />
           </div>
 
-          <div class="rounded-lg bg-white p-5 shadow-2xl lg:p-12">
+          <div class="rounded-lg bg-white p-5 shadow-2xl lg:p-12 lg:-mr-8">
             <div>
               <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg">
                 Get more updates
               </h1>
-              <h1 className="text-[#193D6F] font-campton font-semibold lg:text-xl text-lg">
+              <h1 className="text-[#193D6F] font-campton font-semibold lg:text-2xl text-lg">
                 Send Us a Message
               </h1>
             </div>
@@ -56,7 +56,7 @@ const GetinTouch = () => {
                   Name
                 </label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  class="w-full rounded-md border-2 placeholder:font-medium p-3 text-sm"
                   placeholder="Name"
                   type="text"
                   id="name"
@@ -68,7 +68,7 @@ const GetinTouch = () => {
                   Email
                 </label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  class="w-full rounded-md border-2 placeholder:font-medium p-3 text-sm"
                   placeholder="Email address"
                   type="email"
                   id="email"
@@ -80,7 +80,7 @@ const GetinTouch = () => {
                   Phone
                 </label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  class="w-full rounded-md border-2 placeholder:font-medium p-3 text-sm"
                   placeholder="Phone Number"
                   type="tel"
                   id="phone"
@@ -93,7 +93,7 @@ const GetinTouch = () => {
                 </label>
 
                 <textarea
-                  class="w-full rounded-md border p-3 text-sm"
+                  class="w-full rounded-md border-2 placeholder:font-medium p-3 text-sm"
                   placeholder="Message"
                   rows="8"
                   id="message"

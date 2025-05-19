@@ -46,7 +46,7 @@ const OurBlogs = () => {
                     <BsCalendar /> Jan 17, 2023
                   </h1>
                 </div>
-                <h1 className="text-[#080F10] lg:text-2xl font-campton">How to hire a right business executive for your company</h1>
+                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
                 <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
               </div>
             </div>
@@ -64,7 +64,7 @@ const OurBlogs = () => {
                     <BsCalendar /> Jan 17, 2023
                   </h1>
                 </div>
-                <h1 className="text-[#080F10] lg:text-2xl font-campton">How to hire a right business executive for your company</h1>
+                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
                 <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
               </div>
             </div>
@@ -82,7 +82,7 @@ const OurBlogs = () => {
                     <BsCalendar /> Jan 17, 2023
                   </h1>
                 </div>
-                <h1 className="text-[#080F10] lg:text-2xl font-campton">How to hire a right business executive for your company</h1>
+                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
                 <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
               </div>
             </div>
@@ -100,7 +100,7 @@ const OurBlogs = () => {
                     <BsCalendar /> Jan 17, 2023
                   </h1>
                 </div>
-                <h1 className="text-[#080F10] lg:text-2xl font-campton">How to hire a right business executive for your company</h1>
+                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
                 <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
               </div>
             </div>
@@ -118,7 +118,7 @@ const OurBlogs = () => {
                     <BsCalendar /> Jan 17, 2023
                   </h1>
                 </div>
-                <h1 className="text-[#080F10] lg:text-2xl font-campton">How to hire a right business executive for your company</h1>
+                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
                 <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
               </div>
             </div>
@@ -136,7 +136,7 @@ const OurBlogs = () => {
                     <BsCalendar /> Jan 17, 2023
                   </h1>
                 </div>
-                <h1 className="text-[#080F10] lg:text-2xl font-campton">How to hire a right business executive for your company</h1>
+                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
                 <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
               </div>
             </div>

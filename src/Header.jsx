@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Mail, Menu, Phone, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { logo } from "./assets";
@@ -31,9 +31,9 @@ const Header = () => {
 
   return (
     <section>
-      <header className="bg-white shadow-md fixed w-full z-[999]">
+      <header className="bg-white shadow-md w-full z-[999]">
         {/* Top Bar */}
-        <div className="bg-[#193D6F] shadow-md fixed w-full z-[999] p-3 lg:block hidden">
+        <div className="bg-[#193D6F] shadow-md w-full p-3 lg:block hidden">
           <div className="max-w-7xl mx-auto px-4 relative flex items-center justify-between">
             <div className="flex items-center gap-3">
               <h1 className="text-[#D9DBE9] flex items-center gap-2 text-sm font-campton">
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
 
         {/* Main Navigation */}
-        <div className="max-w-7xl mx-auto px-4 py-4 relative flex justify-between items-center lg:mt-12">
+        <div className="max-w-7xl mx-auto px-4 py-4 relative flex justify-between items-center">
           <div className="flex-shrink-0">
             <Link to="/">
               <img src={logo} alt="Logo" className="w-16" />
@@ -65,7 +65,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex absolute left-1/2 transform -translate-x-96 space-x-8 text-gray-600 font-semibold font-campton">
+          <nav className="hidden md:flex ml-5 space-x-8 text-gray-600 font-semibold font-campton">
             {navLinks.map((link, i) => {
               if (link.name === "COMPANY") {
                 return (
@@ -143,7 +143,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`fixed top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
+        <div className={`absolute top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
           <div className="px-4 py-4 flex justify-between items-center border-b">
             <span className="text-center">
               <Link to="/">
@@ -213,13 +213,6 @@ const Header = () => {
           <div className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden" onClick={() => setOpen(false)} />
         )}
       </header>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </section>
   );
 };

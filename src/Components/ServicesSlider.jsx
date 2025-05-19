@@ -177,11 +177,11 @@ const ServicesSlider = () => {
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 className="text-[#FFFFFF] font-campton lg:font-semibold lg:mt-12 lg:text-start text-center">
+              <h1 className="text-[#FFFFFF] font-campton lg:mt-12 lg:text-start text-center">
                 Our Services
               </h1>
 
-              <h1 className="lg:text-4xl text-lg font-semibold font-campton text-[#FFFFFF] lg:text-start text-center">
+              <h1 className="lg:text-4xl text-lg font-semibold font-campton text-[#FFFFFF] lg:text-start text-center mt-3">
                 Powerful Solutions to
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
