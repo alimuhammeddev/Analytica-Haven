@@ -1,0 +1,297 @@
+import React from "react";
+import Header from "../Header";
+import {
+  aboutus,
+  accel,
+  bessener,
+  combinator,
+  hero,
+  index,
+  lake,
+  nfx,
+  practical,
+  sequoia,
+  strategic,
+  trusted,
+} from "../assets";
+import Projects from "../Components/Projects";
+import ServicesSlider from "../Components/ServicesSlider";
+import OurBlogs from "../Components/OurBlogs";
+import PricingPlan from "../Components/PricingPlan";
+import TeamExpert from "../Components/TeamExpert";
+import CustomersTestimonial from "../Components/CustomersTestimonial";
+import LatestContent from "../Components/LatestContent";
+import GetinTouch from "../Components/GetinTouch";
+import Footer from "../Footer";
+
+const Home = () => {
+  return (
+    <section>
+      <div>
+        <Header />
+      </div>
+
+      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
+        <h1 className="lg:text-6xl text-xl font-semibold lg:mt-20 text-center font-campton">
+          Unlock the Power of Data & Innovation{" "}
+          <br className="lg:block hidden" />
+          <span className="lg:inline-block lg:relative">
+            with Analytica Haven
+            <span className="block -mt-1 lg:ml-36 ml-36">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-36 h-3 lg:w-[450px] lg:h-[14px]"
+                viewBox="0 0 493 14"
+                fill="none"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M12.2475 3.01189C22.6635 3.78806 50.0372 3.82687 124.347 3.90449C240.383 4.02091 332.476 4.87469 358.071 6.11656C360.104 6.23299 197.449 7.08677 180.745 6.46584C154.705 5.45682 30.3484 6.31061 5.32459 7.47486C-1.78877 7.78533 0.878766 8.87197 5.51515 9.10482C12.7555 9.49291 32.1904 9.45409 85.4772 9.37647C122.949 9.33767 421.075 10.2303 453.657 11.8214C471.949 12.714 483.063 13.529 488.144 13.3349C492.4 13.1797 492.463 12.714 488.779 11.4333C486.302 10.5795 489.097 10.075 490.875 9.84218C493.606 9.4541 492.463 8.13461 489.033 7.08678C484.397 5.65086 476.394 5.68967 480.205 7.12559C481.031 7.43606 481.221 8.21222 478.3 8.05699C469.789 7.59129 409.643 4.409 393.321 3.86568C219.043 -2.03321 48.9574 2.27452 12.946 0.838609C0.180104 0.295291 6.02331 2.54618 12.2475 3.01189Z"
+                  fill="#0022EC"
+                />
+              </svg>
+            </span>
+          </span>
+        </h1>
+        <div>
+          <p className="text-center lg:text-lg lg:p-0 justify-center mx-auto font-campton mt-2">
+            Empowering businesses & individuals with predictive insights,
+            scalable solutions, and <br className="lg:block hidden" /> expert
+            learning. Empowering businesses & individuals with predictive
+            learning.
+          </p>
+        </div>
+
+        <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5 p-4">
+          <input
+            type="email"
+            className="w-full px-4 py-3 mt-1 border rounded-lg focus:ring-1 focus:ring-[#193D6F] focus:outline-none"
+            placeholder="Enter your email"
+            required
+          />
+          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-3 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+            Subscribe
+          </button>
+        </div>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <path
+              d="M0 0C22.0914 0 40 17.9086 40 40H0V0Z"
+              fill="#E0F780"
+              fill-opacity="0.7"
+            />
+          </svg>
+        </div>
+
+        <div>
+          <img src={hero} alt="" />
+        </div>
+
+        <div className="flex justify-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <path
+              d="M40 40C17.9086 40 0 22.0914 0 0H40V40Z"
+              fill="#E0F780"
+              fill-opacity="0.7"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div className="bg-[#E0EDFE] lg:mt-10">
+        <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
+          <h1 className="text-[#193D6F] font-campton font-semibold lg:mt-10">
+            About us
+          </h1>
+          <div className="flex  items-center justify-between lg:mt-5 mt-2">
+            <h2 className="lg:text-4xl text-xl font-semibold font-campton">
+              Get to know our purpose <br /> and Mission
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="lg:ml-16 ml-9 w-20 h-3 lg:w-[150px] lg:h-[14px] -m-2"
+                  viewBox="0 0 219 11"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.33804 2.7039C9.95984 3.30132 22.1062 3.3312 55.0789 3.39094C106.567 3.48055 147.43 4.1377 158.788 5.09356C159.689 5.18318 87.516 5.84033 80.1042 5.3624C68.5497 4.58576 13.3698 5.24292 2.26621 6.13904C-0.890144 6.37801 0.293501 7.21439 2.35077 7.39362C5.56347 7.69232 14.1871 7.66245 37.8317 7.60271C54.4589 7.57283 186.744 8.25987 201.201 9.48457C209.317 10.1716 214.249 10.7989 216.504 10.6495C218.392 10.53 218.42 10.1716 216.786 9.18586C215.686 8.5287 216.926 8.14038 217.716 7.96116C218.927 7.66245 218.42 6.64684 216.898 5.84033C214.841 4.73512 211.29 4.76499 212.981 5.87021C213.347 6.10917 213.432 6.70658 212.136 6.5871C208.359 6.22865 181.671 3.77925 174.428 3.36106C97.0978 -1.17929 21.627 2.13636 5.64802 1.03114C-0.0165111 0.61295 2.57625 2.34546 5.33804 2.7039Z"
+                    fill="#0022EC"
+                  />
+                </svg>
+              </div>
+            </h2>
+            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton">
+              Book a call
+            </button>
+          </div>
+
+          <div className="flex lg:flex-row flex-col items-center justify-between lg:mt-10 mt-5 mb-10">
+            <div className="space-y-5">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit p-10 rounded-lg">
+                <img src={trusted} alt="" />
+                <div>
+                  <h1 className="text-[#080F10] text-xl font-semibold font-campton">
+                    Trusted Insights
+                  </h1>
+                  <p className="text-[#575959] font-campton">
+                    Lorem ipsum trusted company hendrerit <br /> aliquam
+                    accumsan nisl suspendisse.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit p-10 rounded-lg">
+                <img src={strategic} alt="" />
+                <div>
+                  <h1 className="text-[#080F10] text-xl font-semibold font-campton">
+                    Strategic Advice
+                  </h1>
+                  <p className="text-[#575959] font-campton">
+                    Lorem ipsum trusted company hendrerit <br /> aliquam
+                    accumsan nisl suspendisse.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit p-10 rounded-lg">
+                <img src={practical} alt="" />
+                <div>
+                  <h1 className="text-[#080F10] text-xl font-semibold font-campton">
+                    Practical Tools
+                  </h1>
+                  <p className="text-[#575959] font-campton">
+                    Lorem ipsum trusted company hendrerit <br /> aliquam
+                    accumsan nisl suspendisse.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:mt-0 mt-10">
+              <img src={aboutus} alt="" width={580} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#193D6F]">
+        <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="54"
+              viewBox="0 0 34 54"
+              fill="none"
+            >
+              <path
+                d="M0 53.5488C18.5069 53.5488 33.5097 38.546 33.5097 20.0391V0.886723H0V53.5488Z"
+                fill="#E0F780"
+              />
+            </svg>
+          </div>
+          <div>
+            <div className="text-center">
+              <h1 className="text-[#ffffff] lg:text-5xl font-campton font-semibold">
+                Trusted by 1,000+ companies <br /> around the world
+              </h1>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="250"
+                height="20"
+                viewBox="0 0 281 20"
+                fill="none"
+                className="lg:mx-auto lg:ml-[510px] lg:w-[500px] w-[80px] ml-[190px] -mt-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M6.44519 4.35266C12.3876 5.49154 28.0045 5.54849 70.3987 5.66238C136.599 5.83321 189.138 7.08596 203.741 8.90816C204.9 9.07899 112.104 10.3318 102.575 9.42065C87.7187 7.94012 16.7719 9.19288 2.49563 10.9012C-1.5626 11.3567 -0.0407511 12.9512 2.60435 13.2928C6.73503 13.8623 17.8228 13.8053 48.2234 13.6914C69.6015 13.6345 239.685 14.9442 258.273 17.2789C268.708 18.5886 275.049 19.7844 277.948 19.4997C280.376 19.2719 280.412 18.5886 278.311 16.7095C276.897 15.4567 278.492 14.7164 279.506 14.3748C281.064 13.8053 280.412 11.8692 278.455 10.3318C275.81 8.22484 271.245 8.28179 273.419 10.3887C273.89 10.8443 273.999 11.9831 272.332 11.7554C267.477 11.072 233.163 6.40264 223.851 5.60543C124.424 -3.05002 27.3885 3.27073 6.84373 1.16381C-0.439344 0.366593 2.89425 3.66934 6.44519 4.35266Z"
+                  fill="#E0F780"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 items-center justify-items-center mt-5 lg:mt-10 mb-10">
+            <img src={combinator} alt="" />
+            <img src={index} alt="" />
+            <img src={nfx} alt="" />
+            <img src={accel} alt="" />
+            <img src={bessener} alt="" />
+            <img src={sequoia} alt="" />
+            <img src={accel} alt="" />
+            <img src={bessener} alt="" />
+            <img src={index} alt="" />
+            <img src={lake} alt="" />
+          </div>
+
+          <div className="flex justify-end lg:mt-0 -mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="53"
+              viewBox="0 0 45 53"
+              fill="none"
+            >
+              <path
+                d="M44.8252 1.66602C26.8244 -2.63258 8.74724 8.47522 4.44864 26.476L0.00011574 45.1046L32.5934 52.8879L44.8252 1.66602Z"
+                fill="#E0F780"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <Projects />
+      </div>
+
+      <div>
+        <ServicesSlider />
+      </div>
+
+      <div>
+        <OurBlogs />
+      </div>
+
+      <div>
+        <PricingPlan />
+      </div>
+
+      <div>
+        <TeamExpert />
+      </div>
+
+      <div>
+        <CustomersTestimonial />
+      </div>
+
+      <div>
+        <LatestContent />
+      </div>
+
+      <div>
+        <GetinTouch />
+      </div>
+
+      <Footer />
+    </section>
+  );
+};
+
+export default Home;
