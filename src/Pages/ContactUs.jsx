@@ -26,7 +26,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label for="name">First Name</label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  className="w-full rounded-md border p-3 text-sm"
                   placeholder="First Name"
                   type="text"
                   id="name"
@@ -36,7 +36,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label for="name">Last Name</label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  className="w-full rounded-md border p-3 text-sm"
                   placeholder="Last Name"
                   type="text"
                   id="name"
@@ -46,7 +46,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label for="email">Email</label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  className="w-full rounded-md border p-3 text-sm"
                   placeholder="Email address"
                   type="email"
                   id="email"
@@ -57,14 +57,14 @@ const ContactUs = () => {
                 <label for="message">Message</label>
 
                 <textarea
-                  class="w-full rounded-md border p-3 text-sm"
+                  className="w-full rounded-md border p-3 text-sm"
                   placeholder="Please leave your Message here"
                   rows="8"
                   id="message"
                 ></textarea>
               </div>
 
-              <div class="mt-4">
+              <div className="mt-4">
                 <a
                   href="#!"
                   class=" justify-center w-full bg-[#E0F780] px-5 py-3 font-medium font-campton lg:text-lg transition ease-out duration-500 text-[#080F10] items-center flex gap-2 sm:w-auto"
