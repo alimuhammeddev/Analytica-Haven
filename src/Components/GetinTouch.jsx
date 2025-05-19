@@ -32,7 +32,7 @@ const GetinTouch = () => {
           </div>
 
           <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
-            Book a Call
+            Book a call
           </button>
         </div>
 
