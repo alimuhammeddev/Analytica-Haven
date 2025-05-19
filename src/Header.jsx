@@ -1,7 +1,7 @@
+
 import React, { useState, useRef, useEffect } from "react";
 import { Mail, Menu, Phone, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
-import { logo } from "./assets";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Header = () => {
@@ -13,10 +13,24 @@ const Header = () => {
   const blogDropdownRef = useRef(null);
 
   const toggleMenu = () => setOpen(!open);
-  const toggleCompanyDropdown = () =>
-    setCompanyDropdownOpen((prev) => !prev);
-  const toggleBlogDropdown = () =>
-    setBlogDropdownOpen((prev) => !prev);
+  
+  const toggleCompanyDropdown = (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+    setCompanyDropdownOpen(!companyDropdownOpen);
+    // Close other dropdown when opening this one
+    if (!companyDropdownOpen) {
+      setBlogDropdownOpen(false);
+    }
+  };
+  
+  const toggleBlogDropdown = (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+    setBlogDropdownOpen(!blogDropdownOpen);
+    // Close other dropdown when opening this one
+    if (!blogDropdownOpen) {
+      setCompanyDropdownOpen(false);
+    }
+  };
 
   const navLinks = [
     { name: "HOME", url: "/" },
@@ -49,6 +63,13 @@ const Header = () => {
     };
   }, []);
 
+  // Helper function to handle mobile dropdown link clicks
+  const handleMobileDropdownLinkClick = (e, setDropdownOpen) => {
+    e.stopPropagation();
+    setOpen(false);
+    setDropdownOpen(false);
+  };
+
   return (
     <section>
       <header className="bg-white shadow-md fixed w-full z-[999]">
@@ -80,7 +101,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 py-4 relative flex justify-between items-center lg:mt-12">
           <div className="flex-shrink-0">
             <Link to="/">
-              <img src={logo} alt="Logo" className="w-16" />
+              <img src="/api/placeholder/100/100" alt="Logo" className="w-16" />
             </Link>
           </div>
 
@@ -219,7 +240,7 @@ const Header = () => {
           <div className="px-4 py-4 flex justify-between items-center border-b">
             <span className="text-center">
               <Link to="/">
-                <img src={logo} alt="Logo" className="w-16" />
+                <img src="/api/placeholder/100/100" alt="Logo" className="w-16" />
               </Link>
             </span>
             <button onClick={toggleMenu}>
@@ -243,37 +264,29 @@ const Header = () => {
                       <div className="pl-4 flex flex-col space-y-2 text-sm">
                         <Link
                           to="/about-us"
-                          onClick={() => {
-                            setOpen(false);
-                            setCompanyDropdownOpen(false);
-                          }}
+                          className="block py-2 hover:text-[#176FB9]"
+                          onClick={(e) => handleMobileDropdownLinkClick(e, setCompanyDropdownOpen)}
                         >
                           About Us
                         </Link>
                         <Link
                           to="/success-page"
-                          onClick={() => {
-                            setOpen(false);
-                            setCompanyDropdownOpen(false);
-                          }}
+                          className="block py-2 hover:text-[#176FB9]"
+                          onClick={(e) => handleMobileDropdownLinkClick(e, setCompanyDropdownOpen)}
                         >
                           Success Page
                         </Link>
                         <Link
                           to="/events"
-                          onClick={() => {
-                            setOpen(false);
-                            setCompanyDropdownOpen(false);
-                          }}
+                          className="block py-2 hover:text-[#176FB9]"
+                          onClick={(e) => handleMobileDropdownLinkClick(e, setCompanyDropdownOpen)}
                         >
                           Events & Programs
                         </Link>
                         <Link
                           to="/community"
-                          onClick={() => {
-                            setOpen(false);
-                            setCompanyDropdownOpen(false);
-                          }}
+                          className="block py-2 hover:text-[#176FB9]"
+                          onClick={(e) => handleMobileDropdownLinkClick(e, setCompanyDropdownOpen)}
                         >
                           Our Community
                         </Link>
@@ -297,19 +310,15 @@ const Header = () => {
                       <div className="pl-4 flex flex-col space-y-2 text-sm">
                         <Link
                           to="/blog"
-                          onClick={() => {
-                            setOpen(false);
-                            setBlogDropdownOpen(false);
-                          }}
+                          className="block py-2 hover:text-[#176FB9]"
+                          onClick={(e) => handleMobileDropdownLinkClick(e, setBlogDropdownOpen)}
                         >
                           Blog
                         </Link>
                         <Link
                           to="/category"
-                          onClick={() => {
-                            setOpen(false);
-                            setBlogDropdownOpen(false);
-                          }}
+                          className="block py-2 hover:text-[#176FB9]"
+                          onClick={(e) => handleMobileDropdownLinkClick(e, setBlogDropdownOpen)}
                         >
                           Category
                         </Link>
