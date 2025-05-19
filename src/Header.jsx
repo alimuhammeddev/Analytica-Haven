@@ -1,7 +1,7 @@
-
 import React, { useState, useRef, useEffect } from "react";
 import { Mail, Menu, Phone, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { logo } from "./assets";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Header = () => {
@@ -13,24 +13,10 @@ const Header = () => {
   const blogDropdownRef = useRef(null);
 
   const toggleMenu = () => setOpen(!open);
-  
-  const toggleCompanyDropdown = (e) => {
-    e.stopPropagation(); // Prevent event bubbling
-    setCompanyDropdownOpen(!companyDropdownOpen);
-    // Close other dropdown when opening this one
-    if (!companyDropdownOpen) {
-      setBlogDropdownOpen(false);
-    }
-  };
-  
-  const toggleBlogDropdown = (e) => {
-    e.stopPropagation(); // Prevent event bubbling
-    setBlogDropdownOpen(!blogDropdownOpen);
-    // Close other dropdown when opening this one
-    if (!blogDropdownOpen) {
-      setCompanyDropdownOpen(false);
-    }
-  };
+  const toggleCompanyDropdown = () =>
+    setCompanyDropdownOpen((prev) => !prev);
+  const toggleBlogDropdown = () =>
+    setBlogDropdownOpen((prev) => !prev);
 
   const navLinks = [
     { name: "HOME", url: "/" },
@@ -63,13 +49,6 @@ const Header = () => {
     };
   }, []);
 
-  // Helper function to handle mobile dropdown link clicks
-  const handleMobileDropdownLinkClick = (e, setDropdownOpen) => {
-    e.stopPropagation();
-    setOpen(false);
-    setDropdownOpen(false);
-  };
-
   return (
     <section>
       <header className="bg-white shadow-md fixed w-full z-[999]">
@@ -101,7 +80,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 py-4 relative flex justify-between items-center lg:mt-12">
           <div className="flex-shrink-0">
             <Link to="/">
-              <img src="/api/placeholder/100/100" alt="Logo" className="w-16" />
+              <img src={logo} alt="Logo" className="w-16" />
             </Link>
           </div>
 
@@ -240,7 +219,7 @@ const Header = () => {
           <div className="px-4 py-4 flex justify-between items-center border-b">
             <span className="text-center">
               <Link to="/">
-                <img src="/api/placeholder/100/100" alt="Logo" className="w-16" />
+                <img src={logo} alt="Logo" className="w-16" />
               </Link>
             </span>
             <button onClick={toggleMenu}>
@@ -264,29 +243,25 @@ const Header = () => {
                       <div className="pl-4 flex flex-col space-y-2 text-sm">
                         <Link
                           to="/about-us"
-                          className="block py-2 hover:text-[#176FB9]"
-                          onClick={(e) => handleMobileDropdownLinkClick(e, setCompanyDropdownOpen)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           About Us
                         </Link>
                         <Link
                           to="/success-page"
-                          className="block py-2 hover:text-[#176FB9]"
-                          onClick={(e) => handleMobileDropdownLinkClick(e, setCompanyDropdownOpen)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           Success Page
                         </Link>
                         <Link
                           to="/events"
-                          className="block py-2 hover:text-[#176FB9]"
-                          onClick={(e) => handleMobileDropdownLinkClick(e, setCompanyDropdownOpen)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           Events & Programs
                         </Link>
                         <Link
                           to="/community"
-                          className="block py-2 hover:text-[#176FB9]"
-                          onClick={(e) => handleMobileDropdownLinkClick(e, setCompanyDropdownOpen)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           Our Community
                         </Link>
@@ -310,15 +285,13 @@ const Header = () => {
                       <div className="pl-4 flex flex-col space-y-2 text-sm">
                         <Link
                           to="/blog"
-                          className="block py-2 hover:text-[#176FB9]"
-                          onClick={(e) => handleMobileDropdownLinkClick(e, setBlogDropdownOpen)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           Blog
                         </Link>
                         <Link
                           to="/category"
-                          className="block py-2 hover:text-[#176FB9]"
-                          onClick={(e) => handleMobileDropdownLinkClick(e, setBlogDropdownOpen)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           Category
                         </Link>
