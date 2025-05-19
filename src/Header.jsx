@@ -220,7 +220,7 @@ const Header = () => {
         {/* Mobile Menu */}
         <div
           className={`fixed top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"
-            } md:hidden overflow-y-auto`}
+            } md:hidden`}
         >
           <div className="px-4 py-4 flex justify-between items-center border-b">
             <span className="text-center">
@@ -237,41 +237,45 @@ const Header = () => {
             {navLinks.map((link, i) => {
               if (link.name === "COMPANY") {
                 return (
-                  <div key={i} className="relative">
-                    <div 
+                  <div
+                    key={i}
+                    className="relative flex items-center"
+                    ref={companyDropdownRef}
+                  >
+                    <span
                       onClick={toggleCompanyDropdown}
-                      className="flex items-center justify-between hover:text-[#176FB9] cursor-pointer"
+                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
                     >
-                      <span className="text-sm">{link.name}</span>
-                      <ChevronDown size={16} className={`transition-transform duration-200 ${companyDropdownOpen ? 'rotate-180' : ''}`} />
-                    </div>
+                      {link.name}
+                      <ChevronDown size={16} />
+                    </span>
                     {companyDropdownOpen && (
-                      <div className="mt-2 ml-4 bg-gray-50 rounded-md p-2 border-l-2 border-[#193D6F]">
+                      <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
                         <Link
                           to="/about-us"
-                          className="block py-2 text-sm text-gray-700 hover:text-[#176FB9]"
-                          onClick={closeAllMenus}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={() => setCompanyDropdownOpen(false)}
                         >
                           About Us
                         </Link>
                         <Link
                           to="/success-page"
-                          className="block py-2 text-sm text-gray-700 hover:text-[#176FB9]"
-                          onClick={closeAllMenus}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={() => setCompanyDropdownOpen(false)}
                         >
                           Success Page
                         </Link>
                         <Link
                           to="/events"
-                          className="block py-2 text-sm text-gray-700 hover:text-[#176FB9]"
-                          onClick={closeAllMenus}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={() => setCompanyDropdownOpen(false)}
                         >
                           Events & Programs
                         </Link>
                         <Link
                           to="/community"
-                          className="block py-2 text-sm text-gray-700 hover:text-[#176FB9]"
-                          onClick={closeAllMenus}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={() => setCompanyDropdownOpen(false)}
                         >
                           Our Community
                         </Link>
@@ -283,27 +287,31 @@ const Header = () => {
 
               if (link.name === "BLOG") {
                 return (
-                  <div key={i} className="relative">
-                    <div 
+                  <div
+                    key={i}
+                    className="relative flex items-center"
+                    ref={blogDropdownRef}
+                  >
+                    <span
                       onClick={toggleBlogDropdown}
-                      className="flex items-center justify-between hover:text-[#176FB9] cursor-pointer"
+                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
                     >
-                      <span className="text-sm">{link.name}</span>
-                      <ChevronDown size={16} className={`transition-transform duration-200 ${blogDropdownOpen ? 'rotate-180' : ''}`} />
-                    </div>
+                      {link.name}
+                      <ChevronDown size={16} />
+                    </span>
                     {blogDropdownOpen && (
-                      <div className="mt-2 ml-4 bg-gray-50 rounded-md p-2 border-l-2 border-[#193D6F]">
+                      <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
                         <Link
                           to="/blog"
-                          className="block py-2 text-sm text-gray-700 hover:text-[#176FB9]"
-                          onClick={closeAllMenus}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={() => setBlogDropdownOpen(false)}
                         >
                           Blog
                         </Link>
                         <Link
                           to="/category"
-                          className="block py-2 text-sm text-gray-700 hover:text-[#176FB9]"
-                          onClick={closeAllMenus}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={() => setBlogDropdownOpen(false)}
                         >
                           Category
                         </Link>
@@ -325,22 +333,20 @@ const Header = () => {
               );
             })}
 
-            <div className="pt-4 space-y-4">
-              <Link
-                to="/donate"
-                className="bg-[#E0F780] text-[#193D6F] text-center px-6 py-3 text-sm rounded-lg font-semibold font-campton block"
-                onClick={closeAllMenus}
-              >
-                Donate
-              </Link>
-              <Link
-                to="/join-community"
-                className="bg-white text-[#193D6F] text-center border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-semibold font-campton block"
-                onClick={closeAllMenus}
-              >
-                Join our Community
-              </Link>
-            </div>
+            <Link
+              to="/donate"
+              className="bg-[#E0F780] text-[#193D6F] text-center px-6 py-3 text-sm rounded-lg font-semibold font-campton"
+              onClick={closeAllMenus}
+            >
+              Donate
+            </Link>
+            <Link
+              to="/join-community"
+              className="bg-white text-[#193D6F] text-center border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-semibold font-campton"
+              onClick={closeAllMenus}
+            >
+              Join our Community
+            </Link>
           </nav>
         </div>
 
