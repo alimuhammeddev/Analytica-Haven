@@ -37,7 +37,7 @@ const Home = () => {
           <br className="lg:block hidden" />
           <span className="lg:inline-block lg:relative">
             with Analytica Haven
-            <span className="block -mt-1 lg:ml-28 ml-36">
+            <span className="block lg:ml-28 ml-36">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-36 h-3 lg:w-[380px] lg:h-[14px]"

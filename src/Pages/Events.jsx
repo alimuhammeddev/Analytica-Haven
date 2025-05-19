@@ -82,7 +82,7 @@ const Events = () => {
             </p>
 
             <div className="space-y-5">
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
                 <img src={trusted} alt="" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
@@ -94,7 +94,7 @@ const Events = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
                 <img src={strategic} alt="" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
@@ -106,7 +106,7 @@ const Events = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-10 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
                 <img src={practical} alt="" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">

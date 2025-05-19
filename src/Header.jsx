@@ -65,7 +65,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex ml-5 space-x-8 text-gray-600 font-semibold font-campton">
+          <nav className="hidden md:flex ml-5 space-x-8 text-gray-600 font-campton">
             {navLinks.map((link, i) => {
               if (link.name === "COMPANY") {
                 return (
@@ -130,8 +130,8 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex gap-5">
-            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium lg:text-lg font-campton">Donate</Link>
-            <Link to="/join-community" className="bg-white text-[#193D6F] border-[#193D6F] border-2 text-sm px-6 py-2 rounded-lg font-medium lg:text-lg font-campton">Join our Community</Link>
+            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-sm px-5 py-3 rounded-lg font-medium lg:text-base font-campton">Donate</Link>
+            <Link to="/join-community" className="bg-white text-[#193D6F] border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-medium lg:text-base font-campton">Join our Community</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -155,7 +155,7 @@ const Header = () => {
             </button>
           </div>
 
-          <nav className="flex flex-col px-6 py-6 space-y-6 text-lg text-gray-600 font-semibold font-campton">
+          <nav className="flex flex-col px-6 py-6 space-y-6 text-lg text-gray-600 font-campton">
             {navLinks.map((link, i) => {
               if (link.name === "COMPANY") {
                 return (

@@ -17,7 +17,7 @@ const AboutUs = () => {
         <Header />
 
         <div>
-          <img src={abouthero} alt="" className="w-full lg:-mt-5 -mt-16" />
+          <img src={abouthero} alt="" className="w-full" />
         </div>
 
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">

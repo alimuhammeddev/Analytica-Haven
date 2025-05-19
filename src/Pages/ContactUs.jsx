@@ -12,7 +12,7 @@ const ContactUs = () => {
       </div>
 
       <div>
-        <img src={abouthero} alt="" className="w-full lg:-mt-5 -mt-16" />
+        <img src={abouthero} alt="" className="w-full" />
       </div>
 
       <div>
@@ -26,7 +26,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label for="name">First Name</label>
                 <input
-                  className="w-full rounded-md border p-3 text-sm"
+                  className="w-full rounded-md border-2 p-3 text-sm"
                   placeholder="First Name"
                   type="text"
                   id="name"
@@ -36,7 +36,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label for="name">Last Name</label>
                 <input
-                  className="w-full rounded-md border p-3 text-sm"
+                  className="w-full rounded-md border-2 p-3 text-sm"
                   placeholder="Last Name"
                   type="text"
                   id="name"
@@ -46,7 +46,7 @@ const ContactUs = () => {
               <div className="space-y-2">
                 <label for="email">Email</label>
                 <input
-                  className="w-full rounded-md border p-3 text-sm"
+                  className="w-full rounded-md border-2 p-3 text-sm"
                   placeholder="Email address"
                   type="email"
                   id="email"
@@ -57,7 +57,7 @@ const ContactUs = () => {
                 <label for="message">Message</label>
 
                 <textarea
-                  className="w-full rounded-md border p-3 text-sm"
+                  className="w-full rounded-md border-2 p-3 text-sm"
                   placeholder="Please leave your Message here"
                   rows="8"
                   id="message"

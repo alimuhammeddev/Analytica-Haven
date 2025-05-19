@@ -22,7 +22,7 @@ const JoinCommunity = () => {
           <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5">
             <input
               type="email"
-              className="w-full px-4 py-3 mt-1 border rounded-lg focus:ring-1 focus:ring-[#193D6F] focus:outline-none"
+              className="w-full px-4 py-3 mt-1 border-2 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black"
               placeholder="Enter your email"
               required
             />
@@ -65,7 +65,7 @@ const JoinCommunity = () => {
               <div className="space-y-2">
                 <label for="name">First Name</label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  class="w-full rounded-md border-2 p-3 text-sm"
                   placeholder="First Name"
                   type="text"
                   id="name"
@@ -75,7 +75,7 @@ const JoinCommunity = () => {
               <div className="space-y-2">
                 <label for="name">Last Name</label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  class="w-full rounded-md border-2 p-3 text-sm"
                   placeholder="Last Name"
                   type="text"
                   id="name"
@@ -85,7 +85,7 @@ const JoinCommunity = () => {
               <div className="space-y-2">
                 <label for="email">Email</label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  class="w-full rounded-md border-2 p-3 text-sm"
                   placeholder="Email address"
                   type="email"
                   id="email"
@@ -95,7 +95,7 @@ const JoinCommunity = () => {
               <div className="space-y-2">
                 <label for="email">Talent</label>
                 <input
-                  class="w-full rounded-md border p-3 text-sm"
+                  class="w-full rounded-md border-2 p-3 text-sm"
                   placeholder="Enter yout Talent"
                   type="email"
                   id="email"
