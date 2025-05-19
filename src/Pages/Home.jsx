@@ -114,7 +114,7 @@ const Home = () => {
 
       <div className="bg-[#E0EDFE] lg:mt-10">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-          <h1 className="text-[#193D6F] font-campton font-semibold lg:mt-10">
+          <h1 className="text-[#193D6F] font-campton lg:mt-10 lg:ml-2 ml-1">
             About us
           </h1>
           <div className="flex  items-center justify-between mt-2">
