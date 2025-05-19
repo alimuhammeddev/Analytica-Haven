@@ -21,7 +21,7 @@ const Category = () => {
       </div>
 
       <div
-        className="relative bg-[#193D6F] bg-cover bg-center text-white lg:-mt-2 -mt-16 lg:h-[500px] h-[300px] flex items-center justify-center"
+        className="relative bg-[#193D6F] bg-cover bg-center text-white lg:h-[500px] h-[300px] flex items-center justify-center"
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="max-w-7xl mx-auto justify-center lg:p-[8]">

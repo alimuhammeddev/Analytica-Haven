@@ -22,8 +22,8 @@ const Community = () => {
         <Header />
       </div>
 
-      <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5 -mt-5">
-        <h1 className="lg:text-6xl text-xl font-semibold lg:mt-20 text-center font-campton">
+      <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5">
+        <h1 className="lg:text-6xl text-xl font-semibold lg:mt-20 mt-7 text-center font-campton">
           Welcome to our community
           <span className="block -mt-1 lg:ml-36 ml-52">
             <svg

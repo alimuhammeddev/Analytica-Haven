@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="lg:text-5xl text-xl font-semibold lg:mt-20 text-center font-campton">
+        <h1 className="lg:text-5xl text-xl font-semibold lg:mt-20 mt-7 text-center font-campton">
           Unlock the Power of Data & Innovation{" "}
           <br className="lg:block hidden" />
           <span className="lg:inline-block lg:relative">

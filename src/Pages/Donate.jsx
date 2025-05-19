@@ -24,7 +24,7 @@ const Donate = () => {
       <Header />
 
       <div
-        className="relative bg-[#193D6F] bg-cover bg-center text-white lg:-mt-2 -mt-16  lg:h-[500px] h-[300px] flex items-center justify-center"
+        className="relative bg-[#193D6F] bg-cover bg-center text-white  lg:h-[500px] h-[300px] flex items-center justify-center"
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="text-center px-4 lg:space-y-7 space-y-4">

@@ -27,7 +27,7 @@ const Events = () => {
         <Header />
       </div>
 
-      <div className="bg-[#193D6F] lg:-mt-2 -mt-16 lg:p-20">
+      <div className="bg-[#193D6F] lg:p-20">
         <div className="max-w-7xl mx-auto justify-center lg:p-0 p-5">
           <div className="flex items-center justify-between lg:flex-row flex-col-reverse gap-5 lg:mt-0 mt-10">
             <div className="px-4 lg:space-y-7 space-y-4">

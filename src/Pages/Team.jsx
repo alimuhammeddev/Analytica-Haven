@@ -24,7 +24,7 @@ const Team = () => {
         <Header />
       </div>
       <div>
-        <img src={teamhero} alt="" className="w-full lg:-mt-2 -mt-16" />
+        <img src={teamhero} alt="" className="w-full" />
       </div>
 
       <div className="text-center lg:mt-20 mt-12">
