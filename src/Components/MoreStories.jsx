@@ -28,7 +28,7 @@ const MoreStories = () => {
           <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5">
             <input
               type="email"
-              className="w-full px-4 py-3 mt-1 border-2 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold"
+              className="w-full px-4 py-3 mt-1 lg:border-2 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold"
               placeholder="Enter your email"
               required
             />

@@ -57,7 +57,7 @@ const Projects = () => {
         <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg lg:mt-12">
           Our Projects
         </h1>
-        <div className="flex items-center justify-between lg:mt-2 mt-5">
+        <div className="flex items-center justify-between lg:mt-2 mt-1">
           <div>
             <h1 className="lg:text-4xl text-lg font-semibold font-campton">
               Explore Our Successful <br /> Projects

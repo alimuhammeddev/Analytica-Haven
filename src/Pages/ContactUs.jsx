@@ -24,9 +24,9 @@ const ContactUs = () => {
           <div className="lg:order-none order-2">
             <form action="#" class="space-y-4 mt-7">
               <div className="space-y-2">
-                <label for="name">First Name</label>
+                <label for="name" className="lg:font-semibold font-campton">First Name</label>
                 <input
-                  className="w-full rounded-md border-2 p-3 text-sm"
+                  className="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
                   placeholder="First Name"
                   type="text"
                   id="name"
@@ -34,9 +34,9 @@ const ContactUs = () => {
               </div>
 
               <div className="space-y-2">
-                <label for="name">Last Name</label>
+                <label for="name" className="lg:font-semibold font-campton">Last Name</label>
                 <input
-                  className="w-full rounded-md border-2 p-3 text-sm"
+                  className="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
                   placeholder="Last Name"
                   type="text"
                   id="name"
@@ -44,9 +44,9 @@ const ContactUs = () => {
               </div>
 
               <div className="space-y-2">
-                <label for="email">Email</label>
+                <label for="email" className="lg:font-semibold font-campton">Email</label>
                 <input
-                  className="w-full rounded-md border-2 p-3 text-sm"
+                  className="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
                   placeholder="Email address"
                   type="email"
                   id="email"
@@ -54,10 +54,10 @@ const ContactUs = () => {
               </div>
 
               <div className="space-y-2">
-                <label for="message">Message</label>
+                <label for="message" className="lg:font-semibold font-campton">Message</label>
 
                 <textarea
-                  className="w-full rounded-md border-2 p-3 text-sm"
+                  className="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
                   placeholder="Please leave your Message here"
                   rows="8"
                   id="message"

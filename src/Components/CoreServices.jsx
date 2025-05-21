@@ -21,10 +21,10 @@ const CoreServices = () => {
                 src={financeconsulting}
                 className="justify-center mx-auto w-20 h-20 object-contain"
               />
-              <h1 className="text-[#080F10] font-campton text-xl font-semibold text-center mt-4">
+              <h1 className="text-[#080F10] font-campton lg:text-xl text-lg font-semibold text-center mt-4">
                 Finance Consulting
               </h1>
-              <p className="text-[#575959] text-center mt-3">
+              <p className="text-[#575959] text-center lg:text-lg mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
                 egestas ullamcorper ipsum nibh quis.
               </p>
@@ -35,10 +35,10 @@ const CoreServices = () => {
                 src={deradigital}
                 className="justify-center mx-auto w-20 h-20 object-contain"
               />
-              <h1 className="text-[#080F10] font-campton text-xl font-semibold text-center mt-4">
+              <h1 className="text-[#080F10] font-campton lg:text-xl text-lg font-semibold text-center mt-4">
                 Dera Digital Marketing
               </h1>
-              <p className="text-[#575959] text-center mt-3">
+              <p className="text-[#575959] text-center lg:text-lg mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
                 egestas ullamcorper ipsum nibh quis.
               </p>
@@ -49,10 +49,10 @@ const CoreServices = () => {
                 src={careerdev}
                 className="justify-center mx-auto w-20 h-20 object-contain"
               />
-              <h1 className="text-[#080F10] font-campton text-xl font-semibold text-center mt-4">
+              <h1 className="text-[#080F10] font-campton lg:text-xl text-lg font-semibold text-center mt-4">
                 Career Development
               </h1>
-              <p className="text-[#575959] text-center mt-3">
+              <p className="text-[#575959] text-center lg:text-lg mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
                 egestas ullamcorper ipsum nibh quis.
               </p>

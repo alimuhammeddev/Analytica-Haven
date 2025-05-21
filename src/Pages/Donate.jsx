@@ -185,7 +185,7 @@ const Donate = () => {
 
       <div className="bg-[#E8ECF1] lg:p-5 p-3 lg:mt-20 mt-7">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-5">
-          <h1 className="text-[#193D6F] lg:text-4xl text-xl font-campton font-semibold text-center">
+          <h1 className="text-[#193D6F] lg:text-4xl text-lg font-campton font-semibold text-center">
             We appreciate your support, please <br className="lg:block hidden"/> send your donation to this
             account below
           </h1>

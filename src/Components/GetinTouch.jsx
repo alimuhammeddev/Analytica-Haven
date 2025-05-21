@@ -8,7 +8,7 @@ const GetinTouch = () => {
         <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg lg:mt-12 mt-5">
           Get in touch
         </h1>
-        <div className="flex items-center justify-between lg:mt-2 mt-5">
+        <div className="flex items-center justify-between lg:mt-2 mt-1">
           <div>
             <h1 className="lg:text-4xl text-lg font-semibold font-campton">
               Contact us today for free
@@ -56,7 +56,7 @@ const GetinTouch = () => {
                   Name
                 </label>
                 <input
-                  class="w-full rounded-md border-2 placeholder:font-medium p-3 text-sm"
+                  class="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
                   placeholder="Name"
                   type="text"
                   id="name"
@@ -68,7 +68,7 @@ const GetinTouch = () => {
                   Email
                 </label>
                 <input
-                  class="w-full rounded-md border-2 placeholder:font-medium p-3 text-sm"
+                  class="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
                   placeholder="Email address"
                   type="email"
                   id="email"
@@ -80,7 +80,7 @@ const GetinTouch = () => {
                   Phone
                 </label>
                 <input
-                  class="w-full rounded-md border-2 placeholder:font-medium p-3 text-sm"
+                  class="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
                   placeholder="Phone Number"
                   type="tel"
                   id="phone"
@@ -93,7 +93,7 @@ const GetinTouch = () => {
                 </label>
 
                 <textarea
-                  class="w-full rounded-md border-2 placeholder:font-medium p-3 text-sm"
+                  class="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
                   placeholder="Message"
                   rows="8"
                   id="message"

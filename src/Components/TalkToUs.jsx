@@ -7,7 +7,7 @@ const TalkToUs = () => {
         <div className='bg-[#193D6F]'>
             <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
                 <div className='flex items-center lg:justify-between lg:flex-row flex-col gap-5 lg:mt-20'>
-                    <div className='lg:mt-0 mt-5 space-y-7'>
+                    <div className='lg:mt-0 mt-5 lg:space-y-7 space-y-2'>
                         <h1 className='font-campton text-[#ffffff] font-semibold lg:text-4xl text-xl'>Get in touch with us for more <br />information or help.</h1>
                         <p className='lg:text-lg font-campton text-[#ffffff]'>If you have any questions or needs, we are here for you</p>
                     </div>
