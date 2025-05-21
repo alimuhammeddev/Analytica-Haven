@@ -59,7 +59,7 @@ const Projects = () => {
         </h1>
         <div className="flex items-center justify-between lg:mt-2 mt-1">
           <div>
-            <h1 className="lg:text-4xl text-lg font-semibold font-campton">
+            <h1 className="lg:text-4xl text-base font-semibold font-campton">
               Explore Our Successful <br /> Projects
               <div>
                 <svg
@@ -79,10 +79,10 @@ const Projects = () => {
             </h1>
           </div>
           <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
-            Browse our Projects
+            our Projects
           </button>
         </div>
-        <p className="text-[#000000] font-campton font-medium mt-5 max-w-prose">
+        <p className="text-[#000000] font-campton lg:text-lg text-sm lg:font-medium mt-5 max-w-prose">
           Analytical Haven is a hub where businesses and individuals transform
           raw data into actionable insights, build scalable solutions, and
           master strategic execution.

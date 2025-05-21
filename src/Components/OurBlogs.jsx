@@ -8,7 +8,7 @@ const OurBlogs = () => {
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
         <div className="flex items-center justify-between lg:mt-10 mt-5">
           <div>
-            <h1 className="lg:text-4xl text-lg font-semibold font-campton">
+            <h1 className="lg:text-4xl text-base font-semibold font-campton">
               Browse our blogs & <br /> resources
             </h1>
             <div>
@@ -29,7 +29,7 @@ const OurBlogs = () => {
           </div>
 
           <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
-            Browse our Resources
+            Browse
           </button>
         </div>
 

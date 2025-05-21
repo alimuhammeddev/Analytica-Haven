@@ -243,9 +243,9 @@ const ServicesSlider = () => {
                       <img
                         src={card.image}
                         alt={card.title}
-                        className="justify-center mx-auto w-20 h-20 object-contain"
+                        className="justify-center mx-auto w-16 h-16 object-contain"
                       />
-                      <h1 className="text-[#080F10] font-campton text-xl font-semibold text-center mt-4">
+                      <h1 className="text-[#080F10] font-campton lg:text-xl text-lg font-semibold text-center mt-4">
                         {card.title}
                       </h1>
                       <p className="text-[#575959] text-center mt-3">

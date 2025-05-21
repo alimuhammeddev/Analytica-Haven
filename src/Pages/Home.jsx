@@ -37,7 +37,7 @@ const Home = () => {
           <br className="lg:block hidden" />
           <span className="lg:inline-block lg:relative">
             with Analytica Haven
-            <span className="block lg:ml-28 ml-36">
+            <span className="block lg:ml-28 ml-36 lg:-mt-0 -mt-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-36 h-3 lg:w-[380px] lg:h-[14px]"
@@ -55,7 +55,7 @@ const Home = () => {
           </span>
         </h1>
         <div>
-          <p className="text-center lg:text-lg lg:p-0 justify-center mx-auto font-campton mt-2">
+          <p className="text-center lg:text-lg text-sm lg:p-0 justify-center mx-auto font-campton mt-2">
             Empowering businesses & individuals with predictive insights,
             scalable solutions, and <br className="lg:block hidden" /> expert
             learning. Empowering businesses & individuals with predictive
@@ -66,7 +66,7 @@ const Home = () => {
         <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5 p-4">
           <input
             type="email"
-            className="w-full px-4 py-3 mt-1 lg:border-2 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-medium"
+            className="w-full px-4 py-3 mt-1 lg:border-2 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-medium lg:placeholder:text-base placeholder:text-sm"
             placeholder="Enter your email"
             required
           />
@@ -75,7 +75,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div>
+        <div className="lg:block hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -91,11 +91,11 @@ const Home = () => {
           </svg>
         </div>
 
-        <div>
+        <div className="lg:block hidden">
           <img src={hero} alt="" />
         </div>
 
-        <div className="flex justify-end">
+        <div className="lg:flex justify-end hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -114,16 +114,16 @@ const Home = () => {
 
       <div className="bg-[#E0EDFE] lg:mt-10">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-          <h1 className="text-[#193D6F] font-campton lg:mt-10 lg:ml-2 ml-1">
+          <h1 className="text-[#193D6F] font-campton lg:text-base text-sm lg:mt-10 lg:ml-2 ml-1">
             About us
           </h1>
           <div className="flex  items-center justify-between mt-2">
-            <h2 className="lg:text-4xl text-xl font-semibold font-campton">
+            <h2 className="lg:text-4xl text-base font-semibold font-campton">
               Get to know our purpose <br /> and Mission
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:ml-16 ml-9 w-20 h-3 lg:w-[150px] lg:h-[14px] -m-2"
+                  className="lg:ml-16 ml-9 w-12 h-3 lg:w-[150px] lg:h-[14px] -m-2"
                   viewBox="0 0 219 11"
                   fill="none"
                 >
@@ -141,39 +141,39 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="flex lg:flex-row flex-col items-center justify-between lg:mt-10 mt-5 mb-10">
+          <div className="flex lg:flex-row flex-col items-center justify-between lg:mt-10 mt-5">
             <div className="space-y-5">
               <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={trusted} alt="" />
+                <img src={trusted} alt="" className="lg:w-fit w-20"/>
                 <div>
-                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
+                  <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Trusted Insights
                   </h1>
-                  <p className="text-[#575959] font-campton">
+                  <p className="text-[#575959] font-campton lg:text-base text-sm">
                     Lorem ipsum trusted company hendrerit <br /> aliquam
                     accumsan nisl suspendisse.
                   </p>
                 </div>
               </div>
               <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={strategic} alt="" />
+                <img src={strategic} alt="" className="lg:w-fit w-20"/>
                 <div>
-                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
+                  <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Strategic Advice
                   </h1>
-                  <p className="text-[#575959] font-campton">
+                  <p className="text-[#575959] font-campton lg:text-base text-sm">
                     Lorem ipsum trusted company hendrerit <br /> aliquam
                     accumsan nisl suspendisse.
                   </p>
                 </div>
               </div>
               <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={practical} alt="" />
+                <img src={practical} alt="" className="lg:w-fit w-20"/>
                 <div>
-                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
+                  <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Practical Tools
                   </h1>
-                  <p className="text-[#575959] font-campton">
+                  <p className="text-[#575959] font-campton lg:text-base text-sm">
                     Lorem ipsum trusted company hendrerit <br /> aliquam
                     accumsan nisl suspendisse.
                   </p>
@@ -182,7 +182,7 @@ const Home = () => {
             </div>
 
             <div className="lg:mt-0 mt-10">
-              <img src={aboutus} alt="" width={580} />
+              <img src={aboutus} alt="" width={580} className="lg:block hidden"/>
             </div>
           </div>
         </div>
@@ -206,7 +206,7 @@ const Home = () => {
           </div>
           <div>
             <div className="text-center">
-              <h1 className="text-[#ffffff] lg:text-5xl font-campton font-semibold">
+              <h1 className="text-[#ffffff] lg:text-5xl text-xl font-campton font-semibold">
                 Trusted by 1,000+ companies <br /> around the world
               </h1>
               <svg
@@ -215,7 +215,7 @@ const Home = () => {
                 height="20"
                 viewBox="0 0 281 20"
                 fill="none"
-                className="lg:mx-auto lg:ml-[510px] lg:w-[500px] w-[80px] ml-[140px] -mt-2"
+                className="lg:mx-auto lg:ml-[510px] lg:w-[500px] w-[80px] ml-[140px] -mt-3"
               >
                 <path
                   fillRule="evenodd"

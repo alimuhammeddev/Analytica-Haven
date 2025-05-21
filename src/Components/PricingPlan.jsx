@@ -22,7 +22,7 @@ const PricingPlan = () => {
           </div>
 
           <div className="text-center flex flex-col items-center lg:mt-5 mt-3">
-            <h1 className="lg:text-4xl text-lg font-semibold font-campton text-[#FFFFFF]">
+            <h1 className="lg:text-4xl text-xl font-semibold font-campton text-[#FFFFFF]">
               Our Best Pricing Plan
             </h1>
             <svg
@@ -51,7 +51,7 @@ const PricingPlan = () => {
 
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 lg:mt-16 mt-7">
             <div className="bg-[#F9F9F9] lg:p-12 p-5 space-y-7 lg:mt-16">
-              <h1 className="text-[#080F10] font-campton text-lg font-medium">
+              <h1 className="text-[#080F10] font-campton text-xl font-medium">
                 Basic
               </h1>
               <h2 className="font-semibold font-campton lg:text-4xl text-xl mt-7">
@@ -100,7 +100,7 @@ const PricingPlan = () => {
               </div>
 
               <div className="bg-[#F9F9F9] lg:p-12 p-5 space-y-7 mt-16">
-                <h1 className="text-[#080F10] font-campton text-lg">Startup</h1>
+                <h1 className="text-[#080F10] font-campton text-xl">Startup</h1>
                 <h2 className="font-semibold font-campton lg:text-4xl text-xl mt-7">
                   $299
                   <span className="text-base font-normal text-[#202324]">
@@ -145,7 +145,7 @@ const PricingPlan = () => {
             </div>
 
             <div className="bg-[#F9F9F9] lg:p-12 p-5 space-y-7 lg:mt-16">
-              <h1 className="text-[#080F10] font-campton text-lg">
+              <h1 className="text-[#080F10] font-campton text-xl">
                 Enterprise
               </h1>
               <h2 className="font-semibold font-campton lg:text-4xl text-xl mt-7">
