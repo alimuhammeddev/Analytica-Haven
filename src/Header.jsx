@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <section>
-      <header className="bg-white shadow-md w-full z-[999]">
+      <header className="fixed top-0 left-0 right-0 bg-white shadow-md w-full z-[999]">
         {/* Top Bar */}
         <div className="bg-[#193D6F] shadow-md w-full p-3 lg:block hidden">
           <div className="max-w-7xl mx-auto px-4 relative flex items-center justify-between">
@@ -213,6 +213,9 @@ const Header = () => {
           <div className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden" onClick={() => setOpen(false)} />
         )}
       </header>
+
+      {/* Spacer below fixed header */}
+      <div className="h-[90px] md:h-[120px]" />
     </section>
   );
 };
