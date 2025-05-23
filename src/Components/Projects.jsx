@@ -11,19 +11,18 @@ const Projects = () => {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [transition, setTransition] = useState(true);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
-  // Responsive item count
   const itemsPerSlide = isMobile ? 1 : 6;
 
-  // Break projects into chunks
   const slides = [];
   for (let i = 0; i < Math.ceil(projects.length / itemsPerSlide); i++) {
     slides.push(projects.slice(i * itemsPerSlide, i * itemsPerSlide + itemsPerSlide));
   }
 
-  // Clone last and first for infinite scroll effect
   const clonedSlides = [slides[slides.length - 1], ...slides, slides[0]];
-  const [currentSlide, setCurrentSlide] = useState(1); // start from the first real slide
+  const [currentSlide, setCurrentSlide] = useState(1);
 
   useEffect(() => {
     const handleResize = () => {
@@ -51,13 +50,30 @@ const Projects = () => {
     setCurrentSlide((prev) => prev - 1);
   };
 
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    const swipeDistance = touchStartX - touchEndX;
+    if (swipeDistance > 50) {
+      nextSlide();
+    } else if (swipeDistance < -50) {
+      prevSlide();
+    }
+  };
+
   return (
     <section>
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
         <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg lg:mt-12">
           Our Projects
         </h1>
-        <div className="flex items-center justify-between lg:mt-2 mt-1">
+        <div className="lg:flex items-center justify-between lg:mt-2 mt-1">
           <div>
             <h1 className="lg:text-4xl text-base font-semibold font-campton">
               Explore Our Successful <br /> Projects
@@ -78,7 +94,7 @@ const Projects = () => {
               </div>
             </h1>
           </div>
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+          <button className="bg-[#E0F780] lg:block hidden text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
             our Projects
           </button>
         </div>
@@ -87,10 +103,18 @@ const Projects = () => {
           raw data into actionable insights, build scalable solutions, and
           master strategic execution.
         </p>
+        <button className="bg-[#E0F780] lg:hidden block lg:w-fit w-full lg:mt-0 mt-4 text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+          our Projects
+        </button>
 
         <div>
           <div className="relative mt-10 mb-20">
-            <div className="overflow-hidden">
+            <div
+              className="overflow-hidden"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
               <div
                 className="flex transition-transform duration-500 ease-in-out"
                 style={{
@@ -132,41 +156,62 @@ const Projects = () => {
             </div>
 
             <div className="flex items-center justify-between mt-8">
-              <div className={`${isMobile ? "hidden" : "flex"} items-center`}>
-                {slides.map((_, index) => (
+              <div className={`items-center gap-2 ${isMobile ? "flex justify-center w-full mt-4" : "flex"}`}>
+                {(isMobile ? (() => {
+                  const total = slides.length;
+                  const current = currentSlide - 1; // Adjust index since `currentSlide` starts from 1
+                  const pages = [];
+
+                  if (total <= 3) {
+                    for (let i = 0; i < total; i++) pages.push(i);
+                  } else {
+                    const start = Math.max(0, Math.min(current - 1, total - 3));
+                    for (let i = start; i < start + 3; i++) pages.push(i);
+                  }
+
+                  return pages.map((index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index + 1)}
+                      className={`w-3 h-3 rounded-full mx-1 ${currentSlide === index + 1
+                          ? "bg-[#193D6F]"
+                          : "bg-white border border-[#193D6F]"
+                        }`}
+                      aria-label={`Go to slide ${index + 1}`}
+                    />
+                  ));
+                })() : slides.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentSlide(index + 1)}
-                    className={`w-3 h-3 rounded-full mx-1 ${
-                      currentSlide === index + 1
+                    className={`w-3 h-3 rounded-full mx-1 ${currentSlide === index + 1
                         ? "bg-[#193D6F]"
                         : "bg-white border border-[#193D6F]"
-                    }`}
+                      }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
-                ))}
+                )))}
               </div>
 
-              <div
-                className={`flex items-center gap-5 ${
-                  isMobile ? "w-full justify-center mx-auto -mt-5" : ""
-                }`}
-              >
-                <button
-                  className="border-[#193D6F] border p-3 rounded-full hover:bg-[#E0F780] hover:border-[#E0F780]"
-                  onClick={prevSlide}
-                  aria-label="Previous slide"
-                >
-                  <ArrowLeft className="text-[#193D6F]" />
-                </button>
-                <button
-                  className="border-[#193D6F] border p-3 rounded-full hover:bg-[#E0F780] hover:border-[#E0F780]"
-                  onClick={nextSlide}
-                  aria-label="Next slide"
-                >
-                  <ArrowRight className="text-[#193D6F]" />
-                </button>
-              </div>
+
+              {!isMobile && (
+                <div className="flex items-center gap-5">
+                  <button
+                    className="border-[#193D6F] border p-3 rounded-full hover:bg-[#E0F780] hover:border-[#E0F780]"
+                    onClick={prevSlide}
+                    aria-label="Previous slide"
+                  >
+                    <ArrowLeft className="text-[#193D6F]" />
+                  </button>
+                  <button
+                    className="border-[#193D6F] border p-3 rounded-full hover:bg-[#E0F780] hover:border-[#E0F780]"
+                    onClick={nextSlide}
+                    aria-label="Next slide"
+                  >
+                    <ArrowRight className="text-[#193D6F]" />
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -50,7 +50,7 @@ const LatestContent = () => {
         <div className="justify-center mx-auto flex mt-5">
           <Link
             to=""
-            className="bg-[#E0F780] text-[#080F10] text-base px-6 py-3 rounded-lg font-medium font-campton"
+            className="bg-[#E0F780] text-[#080F10] lg:w-fit w-full text-center text-base px-6 py-3 rounded-lg font-medium font-campton"
           >
             Join our Community
           </Link>

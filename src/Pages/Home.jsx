@@ -63,14 +63,14 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5 p-4">
+        <div className="lg:flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5 p-4">
           <input
             type="email"
             className="w-full px-4 py-3 mt-1 lg:border-2 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-medium lg:placeholder:text-base placeholder:text-sm"
             placeholder="Enter your email"
             required
           />
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-3 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:w-fit w-full lg:mt-0 mt-4 lg:px-6 px-3 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
             Subscribe
           </button>
         </div>
@@ -117,7 +117,7 @@ const Home = () => {
           <h1 className="text-[#193D6F] font-campton lg:text-base text-sm lg:mt-10 lg:ml-2 ml-1">
             About us
           </h1>
-          <div className="flex  items-center justify-between mt-2">
+          <div className="lg:flex items-center justify-between mt-2">
             <h2 className="lg:text-4xl text-base font-semibold font-campton">
               Get to know our purpose <br /> and Mission
               <div>
@@ -136,12 +136,12 @@ const Home = () => {
                 </svg>
               </div>
             </h2>
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton">
+            <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton">
               Book a call
             </button>
           </div>
 
-          <div className="flex lg:flex-row flex-col items-center justify-between lg:mt-10 mt-5">
+          <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-10 mt-5 gap-7">
             <div className="space-y-5">
               <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
                 <img src={trusted} alt="" className="lg:w-fit w-20"/>
@@ -182,13 +182,13 @@ const Home = () => {
             </div>
 
             <div className="lg:mt-0 mt-10">
-              <img src={aboutus} alt="" width={580} className="lg:block hidden"/>
+              <img src={aboutus} alt="" width={580} />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-[#193D6F]">
+      <div className="bg-[#193D6F] hidden">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
           <div>
             <svg
@@ -267,10 +267,6 @@ const Home = () => {
 
       <div>
         <OurBlogs />
-      </div>
-
-      <div>
-        <PricingPlan />
       </div>
 
       <div>

@@ -1,12 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import { blogimg } from "../assets";
 import { BsCalendar, BsPerson } from "react-icons/bs";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+const BlogCard = () => (
+  <div className="inline-block">
+    <img src={blogimg} alt="" className="w-full" />
+    <div className="bg-[#F9F9F9] p-4">
+      <div>
+        <div className="flex items-center justify-between">
+          <h1 className="flex items-center gap-1 font-campton text-sm">
+            <BsPerson /> By Michel John
+          </h1>
+          <h1 className="flex items-center gap-1 font-campton text-sm">
+            <BsCalendar /> Jan 17, 2023
+          </h1>
+        </div>
+        <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold mt-2">
+          How to hire a right business executive for your company
+        </h1>
+        <button className="border border-[#828282] p-3 lg:w-fit w-full rounded-md font-campton mt-5">
+          Read More
+        </button>
+      </div>
+    </div>
+  </div>
+);
 
 const OurBlogs = () => {
+  const totalSlides = 6;
+  const visibleBullets = 3;
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  // Calculate the "window" of bullets
+  // This will be the start index of the visible 3 bullets sliding over total slides.
+  // When near the end, the window still moves forward until last bullet is active.
+  const getBulletWindowStart = () => {
+    if (activeIndex <= 1) return 0;
+    if (activeIndex >= totalSlides - 2) return totalSlides - visibleBullets;
+    return activeIndex - 1;
+  };
+
+  const bulletWindowStart = getBulletWindowStart();
+
   return (
     <section>
-      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <div className="flex items-center justify-between lg:mt-10 mt-5">
+      <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5">
+        <div className="lg:flex items-center justify-between lg:mt-10 mt-5">
           <div>
             <h1 className="lg:text-4xl text-base font-semibold font-campton">
               Browse our blogs & <br /> resources
@@ -28,121 +71,35 @@ const OurBlogs = () => {
             </div>
           </div>
 
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
-            Browse
+          <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+            Browse our Resources
           </button>
         </div>
-
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 mt-10">
-          <div className="inline-block">
-            <img src={blogimg} alt="" className="w-full"/>
-            <div className="bg-[#F9F9F9] p-4">
-              <div>
-                <div className="flex items-center justify-between">
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </h1>
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </h1>
-                </div>
-                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
-                <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
-              </div>
-            </div>
-          </div>
-
-          <div className="inline-block">
-            <img src={blogimg} alt="" className="w-full"/>
-            <div className="bg-[#F9F9F9] p-4">
-              <div>
-                <div className="flex items-center justify-between">
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </h1>
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </h1>
-                </div>
-                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
-                <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
-              </div>
-            </div>
-          </div>
-
-          <div className="inline-block">
-            <img src={blogimg} alt="" className="w-full"/>
-            <div className="bg-[#F9F9F9] p-4">
-              <div>
-                <div className="flex items-center justify-between">
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </h1>
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </h1>
-                </div>
-                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
-                <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
-              </div>
-            </div>
-          </div>
-
-          <div className="inline-block">
-            <img src={blogimg} alt="" className="w-full"/>
-            <div className="bg-[#F9F9F9] p-4">
-              <div>
-                <div className="flex items-center justify-between">
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </h1>
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </h1>
-                </div>
-                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
-                <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
-              </div>
-            </div>
-          </div>
-
-          <div className="inline-block">
-            <img src={blogimg} alt="" className="w-full"/>
-            <div className="bg-[#F9F9F9] p-4">
-              <div>
-                <div className="flex items-center justify-between">
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </h1>
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </h1>
-                </div>
-                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
-                <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
-              </div>
-            </div>
-          </div>
-
-          <div className="inline-block">
-            <img src={blogimg} alt="" className="w-full"/>
-            <div className="bg-[#F9F9F9] p-4">
-              <div>
-                <div className="flex items-center justify-between">
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </h1>
-                  <h1 className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </h1>
-                </div>
-                <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold">How to hire a right business executive for your company</h1>
-                <button className="border border-[#828282] p-3 rounded-md font-campton mt-5">Read More</button>
-              </div>
-            </div>
-          </div>
+        {/* Desktop grid */}
+        <div className="hidden lg:grid lg:grid-cols-3 gap-10 mt-10">
+          {Array.from({ length: totalSlides }).map((_, idx) => (
+            <BlogCard key={idx} />
+          ))}
         </div>
-      </div>
+
+        {/* Mobile Swiper */}
+        <div className="lg:hidden mt-10">
+          <Swiper
+            modules={[Pagination]}
+            slidesPerView={1}
+            spaceBetween={20}
+            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            pagination={{ clickable: true }}
+            className="custom-swiper-pagination"
+          >
+            {Array.from({ length: totalSlides }).map((_, idx) => (
+              <SwiperSlide key={idx}>
+                <BlogCard />
+              </SwiperSlide>
+            ))} <br /><br />
+          </Swiper>
+        </div>
+      </div><br /><br />
     </section>
   );
 };

@@ -32,7 +32,7 @@ const TeamExpert = () => {
           </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="lg:ml-[680px] lg:block hidden -mt-2  h-3 lg:w-[270px] lg:h-[14px]"
+            className="lg:ml-[680px] lg:block hidden -mt-2 h-3 lg:w-[270px] lg:h-[14px]"
             viewBox="0 0 451 10"
             fill="none"
           >
@@ -45,14 +45,40 @@ const TeamExpert = () => {
           </svg>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:mt-16 mt-7">
+        {/* Desktop Grid */}
+        <div className="hidden lg:grid grid-cols-3 gap-10 lg:mt-16 mt-7">
           {teamMembers.map((member, index) => (
-            <div key={index} className="text-center">
-              <img src={member.image} alt={member.name} className="w-36 lg:w-fit mx-auto" />
-              <h2 className="font-campton font-semibold text-sm lg:text-lg mt-2">
-                {member.name}
-              </h2>
-              <p className="text-[#193D6F] lg:text-base text-sm font-campton">{member.role}</p>
+            <div key={index} className="flex flex-col items-center">
+              <div className="inline-block">
+                <img src={member.image} alt={member.name} className="w-fit" />
+                <div className="bg-white w-full p-3 rounded-b-xl shadow-md">
+                  <h2 className="font-campton font-semibold text-sm lg:text-lg text-center">
+                    {member.name}
+                  </h2>
+                  <p className="text-[#193D6F] lg:text-base text-sm font-campton text-center">
+                    {member.role}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile Slider */}
+        <div className="lg:hidden flex overflow-x-auto space-x-6 mt-7 px-4">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="flex-shrink-0">
+              <div className="inline-block">
+                <img src={member.image} alt={member.name} className="w-fit" />
+                <div className="bg-white w-full p-3 rounded-b-xl shadow-md">
+                  <h2 className="font-campton font-semibold text-sm text-center">
+                    {member.name}
+                  </h2>
+                  <p className="text-[#193D6F] text-sm font-campton text-center">
+                    {member.role}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

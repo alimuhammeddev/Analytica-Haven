@@ -8,7 +8,7 @@ const GetinTouch = () => {
         <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg lg:mt-12 mt-5">
           Get in touch
         </h1>
-        <div className="flex items-center justify-between lg:mt-2 mt-1">
+        <div className="lg:flex items-center justify-between lg:mt-2 mt-1">
           <div>
             <h1 className="lg:text-4xl text-lg font-semibold font-campton">
               Contact us today for free
@@ -31,7 +31,7 @@ const GetinTouch = () => {
             </h1>
           </div>
 
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+          <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
             Book a call
           </button>
         </div>
