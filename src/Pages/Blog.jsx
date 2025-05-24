@@ -25,7 +25,7 @@ const Blog = () => {
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="max-w-7xl mx-auto justify-center lg:p-[8]">
-          <div className="text-center px-4 lg:space-y-7 space-y-4">
+          <div className="text-center px-4 lg:space-y-7 space-y-2">
             <br />
             <div className="text-left text-[#E0F780] font-campton lg:text-lg">
               Home <span className="text-white">{"> Blog/News"}</span>
