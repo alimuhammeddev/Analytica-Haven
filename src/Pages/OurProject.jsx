@@ -124,7 +124,7 @@ const OurProject = () => {
 
         <div className="flex items-center justify-between flex-wrap lg:flex-row flex-col lg:gap-16 gap-7 lg:mt-16 mt-8">
           <div className="space-y-3">
-            <img src={data4impact} alt="" className="mx-auto" />
+            <img src={data4impact} alt="" className="mx-auto lg:w-fit w-20" />
             <h1 className="lg:text-xl font-campton font-semibold text-center">
               Data4Impact
             </h1>
@@ -135,7 +135,7 @@ const OurProject = () => {
           </div>
 
           <div className="space-y-3">
-            <img src={ux4her} alt="" className="mx-auto" />
+            <img src={ux4her} alt="" className="mx-auto lg:w-fit w-20" />
             <h1 className="lg:text-xl font-campton font-semibold text-center">
               UX4Her
             </h1>
@@ -146,7 +146,7 @@ const OurProject = () => {
           </div>
 
           <div className="space-y-3">
-            <img src={devboot} alt="" className="mx-auto" />
+            <img src={devboot} alt="" className="mx-auto lg:w-fit w-20" />
             <h1 className="lg:text-xl font-campton font-semibold text-center">
               DevBoot Studio
             </h1>
@@ -156,7 +156,7 @@ const OurProject = () => {
           </div>
 
           <div className="space-y-3">
-            <img src={havenhack} alt="" className="mx-auto" />
+            <img src={havenhack} alt="" className="mx-auto lg:w-fit w-20" />
             <h1 className="lg:text-xl font-campton font-semibold text-center">
               Haven Hack 2025
             </h1>
@@ -167,7 +167,7 @@ const OurProject = () => {
           </div>
 
           <div className="space-y-3">
-            <img src={agrotech} alt="" className="mx-auto" />
+            <img src={agrotech} alt="" className="mx-auto lg:w-fit w-20" />
             <h1 className="lg:text-xl font-campton font-semibold text-center">
               AgroTech Connect
             </h1>
@@ -178,7 +178,7 @@ const OurProject = () => {
           </div>
 
           <div className="space-y-3">
-            <img src={code4teens} alt="" className="mx-auto" />
+            <img src={code4teens} alt="" className="mx-auto lg:w-fit w-20" />
             <h1 className="lg:text-xl font-campton font-semibold text-center">
               Code4Teens
             </h1>
