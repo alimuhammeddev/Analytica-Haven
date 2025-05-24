@@ -50,7 +50,7 @@ const GetinTouch = () => {
                 Send Us a Message
               </h1>
             </div>
-            <form action="#" class="space-y-4 mt-7">
+            <div class="space-y-4 mt-7">
               <div>
                 <label class="sr-only" for="name">
                   Name
@@ -100,15 +100,10 @@ const GetinTouch = () => {
                 ></textarea>
               </div>
 
-              <div class="mt-4">
-                <a
-                  href="#!"
-                  class=" justify-center w-full bg-[#E0F780] px-5 py-3 font-medium font-campton lg:text-lg transition ease-out duration-500 text-[#080F10] items-center flex gap-2 sm:w-auto"
-                >
-                  Send Message
-                </a>
-              </div>
-            </form>
+              <button className="bg-[#E0F780] text-[#193D6F] w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 font-medium lg:text-lg font-campton">
+                Send Message
+              </button>
+            </div>
           </div>
         </div>
       </div>

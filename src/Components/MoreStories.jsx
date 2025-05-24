@@ -25,14 +25,14 @@ const MoreStories = () => {
           <p className="mt-2 lg:text-lg font-campton text-[#193D6F] font-semibold">
             Enter your email to get the necessary information
           </p>
-          <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5">
+          <div className="lg:flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5">
             <input
               type="email"
               className="w-full px-4 py-3 mt-1 lg:border-2 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold"
               placeholder="Enter your email"
               required
             />
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+            <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
               Subscribe
             </button>
           </div>

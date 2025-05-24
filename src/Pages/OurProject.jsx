@@ -6,9 +6,12 @@ import {
   businessstrategy,
   code4teens,
   data4impact,
+  dera,
   devboot,
   havenhack,
+  leaders,
   patternhero,
+  project,
   projectimg1,
   ux4her,
   verbalidentity,
@@ -31,35 +34,33 @@ const projects = [
   {
     title: (
       <>
-        Explore <span className="text-[#000]">Our Skills and</span> Digital{" "}
-        <br /> Capabilities
+        Leaders Impart Website Design <br />
+        and Development App
       </>
     ),
-    description: "Designed to turn your vision into reality.",
+    description: (<> Focus on empowering leaders through digital presence,by <br /> building and educating them.</>),
     imgAlt: "Project showcase image",
-    imgSrc: projectimg1,
+    imgSrc: leaders,
   },
   {
     title: (
       <>
-        Explore <span className="text-[#000]">Our Skills and</span> Digital{" "}
-        <br /> Capabilities
+        Dera Web Development Project
       </>
     ),
-    description: "Designed to turn your vision into reality.",
+    description: (<>Dera is a digital Marketing agency specialize in helping brands <br /> boost their online visibility</>),
     imgAlt: "Project showcase image",
-    imgSrc: projectimg1,
+    imgSrc: dera,
   },
   {
     title: (
       <>
-        Explore <span className="text-[#000]">Our Skills and</span> Digital{" "}
-        <br /> Capabilities
+        Project Managment App Design
       </>
     ),
-    description: "Designed to turn your vision into reality.",
+    description: (<>A comprehensive project management platform designed for team <br /> collaboration and task tracking.</>),
     imgAlt: "Project showcase image",
-    imgSrc: projectimg1,
+    imgSrc: project,
   },
 ];
 
@@ -204,7 +205,7 @@ const OurProject = () => {
 
             <div>
               <h1 className="font-campton text-[#000] lg:text-2xl text-xl font-semibold">
-                Women Companionship App
+                Safe Sisterhood Companionship App
               </h1>
               <p>
                 Women’s Companionship App .This app empowers women to{" "}
@@ -277,7 +278,7 @@ const OurProject = () => {
           <div className="flex items-center justify-between lg:flex-row flex-col-reverse lg:mt-16 mt-7 lg:mb-10 mb-7 lg:gap-16 gap-7">
             <div className="space-y-5">
               <h1 className="font-campton lg:text-3xl text-xl font-semibold text-[#080F10]">
-                Brand & Business Strategy
+                Verbal identity systems
               </h1>
               <p className="text-[#575959] font-campton lg:text-lg">
                 Crafting a consistent tone that connects, resonates, and give
@@ -310,27 +311,27 @@ const OurProject = () => {
 
       <div className="max-w-7xl mx-auto justify-center p-5">
         <div>
-            <h1 className="text-[#193D6F] font-semibold font-campton lg:text-3xl text-xl text-center">Testimonials</h1>
+          <h1 className="text-[#193D6F] font-semibold font-campton lg:text-3xl text-xl text-center">Testimonials</h1>
         </div>
         <div className="flex items-center justify-between lg:flex-row flex-col lg:gap-16 gap-7 lg:mt-7 mt-5">
-            <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
-                <p className="lg:text-lg font-campton">Working with Analytica Haven transformed our product strategy
-                The support and insights we received were simply outstanding plus "They us helped gain our stand,</p>
-                <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Mango farm Ltd</h1>
-                <p className="lg:text-lg font-campton">Bola Peter</p>
-            </div>
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">Working with Analytica Haven transformed our product strategy
+              The support and insights we received were simply outstanding plus "They us helped gain our stand,</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Mango farm Ltd</h1>
+            <p className="lg:text-lg font-campton">Bola Peter</p>
+          </div>
 
-            <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
-                <p className="lg:text-lg font-campton">"Analytica Haven is incredible, this initiative deserves greater visibility and reach, as it has the potential to empower more individual ,and create lasting impact across communities.</p>
-                <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">UI/UX Designer</h1>
-                <p className="lg:text-lg font-campton">Faith Akan</p>
-            </div>
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">"Analytica Haven is incredible, this initiative deserves greater visibility and reach, as it has the potential to empower more individual ,and create lasting impact across communities.</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">UI/UX Designer</h1>
+            <p className="lg:text-lg font-campton">Faith Akan</p>
+          </div>
 
-            <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
-                <p className="lg:text-lg font-campton">As a startup, finding the right talent is crucial. Analytica Haven not only simplified our hiring process but also connected us with skilled professionals who truly fit our mission."</p>
-                <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Backend Developer</h1>
-                <p className="lg:text-lg font-campton">Precious Ana</p>
-            </div>
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">As a startup, finding the right talent is crucial. Analytica Haven not only simplified our hiring process but also connected us with skilled professionals who truly fit our mission."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Backend Developer</h1>
+            <p className="lg:text-lg font-campton">Precious Ana</p>
+          </div>
         </div>
       </div>
 

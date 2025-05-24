@@ -121,6 +121,9 @@ import lakeblack from './lakeblack.png';
 import nfxblack from './nfxblack.png';
 import indexblack from './indexblack.png';
 import team from "./team.png";
+import leaders from "./leaders.png";
+import dera from "./dera.png";
+import project from "./project.png";
 
 export {
     logo,
@@ -246,4 +249,7 @@ export {
     lakeblack,
     nfxblack,
     team,
+    leaders,
+    dera,
+    project,
 };
