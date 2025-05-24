@@ -19,7 +19,7 @@ const CoreServices = () => {
             <div className="bg-white p-6 rounded-md h-full mx-2">
               <img
                 src={financeconsulting}
-                className="justify-center mx-auto w-20 h-20 object-contain"
+                className="justify-center mx-auto lg:w-20 lg:h-20 w-16 object-contain"
               />
               <h1 className="text-[#080F10] font-campton lg:text-xl text-lg font-semibold text-center mt-4">
                 Finance Consulting
@@ -33,7 +33,7 @@ const CoreServices = () => {
             <div className="bg-white p-6 rounded-md h-full mx-2">
               <img
                 src={deradigital}
-                className="justify-center mx-auto w-20 h-20 object-contain"
+                className="justify-center mx-auto lg:w-20 lg:h-20 w-16 object-contain"
               />
               <h1 className="text-[#080F10] font-campton lg:text-xl text-lg font-semibold text-center mt-4">
                 Dera Digital Marketing
@@ -47,7 +47,7 @@ const CoreServices = () => {
             <div className="bg-white p-6 rounded-md h-full mx-2">
               <img
                 src={careerdev}
-                className="justify-center mx-auto w-20 h-20 object-contain"
+                className="justify-center mx-auto lg:w-20 lg:h-20 w-16 object-contain"
               />
               <h1 className="text-[#080F10] font-campton lg:text-xl text-lg font-semibold text-center mt-4">
                 Career Development
