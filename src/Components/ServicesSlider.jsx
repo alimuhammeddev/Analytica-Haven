@@ -160,7 +160,7 @@ const ServicesSlider = () => {
     <section>
       <div className="bg-[#193D6F]">
         <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5">
-          <div>
+          <div className="lg:block hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="38"
@@ -177,11 +177,11 @@ const ServicesSlider = () => {
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 className="text-[#FFFFFF] font-campton lg:mt-12 lg:text-start text-center">
+              <h1 className="text-[#FFFFFF] font-campton lg:mt-12 text-start">
                 Our Services
               </h1>
 
-              <h1 className="lg:text-4xl text-lg font-semibold font-campton text-[#FFFFFF] lg:text-start text-center mt-3">
+              <h1 className="lg:text-4xl text-lg font-semibold font-campton text-[#FFFFFF] text-start mt-3">
                 Powerful Solutions to
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

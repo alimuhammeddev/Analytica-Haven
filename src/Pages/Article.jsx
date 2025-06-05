@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../Header";
 import {
   blog3,
@@ -27,7 +26,7 @@ const Article = () => {
           <h1 className="font-campton text-base md:block hidden">
             Product Updates April 22, 2025
           </h1>
-          <h1 className="font-campton lg:text-4xl text-[1.3rem] font-semibold md:text-left text-center">
+          <h1 className="font-campton lg:text-4xl text-[1.3rem] font-semibold md:text-left text-center pt-[3rem] md:pt-0">
             Top Ten Marketing Tips for your Company
           </h1>
           <p className="font-campton text-lg md:block hidden">
@@ -134,7 +133,7 @@ const Article = () => {
                 <h1 className="text-[#080F10] font-campton font-semibold mt-2">
                   How to hire a right business executive for your company
                 </h1>
-                <button className="bg-[#193D6F] text-[#FFFFFF] p-2 rounded-md font-campton mt-2">
+                <button className="bg-[#193D6F] text-[#FFFFFF] p-2 rounded-md font-campton mt-2 md:hover:bg-transparent md:hover:text-[#193D6F] md:hover:border md:hover:border-blue-500 transition ease-in-out duration-300">
                   Read More
                 </button>
               </div>
@@ -153,7 +152,7 @@ const Article = () => {
                   Redefined the user acquisition and redesigned the onboarding
                   experience, all within 3 working weeks
                 </p>
-                <button className="bg-[#E0F780] text-[#193D6F] px-4 py-2 rounded-md mt-2 font-semibold">
+                <button className="bg-[#E0F780] text-[#193D6F] px-4 py-2 rounded-md mt-2 font-semibold md:hover:bg-transparent md:hover:text-[#193D6F] md:hover:border md:hover:border-blue-500 transition ease-in-out duration-300">
                   Learn More
                 </button>
               </div>
@@ -175,7 +174,7 @@ const Article = () => {
                 <h1 className="text-[#080F10] font-campton font-semibold mt-2">
                   How to hire a right business executive for your company
                 </h1>
-                <button className="bg-[#193D6F] text-[#FFFFFF] p-2 rounded-md font-campton mt-2">
+                <button className="bg-[#193D6F] text-[#FFFFFF] p-2 rounded-md font-campton mt-2 md:hover:bg-transparent md:hover:text-[#193D6F] md:hover:border md:hover:border-blue-500 transition ease-in-out duration-300">
                   Read More
                 </button>
               </div>
@@ -194,13 +193,13 @@ const Article = () => {
                   Redefined the user acquisition and redesigned the onboarding
                   experience, all within 3 working weeks
                 </p>
-                <button className="bg-[#E0F780] text-[#193D6F] px-4 py-2 rounded-md mt-2 font-semibold">
+                <button className="bg-[#E0F780] text-[#193D6F] px-4 py-2 rounded-md mt-2 font-semibold md:hover:bg-transparent md:hover:text-[#193D6F] md:hover:border md:hover:border-blue-500 transition ease-in-out duration-300">
                   Learn More
                 </button>
               </div>
             </div>
 
-            <div className="inline-block md:block hidden">
+            <div className="inline-block md:block hidden w-[75%]">
               <img src={blog3} alt="" className="w-full" />
               <div className="bg-[#F9F9F9] p-4">
                 <div>
@@ -215,7 +214,7 @@ const Article = () => {
                   <h1 className="text-[#080F10] font-campton font-semibold mt-2">
                     How to hire a right business executive for your company
                   </h1>
-                  <button className="bg-[#193D6F] text-[#FFFFFF] p-2 rounded-md font-campton mt-2">
+                  <button className="bg-[#193D6F] text-[#FFFFFF] p-2 rounded-md font-campton mt-2 md:hover:bg-transparent md:hover:text-[#193D6F] md:hover:border md:hover:border-blue-500 transition ease-in-out duration-300">
                     Read More
                   </button>
                 </div>
@@ -223,8 +222,8 @@ const Article = () => {
             </div>
           </div>
 
-          <div className="space-y-7 md:block hidden">
-            <h1 className="font-campton lg:text-lg">
+          <div className="space-y-7 space-x-7 md:block hidden">
+            <h1 className="font-campton lg:text-lg lg:px-5">
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum and Lorem Ipsum is simply dummy text
               of the printing and typesetting industry. Lorem Ipsum has been the
@@ -241,8 +240,8 @@ const Article = () => {
               Ipsum passages, and more recently with desktop publishing software
               like Aldus PageMaker including versions of Lorem Ipsum.
             </h1>
-            <img src={laptop} alt="" />
-            <h1 className="font-campton lg:text-lg">
+            <img src={laptop} alt=""/>
+            <h1 className="font-campton lg:text-sm">
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum and Lorem Ipsum is simply dummy text
               of the printing and typesetting industry. Lorem Ipsum has been the
@@ -252,27 +251,27 @@ const Article = () => {
               is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the
             </h1>
-            <h1 className="bg-[#EBF2FE] border-t-4 border-t-[#0022EC] rounded-lg lg:p-10 p-5 font-campton lg:text-lg">
+            <h1 className="bg-[#EBF2FE] border-t-4 border-t-[#0022EC] rounded-lg lg:p-10 p-5 font-campton lg:text-lg lg:mx-3">
               klcIt was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum and Lorem Ipsum is simply dummy.
             </h1>
-            <p className="font-campton lg:text-lg">
+            <p className="font-campton lg:text-lg lg:px-6">
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum and Lorem Ipsum is simply dummy text
               of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a (It was popularised in the 1960s with the
-              release of Letraset sheets containing Lorem Ipsum and)Lorem Ipsum
+              unknown printer took a It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum and Lorem Ipsum
               is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the
             </p>
-            <p className="font-campton lg:text-lg">
+            <p className="font-campton lg:text-lg lg:px-6">
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum and Lorem Ipsum is simply dummy text
               of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a (It was popularised in the 1960s with the
-              release of Letraset sheets containing Lorem Ipsum and)Lorem Ipsum
+              unknown printer took a It was popularised in the 1960s with the
+              release of Letraset sheets containing Lorem Ipsum and Lorem Ipsum
               is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the
             </p>

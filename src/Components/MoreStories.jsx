@@ -19,20 +19,35 @@ const MoreStories = () => {
       {/* Text Content */}
       <div className="relative z-10 max-w-7xl mx-auto justify-center lg:p-28 p-8">
         <div className="text-center px-4 space-y-4">
-          <h1 className="lg:text-4xl text-[1.2rem] font-semibold font-campton text-[#193D6F]">
+          <h1 className="lg:text-4xl text-[1.2rem] font-semibold font-campton text-[#000]">
             Get more stories like this
           </h1>
-          <p className="mt-2 lg:text-lg font-campton text-[#193D6F]">
+          <p className="mt-2 lg:text-lg font-semibold font-campton text-[#193D6F] pb-4">
             Enter your email to get the necessary information
           </p>
-          <div className="lg:flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5">
+
+          {/* Desktop View */}
+          <div className="lg:max-w-lg mx-auto lg:mt-5 md:block hidden">
             <input
               type="email"
-              className="w-full px-4 py-3 mt-1 lg:border-2 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold"
+              className="w-[70%] px-4 py-3 border border-r-0  border-gray-400 rounded-l-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold"
               placeholder="Enter your email"
               required
             />
-            <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+            <button className="bg-[#E0F780] text-[#193D6F] w-[30%] text-sm lg:px-6 px-2 py-3 rounded-r-lg font-medium lg:text-lg font-campton focus:outline-2 focus:outline-gray-500 md:hover:bg-[#193D6F] md:hover:text-[#fff] transition ease-in-out duration-300">
+              Subscribe
+            </button>
+          </div>
+
+          {/* Mobile view */}
+          <div className="mx-auto mt-5 md:hidden block">
+            <input
+              type="email"
+              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold"
+              placeholder="Enter your email"
+              required
+            />
+            <button className="bg-[#E0F780] text-[#193D6F] w-full text-sm px-4 py-3 rounded-lg font-medium lg:text-lg font-campton focus:outline-2 focus:outline-gray-500 mt-5">
               Subscribe
             </button>
           </div>

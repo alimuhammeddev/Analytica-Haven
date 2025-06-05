@@ -19,46 +19,80 @@ const JoinCommunity = () => {
             Empower Your Team With <br className="lg:block hidden" /> Seamless
             Collaboration
           </h1>
-          <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5">
+          <div className="flex md:flex-row flex-col lg:max-w-lg justify-center mx-auto lg:mt-5">
             <input
               type="email"
-              className="w-full px-4 py-3 mt-1 border-2 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black"
+              className="md:w-[70%] w-full px-4 py-3 border md:rounded-l-lg rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black"
               placeholder="Enter your email"
               required
             />
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+
+            {/* Desktop View */}
+            <button className="bg-[#E0F780] w-[30%] text-[#193D6F] px-6 lg:py-2 py-3 rounded-r-lg font-medium text-lg font-campton md:block hidden">
               Subscribe
+            </button>
+
+            {/* Mobile view */}
+            <button className="bg-[#E0F780] w-full text-[#193D6F] text-sm px-4 py-3 rounded-lg font-medium font-campton mt-3 md:hidden block">
+              Get Started
             </button>
           </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="text-[#193d6f] lg:text-3xl text-xl font-campton font-semibold text-center mt-10">
+        <h1 className="text-[#193d6f] lg:text-3xl text-xl font-campton font-semibold text-center md:mt-10">
           Join Our Team
         </h1>
-        <div className="flex items-center mx-auto justify-center lg:gap-32 gap-5 lg:flex-row flex-col lg:mt-7">
-          <div className="lg:space-y-5">
-            <h1 className="text-[#193d6f] lg:text-xl font-campton font-semibold text-center">
+
+        {/* Desktop view */}
+        <div className="md:block hidden">
+        <div className="flex items-center gap-20 mx-auto justify-center mt-7">
+          <div className="space-y-5">
+            <h1 className="text-[#193d6f] text-xl font-campton font-semibold text-center">
               Knowledge | Innovation | Empowerment
             </h1>
-            <p className="font-campton lg:text-lg text-gray-600 text-center">
+            <p className="font-campton text-lg text-gray-600 text-center">
               Join our team of Talents today! at Analytica Haven,{" "}
-              <br className="lg:block hidden" /> where Knowledge meets execution
+              <br/> where Knowledge meets execution
             </p>
-            <div className="mx-auto justify-center flex">
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+            <div className="flex mx-auto justify-center">
+            <button className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium text-lg font-campton">
               Join us
             </button>
             </div>
           </div>
+          <div className="p-4 bg-[#fff] shadow-lg">
+          <img src={team} alt=""/>
+          </div>
+        </div>
+        </div>
+
+        {/* Mobile view */}
+        <div className="flex items-center mx-auto justify-center gap-5 flex-col-reverse md:hidden block">
+          <div className="">
+            <h1 className="text-[#193d6f] font-campton font-semibold text-center">
+              Knowledge | Innovation | Empowerment
+            </h1>
+            <p className="font-campton text-gray-600 text-center">
+              Join our team of Talents today! at Analytica Haven,{" "}
+              <br className="lg:block hidden" /> where Knowledge meets execution
+            </p>
+            <div className="mx-auto justify-center flex">
+            <button className="bg-[#E0F780] text-[#193D6F] w-full text-sm px-4 py-3 rounded-lg font-medium font-campton">
+              Join us
+            </button>
+            </div>
+          </div>
+                    <div className="p-4 bg-[#fff] shadow-lg">
           <img src={team} alt="" />
+          </div>
         </div>
       </div>
 
-      <div className="bg-[#899bb5] pb-12">
+      <div className="md:bg-[#899bb5] bg-[#EBF2FE] pb-12">
         <div className="max-w-xl mx-auto justify-center lg:p-[8] p-5">
-            <h1 className="text-white lg:text-3xl text-xl font-campton font-semibold text-center mt-10">Want to join our community please fill the form below.</h1>
+            <h1 className="lg:text-3xl text-xl font-campton font-semibold text-center text-[#193D6F] mt-5">Want to join our community please fill the form below.</h1>
 
             <div className="bg-white lg:p-10 p-5 lg:mt-10 mt-5 rounded-xl">
             <form action="#" class="space-y-4 mt-7">
