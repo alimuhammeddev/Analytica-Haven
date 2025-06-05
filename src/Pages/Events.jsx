@@ -1,256 +1,167 @@
-import React from "react";
-import Header from "../Header";
-import {
-  competitive,
-  event1,
-  event2,
-  event3,
-  eventcta,
-  eventgroup,
-  eventhero,
-  practical,
-  strategic,
-  trusted,
-} from "../assets";
-import CoreServices from "../Components/CoreServices";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/autoplay";
+import AddEvent from "../components/AddEvent";
+import CommunityEvent from "../Components/CommunityEvent";
 import Footer from "../Footer";
+import Header from "../Header";
+import { Link } from "react-router-dom";
+import eventline from "../assets/eventline.svg";
+import eventbottomimg from "../assets/eventbottomimg.svg";
+import event2 from "../assets/event2.svg";
+import event3 from "../assets/event3.svg";
+import event4 from "../assets/event4.svg";
+import event5 from "../assets/event5.svg";
+
 
 const Events = () => {
   return (
-    <section>
-      <div>
-        <Header />
-      </div>
-
-      <div className="bg-[#193D6F] lg:p-20">
-        <div className="max-w-7xl mx-auto justify-center lg:p-0 p-5">
-          <div className="flex items-center justify-between lg:flex-row flex-col-reverse gap-5 lg:mt-0 mt-10">
-            <div className="px-4 lg:space-y-7 space-y-4">
-              <br />
-              <div className="text-left text-[#E0F780] font-campton lg:text-lg">
-                Home <span className="text-white">{"> Events & Programs"}</span>
-              </div>
-              <h1 className="lg:text-6xl text-2xl font-semibold font-campton text-[#FFFFFF]">
-                Explore the programs <br className="lg:block hidden" /> and
-                events in Our <span className="text-[#E0F780]">Community</span>
-              </h1>
-              <div className="flex items-center lg:max-w-lg gap-2 lg:mt-5">
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 mt-1 border rounded-lg focus:ring-1 focus:ring-[#193D6F] focus:outline-none"
-                  placeholder="Enter your email"
-                  required
-                />
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
-                  Subscribe
-                </button>
-              </div>
+    <section className="font-campton">
+      <Header />
+      {/* Hero section */}
+      <div className="bg-[url(src/assets/event1.svg)] bg-cover bg-no-repeat bg-center text-white">
+        <div className="max-w-7xl mx-auto px-4 pt-[4rem]">
+          <div className="relative">
+            <p className="text-[#E0F780] md:block hidden">
+              <Link to="/">Home </Link>
+              {">"} <span className="text-[#fff]">Events & Programs</span>
+            </p>
+            {/* Desktop view */}
+            <div className="my-[4rem] text-[3rem] font-bold md:block hidden">
+              <h2 className="w-[45%]">
+                Explore the programs and events in Our
+              </h2>
+              <p>Community</p>
+              <img
+                src={eventline}
+                alt="Event Line"
+                className="mt-[-0.5rem] w-[22%]"
+              />
             </div>
+
+            {/* Mobile view */}
             <div>
-              <img src={eventhero} alt="" />
+              <h2  className="my-[2.5rem] text-[2rem] pr-[3rem] md:hidden block">Explore the programs and events in Our <span className="text-[#E0F780]">Community</span></h2>
+            </div>
+
+            {/* Desktop view */}
+            <div className="md:block hidden">
+            <Link
+              to="/community"
+              className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[5rem] block w-fit hover:bg-[#193D6F] hover:text-white transition-colors duration-300 md:block hidden"
+            >
+              Join Us Now
+            </Link>
+            <div className="flex justify-end items-end pb-3">
+              <img src={eventbottomimg} alt="" className="w-[35%]" />
+            </div>
+            </div>
+
+              {/* Mobile view */}
+            <div className="flex items-center justify-center gap-4 pb-[3rem] md:hidden">
+              <div>
+              <Link
+              to="/community"
+              className="bg-[#E0F780] px-2 py-1 rounded-md text-[#193D6F] text-[0.5rem]"
+            >
+              Join Us Now
+            </Link>
+              </div>
+            <div className="w-[70%]">
+              <img src={eventbottomimg} alt="" className="w-[100%]"/>
+            </div>
             </div>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
       </div>
 
-      <div className="max-w-7xl mx-auto justify-center lg:p-0 p-5">
-        <div>
-          <img src={eventgroup} alt="" className="lg:ml-28 -mt-20" />
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <div className=" flex items-center justify-between lg:flex-row flex-col lg:gap-20 gap-7 lg:mt-24 mt-10">
-          <img src={competitive} alt="" />
-          <div className="space-y-5">
-            <h1 className="font-campton lg:text-4xl text-xl font-semibold">
-              We build Competitive Business sectors
-            </h1>
-            <p className="font-campton lg:text-lg text-[#575959]">
+      {/* Events other section 1*/}
+      <div className="max-w-7xl mx-auto md:my-[6rem] my-[2rem]">
+        <div className="flex flex-col md:flex-row md:gap-10 justify-center">
+          <div className="border bg-[#193D6F] md:mx-0 mx-10 p-10 md:w-[30%]">
+            <img src={event2} alt="" className="rounded-[20px]" />
+          </div>
+          <div className="md:w-[40%] w-[100%] text-center px-5 md:px-0 md:py-0 py-5">
+            <h2 className="md:text-[#193D6F] text-[#000] md:text-[2rem] text-[1.5rem] font-semibold pb-5">
+              We Build strong Business sectors
+            </h2>
+            <p className="md:text-[#575959] text-[#575959] text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit arcu
               eleifend quis elementum elementum massa facilisiLorem ipsum dolor
               sit amet, consectetur adipiscing elit arcu eleifend quis elementum
-              elementum massa facilisi
+              elementum massa facilisi rite a paragraph that talks about your
+              company here. You can talk about your company's background,
+              history, mission, vision, or philosophy. Anything that will
+              introduce your brand's persona to your clients. This will help
+              build a connection between
             </p>
+            <p className="text-[#575959] font-semibold py-5 md:block hidden">
+              A better world starts with a caring community.
+            </p>
+            <Link
+              to="/community"
+              className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[2rem] block w-fit hover:bg-[#193D6F] hover:text-white transition-colors duration-300 md:block hidden"
+            >
+              Join Us Now
+            </Link>
+          </div>
+        </div>
+      </div>
 
-            <div className="space-y-5">
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={trusted} alt="" />
-                <div>
-                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
-                    Trusted Insights
-                  </h1>
-                  <p className="text-[#575959] font-campton">
-                    Lorem ipsum trusted company hendrerit <br /> aliquam
-                    accumsan nisl suspendisse.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={strategic} alt="" />
-                <div>
-                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
-                    Strategic Advice
-                  </h1>
-                  <p className="text-[#575959] font-campton">
-                    Lorem ipsum trusted company hendrerit <br /> aliquam
-                    accumsan nisl suspendisse.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-[#f9f9f9] flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={practical} alt="" />
-                <div>
-                  <h1 className="text-[#080F10] lg:text-xl text-lg font-semibold font-campton">
-                    Practical Tools
-                  </h1>
-                  <p className="text-[#575959] font-campton">
-                    Lorem ipsum trusted company hendrerit <br /> aliquam
-                    accumsan nisl suspendisse.
-                  </p>
-                </div>
-              </div>
+      {/* Events other section 2*/}
+      <div className="bg-[#F7F7F7] md:py-[4rem] py-[2rem] text-center">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="md:text-[#193D6F] text-[#000] md:text-[2rem] text-[1.5rem] font-semibold ">
+            What We do for Community
+          </h2>
+          <p className="md:text-[#575959] text-[#575959] py-[1rem]">
+            ipsum dolor sit amet, consectetur adipiscing elit arcu eleifend quis
+            elementum elementum massa facilisi
+          </p>
+          <div className="flex justify-center flex-wrap gap-10 mt-[2rem] md:px-0 px-5">
+            <div className="bg-[#EBF2FE] md:w-[30%]">
+              <img src={event3} alt="" className="w-[100%]" />
+              <p className="text-[1.2rem] font-semibold pt-2">
+                Finance Consulting
+              </p>
+              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
+                egestas ullamcorper ipsum nibh quis.
+              </p>
+            </div>
+            <div className="bg-[#EBF2FE] md:w-[30%]">
+              <img src={event4} alt="" className="w-[100%]" />
+              <p className="text-[1.2rem] font-semibold pt-2">
+                Business Market
+              </p>
+              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
+                egestas ullamcorper ipsum nibh quis.
+              </p>
+            </div>
+            <div className="bg-[#EBF2FE] md:w-[30%]">
+              <img src={event5} alt="" className="w-[100%]" />
+              <p className="text-[1.2rem] font-semibold pt-2">
+                Career Development
+              </p>
+              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
+                egestas ullamcorper ipsum nibh quis.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="lg:mt-16 mt-7">
-        <CoreServices />
-      </div>
-
-      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="font-campton lg:text-3xl text-xl font-semibold text-center lg:mt-10 mt-5">
-          Our Community Upcoming Event
-        </h1>
-        <div className="mt-10">
-          <Swiper
-            modules={[Autoplay]}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            loop={true}
-            spaceBetween={20}
-            slidesPerView={1}
-            breakpoints={{
-              768: {
-                slidesPerView: 3,
-              },
-            }}
-          >
-            <SwiperSlide>
-              <div className="relative overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg h-full">
-                <img
-                  src={event3}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-96 lg:pt-96">
-                  <div className="p-4 sm:p-6 flex justify-between">
-                    <div>
-                      <h1 className="lg:text-lg font-campton text-[#ffffff]">
-                        Voluntary weekly Reach out
-                      </h1>
-                      <p className="font-campton text-[#ffffff]">
-                        San avenue Ewarinpa, Edo State
-                      </p>
-                    </div>
-                    <h1 className="font-campton text-[#ffffff]">
-                      22 April, 2025
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg h-full">
-                <img
-                  src={event1}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-96 lg:pt-96">
-                  <div className="p-4 sm:p-6 flex justify-between">
-                    <div>
-                      <h1 className="lg:text-lg font-campton text-[#ffffff]">
-                        Voluntary weekly Reach out
-                      </h1>
-                      <p className="font-campton text-[#ffffff]">
-                        San avenue Ewarinpa, Edo State
-                      </p>
-                    </div>
-                    <h1 className="font-campton text-[#ffffff]">
-                      22 April, 2025
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg h-full">
-                <img
-                  src={event2}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-96 lg:pt-96">
-                  <div className="p-4 sm:p-6 flex justify-between">
-                    <div>
-                      <h1 className="lg:text-lg font-campton text-[#ffffff]">
-                        Voluntary weekly Reach out
-                      </h1>
-                      <p className="font-campton text-[#ffffff]">
-                        San avenue Ewarinpa, Edo State
-                      </p>
-                    </div>
-                    <h1 className="font-campton text-[#ffffff]">
-                      22 April, 2025
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg h-full">
-                <img
-                  src={event3}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-96 lg:pt-96">
-                  <div className="p-4 sm:p-6 flex justify-between">
-                    <div>
-                      <h1 className="lg:text-lg font-campton text-[#ffffff]">
-                        Voluntary weekly Reach out
-                      </h1>
-                      <p className="font-campton text-[#ffffff]">
-                        San avenue Ewarinpa, Edo State
-                      </p>
-                    </div>
-                    <h1 className="font-campton text-[#ffffff]">
-                      22 April, 2025
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div>
-
-      <div className="flex items-center justify-center mx-auto lg:p-[8] p-5 lg:mt-20 mt-5">
-        <img src={eventcta} alt="" />
-      </div>
-
+      {/* Events other section 3*/}
       <div>
-        <Footer />
+        <AddEvent />
       </div>
+
+      {/* Community Events Section */}
+      <div>
+        <CommunityEvent />
+      </div>
+
+      {/* Foter */}
+      <Footer/>
     </section>
   );
 };

@@ -15,7 +15,7 @@ import {
   testi3,
   volunteer,
 } from "../assets";
-import SparkForChange from "../Components/SparkForChange"
+import SparkForChange2 from "../Components/SparkForChange2";
 import Footer from "../Footer"
 
 const Donate = () => {
@@ -42,7 +42,9 @@ const Donate = () => {
         </div>
       </div>
 
-      <div className="bg-[#E8ECF1] lg:p-10 p-3">
+
+      {/* Desktop Screen */}
+      <div className="bg-[#E8ECF1] lg:p-10 p-3 md:block hidden">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 space-y-10">
           <div>
             <h1 className="text-[#000000] lg:text-4xl text-xl font-campton font-semibold text-center">
@@ -201,11 +203,63 @@ const Donate = () => {
         </div> <br /><br className="lg:block hidden"/>
       </div>
 
-      <div>
-        <SparkForChange />
+    {/* Mobile Screen */}
+          <div className="bg-[#fff] lg:p-10 p-3 md:hidden block">
+        <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 space-y-10">
+          <div>
+            <h1 className="text-[#000000] lg:text-4xl text-xl font-campton font-semibold text-center">
+              We value your support
+            </h1>
+            <p className="text-center text-[#65676A] lg:text-lg lg:mt-5 mt-2 font-campton">
+              Your support plays a vital role in helping us reach our{" "}
+              <br className="lg:block hidden" />
+              goals and serve our community more effectively
+            </p>
+          </div>
+
+          <div className="flex lg:flex-row flex-col items-center justify-between lg:gap-20 gap-10">
+            <div className="space-y-3">
+              <img src={fund} alt="" className="mx-auto" />
+              <h1 className="lg:text-2xl font-semibold font-campton text-center">
+                Fund Innovation Project
+              </h1>
+              <p className="text-center text-[#65676A] lg:text-lg font-campton">
+                Your donation directly support innovative project and start-ups
+                ,providing resources and mentorship.
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              <img src={career} alt="" className="mx-auto" />
+              <h1 className="lg:text-2xl font-semibold font-campton text-center">
+                Career Development
+              </h1>
+              <p className="text-center text-[#65676A] lg:text-lg font-campton">
+                Help individuals transition into tech roles and also connect
+                them to real life project.
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              <img src={expand} alt="" className="mx-auto" />
+              <h1 className="lg:text-2xl font-semibold font-campton text-center">
+                Expand Outreach
+              </h1>
+              <p className="text-center text-[#65676A] lg:text-lg font-campton">
+                With Your Support,we can expand our outreach reaching more
+                aspiring innovators and entrepreneurs worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-5">
+      <div>
+        <SparkForChange2 />
+      </div>
+
+      {/* Desktop version */}
+      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-5 md:block hidden">
         <div>
             <h1 className="text-[#193D6F] lg:text-4xl text-xl font-campton font-semibold text-center lg:mt-20 mt-10">Testimonials</h1>
         </div>
@@ -219,7 +273,7 @@ const Donate = () => {
                 </div>
             </div>
 
-            <div className="bg-[#D1D8E2] p-5 w-fit rounded-2xl">
+            <div className="bg-[#D1D8E2] p-5 my-10 md:my-0 rounded-2xl">
                 <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">I believe in power of small actions.Donating here means i am contributing to a bigger vision.</h1>
                 <div className="flex items-center gap-5 mx-auto justify-center">
                     <h1 className="font-campton lg:text-base font-semibold">Kola N, First-Time Donor</h1>
@@ -237,7 +291,40 @@ const Donate = () => {
         </div>
       </div>
 
-      <div className="lg:mt-16 mt-10">
+      {/* mobile view */}
+      <div className="max-w-7xl mx-auto justify-center md:hidden block">
+        <div>
+            <h1 className="text-[#193D6F] text-xl font-campton font-semibold text-center mt-10">Testimonials</h1>
+        </div>
+
+        <div className="my-4">
+            <div className="bg-[#D1D8E2] p-5 mx-3 rounded-2xl relative">
+                <h1 className="text-[#000000] mt-2 font-campton">Everytime i donate,i know i am helping someone in need.That is what keeps me coming back.</h1>
+                <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
+                    <h1 className="font-campton font-semibold">Lola B, Donor</h1>
+                    <img src={testi3} alt="" />
+                </div>
+            </div>
+
+            <div className="bg-[#D1D8E2] p-5 mx-3 my-[4rem] rounded-2xl relative">
+                <h1 className="text-[#000000] mt-2 font-campton">I believe in power of small actions.Donating here means i am contributing to a bigger vision.</h1>
+                <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
+                    <h1 className="font-campton font-semibold">Kola N, Donor</h1>
+                    <img src={testi1} alt="" />
+                </div>
+            </div>
+
+            <div className="bg-[#D1D8E2] p-5 mx-3 rounded-2xl relative">
+                <h1 className="text-[#000000] mt-2 font-campton">Donating Here gave me a purpose.It isamazing how a simple act of giving can help transform someones’s life.</h1>
+                <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
+                    <h1 className="font-campton font-semibold">Zainab, Donor</h1>
+                    <img src={testi2} alt="" />
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div className="mt-[5rem]">
         <Footer />
       </div>
     </section>

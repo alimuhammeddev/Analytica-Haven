@@ -24,7 +24,7 @@ const Header = () => {
     { name: "HOME", url: "/" },
     { name: "COMPANY", url: "#" },
     { name: "OUR PROJECT", url: "/our-project" },
-    { name: "BLOG", url: "#" },
+    { name: "BLOG", url: "/blog" },
     { name: "OUR TEAM", url: "/team" },
     { name: "CONTACT US", url: "/contact-us" },
   ];
@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <section>
       <header className="fixed top-0 left-0 right-0 bg-white shadow-md w-full z-[999]">
-        {/* Top Bar */}
+        {/* Top Bar for Desktop view*/}
         <div className="bg-[#193D6F] shadow-md w-full p-3 lg:block hidden">
           <div className="max-w-7xl mx-auto px-4 relative flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -46,6 +46,28 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-3">
               <h1 className="text-[#D9DBE9] text-sm font-campton">Follow us:</h1>
+              <div className="flex gap-4">
+                <FaFacebook className="text-white" />
+                <FaTwitter className="text-white" />
+                <FaInstagram className="text-white" />
+                <FaLinkedin className="text-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Top Bar for mobile view*/}
+        <div className="bg-[#193D6F] shadow-md w-full p-3 lg:hidden block">
+          <div className="max-w-7xl mx-auto px-4 relative flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <h1 className="text-[#D9DBE9] flex items-center gap-2 text-sm font-campton">
+                <Phone size={15} />
+              </h1>
+              <div className="w-px h-4 bg-white opacity-100"></div>
+              <h1 className="text-[#D9DBE9] flex items-center gap-2 text-sm font-campton">
+                <Mail size={15} />
+              </h1>
+            </div>
+            <div className="flex items-center gap-3">
               <div className="flex gap-4">
                 <FaFacebook className="text-white" />
                 <FaTwitter className="text-white" />
@@ -83,6 +105,7 @@ const Header = () => {
                     {desktopCompanyOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
                         <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</Link>
+                        <Link to="/article" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Article</Link>
                         <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Success Page</Link>
                         <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Events & Programs</Link>
                         <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our Community</Link>
@@ -130,8 +153,8 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex gap-5">
-            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-sm px-5 py-3 rounded-lg font-medium lg:text-base font-campton">Donate</Link>
-            <Link to="/join-community" className="bg-white text-[#193D6F] border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-medium lg:text-base font-campton">Join our Community</Link>
+            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-sm px-5 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">Donate</Link>
+            <Link to="/join-community" className="bg-white text-[#193D6F] border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">Join our Community</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -167,6 +190,7 @@ const Header = () => {
                     {mobileCompanyOpen && (
                       <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
                         <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>About Us</Link>
+                        <Link to="/article" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Article</Link>
                         <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Success Page</Link>
                         <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Events & Programs</Link>
                         <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Our Community</Link>
@@ -199,7 +223,7 @@ const Header = () => {
                 </Link>
               );
             })}
-
+      
             <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-center px-6 py-3 text-sm rounded-lg font-semibold font-campton" onClick={closeAllMenus}>
               Donate
             </Link>

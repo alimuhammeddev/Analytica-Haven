@@ -81,6 +81,8 @@ import havenhack from "./havenhack.png";
 import agrotech from "./agrotech.png";
 import code4teens from "./code4teens.png";
 import woman from "./woman.png";
+import woman1 from "./woman1.png";
+import woman2 from "./woman2.png"
 import businessstrategy from "./businessstrategy.png";
 import verbalidentity from "./verbalidentity.png";
 import blog1 from "./blog1.png";
@@ -95,8 +97,10 @@ import article2 from "./article2.png";
 import article3 from "./article3.png";
 import article4 from "./article4.png";
 import tips from "./tips.png";
+import tips1 from "./tips1.png"
 import lady from "./lady.png";
 import laptop from "./laptop.png";
+import laptop1 from "./laptop1.png";
 import blog7 from "./blog7.png";
 import blog8 from "./blog8.png";
 import eventhero from "./eventhero.png";
@@ -124,6 +128,7 @@ import team from "./team.png";
 import leaders from "./leaders.png";
 import dera from "./dera.png";
 import project from "./project.png";
+import change2 from "./change2.svg"
 
 export {
     logo,
@@ -209,6 +214,8 @@ export {
     agrotech,
     code4teens,
     woman,
+    woman1,
+    woman2,
     businessstrategy,
     verbalidentity,
     blog1,
@@ -223,8 +230,10 @@ export {
     article3,
     article4,
     tips,
+    tips1,
     lady,
     laptop,
+    laptop1,
     blog7,
     blog8,
     eventhero,
@@ -252,4 +261,5 @@ export {
     leaders,
     dera,
     project,
+    change2,
 };

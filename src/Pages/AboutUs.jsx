@@ -17,7 +17,7 @@ const AboutUs = () => {
         <Header />
 
         <div>
-          <img src={abouthero} alt="" className="w-full"/>
+          <img src={abouthero} alt="" className="w-full" />
         </div>
 
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
@@ -65,7 +65,9 @@ const AboutUs = () => {
                   Join Our Team
                 </button>
               </div>
-            </div><br /><br />
+            </div>
+            <br />
+            <br />
           </div>
         </div>
 
@@ -111,7 +113,7 @@ const AboutUs = () => {
       </div>
 
       <div>
-       <SparkForChange />
+        <SparkForChange />
       </div>
 
       <div>

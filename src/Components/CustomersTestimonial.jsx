@@ -16,7 +16,7 @@ const CustomersTestimonial = () => {
         " “Analytica Haven is a professional, knowledgeable and always ready to go the extra mile.” ",
       profileImg: t1,
       name: "Kristin Watson",
-      position: "CEO of Company"
+      position: "CEO of Company",
     },
     {
       image: rating,
@@ -24,7 +24,7 @@ const CustomersTestimonial = () => {
         " “Analtica Haven’s data tools allowed  us to clearly communicate our progress,helping us expand .” ",
       profileImg: t2,
       name: "Albert Flores",
-      position: "CTO of Company"
+      position: "CTO of Company",
     },
     {
       image: rating,
@@ -32,7 +32,7 @@ const CustomersTestimonial = () => {
         " “Analytica Haven delivers visualization, strategic recommendations, data analysis, and so much more.” ",
       profileImg: t3,
       name: "Michel Smith",
-      position: "Ethnographer"
+      position: "Ethnographer",
     },
     {
       image: rating,
@@ -40,7 +40,7 @@ const CustomersTestimonial = () => {
         " “Analytica Haven is a professional, knowledgeable and always ready to go the extra mile.” ",
       profileImg: t2,
       name: "Dianne Russell",
-      position: "Chief Marketing officer"
+      position: "Chief Marketing officer",
     },
   ];
 
@@ -174,7 +174,7 @@ const CustomersTestimonial = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between lg:mt-10 mt-5">
             <div>
               <h1 className="lg:text-4xl text-lg font-semibold font-campton lg:text-start text-center">
-                What our great Customers say
+                Hear from our Community
               </h1>
               <div>
                 <svg
@@ -242,7 +242,11 @@ const CustomersTestimonial = () => {
                       <p className="text-[#575959] mt-3">{card.description}</p>
 
                       <div className="flex items-center gap-2 mt-4">
-                        <img src={card.profileImg} alt={card.name} className="w-12 h-12 rounded-full object-cover" />
+                        <img
+                          src={card.profileImg}
+                          alt={card.name}
+                          className="w-12 h-12 rounded-full object-cover"
+                        />
                         <div className="space-y-1">
                           <h1 className="text-[#080F10] font-campton font-semibold">
                             {card.name}
@@ -278,10 +282,10 @@ const CustomersTestimonial = () => {
                       />
                       <p className="text-[#575959] mt-3">{card.description}</p>
                       <div className="flex items-center gap-2 mt-4">
-                        <img 
-                          src={card.profileImg} 
-                          alt={card.name} 
-                          className="w-10 h-10 md:w-16 md:h-16 rounded-full object-cover" 
+                        <img
+                          src={card.profileImg}
+                          alt={card.name}
+                          className="w-10 h-10 md:w-16 md:h-16 rounded-full object-cover"
                         />
                         <div className="space-y-1">
                           <h1 className="text-[#080F10] font-campton font-semibold">
@@ -298,7 +302,7 @@ const CustomersTestimonial = () => {
               </div>
             )}
           </div>
-          
+
           {/* Mobile navigation buttons - below the card */}
           {isMobile && (
             <div className="flex items-center justify-center mt-6 gap-5">

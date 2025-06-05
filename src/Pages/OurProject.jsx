@@ -16,6 +16,8 @@ import {
   ux4her,
   verbalidentity,
   woman,
+  woman1,
+  woman2,
 } from "../assets";
 import { Check } from "lucide-react";
 
@@ -105,7 +107,7 @@ const OurProject = () => {
                 </button>
               </div>
               <div>
-                <img src={imgSrc} alt={imgAlt} />
+                <img src={imgSrc} alt={imgAlt}  className="w-full"/>
               </div>
             </div>
           ))}
@@ -114,7 +116,7 @@ const OurProject = () => {
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-20 mt-7">
         <div>
-          <h1 className="lg:text-3xl font-campton text-xl font-semibold text-center text-[#080F10]">
+          <h1 className="lg:text-[2rem] font-campton text-[1.5rem] font-semibold text-center text-[#080F10]">
             Our Core Digital Capabilities
           </h1>
           <p className="text-center font-campton text-[#575959] lg:text-lg mt-2">
@@ -199,12 +201,16 @@ const OurProject = () => {
       <div className="bg-[#EBF2FE]">
         <div className="max-w-7xl mx-auto justify-center p-5 lg:mt-20 mt-7">
           <div className="flex items-center justify-between lg:mt-10 mt-5 lg:flex-row flex-col gap-5">
-            <div>
-              <img src={woman} alt="" />
+            <div className="md:block hidden">
+              <img src={woman} alt=""/>
+            </div>
+            <div className="md:hidden block">
+              <img src={woman1} alt=""className="w-full"/>
+              <img src={woman2} alt="" className="w-full"/>
             </div>
 
             <div>
-              <h1 className="font-campton text-[#000] lg:text-2xl text-xl font-semibold">
+              <h1 className="font-campton text-[#000] lg:text-2xl text-xl">
                 Safe Sisterhood Companionship App
               </h1>
               <p>
@@ -237,8 +243,8 @@ const OurProject = () => {
         </div>
       </div>
 
-      <div>
-        <div className="max-w-7xl mx-auto justify-center p-5 lg:mt-20 mt-7">
+      <div className="md:block hidden">
+        <div className="max-w-7xl mx-auto justify-center p-5 lg:mt-20 mt-7 md:block hidden">
           <div>
             <h1 className="lg:text-3xl text-xl font-campton font-semibold text-center">
               Our Exclusive Expert Support
@@ -311,20 +317,38 @@ const OurProject = () => {
 
       <div className="max-w-7xl mx-auto justify-center p-5">
         <div>
-          <h1 className="text-[#193D6F] font-semibold font-campton lg:text-3xl text-xl text-center">Testimonials</h1>
+          <h1 className="text-[#193D6F] font-semibold font-campton lg:text-[2rem] text-[1.5rem] text-center">Testimonials</h1>
         </div>
         <div className="flex items-center justify-between lg:flex-row flex-col lg:gap-16 gap-7 lg:mt-7 mt-5">
           <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
-            <p className="lg:text-lg font-campton">Working with Analytica Haven transformed our product strategy
-              The support and insights we received were simply outstanding plus "They us helped gain our stand,</p>
+            <p className="lg:text-lg font-campton">"Working with Analytica Haven transformed our product strategy
+The support and insights we received were simply outstanding plus. They us helped gain our stand."</p>
             <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Mango farm Ltd</h1>
             <p className="lg:text-lg font-campton">Bola Peter</p>
           </div>
 
           <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
-            <p className="lg:text-lg font-campton">"Analytica Haven is incredible, this initiative deserves greater visibility and reach, as it has the potential to empower more individual ,and create lasting impact across communities.</p>
+            <p className="lg:text-lg font-campton">"Analytica Haven is incredible, this initiative deserves greater visibility and reach, as it has the potential to empower more individual ,and create lasting impact across communities."</p>
             <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">UI/UX Designer</h1>
             <p className="lg:text-lg font-campton">Faith Akan</p>
+          </div>
+
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">As a startup, finding the right talent is crucial. Analytica Haven not only simplified our hiring process but also connected us with skilled professionals who truly fit our mission."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Backend Developer</h1>
+            <p className="lg:text-lg font-campton">Precious Ana</p>
+          </div>
+
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">As a startup, finding the right talent is crucial. Analytica Haven not only simplified our hiring process but also connected us with skilled professionals who truly fit our mission."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Backend Developer</h1>
+            <p className="lg:text-lg font-campton">Precious Ana</p>
+          </div>
+
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">As a startup, finding the right talent is crucial. Analytica Haven not only simplified our hiring process but also connected us with skilled professionals who truly fit our mission."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Backend Developer</h1>
+            <p className="lg:text-lg font-campton">Precious Ana</p>
           </div>
 
           <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">

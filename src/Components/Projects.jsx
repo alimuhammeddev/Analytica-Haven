@@ -94,8 +94,8 @@ const Projects = () => {
               </div>
             </h1>
           </div>
-          <button className="bg-[#E0F780] lg:block hidden text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
-            our Projects
+          <button className="bg-[#E0F780] lg:block hidden text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
+            Our Projects
           </button>
         </div>
         <p className="text-[#000000] font-campton lg:text-lg text-sm lg:font-medium mt-5 max-w-prose">

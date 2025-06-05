@@ -11,8 +11,11 @@ import {
   testi3,
   testi4,
 } from "../assets";
+import BlueLine from "../assets/underblueline.svg";
 import OurCommunity from "../Components/OurCommunity";
 import { FaMessage } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Footer from "../Footer";
 
 const Community = () => {
@@ -22,8 +25,9 @@ const Community = () => {
         <Header />
       </div>
 
-      <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5">
-        <h1 className="lg:text-6xl text-xl font-semibold lg:mt-20 mt-7 text-center font-campton">
+      <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5 font-campton">
+        {/* Desktop View */}
+        <h1 className="lg:text-6xl text-xl font-semibold lg:mt-20 mt-7 text-center font-campton md:block hidden">
           Welcome to our community
           <span className="block -mt-1 lg:ml-36 ml-52">
             <svg
@@ -42,28 +46,69 @@ const Community = () => {
           </span>
         </h1>
 
+        {/* Mobile view */}
+        <div className="text-[2rem] font-semibold text-center mb-5 md:hidden block">
+          <h2>Welcome to our</h2>
+          <p>Community</p>
+          <img
+            src={BlueLine}
+            alt="Underline"
+            className="w-[45%] mx-auto mt-[-0.5rem]"
+          />
+        </div>
+
         <p className="text-center lg:text-lg mx-auto font-campton mt-2">
           Explore the community, find help in our Docs, and learn the art of
           digital excellence
         </p>
 
-        <div className="flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5 p-4">
+        {/* Desktop view */}
+        <div className="max-w-lg mx-auto mt-5 p-4 md:block hidden">
           <input
             type="email"
-            className="w-full px-4 py-3 mt-1 lg:border-2 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold"
+            className="w-[70%] px-4 py-3 rounded-l-lg border border-gray-300 border-r-0 focus:ring-2 focus:ring-[#193D6F] focus:outline focus:outline-2 focus:outline-gray-300 placeholder:font-semibold"
             placeholder="Enter your email"
             required
           />
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-3 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+          <button
+            type="submit"
+            className="bg-[#E0F780] text-[#193D6F] px-4 py-3 rounded-r-lg font-medium text-lg font-campton active:scale-95 hover:bg-[#193D6F] hover:text-white transition duration-300"
+          >
             Subscribe
           </button>
+        </div>
+
+        {/* Mobile view */}
+        <div className="md:hidden block mt-5">
+          <div className="relative flex items-center">
+            {/* Search Icon */}
+            <FaSearch className="absolute left-3 text-black-500 text-lg" />{" "}
+            {/* Search Input */}
+            <input
+              type="text"
+              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:border-transparent focus:outline focus:outline-2 focus:outline-gray-300 placeholder-gray-500"
+              placeholder="Search the community"
+              aria-label="Search community"
+              required
+            />
+            </div>
+
+            {/* Discover Button */} 
+          <div className="text-center mt-3">
+            <button
+              to="#"
+              className="text-[#fff] bg-[#193D6F] w-[100%] text-sm px-6 py-3 rounded-lg active:scale-95 font-campton"
+            >
+              Discover
+            </button>
+          </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5 -mt-5">
         <div
-          className="flex items-center justify-center
-         mx-auto"
+          className="flex justify-center
+         mx-auto md:mt-0 mt-4"
         >
           <img src={communityhero} alt="" />
         </div>
@@ -74,7 +119,7 @@ const Community = () => {
       </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="text-[#050B15] font-campton font-semibold lg:text-3xl text-xl">
+        <h1 className="text-[#050B15] text-center md:text-justify font-campton font-semibold lg:text-3xl text-xl">
           What are you interested in?
         </h1>
         <div className="flex justify-between gap-5 lg:flex-row flex-col mt-10">
@@ -140,7 +185,34 @@ const Community = () => {
               Featured Conversation
             </h1>
             <div className="lg:space-y-12 space-y-5">
-              <div className="border-[#878787] border rounded-xl p-10 space-y-4">
+              <div className="border-[#878787] border rounded-xl p-10 space-y-4 lg:text-lg text-sm">
+                <div className="flex items-center gap-5">
+                  <img src={t1} alt="" />
+                  <div>
+                    <h1 className="font-campton font-semibold">
+                      Opeyemi Ojo{" "}
+                      <span className="font-normal text-sm bg-[#DCDCDC] p-1 rounded-md">
+                        Level 4
+                      </span>
+                    </h1>
+                    <p>Lagos, Nigeria</p>
+                  </div>
+                </div>
+                <h1 className="lg:text-xl font-campton font-semibold">
+                  Data Analysis or Data Analytics - Which is correct?
+                </h1>
+                <p className="text-gray-600 font-campton lg:text-lg">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using...{" "}
+                  <a href="" className="underline font-semibold">
+                    View Replies
+                  </a>
+                </p>
+              </div>
+
+              <div className="border-[#878787] border rounded-xl p-10 space-y-4 lg:text-lg text-sm">
                 <div className="flex items-center gap-5">
                   <img src={t1} alt="" />
                   <div>
@@ -167,34 +239,7 @@ const Community = () => {
                 </p>
               </div>
 
-              <div className="border-[#878787] border rounded-xl p-10 space-y-4">
-                <div className="flex items-center gap-5">
-                  <img src={t1} alt="" />
-                  <div>
-                    <h1 className="lg:text-lg font-campton font-semibold">
-                      Opeyemi Ojo{" "}
-                      <span className="font-normal text-sm bg-[#DCDCDC] p-1 rounded-md">
-                        Level 4
-                      </span>
-                    </h1>
-                    <p>Lagos, Nigeria</p>
-                  </div>
-                </div>
-                <h1 className="lg:text-xl font-campton font-semibold">
-                  Data Analysis or Data Analytics - Which is correct?
-                </h1>
-                <p className="text-gray-600 font-campton lg:text-lg">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using...{" "}
-                  <a href="" className="underline font-semibold">
-                    View Replies
-                  </a>
-                </p>
-              </div>
-
-              <div className="border-[#878787] border rounded-xl p-10 space-y-4">
+              <div className="border-[#878787] border rounded-xl p-10 space-y-4 lg:text-lg text-sm">
                 <div className="flex items-center gap-5">
                   <img src={t1} alt="" />
                   <div>
@@ -223,13 +268,13 @@ const Community = () => {
             </div>
           </div>
 
-          <div className="space-y-10">
+          <div className="space-y-10 lg:text-lg text-sm">
             <h1 className="text-[#050B15] font-campton font-semibold lg:text-3xl text-xl">
               Top Contributors
             </h1>
             <div>
               <div className="flex items-center justify-between">
-                <div className="flex  items-center gap-7">
+                <div className="flex items-center gap-7">
                   <h1 className="font-campton font-semibold text-gray-600 lg:text-lg">
                     1
                   </h1>
@@ -334,14 +379,17 @@ const Community = () => {
           </div>
         </div>
 
-        <div>
-          <h1 className="font-campton text-center text-[#193d6f] text-lg underline mt-7">
+        <div className="lg:text-lg text-sm underline mt-7">
+          <Link
+            to="#"
+            className="font-campton text-center text-[#193d6f]"
+          >
             See More
-          </h1>
+          </Link>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-20 mt-10 space-y-5">
+      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-20 mt-10 space-y-5 lg:text-lg text-sm">
         <h1 className="text-[#050B15] font-campton font-semibold lg:text-3xl text-xl">
           Popular Topics
         </h1>
@@ -350,7 +398,7 @@ const Community = () => {
           <div className="flex items-center justify-between lg:mt-12 mt-7">
             <div className="flex items-center gap-5">
               <img src={testi4} alt="" />
-              <h1 className="font-campton text-gray-600 lg:text-lg">
+              <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                 What is the difference between a UI designer and a UX designer?
               </h1>
             </div>
@@ -366,7 +414,7 @@ const Community = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-5">
               <img src={testi4} alt="" />
-              <h1 className="font-campton text-gray-600 lg:text-lg">
+              <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                 What does the future with Artificial Intelligence look like?
               </h1>
             </div>
@@ -382,7 +430,7 @@ const Community = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-5">
               <img src={testi4} alt="" />
-              <h1 className="font-campton text-gray-600 lg:text-lg">
+              <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                 Web3 and Blockchain, What!?!
               </h1>
             </div>
@@ -398,7 +446,7 @@ const Community = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-5">
               <img src={testi4} alt="" />
-              <h1 className="font-campton text-gray-600 lg:text-lg">
+              <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                 How to start Tech Startup company?
               </h1>
             </div>
@@ -414,7 +462,7 @@ const Community = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-5">
               <img src={testi4} alt="" />
-              <h1 className="font-campton text-gray-600 lg:text-lg">
+              <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                 Is Remote Work & Freelancing the best form of working in 2025?
               </h1>
             </div>
@@ -430,7 +478,7 @@ const Community = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-5">
               <img src={testi4} alt="" />
-              <h1 className="font-campton text-gray-600 lg:text-lg">
+              <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                 Is it essential to be a hacker to learn Cybersecurity?
               </h1>
             </div>
@@ -446,7 +494,7 @@ const Community = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-5">
               <img src={testi4} alt="" />
-              <h1 className="font-campton text-gray-600 lg:text-lg">
+              <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                 What is the difference between API and SDK?
               </h1>
             </div>
@@ -462,7 +510,7 @@ const Community = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-5">
               <img src={testi4} alt="" />
-              <h1 className="font-campton text-gray-600 lg:text-lg">
+              <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                 What is the difference between a software developer and a
                 software engineer?
               </h1>
@@ -504,7 +552,7 @@ const Community = () => {
               </svg>
             </summary>
 
-            <p className="mt-4 leading-relaxed text-gray-600 font-campton">
+            <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
               veritatis molestias culpa in, recusandae laboriosam neque aliquid
               libero nesciunt voluptate dicta quo officiis explicabo
@@ -534,7 +582,7 @@ const Community = () => {
               </svg>
             </summary>
 
-            <p className="mt-4 leading-relaxed text-gray-600 font-campton">
+            <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
               veritatis molestias culpa in, recusandae laboriosam neque aliquid
               libero nesciunt voluptate dicta quo officiis explicabo
@@ -564,7 +612,7 @@ const Community = () => {
               </svg>
             </summary>
 
-            <p className="mt-4 leading-relaxed text-gray-600 font-campton">
+            <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
               veritatis molestias culpa in, recusandae laboriosam neque aliquid
               libero nesciunt voluptate dicta quo officiis explicabo
@@ -594,7 +642,7 @@ const Community = () => {
               </svg>
             </summary>
 
-            <p className="mt-4 leading-relaxed text-gray-600 font-campton">
+            <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
               veritatis molestias culpa in, recusandae laboriosam neque aliquid
               libero nesciunt voluptate dicta quo officiis explicabo
@@ -624,7 +672,7 @@ const Community = () => {
               </svg>
             </summary>
 
-            <p className="mt-4 leading-relaxed text-gray-600 font-campton">
+            <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
               veritatis molestias culpa in, recusandae laboriosam neque aliquid
               libero nesciunt voluptate dicta quo officiis explicabo
@@ -654,7 +702,7 @@ const Community = () => {
               </svg>
             </summary>
 
-            <p className="mt-4 leading-relaxed text-gray-600 font-campton">
+            <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
               veritatis molestias culpa in, recusandae laboriosam neque aliquid
               libero nesciunt voluptate dicta quo officiis explicabo
@@ -684,7 +732,7 @@ const Community = () => {
               </svg>
             </summary>
 
-            <p className="mt-4 leading-relaxed text-gray-600 font-campton">
+            <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
               veritatis molestias culpa in, recusandae laboriosam neque aliquid
               libero nesciunt voluptate dicta quo officiis explicabo
@@ -714,7 +762,7 @@ const Community = () => {
               </svg>
             </summary>
 
-            <p className="mt-4 leading-relaxed text-gray-600 font-campton">
+            <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
               veritatis molestias culpa in, recusandae laboriosam neque aliquid
               libero nesciunt voluptate dicta quo officiis explicabo

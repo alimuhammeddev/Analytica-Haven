@@ -39,7 +39,7 @@ const LatestContent = () => {
           Partner with us
         </p>
         <h1 className="lg:text-5xl text-xl font-semibold font-campton text-center text-[#FFFFFF] mt-3">
-          Stay Informed with Our Latest Content
+          Stay Informed with Our Latest <span className="text-[#e0f780]">{" "} Content</span>
         </h1>
         <p className="text-center lg:text-lg text-[#FFFFFF] mt-3">
           Analytical Haven is a hub where businesses and individuals transform
@@ -49,8 +49,8 @@ const LatestContent = () => {
         </p>
         <div className="justify-center mx-auto flex mt-5">
           <Link
-            to=""
-            className="bg-[#E0F780] text-[#080F10] lg:w-fit w-full text-center text-base px-6 py-3 rounded-lg font-medium font-campton"
+            to="/community"
+            className="bg-[#E0F780] text-[#080F10] lg:w-fit w-full text-center text-base px-6 py-3 rounded-lg font-medium font-campton md:hover:border md:hover:border-black-500 md:hover:bg-transparent md:hover:text-[#fff] transition duration-300 ease-in-out"
           >
             Join our Community
           </Link>

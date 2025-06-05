@@ -19,10 +19,10 @@ const MoreStories = () => {
       {/* Text Content */}
       <div className="relative z-10 max-w-7xl mx-auto justify-center lg:p-28 p-8">
         <div className="text-center px-4 space-y-4">
-          <h1 className="lg:text-4xl text-2xl font-semibold font-campton">
+          <h1 className="lg:text-4xl text-[1.2rem] font-semibold font-campton text-[#193D6F]">
             Get more stories like this
           </h1>
-          <p className="mt-2 lg:text-lg font-campton text-[#193D6F] font-semibold">
+          <p className="mt-2 lg:text-lg font-campton text-[#193D6F]">
             Enter your email to get the necessary information
           </p>
           <div className="lg:flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5">

@@ -22,6 +22,7 @@ import TeamExpert from "../Components/TeamExpert";
 import CustomersTestimonial from "../Components/CustomersTestimonial";
 import LatestContent from "../Components/LatestContent";
 import GetinTouch from "../Components/GetinTouch";
+import { Link } from "react-router-dom";
 import Footer from "../Footer";
 
 const Home = () => {
@@ -32,7 +33,7 @@ const Home = () => {
       </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="lg:text-5xl text-xl font-semibold lg:mt-20 mt-7 text-center font-campton">
+        <h1 className="lg:text-5xl text-xl font-semibold lg:mt-20 mt-12 text-center font-campton">
           Unlock the Power of Data & Innovation{" "}
           <br className="lg:block hidden" />
           <span className="lg:inline-block lg:relative">
@@ -63,19 +64,20 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="lg:flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5 p-4">
+        <div className="lg:flex lg:flex-row items-center flex-col lg:max-w-lg justify-center mx-auto lg:mt-5 p-4">
           <input
             type="email"
-            className="w-full px-4 py-3 mt-1 lg:border-2 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-medium lg:placeholder:text-base placeholder:text-sm"
+            className="w-full px-4 py-3 border md:border-r-0 border-gray-500 rounded-l-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-2 focus:outline-gray-300 lg:placeholder:font-medium lg:placeholder:text-base placeholder:text-sm"
             placeholder="Enter your email"
             required
           />
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:w-fit w-full lg:mt-0 mt-4 lg:px-6 px-3 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+          
+          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:w-fit w-full px-6 py-3 rounded-r-lg font-medium lg:text-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
             Subscribe
           </button>
         </div>
 
-        <div className="lg:block hidden">
+        <div className="hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -95,7 +97,7 @@ const Home = () => {
           <img src={hero} alt="" />
         </div>
 
-        <div className="lg:flex justify-end hidden">
+        <div className="flex justify-end hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -136,9 +138,11 @@ const Home = () => {
                 </svg>
               </div>
             </h2>
-            <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton">
+            <Link to="/about-us">
+            <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
               Book a call
             </button>
+            </Link>
           </div>
 
           <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-10 mt-5 gap-7">
@@ -240,7 +244,7 @@ const Home = () => {
             <img src={lake} alt="" />
           </div>
 
-          <div className="flex justify-end lg:mt-0 -mt-5">
+          <div className="flex justify-end lg:mt-0 mt-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="45"

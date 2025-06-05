@@ -82,16 +82,16 @@ const OurCommunity = () => {
 
   return (
     <section className="max-w-7xl mx-auto">
-      <div>
+      <div className="md:block hidden">
         <DecorativeSvg />
       </div>
 
-      <div className="p-5 -mt-12 flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div className="p-5 mt-4 md:mt-12 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         <div className="flex-1">
-          <h1 className="text-[#050B15] font-campton font-semibold lg:text-3xl text-xl">
+          <h1 className="text-[#050B15] md:text-justify text-center font-campton font-semibold lg:text-3xl text-xl">
             Our Community
           </h1>
-          <p className="text-[#000000] font-campton lg:text-lg mt-5 leading-relaxed">
+          <p className="text-[#000000] font-campton text-[0.8rem] lg:text-lg mt-5 leading-relaxed">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -104,7 +104,7 @@ const OurCommunity = () => {
             and the like).
           </p>
 
-          <div className="flex flex-wrap lg:justify-between gap-6 mt-6">
+          <div className="flex flex-wrap lg:justify-between justify-center gap-6 mt-6">
             {stats.map((item, index) => (
               <div key={index} className="text-center min-w-[100px]">
                 <h1 className="font-campton text-[#193D6F] lg:text-xl font-semibold">
@@ -123,8 +123,10 @@ const OurCommunity = () => {
         </div>
       </div>
 
-      <div className="flex justify-end -mt-5">
+      <div className="md:block hidden">
+      <div className="flex justify-end mt-5">
         <DecorativeSvg />
+      </div>
       </div>
     </section>
   );

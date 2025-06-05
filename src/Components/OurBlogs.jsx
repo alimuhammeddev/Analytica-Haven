@@ -22,7 +22,7 @@ const BlogCard = () => (
         <h1 className="text-[#080F10] lg:text-xl font-campton font-semibold mt-2">
           How to hire a right business executive for your company
         </h1>
-        <button className="border border-[#828282] p-3 lg:w-fit w-full rounded-md font-campton mt-5">
+        <button className="border border-[#828282] p-3 lg:w-fit w-full rounded-md font-campton mt-5 md:hover:text-[#fff] md:hover:bg-[#193D6F] transition ease-in-out duration-300">
           Read More
         </button>
       </div>
@@ -71,7 +71,7 @@ const OurBlogs = () => {
             </div>
           </div>
 
-          <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+          <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
             Browse our Resources
           </button>
         </div>

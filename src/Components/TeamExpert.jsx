@@ -27,7 +27,7 @@ const TeamExpert = () => {
     <section className="bg-[#e8ecf1] py-10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center lg:mt-10">
-          <h1 className="text-xl lg:text-4xl font-semibold font-campton">
+          <h1 className="text-xl lg:text-4xl font-semibold font-campton px-4 md:px-0">
             Meet our Dedicated Team of Experts
           </h1>
           <svg
