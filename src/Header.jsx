@@ -79,7 +79,7 @@ const Header = () => {
         </div>
 
         {/* Main Navigation */}
-        <div className="max-w-7xl mx-auto px-4 py-4 relative flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 lg:py-4 py-2 relative flex justify-between items-center">
           <div className="flex-shrink-0">
             <Link to="/">
               <img src={logo} alt="Logo" className="w-16" />
