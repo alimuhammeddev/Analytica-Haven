@@ -340,15 +340,16 @@ const OurProject = () => {
           </div>
 
           <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
-            <p className="lg:text-lg font-campton">As a startup, finding the right talent is crucial. Analytica Haven not only simplified our hiring process but also connected us with skilled professionals who truly fit our mission."</p>
-            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Backend Developer</h1>
-            <p className="lg:text-lg font-campton">Precious Ana</p>
+            <p className="lg:text-lg font-campton">"Working with Analytica Haven transformed our product strategy
+              The support and insights we received were simply outstanding plus. They us helped gain our stand."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Mango farm Ltd</h1>
+            <p className="lg:text-lg font-campton">Bola Peter</p>
           </div>
 
           <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
-            <p className="lg:text-lg font-campton">As a startup, finding the right talent is crucial. Analytica Haven not only simplified our hiring process but also connected us with skilled professionals who truly fit our mission."</p>
-            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Backend Developer</h1>
-            <p className="lg:text-lg font-campton">Precious Ana</p>
+            <p className="lg:text-lg font-campton">"Analytica Haven is incredible, this initiative deserves greater visibility and reach, as it has the potential to empower more individual ,and create lasting impact across communities."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">UI/UX Designer</h1>
+            <p className="lg:text-lg font-campton">Faith Akan</p>
           </div>
 
           <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
