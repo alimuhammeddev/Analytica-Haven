@@ -1,4 +1,3 @@
-import AddEvent from "../components/AddEvent";
 import CommunityEvent from "../Components/CommunityEvent";
 import Footer from "../Footer";
 import Header from "../Header";
@@ -9,6 +8,7 @@ import event2 from "../assets/event2.svg";
 import event3 from "../assets/event3.svg";
 import event4 from "../assets/event4.svg";
 import event5 from "../assets/event5.svg";
+import AddEvent from "../Components/AddEvent";
 
 
 const Events = () => {
