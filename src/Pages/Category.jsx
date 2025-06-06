@@ -44,21 +44,12 @@ const Category = () => {
 
       {/* Desktop version for category */}
       <div
-<<<<<<< HEAD
         className="relative bg-[#193D6F] bg-cover bg-center text-white py-[3rem] flex items-center justify-center md:block hidden"
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="max-w-7xl mx-auto justify-center lg:p-[8]">
           <div className="text-center px-4 lg:space-y-7 space-y-4">
             <h1 className="lg:text-5xl text-2xl font-semibold font-campton">
-=======
-        className="relative bg-[#193D6F] bg-cover bg-center text-white lg:h-[500px] h-[300px] lg:flex items-center justify-center md:block hidden"
-        style={{ backgroundImage: `url(${patternhero})` }}
-      >
-        <div className="max-w-7xl mx-auto justify-center lg:p-[8]">
-          <div className="text-center px-4 lg:space-y-7 space-y-4 ">
-            <h1 className="lg:text-6xl text-2xl font-semibold font-campton">
->>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
               Explore Blog Categories to Discover Our Insights.
             </h1>
             <p className="mt-2 lg:text-2xl font-campton">
@@ -313,7 +304,6 @@ const Category = () => {
                 <img src={article3} alt="" className="md:mt-0 mt-10" />
               </div>
 
-<<<<<<< HEAD
               <div className="md:block hidden">
                 <div className="flex justify-between lg:flex-row flex-col gap-7">
                   <div className="space-y-3 lg:mt-20 mt-10">
@@ -328,13 +318,6 @@ const Category = () => {
                     <h1 className="font-campton lg:text-2xl text-lg font-semibold">
                       10 Hillarious Cartoons That Depict Real-Life{" "}
                       <br className="lg:block hidden" /> Problems of Programmers
-=======
-              <div className="flex justify-between lg:flex-row flex-col-reverse gap-7">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      MARKETING
->>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
                     </h1>
                     <p className="font-campton lg:text-lg">
                       Redefined the user acquisition and redesigned the
@@ -349,7 +332,6 @@ const Category = () => {
                 </div>
               </div>
 
-<<<<<<< HEAD
               <div className="md:block hidden">
                 <div className="flex justify-between lg:flex-row flex-col gap-7">
                   <div className="space-y-3 lg:mt-20 mt-10">
@@ -364,13 +346,6 @@ const Category = () => {
                     <h1 className="font-campton lg:text-2xl text-lg font-semibold">
                       10 Hillarious Cartoons That Depict Real-Life{" "}
                       <br className="lg:block hidden" /> Problems of Programmers
-=======
-              <div className="flex justify-between lg:flex-row flex-col-reverse gap-7">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      MARKETING
->>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
                     </h1>
                     <p className="font-campton lg:text-lg">
                       Redefined the user acquisition and redesigned the
