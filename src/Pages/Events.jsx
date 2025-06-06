@@ -55,7 +55,7 @@ const Events = () => {
             </div>
 
               {/* Mobile view */}
-            <div className="items-center justify-center gap-4 pb-[3rem] lg::hidden  md:hidden block">
+            <div className="flex items-center justify-center gap-4 pb-[3rem] lg::hidden  md:hidden sm:block">
               <div>
               <Link
               to="/community"
