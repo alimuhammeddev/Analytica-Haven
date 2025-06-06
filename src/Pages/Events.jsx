@@ -45,7 +45,7 @@ const Events = () => {
             <div className="md:block hidden">
             <Link
               to="/community"
-              className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[5rem] block w-fit hover:bg-[#193D6F] hover:text-white transition-colors duration-300 md:block hidden"
+              className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[5rem] lg:block w-fit hover:bg-[#193D6F] hover:text-white transition-colors duration-300 md:block hidden"
             >
               Join Us Now
             </Link>
@@ -55,16 +55,16 @@ const Events = () => {
             </div>
 
               {/* Mobile view */}
-            <div className="flex items-center justify-center gap-4 pb-[3rem] md:hidden">
+            <div className="items-center justify-center gap-4 pb-[3rem] lg::hidden  md:hidden block">
               <div>
               <Link
               to="/community"
-              className="bg-[#E0F780] px-2 py-1 rounded-md text-[#193D6F] text-[0.5rem]"
+              className="bg-[#E0F780] px-2 py-2 rounded-md text-[#193D6F] text-[0.5rem]"
             >
               Join Us Now
             </Link>
               </div>
-            <div className="w-[70%]">
+            <div className="w-[70%] mt-5">
               <img src={eventbottomimg} alt="" className="w-[100%]"/>
             </div>
             </div>

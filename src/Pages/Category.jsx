@@ -44,11 +44,11 @@ const Category = () => {
 
       {/* Desktop version for category */}
       <div
-        className="relative bg-[#193D6F] bg-cover bg-center text-white lg:h-[500px] h-[300px] flex items-center justify-center md:block hidden"
+        className="relative bg-[#193D6F] bg-cover bg-center text-white lg:h-[500px] h-[300px] lg:flex items-center justify-center md:block hidden"
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="max-w-7xl mx-auto justify-center lg:p-[8]">
-          <div className="text-center px-4 lg:space-y-7 space-y-4">
+          <div className="text-center px-4 lg:space-y-7 space-y-4 ">
             <h1 className="lg:text-6xl text-2xl font-semibold font-campton">
               Explore Blog Categories to Discover Our Insights.
             </h1>
@@ -304,7 +304,7 @@ const Category = () => {
                 <img src={article3} alt="" className="md:mt-0 mt-10" />
               </div>
 
-              <div className="flex justify-between lg:flex-row flex-col gap-7 md:block hidden">
+              <div className="flex justify-between lg:flex-row flex-col-reverse gap-7">
                 <div className="space-y-3 lg:mt-20 mt-10">
                   <div className="flex items-center gap-3">
                     <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
@@ -330,7 +330,7 @@ const Category = () => {
                 <img src={article4} alt="" />
               </div>
 
-              <div className="flex justify-between lg:flex-row flex-col gap-7 md:block hidden">
+              <div className="flex justify-between lg:flex-row flex-col-reverse gap-7">
                 <div className="space-y-3 lg:mt-20 mt-10">
                   <div className="flex items-center gap-3">
                     <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">

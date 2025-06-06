@@ -107,7 +107,7 @@ const OurProject = () => {
                 </button>
               </div>
               <div>
-                <img src={imgSrc} alt={imgAlt}  className="w-full"/>
+                <img src={imgSrc} alt={imgAlt} className="w-full" />
               </div>
             </div>
           ))}
@@ -202,11 +202,11 @@ const OurProject = () => {
         <div className="max-w-7xl mx-auto justify-center p-5 lg:mt-20 mt-7">
           <div className="flex items-center justify-between lg:mt-10 mt-5 lg:flex-row flex-col gap-5">
             <div className="md:block hidden">
-              <img src={woman} alt=""/>
+              <img src={woman} alt="" />
             </div>
             <div className="md:hidden block">
-              <img src={woman1} alt=""className="w-full"/>
-              <img src={woman2} alt="" className="w-full"/>
+              <img src={woman1} alt="" className="w-full" />
+              <img src={woman2} alt="" className="w-full" />
             </div>
 
             <div>
@@ -319,10 +319,10 @@ const OurProject = () => {
         <div>
           <h1 className="text-[#193D6F] font-semibold font-campton lg:text-[2rem] text-[1.5rem] text-center">Testimonials</h1>
         </div>
-        <div className="flex items-center justify-between lg:flex-row flex-col lg:gap-16 gap-7 lg:mt-7 mt-5">
+        <div className="grid lg:grid-cols-3 lg:gap-16 gap-7 lg:mt-7 mt-5">
           <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
             <p className="lg:text-lg font-campton">"Working with Analytica Haven transformed our product strategy
-The support and insights we received were simply outstanding plus. They us helped gain our stand."</p>
+              The support and insights we received were simply outstanding plus. They us helped gain our stand."</p>
             <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Mango farm Ltd</h1>
             <p className="lg:text-lg font-campton">Bola Peter</p>
           </div>

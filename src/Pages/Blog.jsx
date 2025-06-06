@@ -314,7 +314,7 @@ const Blog = () => {
                 <img src={blog5} alt="" className="lg:mt-0 mt-7" />
               </div>
 
-              <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7 md:block hidden">
+              <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7">
                 <div className="space-y-3 lg:mt-20 mt-10">
                   <div className="flex items-center gap-3">
                     <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">

@@ -47,7 +47,7 @@ const Community = () => {
         </h1>
 
         {/* Mobile view */}
-        <div className="text-[2rem] font-semibold text-center mb-5 md:hidden block">
+        <div className="text-[2rem] font-semibold text-center mb-5 md:hidden block lg:mt-0 mt-16">
           <h2>Welcome to our</h2>
           <p>Community</p>
           <img
