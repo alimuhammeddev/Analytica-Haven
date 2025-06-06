@@ -43,7 +43,7 @@ const MoreStories = () => {
           <div className="mx-auto mt-5 md:hidden block">
             <input
               type="email"
-              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold"
+              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold -mt-5"
               placeholder="Enter your email"
               required
             />
@@ -51,7 +51,7 @@ const MoreStories = () => {
               Subscribe
             </button>
           </div>
-          <p className="text-[#193D6F] font-campton lg:text-base">You can Unsubscribe anytime. learn more in our <span className="text-blue-500">Privacy and Policy</span></p>
+          <p className="text-[#193D6F] font-campton lg:text-base">You can Unsubscribe anytime. learn more in our <span className="text-blue-500">Privacy and Policy</span></p> <br />
         </div>
       </div>
     </section>

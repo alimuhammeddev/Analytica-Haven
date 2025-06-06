@@ -328,6 +328,7 @@ const OurProject = () => {
             Testimonials
           </h1>
         </div>
+<<<<<<< HEAD
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Testimonial 1 */}
           <div className="space-y-3 border-2 border-[#193D6F] p-5 rounded-xl hover:shadow-lg transition-shadow duration-300">
@@ -342,6 +343,14 @@ const OurProject = () => {
             <p className="text-base lg:text-lg font-campton text-gray-600">
               Bola Peter
             </p>
+=======
+        <div className="grid lg:grid-cols-3 lg:gap-16 gap-7 lg:mt-7 mt-5">
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">"Working with Analytica Haven transformed our product strategy
+              The support and insights we received were simply outstanding plus. They us helped gain our stand."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Mango farm Ltd</h1>
+            <p className="lg:text-lg font-campton">Bola Peter</p>
+>>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
           </div>
 
           {/* Testimonial 2 */}
@@ -374,6 +383,7 @@ const OurProject = () => {
             </p>
           </div>
 
+<<<<<<< HEAD
           {/* Testimonial 4 - Only shown on lg screens and up */}
           <div className="space-y-3 border-2 border-[#193D6F] p-5 rounded-xl hover:shadow-lg transition-shadow duration-300 hidden lg:block">
             <p className="text-base lg:text-lg font-campton italic text-gray-700">
@@ -402,6 +412,19 @@ const OurProject = () => {
             <p className="text-base lg:text-lg font-campton text-gray-600">
               Chioma Eze
             </p>
+=======
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">"Working with Analytica Haven transformed our product strategy
+              The support and insights we received were simply outstanding plus. They us helped gain our stand."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">Mango farm Ltd</h1>
+            <p className="lg:text-lg font-campton">Bola Peter</p>
+          </div>
+
+          <div className="space-y-1 border-[#193D6F] border p-5 rounded-xl">
+            <p className="lg:text-lg font-campton">"Analytica Haven is incredible, this initiative deserves greater visibility and reach, as it has the potential to empower more individual ,and create lasting impact across communities."</p>
+            <h1 className="text-blue-700 font-campton lg:text-2xl text-lg font-semibold">UI/UX Designer</h1>
+            <p className="lg:text-lg font-campton">Faith Akan</p>
+>>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
           </div>
 
           {/* Testimonial 6 - Only shown on lg screens and up */}

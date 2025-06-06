@@ -70,6 +70,58 @@ const Community = () => {
                 alt="Underline"
                 className="w-[45%] mx-auto mt-[-0.5rem]"
               />
+<<<<<<< HEAD
+=======
+            </svg>
+          </span>
+        </h1>
+
+        {/* Mobile view */}
+        <div className="text-[2rem] font-semibold text-center mb-5 md:hidden block lg:mt-0 mt-16">
+          <h2>Welcome to our</h2>
+          <p>Community</p>
+          <img
+            src={BlueLine}
+            alt="Underline"
+            className="w-[45%] mx-auto mt-[-0.5rem]"
+          />
+        </div>
+
+        <p className="text-center lg:text-lg mx-auto font-campton mt-2">
+          Explore the community, find help in our Docs, and learn the art of
+          digital excellence
+        </p>
+
+        {/* Desktop view */}
+        <div className="max-w-lg mx-auto mt-5 p-4 md:block hidden">
+          <input
+            type="email"
+            className="w-[70%] px-4 py-3 rounded-l-lg border border-gray-300 border-r-0 focus:ring-2 focus:ring-[#193D6F] focus:outline focus:outline-2 focus:outline-gray-300 placeholder:font-semibold"
+            placeholder="Enter your email"
+            required
+          />
+          <button
+            type="submit"
+            className="bg-[#E0F780] text-[#193D6F] px-4 py-3 rounded-r-lg font-medium text-lg font-campton active:scale-95 hover:bg-[#193D6F] hover:text-white transition duration-300"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        {/* Mobile view */}
+        <div className="md:hidden block mt-5">
+          <div className="relative flex items-center">
+            {/* Search Icon */}
+            <FaSearch className="absolute left-3 text-black-500 text-lg" />{" "}
+            {/* Search Input */}
+            <input
+              type="text"
+              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:border-transparent focus:outline focus:outline-2 focus:outline-gray-300 placeholder-gray-500"
+              placeholder="Search the community"
+              aria-label="Search community"
+              required
+            />
+>>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
             </div>
 
             <p className="text-center lg:text-lg mx-auto font-campton mt-2">

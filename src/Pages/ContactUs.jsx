@@ -20,7 +20,11 @@ const ContactUs = () => {
       </div>
 
       {/* Desktop view */}
+<<<<<<< HEAD
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 md:block hidden">
+=======
+      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:block">
+>>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
         <div className="grid lg:grid-cols-2 items-center lg:gap-28 mt-7">
           <div className="lg:order-none order-2 shadow-lg p-5 lg:w-[75%] mx-auto">
             <form action="#" class="space-y-4 mt-7">
@@ -96,8 +100,13 @@ const ContactUs = () => {
             </form>
           </div>
 
+<<<<<<< HEAD
           <div className="order-1 text-[#193D6F]">
             <h1 className="font-campton lg:text-4xl text-xl font-semibold">
+=======
+          <div className="order-1 text-[#193D6F] shadow-lg p-3">
+            <h1 className="font-campton lg:text-2xl text-xl font-normal">
+>>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
               Contact us here
             </h1>
             <p className="font-campton lg:text-2xl">
@@ -108,8 +117,13 @@ const ContactUs = () => {
       </div>
 
       {/* Mobile view */}
+<<<<<<< HEAD
       <div className="md:hidden block">
       <div className="mt-5">
+=======
+      <div className="hidden">
+      <div>
+>>>>>>> 96788d9b78b4a9d5a21d0526139132042981d482
         <img src={contact} alt="" />
       </div>
 

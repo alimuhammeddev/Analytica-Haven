@@ -219,7 +219,7 @@ const Donate = () => {
 
           <div className="flex lg:flex-row flex-col items-center justify-between lg:gap-20 gap-10">
             <div className="space-y-3">
-              <img src={fund} alt="" className="mx-auto" />
+              <img src={fund} alt="" className="mx-auto lg:w-fit w-20" />
               <h1 className="lg:text-2xl font-semibold font-campton text-center">
                 Fund Innovation Project
               </h1>
@@ -230,7 +230,7 @@ const Donate = () => {
             </div>
 
             <div className="space-y-3">
-              <img src={career} alt="" className="mx-auto" />
+              <img src={career} alt="" className="mx-auto lg:w-fit w-20" />
               <h1 className="lg:text-2xl font-semibold font-campton text-center">
                 Career Development
               </h1>
@@ -241,7 +241,7 @@ const Donate = () => {
             </div>
 
             <div className="space-y-3">
-              <img src={expand} alt="" className="mx-auto" />
+              <img src={expand} alt="" className="mx-auto lg:w-fit w-20" />
               <h1 className="lg:text-2xl font-semibold font-campton text-center">
                 Expand Outreach
               </h1>
