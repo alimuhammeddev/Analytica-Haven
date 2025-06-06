@@ -2,7 +2,6 @@ import Header from "../Header";
 import {
   blog3,
   blog7,
-  blog8,
   lady,
   laptop,
   laptop1,
@@ -40,16 +39,16 @@ const Article = () => {
           {/* mobile view */}
           <p className="font-campton text-[0.9rem] md:hidden block">
             It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum and Lorem Ipsum is simply dummy text of the
+            containing Lorem Ipsum and Lorem Ipsum is simply dummy text of the
             printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown
             printer took. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum and Lorem Ipsum is simply
+            Letraset sheets containing Lorem Ipsum and Lorem Ipsum is simply
             dummy text of the printing and typesetting industry. Lorem Ipsum has
             been the industry's standard dummy text ever since the 1500s, when
             an unknown printer took.{" "}
           </p>
-          <img src={tips} alt="" className="md:block hidden" />
+          <img src={tips} alt="" className="md:block hidden w-[75%] mx-auto" />
 
           {/* mobile view */}
           <img src={tips1} alt="" className="md:hidden block w-full pt-10" />
@@ -75,16 +74,19 @@ const Article = () => {
 
         {/* mobile view */}
         <div className="md:hidden block mt-[3rem] font-campton">
-          <div>
+          <div className="md:block hidden">
             <img src={laptop1} alt="" />
+          </div>
+          <div className="md:hidden block">
+            <img src={laptop1} alt="" className="w-full"/>
           </div>
           <p className="mt-5 text-[0.9rem]">
             It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum and Lorem Ipsum is simply dummy text of the
+            containing Lorem Ipsum and Lorem Ipsum is simply dummy text of the
             printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown
             printer took. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum and Lorem Ipsum is simply
+            Letraset sheets containing Lorem Ipsum and Lorem Ipsum is simply
             dummy text of the printing and typesetting industry. Lorem Ipsum has
             been the industry's standard dummy text ever since the 1500s, when
             an unknown printer took.
@@ -94,7 +96,7 @@ const Article = () => {
         <div className="md:hidden block">
           <p className="bg-[#EBF2FE] border-t-4 border-t-[#0022EC] rounded-lg px-[1.5rem] py-[3rem] font-campton text-[0.9rem] my-5">
             It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum and Lorem Ipsum is simply dummy text of the
+            containing Lorem Ipsum and Lorem Ipsum is simply dummy text of the
             printing an
           </p>
         </div>
@@ -117,8 +119,7 @@ const Article = () => {
             </div>
 
             <div className="inline-block">
-              <img src={blog8} alt="" className="w-full md:block hidden" />
-              <img src={blog7} alt="" className="w-full md:hidden block" />
+              <img src={blog7} alt="" className="w-full" />
 
               {/* Desktop view */}
               <div className="bg-[#F9F9F9] p-4 md:block hidden">
@@ -240,7 +241,7 @@ const Article = () => {
               Ipsum passages, and more recently with desktop publishing software
               like Aldus PageMaker including versions of Lorem Ipsum.
             </h1>
-            <img src={laptop} alt=""/>
+            <img src={laptop} alt="" />
             <h1 className="font-campton lg:text-sm">
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum and Lorem Ipsum is simply dummy text

@@ -93,7 +93,7 @@ const Header = () => {
                 return (
                   <div key={i} className="relative flex items-center">
                     <span
-                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
+                      className="flex items-center gap-1 text-sm hover:text-[#193D6F] cursor-pointer hover:border-b-2 hover:border-b-[#193D6F]"
                       onClick={() => {
                         setDesktopCompanyOpen(!desktopCompanyOpen);
                         setDesktopBlogOpen(false);
@@ -119,7 +119,7 @@ const Header = () => {
                 return (
                   <div key={i} className="relative flex items-center">
                     <span
-                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
+                      className="flex items-center gap-1 text-sm hover:text-[#193d6f] cursor-pointer hover:border-b-2 hover:border-b-[#193D6F]"
                       onClick={() => {
                         setDesktopBlogOpen(!desktopBlogOpen);
                         setDesktopCompanyOpen(false);
@@ -142,7 +142,7 @@ const Header = () => {
                 <Link
                   key={i}
                   to={link.url}
-                  className="hover:text-[#176FB9] transition-colors text-sm"
+                  className="hover:text-[#193d6f] transition-colors text-sm hover:border-b-2 hover:border-b-[#193D6F]"
                   onClick={closeAllMenus}
                 >
                   {link.name}
@@ -153,7 +153,7 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex gap-5">
-            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-sm px-5 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">Donate</Link>
+            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-sm px-5 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out shadow-lg">Donate</Link>
             <Link to="/join-community" className="bg-white text-[#193D6F] border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">Join our Community</Link>
           </div>
 

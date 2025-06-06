@@ -20,9 +20,9 @@ const ContactUs = () => {
       </div>
 
       {/* Desktop view */}
-      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
+      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 md:block hidden">
         <div className="grid lg:grid-cols-2 items-center lg:gap-28 mt-7">
-          <div className="lg:order-none order-2">
+          <div className="lg:order-none order-2 shadow-lg p-5 lg:w-[75%] mx-auto">
             <form action="#" class="space-y-4 mt-7">
               <div className="space-y-2">
                 <label
@@ -88,7 +88,7 @@ const ContactUs = () => {
               <div className="mt-4">
                 <a
                   href="#!"
-                  class=" justify-center w-full bg-[#E0F780] px-5 py-3 font-medium font-campton lg:text-lg transition ease-out duration-500 text-[#080F10] items-center flex gap-2 sm:w-auto"
+                  class=" justify-center w-full bg-[#E0F780] px-5 py-3 font-medium font-campton lg:text-lg transition ease-out duration-500 text-[#080F10] items-center flex gap-2 sm:w-auto md:hover:bg-[#193D6F] md:hover:text-[#fff] transition ease-in-out duration-300"
                 >
                   Send Message
                 </a>
@@ -96,11 +96,11 @@ const ContactUs = () => {
             </form>
           </div>
 
-          <div className="order-1 text-[#193D6F] shadow-lg">
-            <h1 className="font-campton lg:text-2xl text-xl font-normal">
+          <div className="order-1 text-[#193D6F]">
+            <h1 className="font-campton lg:text-4xl text-xl font-semibold">
               Contact us here
             </h1>
-            <p className="font-campton lg:text-lg font-semibold">
+            <p className="font-campton lg:text-2xl">
               Leave a message here to let us know how we may help you.
             </p>
           </div>
@@ -109,7 +109,7 @@ const ContactUs = () => {
 
       {/* Mobile view */}
       <div className="md:hidden block">
-      <div>
+      <div className="mt-5">
         <img src={contact} alt="" />
       </div>
 

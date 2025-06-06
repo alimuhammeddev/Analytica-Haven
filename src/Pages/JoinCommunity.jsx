@@ -15,20 +15,30 @@ const JoinCommunity = () => {
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="text-center px-4 lg:space-y-7 space-y-4">
-          <h1 className="lg:text-6xl text-2xl font-semibold font-campton">
+          <h1 className="lg:text-5xl text-2xl font-semibold font-campton">
             Empower Your Team With <br className="lg:block hidden" /> Seamless
             Collaboration
           </h1>
-          <div className="flex md:flex-row flex-col lg:max-w-lg justify-center mx-auto lg:mt-5">
+          <div className="flex md:flex-row flex-col lg:max-w-lg justify-center mx-auto lg:pt-10">
+
+            {/* Desktop view*/}
             <input
               type="email"
-              className="md:w-[70%] w-full px-4 py-3 border md:rounded-l-lg rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black"
+              className="w-[70%] px-4 py-3 border rounded-l-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black md:block hidden"
+              placeholder="Enter your email"
+              required
+            />
+
+            {/*Mobile view */}
+            <input
+              type="email"
+              className="w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black md:hidden block"
               placeholder="Enter your email"
               required
             />
 
             {/* Desktop View */}
-            <button className="bg-[#E0F780] w-[30%] text-[#193D6F] px-6 lg:py-2 py-3 rounded-r-lg font-medium text-lg font-campton md:block hidden">
+            <button className="bg-[#E0F780] w-[30%] text-[#193D6F] px-6 lg:py-2 py-3 rounded-r-lg font-medium text-lg font-campton hover:bg-[#193D6F] hover:text-[#fff] hover:border hover:border-transparent-400 transition ease-in-out duration-300 md:block hidden">
               Subscribe
             </button>
 
@@ -57,7 +67,7 @@ const JoinCommunity = () => {
               <br/> where Knowledge meets execution
             </p>
             <div className="flex mx-auto justify-center">
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium text-lg font-campton">
+            <button className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium text-lg font-campton hover:bg-[#193D6F] hover:text-[#fff] hover:border hover:border-transparent-400 transition ease-in-out duration-300">
               Join us
             </button>
             </div>
@@ -139,7 +149,7 @@ const JoinCommunity = () => {
               <div class="mt-4">
                 <a
                   href="#!"
-                  class=" justify-center w-full bg-[#E0F780] px-5 py-3 font-medium font-campton lg:text-lg transition ease-out duration-500 text-[#080F10] items-center flex gap-2 sm:w-auto"
+                  class=" justify-center w-full bg-[#E0F780] px-5 py-3 font-medium font-campton lg:text-lg transition ease-out duration-500 text-[#080F10] items-center flex gap-2 sm:w-auto md:hover:bg-[#193D6F] md:hover:text-[#fff] md:hover:border md:hover:border-transparent-400 transition ease-in-out duration-300"
                 >
                   Submit
                 </a>

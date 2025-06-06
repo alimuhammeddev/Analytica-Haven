@@ -44,7 +44,7 @@ const OurBlogs = () => {
     return activeIndex - 1;
   };
 
-  const bulletWindowStart = getBulletWindowStart();
+getBulletWindowStart();
 
   return (
     <section>
@@ -99,7 +99,7 @@ const OurBlogs = () => {
             ))} <br /><br />
           </Swiper>
         </div>
-      </div><br /><br />
+      </div>
     </section>
   );
 };

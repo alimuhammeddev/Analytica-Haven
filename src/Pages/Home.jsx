@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../Header";
 import {
   aboutus,
@@ -17,12 +16,12 @@ import {
 import Projects from "../Components/Projects";
 import ServicesSlider from "../Components/ServicesSlider";
 import OurBlogs from "../Components/OurBlogs";
-import PricingPlan from "../Components/PricingPlan";
 import TeamExpert from "../Components/TeamExpert";
 import CustomersTestimonial from "../Components/CustomersTestimonial";
 import LatestContent from "../Components/LatestContent";
 import GetinTouch from "../Components/GetinTouch";
 import { Link } from "react-router-dom";
+import FeedBack from "../Components/FeedBack";
 import Footer from "../Footer";
 
 const Home = () => {
@@ -67,35 +66,33 @@ const Home = () => {
         <div className="lg:max-w-lg mx-auto lg:mt-5 p-4">
           {/* Desktop view */}
           <div className="md:block hidden">
-          <div className="flex items-center justify-center ">
-          <input
-            type="email"
-            className="w-full px-4 py-3 border border-r-0 border-gray-500 rounded-l-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-2 focus:outline-gray-300 lg:placeholder:font-medium lg:placeholder:text-base placeholder:text-sm"
-            placeholder="Enter your email"
-            required
-          />
-          
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:w-fit w-full px-6 py-3 md:rounded-r-lg mt-3 lg:mt-0 font-medium lg:text-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
-            Subscribe
-          </button>
-          </div>
+            <div className="flex justify-center ">
+              <input
+                type="email"
+                className="w-[70%] px-4 py-3 border border-r-0 border-gray-500 rounded-l-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-2 focus:outline-gray-300 lg:placeholder:font-medium lg:placeholder:text-base placeholder:text-sm"
+                placeholder="Enter your email"
+                required
+              />
+
+              <button className="bg-[#E0F780] text-[#193D6F] w-[30%] px-6 py-3 rounded-r-lg font-medium text-lg font-campton hover:bg-[#193D6F] hover:text-[#fff] transition duration-300 ease-in-out">
+                Subscribe
+              </button>
+            </div>
           </div>
 
           {/* Mobile view */}
           <div className="md:hidden block flex flex-col justify-center ">
-          <input
-            type="email"
-            className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-2 focus:outline-gray-300 lg:placeholder:font-medium lg:placeholder:text-base placeholder:text-sm"
-            placeholder="Enter your email"
-            required
-          />
-          
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm w-full px-6 py-3 rounded-lg mt-3 font-medium font-campton">
-            Subscribe
-          </button>
+            <input
+              type="email"
+              className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-2 focus:outline-gray-300 lg:placeholder:font-medium lg:place placeholder:text-sm"
+              placeholder="Enter your email"
+              required
+            />
+
+            <button className="bg-[#E0F780] text-[#193D6F] text-sm w-full px-6 py-3 rounded-lg mt-3 font-medium font-campton">
+              Subscribe
+            </button>
           </div>
-
-
         </div>
 
         <div className="hidden">
@@ -160,16 +157,16 @@ const Home = () => {
               </div>
             </h2>
             <Link to="/about-us">
-            <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 shadow-lg text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
-              Book a call
-            </button>
+              <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 shadow-lg text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton">
+                Book a call
+              </button>
             </Link>
           </div>
 
           <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-10 mt-5 gap-7">
             <div className="space-y-5">
               <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={trusted} alt="" className="lg:w-fit w-20"/>
+                <img src={trusted} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Trusted Insights
@@ -182,7 +179,7 @@ const Home = () => {
               </div>
 
               <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={strategic} alt="" className="lg:w-fit w-20"/>
+                <img src={strategic} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Strategic Advice
@@ -195,7 +192,7 @@ const Home = () => {
               </div>
 
               <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
-                <img src={practical} alt="" className="lg:w-fit w-20"/>
+                <img src={practical} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Practical Tools
@@ -310,6 +307,11 @@ const Home = () => {
 
       <div>
         <GetinTouch />
+      </div>
+
+      {/* Add this just before the Footer */}
+      <div className="fixed bottom-8 right-0 z-50">
+        <FeedBack />
       </div>
 
       <Footer />

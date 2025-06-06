@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import {
@@ -44,12 +43,11 @@ const Blog = () => {
 
       {/* Desktop view */}
       <div
-        className="relative bg-[#193D6F] bg-cover bg-center text-white lg:h-[500px] h-[300px] md:block hidden"
+        className="relative bg-[#193D6F] bg-cover bg-center text-white flex flex-col items-center md:block hidden"
         style={{ backgroundImage: `url(${patternhero})` }}
       >
-        <div className="max-w-7xl mx-auto justify-center lg:p-[8]">
-          <div className="text-center px-4 lg:space-y-7 space-y-2">
-            <br />
+        <div className="max-w-7xl mx-auto justify-center lg:p-[8] pt-[3rem]">
+          <div className="text-left px-4 lg:space-y-7 space-y-2">
             <div className="text-left text-[#E0F780] font-campton lg:text-lg">
               Home <span className="text-white">{"> Blog/News"}</span>
             </div>
@@ -61,14 +59,14 @@ const Blog = () => {
             </p>
 
             {/* Desktop version for the newsletter input field*/}
-            <div className="lg:flex items-center lg:max-w-lg justify-center mx-auto gap-2 lg:mt-5 md:block hidden">
+            <div className="lg:max-w-lg lg:mt-5 md:block hidden py-[2rem]">
               <input
                 type="email"
-                className="w-full px-4 py-3 mt-1 border-2 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold text-black"
+                className="w-[70%] px-4 py-3 border-2 rounded-l-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold text-black"
                 placeholder="Enter your email"
                 required
               />
-              <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+              <button className="bg-[#E0F780] text-[#193D6F] w-[30%] text-sm px-6 py-3 rounded-r-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border transition ease-in-out duration-300">
                 Subscribe
               </button>
             </div>
@@ -194,7 +192,7 @@ const Blog = () => {
                     experience, <br className="lg:block hidden" /> all within 3
                     working weeks
                   </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                     Read More
                   </button>
                 </div>
@@ -220,7 +218,7 @@ const Blog = () => {
                     experience, <br className="lg:block hidden" /> all within 3
                     working weeks
                   </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                     Read More
                   </button>
                 </div>
@@ -228,7 +226,7 @@ const Blog = () => {
               </div>
 
               <div className="md:block hidden">
-                <div className="flex justify-betweengap-7">
+                <div className="flex justify-between gap-7">
                   <div className="space-y-3 lg:mt-20 mt-10">
                     <div className="flex items-center gap-3">
                       <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
@@ -247,7 +245,7 @@ const Blog = () => {
                       onboarding experience, <br className="lg:block hidden" />{" "}
                       all within 3 working weeks
                     </p>
-                    <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                    <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                       Read More
                     </button>
                   </div>
@@ -281,7 +279,7 @@ const Blog = () => {
                     experience, <br className="lg:block hidden" /> all within 3
                     working weeks
                   </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                     Read More
                   </button>
                 </div>
@@ -307,14 +305,15 @@ const Blog = () => {
                     experience, <br className="lg:block hidden" /> all within 3
                     working weeks
                   </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                     Read More
                   </button>
                 </div>
                 <img src={blog5} alt="" className="lg:mt-0 mt-7" />
               </div>
 
-              <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7 md:block hidden">
+            <div className="md:block hidden">
+                            <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7">
                 <div className="space-y-3 lg:mt-20 mt-10">
                   <div className="flex items-center gap-3">
                     <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
@@ -333,12 +332,13 @@ const Blog = () => {
                     experience, <br className="lg:block hidden" /> all within 3
                     working weeks
                   </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                     Read More
                   </button>
                 </div>
                 <img src={blog6} alt="" className="lg:mt-0 mt-7" />
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -369,7 +369,7 @@ const Blog = () => {
               experience, <br className="lg:block hidden" /> all within 3
               working weeks
             </p>
-            <button className="bg-[#E0F780] lg:hidden block text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+            <button className="bg-[#E0F780] lg:hidden block text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
               Read More
             </button>
             <div className="flex items-center lg:justify-start justify-center gap-5 mt-2">

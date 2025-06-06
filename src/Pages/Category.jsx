@@ -44,19 +44,19 @@ const Category = () => {
 
       {/* Desktop version for category */}
       <div
-        className="relative bg-[#193D6F] bg-cover bg-center text-white lg:h-[500px] h-[300px] flex items-center justify-center md:block hidden"
+        className="relative bg-[#193D6F] bg-cover bg-center text-white py-[3rem] flex items-center justify-center md:block hidden"
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="max-w-7xl mx-auto justify-center lg:p-[8]">
           <div className="text-center px-4 lg:space-y-7 space-y-4">
-            <h1 className="lg:text-6xl text-2xl font-semibold font-campton">
+            <h1 className="lg:text-5xl text-2xl font-semibold font-campton">
               Explore Blog Categories to Discover Our Insights.
             </h1>
             <p className="mt-2 lg:text-2xl font-campton">
               Discover marketing tips,updates,and empowering stories from the
               Analytica Haven Team.
             </p>
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
+            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
               Explore Articles
             </button>
           </div>
@@ -151,7 +151,7 @@ const Category = () => {
       {/* Recent updates section for mobile */}
       <div className="bg-[#EBF2FE] mt-2 md:hidden block">
         <h2 className="text-[2rem] font-campton font-semibold text-center">
-          Recent Updates
+          Marketing Updates
         </h2>
         <div className="max-w-7xl mx-auto justify-center p-5">
           <div className="flex justify-between flex-col-reverse gap-7">
@@ -174,7 +174,42 @@ const Category = () => {
                 experience, <br className="lg:block hidden" /> all within 3
                 working weeks
               </p>
-              <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+              <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton ">
+                Explore More
+              </button>
+            </div>
+            <img src={blog1} alt="" />
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop view for recent updates*/}
+      <div className="bg-[#EBF2FE] lg:p-16 mt-12 md:block hidden">
+        <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5">
+          <h1 className="lg:text-2xl text-lg font-campton font-semibold lg:mt-0 mt-5">
+            Marketing Updates Categories
+          </h1>
+          <div className="flex justify-between lg:flex-row flex-col gap-7">
+            <div className="space-y-3 lg:mt-20 mt-10">
+              <div className="flex items-center gap-3">
+                <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
+                  MARKETING
+                </h1>
+                <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold p-2">
+                  APRIL 22, 2025
+                </p>
+              </div>
+              <Link to="/article">
+                <h1 className="font-campton lg:text-2xl text-lg font-semibold hover:text-[#193D6F] duration-500">
+                  Top 10 Marketing Tips for your Company
+                </h1>
+              </Link>
+              <p className="font-campton lg:text-lg">
+                Redefined the user acquisition and redesigned the onboarding
+                experience, <br className="lg:block hidden" /> all within 3
+                working weeks
+              </p>
+              <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                 Explore More
               </button>
             </div>
@@ -205,46 +240,11 @@ const Category = () => {
                   experience, <br className="lg:block hidden" /> all within 3
                   working weeks
                 </p>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                   Explore More
                 </button>
               </div>
               <img src={article1} alt="" className="md:mt-0 mt-8" />
-            </div>
-          </div>
-        </div>
-
-        {/* Desktop view */}
-        <div className="bg-[#EBF2FE] lg:p-16 mt-12 md:block hidden">
-          <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-            <h1 className="lg:text-2xl text-lg font-campton font-semibold lg:mt-0 mt-5">
-              Marketing Updates Categories
-            </h1>
-            <div className="flex justify-between lg:flex-row flex-col gap-7">
-              <div className="space-y-3 lg:mt-20 mt-10">
-                <div className="flex items-center gap-3">
-                  <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                    MARKETING
-                  </h1>
-                  <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold p-2">
-                    APRIL 22, 2025
-                  </p>
-                </div>
-                <Link to="/article">
-                  <h1 className="font-campton lg:text-2xl text-lg font-semibold hover:text-[#193D6F] duration-500">
-                    Top 10 Marketing Tips for your Company
-                  </h1>
-                </Link>
-                <p className="font-campton lg:text-lg">
-                  Redefined the user acquisition and redesigned the onboarding
-                  experience, <br className="lg:block hidden" /> all within 3
-                  working weeks
-                </p>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
-                  Explore More
-                </button>
-              </div>
-              <img src={blog1} alt="" />
             </div>
           </div>
         </div>
@@ -271,7 +271,7 @@ const Category = () => {
                     experience, <br className="lg:block hidden" /> all within 3
                     working weeks
                   </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                     Explore More
                   </button>
                 </div>
@@ -297,63 +297,67 @@ const Category = () => {
                     experience, <br className="lg:block hidden" /> all within 3
                     working weeks
                   </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
+                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                     Explore More
                   </button>
                 </div>
                 <img src={article3} alt="" className="md:mt-0 mt-10" />
               </div>
 
-              <div className="flex justify-between lg:flex-row flex-col gap-7 md:block hidden">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      MARKETING
+              <div className="md:block hidden">
+                <div className="flex justify-between lg:flex-row flex-col gap-7">
+                  <div className="space-y-3 lg:mt-20 mt-10">
+                    <div className="flex items-center gap-3">
+                      <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
+                        MARKETING
+                      </h1>
+                      <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
+                        APRIL 22, 2025
+                      </p>
+                    </div>
+                    <h1 className="font-campton lg:text-2xl text-lg font-semibold">
+                      10 Hillarious Cartoons That Depict Real-Life{" "}
+                      <br className="lg:block hidden" /> Problems of Programmers
                     </h1>
-                    <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                      APRIL 22, 2025
+                    <p className="font-campton lg:text-lg">
+                      Redefined the user acquisition and redesigned the
+                      onboarding experience, <br className="lg:block hidden" />{" "}
+                      all within 3 working weeks
                     </p>
+                    <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
+                      Explore More
+                    </button>
                   </div>
-                  <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-                    10 Hillarious Cartoons That Depict Real-Life{" "}
-                    <br className="lg:block hidden" /> Problems of Programmers
-                  </h1>
-                  <p className="font-campton lg:text-lg">
-                    Redefined the user acquisition and redesigned the onboarding
-                    experience, <br className="lg:block hidden" /> all within 3
-                    working weeks
-                  </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
-                    Explore More
-                  </button>
+                  <img src={article4} alt="" />
                 </div>
-                <img src={article4} alt="" />
               </div>
 
-              <div className="flex justify-between lg:flex-row flex-col gap-7 md:block hidden">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      MARKETING
+              <div className="md:block hidden">
+                <div className="flex justify-between lg:flex-row flex-col gap-7">
+                  <div className="space-y-3 lg:mt-20 mt-10">
+                    <div className="flex items-center gap-3">
+                      <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
+                        MARKETING
+                      </h1>
+                      <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
+                        APRIL 22, 2025
+                      </p>
+                    </div>
+                    <h1 className="font-campton lg:text-2xl text-lg font-semibold">
+                      10 Hillarious Cartoons That Depict Real-Life{" "}
+                      <br className="lg:block hidden" /> Problems of Programmers
                     </h1>
-                    <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                      APRIL 22, 2025
+                    <p className="font-campton lg:text-lg">
+                      Redefined the user acquisition and redesigned the
+                      onboarding experience, <br className="lg:block hidden" />{" "}
+                      all within 3 working weeks
                     </p>
+                    <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
+                      Explore More
+                    </button>
                   </div>
-                  <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-                    10 Hillarious Cartoons That Depict Real-Life{" "}
-                    <br className="lg:block hidden" /> Problems of Programmers
-                  </h1>
-                  <p className="font-campton lg:text-lg">
-                    Redefined the user acquisition and redesigned the onboarding
-                    experience, <br className="lg:block hidden" /> all within 3
-                    working weeks
-                  </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 lg:py-3 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton">
-                    Explore More
-                  </button>
+                  <img src={blog3} alt="" />
                 </div>
-                <img src={blog3} alt="" />
               </div>
             </div>
           </div>

@@ -61,7 +61,7 @@ const CoreServices = () => {
         </div>
 
         <div className="flex justify-center mx-auto lg:mt-5">
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-5 rounded-lg font-medium lg:text-lg font-campton">
+          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-5 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
             Learn More
           </button>
         </div> <br /><br />

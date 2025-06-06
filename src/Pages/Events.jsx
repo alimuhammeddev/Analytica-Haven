@@ -24,7 +24,7 @@ const Events = () => {
               {">"} <span className="text-[#fff]">Events & Programs</span>
             </p>
             {/* Desktop view */}
-            <div className="my-[4rem] text-[3rem] font-bold md:block hidden">
+            <div className="my-[0.5rem] text-[3rem] font-bold md:block hidden">
               <h2 className="w-[45%]">
                 Explore the programs and events in Our
               </h2>
@@ -92,7 +92,7 @@ const Events = () => {
               introduce your brand's persona to your clients. This will help
               build a connection between
             </p>
-            <p className="text-[#575959] font-semibold py-5 md:block hidden">
+            <p className="text-[#575959] text-justify font-semibold py-5 md:block hidden">
               A better world starts with a caring community.
             </p>
             <Link

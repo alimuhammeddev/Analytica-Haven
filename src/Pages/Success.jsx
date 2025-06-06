@@ -32,7 +32,7 @@ const Success = () => {
           style={{ backgroundImage: `url(${patternhero})` }}
         >
           <div className="text-center px-4 lg:space-y-7 space-y-4">
-            <h1 className="lg:text-6xl text-2xl font-semibold font-campton">
+            <h1 className="lg:text-6xl text-2xl font-semibold font-campton border-2 border-transparent-500 p-3">
               Transforming ideas into impart
             </h1>
             <p className="mt-2 lg:text-2xl font-campton">
@@ -40,7 +40,7 @@ const Success = () => {
               innovation, collaboration, and <br className="lg:block hidden" />{" "}
               success.
             </p>
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-semibold lg:text-lg font-campton">
+            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-semibold lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
               Be the Change
             </button>
           </div>
@@ -85,11 +85,11 @@ const Success = () => {
             <div className="flex flex-wrap gap-6 lg:mt-16 mt-5">
               <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
                 <img src={emma} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[30px] text-[24px] font-campton">
+                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
                   Emma Paul
                 </h1>
-                <h2 className="lg:text-lg font-campton">Techie Solution</h2>
-                <p className="text-[#65676A]">
+                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Techie Solution</h2>
+                <p className="text-[#65676A] md:text-[14px] text-[12px]">
                   Precious startup, techie solution was able to grow His
                   business after ,participating in one of Analytica Haven
                   Mentorship programs
@@ -97,14 +97,14 @@ const Success = () => {
               </div>
 
               <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">  
-                <img src={tolu} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[30px] text-[24px] font-campton">
+                <img src={tolu} alt="" className="w-[100%] h-50"/>
+                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
                   Tolu Adebayo
                 </h1>
-                <h2 className="lg:text-lg font-campton">
+                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">
                   Green Tech Innovation
                 </h2>
-                <p className="text-[#65676A]">
+                <p className="text-[#65676A] md:text-[14px] text-[12px]">
                   Sandra turned her freelance digital marketing business into a
                   fully-fledged after attending series of workshops at Analytica
                   Haven .
@@ -113,11 +113,11 @@ const Success = () => {
 
               <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
                 <img src={mary} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[30px] text-[24px] font-campton">
+                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
                   Mary Anababa
                 </h1>
-                <h2 className="lg:text-lg font-campton">Ojo Digital Market</h2>
-                <p className="text-[#65676A]">
+                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Ojo Digital Market</h2>
+                <p className="text-[#65676A] md:text-[14px] text-[12px]">
                   Throuh the networking and events organized by Analytica Haven
                   Tolu was able to secure funding for Her Business.
                 </p>
@@ -125,11 +125,11 @@ const Success = () => {
 
               <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
                 <img src={maro} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[30px] text-[24px] font-campton">
+                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
                   Maro Salat
                 </h1>
-                <h2 className="lg:text-lg font-campton">Data Tafa.co</h2>
-                <p className="text-[#65676A]">
+                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Data Tafa.co</h2>
+                <p className="text-[#65676A] md:text-[14px] text-[12px]">
                   I never imagined I'd teach others how to use data tools.
                   Analytica Haven made that possible. And am very grateful.
                 </p>
@@ -137,11 +137,11 @@ const Success = () => {
 
               <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
                 <img src={paul} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[30px] text-[24px] font-campton">
+                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
                   Paul Rose
                 </h1>
-                <h2 className="lg:text-lg font-campton">Startup Spotlight</h2>
-                <p className="text-[#65676A]">
+                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Startup Spotlight</h2>
+                <p className="text-[#65676A] md:text-[14px] text-[12px]">
                   As a startup, finding the right career path and tools was
                   difficult,until Analytica Haven stepped in. And make the
                   process easy.
@@ -150,11 +150,11 @@ const Success = () => {
 
               <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
                 <img src={peter} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[30px] text-[24px] font-campton">
+                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
                   Peter Favour
                 </h1>
-                <h2 className="lg:text-lg font-campton">Ojo Digital Market</h2>
-                <p className="text-[#65676A]">
+                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Ojo Digital Market</h2>
+                <p className="text-[#65676A] md:text-[14px] text-[12px]">
                   Tolu’s breakthrough came after attending Analytica Haven’s
                   networking events,where she connected with the right partners.
                 </p>
@@ -241,7 +241,7 @@ const Success = () => {
                   <Check className="text-[#FFFFFF] bg-[#575959] p-1 rounded-full" />{" "}
                   10+ Years of Experience
                 </h1>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
                   Our Case Study
                 </button>
               </div>

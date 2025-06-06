@@ -61,13 +61,11 @@ const AboutUs = () => {
                   <br className="lg:block hidden" />
                   source of inspiration for others.
                 </p>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                   Join Our Team
                 </button>
               </div>
             </div>
-            <br />
-            <br />
           </div>
         </div>
 
@@ -91,7 +89,7 @@ const AboutUs = () => {
                   <br className="lg:block hidden" /> solutions that drive
                   long-term value and impact.
                 </p>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                   Join Our Team
                 </button>
               </div>
