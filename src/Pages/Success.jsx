@@ -32,7 +32,7 @@ const Success = () => {
           style={{ backgroundImage: `url(${patternhero})` }}
         >
           <div className="text-center px-4 lg:space-y-7 space-y-4">
-            <h1 className="lg:text-6xl text-2xl font-semibold font-campton border-2 border-transparent-500 p-3">
+            <h1 className="lg:text-6xl text-xl font-semibold font-campton border-2 border-transparent-500 p-3">
               Transforming ideas into impart
             </h1>
             <p className="mt-2 lg:text-2xl font-campton">
