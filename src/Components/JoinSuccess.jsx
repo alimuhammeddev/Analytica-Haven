@@ -7,7 +7,7 @@ const JoinSuccess = () => {
         <div>
           <img src={Emoji} alt="Thumbs up emoji" />
         </div>
-        <p>Thanks for joining the community</p>
+        <p className="text-center">Thanks for joining the community</p>
       </div>
     </>
   );
