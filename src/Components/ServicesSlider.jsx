@@ -185,7 +185,7 @@ const ServicesSlider = () => {
                 Powerful Solutions to
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:ml-0 ml-24 w-40 h-3 lg:w-[320px] lg:h-[14px] -m-2"
+                  className="lg:ml-0 ml-20 w-28 h-3 lg:w-[320px] lg:h-[14px] -m-2"
                   viewBox="0 0 465 15"
                   fill="none"
                 >
