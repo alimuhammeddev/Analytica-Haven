@@ -239,7 +239,7 @@ const Header = () => {
       </header>
 
       {/* Spacer below fixed header */}
-      <div className="h-[95px] md:h-[120px]" />
+      <div className="h-[104px] md:h-[120px]" />
     </section>
   );
 };
