@@ -185,7 +185,7 @@ const Community = () => {
                 <div className="lg:space-y-12 space-y-5">
                   <div className="border-[#878787] border rounded-xl p-10 space-y-4 lg:text-lg text-sm">
                     <div className="flex items-center gap-5">
-                      <img src={t1} alt="" />
+                      <img src={t1} alt="" className="lg:w-fit w-16"/>
                       <div>
                         <h1 className="font-campton font-semibold">
                           Opeyemi Ojo{" "}
@@ -212,7 +212,7 @@ const Community = () => {
 
                   <div className="border-[#878787] border rounded-xl p-10 space-y-4 lg:text-lg text-sm">
                     <div className="flex items-center gap-5">
-                      <img src={t1} alt="" />
+                      <img src={t1} alt="" className="lg:w-fit w-16"/>
                       <div>
                         <h1 className="lg:text-lg font-campton font-semibold">
                           Opeyemi Ojo{" "}
@@ -239,7 +239,7 @@ const Community = () => {
 
                   <div className="border-[#878787] border rounded-xl p-10 space-y-4 lg:text-lg text-sm">
                     <div className="flex items-center gap-5">
-                      <img src={t1} alt="" />
+                      <img src={t1} alt="" className="lg:w-fit w-16"/>
                       <div>
                         <h1 className="lg:text-lg font-campton font-semibold">
                           Opeyemi Ojo{" "}
