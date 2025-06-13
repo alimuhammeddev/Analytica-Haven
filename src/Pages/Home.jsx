@@ -4,7 +4,6 @@ import {
   accel,
   bessener,
   combinator,
-  hero,
   index,
   lake,
   nfx,
@@ -13,6 +12,11 @@ import {
   strategic,
   trusted,
 } from "../assets";
+import Hero from "../assets/hero.svg";
+import HeroCircle1 from "../assets/hero_circle1.svg";
+import HeroCircle2 from "../assets/hero_circle2.svg";
+import HeroCircle3 from "../assets/hero_circle3.svg";
+import HeroCircle4 from "../assets/hero_circle4.svg";
 import Projects from "../Components/Projects";
 import ServicesSlider from "../Components/ServicesSlider";
 import OurBlogs from "../Components/OurBlogs";
@@ -20,7 +24,6 @@ import TeamExpert from "../Components/TeamExpert";
 import CustomersTestimonial from "../Components/CustomersTestimonial";
 import LatestContent from "../Components/LatestContent";
 import GetinTouch from "../Components/GetinTouch";
-import { Link } from "react-router-dom";
 import FeedBack from "../Components/FeedBack";
 import Footer from "../Footer";
 
@@ -54,8 +57,33 @@ const Home = () => {
             </span>
           </span>
         </h1>
+
+       {/* Mobile view for hero picture*/}
+        <div className="relative md:hidden block w-full max-w-5xl mx-auto my-5">
+          {/* Floating Labels */}
+          <span className="absolute top-0 -left-2 bg-[#193D6F] text-white font-normal text-[0.7rem] px-3 py-2 rounded-md">
+            100% Reliable
+          </span>
+          <span className="absolute bottom-0 -left-2 bg-[#0022EC] text-white font-normal text-[0.7rem] px-3 py-2 rounded-md">
+            24/7 Support
+          </span>
+          <span className="absolute top-0 -right-2 bg-[#E0F780] text-black font-normal text-[0.7rem] px-3 py-2 rounded-md">
+            Collaboration
+          </span>
+          <span className="absolute bottom-0 -right-2 bg-[#B8B8F3] text-black font-normal text-[0.7rem] px-3 py-2 rounded-md">
+            100% Integrity
+          </span>
+
+          {/* Main Image */}
+          <img
+            src={Hero}
+            alt="Team"
+            className="w-[100%] rounded-xl shadow-xl mx-auto"
+          />
+        </div>
+
         <div>
-          <p className="text-center lg:text-lg text-sm lg:p-0 justify-center mx-auto font-campton mt-2">
+          <p className="text-center lg:text-xl text-md lg:p-0 justify-center mx-auto font-campton mt-2">
             Empowering businesses & individuals with predictive insights,
             scalable solutions, and <br className="lg:block hidden" /> expert
             learning. Empowering businesses & individuals with predictive
@@ -95,7 +123,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="hidden">
+        {/* <div className="hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -109,13 +137,48 @@ const Home = () => {
               fill-opacity="0.7"
             />
           </svg>
+        </div> */}
+
+        {/* Desktop view  for hero picture*/}
+        <div className="relative md:block hidden w-full max-w-5xl mx-auto mt-10">
+          {/* Floating Labels */}
+          <span className="absolute top-4 left-6 bg-[#193D6F] text-white font-medium text-sm px-4 py-3 rounded-lg shadow-md">
+            100% Reliable
+          </span>
+          <span className="absolute bottom-24 left-4 bg-[#0022EC] text-white font-medium text-sm px-4 py-3 rounded-lg shadow-md">
+            24/7 Support
+          </span>
+          <span className="absolute top-24 right-0 bg-[#E0F780] text-black font-medium text-sm px-4 py-3 rounded-lg shadow-md">
+            Collaboration
+          </span>
+          <span className="absolute bottom-10 right-6 bg-[#B8B8F3] text-black font-medium text-sm px-4 py-3 rounded-lg shadow-md">
+            100% Integrity
+          </span>
+
+          {/* Main Image */}
+          <img
+            src={Hero}
+            alt="Team"
+            className="w-[80%] rounded-xl shadow-xl mx-auto"
+          />
+
+          {/* Team Badge (Overlay Centered) */}
+        <div className="absolute bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-3 rounded-xl shadow-md w-fit">
+          <div className="flex items-center justify-center mb-1">
+            <img src={HeroCircle1} alt="Team Member 1" className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover z-10" />
+            <img src={HeroCircle2} alt="Team Member 2" className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-20" />
+            <img src={HeroCircle3} alt="Team Member 3" className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-30" />
+            <img src={HeroCircle4} alt="Team Member 4" className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-40" />
+            <p className="w-12 h-12 flex items-center justify-center border-2 border-blue-500 rounded-full bg-white text-sm font-semibold -ml-3 z-50">
+              34
+            </p>
+          </div>
+          <p className="text-center font-semibold text-[0.8rem] text-[#828282]">Our Extraordinary Team</p>
         </div>
 
-        <div>
-          <img src={hero} alt="" />
         </div>
 
-        <div className="flex justify-end hidden">
+        {/* <div className="flex justify-end hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -129,16 +192,16 @@ const Home = () => {
               fill-opacity="0.7"
             />
           </svg>
-        </div>
+        </div> */}
       </div>
 
       <div className="lg:bg-[#E0EDFE] bg-[#fff] lg:mt-10">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-          <h1 className="text-[#193D6F] font-campton lg:text-base text-sm lg:mt-10 lg:ml-2 ml-1">
+          <h1 className="text-[#193D6F] font-campton lg:text-[1.5rem] text-[1.3rem] lg:mt-10 lg:ml-2 ml-1">
             About us
           </h1>
           <div className="lg:flex items-center justify-between mt-2">
-            <h2 className="lg:text-4xl text-base font-semibold font-campton">
+            <h2 className="lg:text-[2.5rem] text-[1.1rem] font-semibold font-campton">
               Get to know our purpose <br /> and Mission
               <div>
                 <svg
@@ -156,11 +219,9 @@ const Home = () => {
                 </svg>
               </div>
             </h2>
-            <Link to="/about-us">
-              <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 shadow-lg text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton">
+            {/* <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 shadow-lg text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton">
                 Book a call
-              </button>
-            </Link>
+              </button> */}
           </div>
 
           <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-10 mt-5 gap-7">

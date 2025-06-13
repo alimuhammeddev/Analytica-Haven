@@ -35,7 +35,7 @@ const LatestContent = () => {
 
       {/* Add your content here if needed */}
       <div className="relative z-10 lg:p-10 p-5">
-        <p className="text-[#B8C3D2] text-center font-campton lg:text-xl lg:mt-0 mt-5">
+        <p className="text-[#B8C3D2] text-center font-campton text-xl lg:text-3xl lg:mt-0 mt-5">
           Partner with us
         </p>
         <h1 className="lg:text-5xl text-xl font-semibold font-campton text-center text-[#FFFFFF] mt-3">
@@ -50,7 +50,7 @@ const LatestContent = () => {
         <div className="justify-center mx-auto flex mt-5">
           <Link
             to="/community"
-            className="bg-[#E0F780] text-[#080F10] lg:w-fit w-full text-center text-base px-6 py-3 rounded-lg font-medium font-campton md:hover:border md:hover:border-black-500 md:hover:bg-transparent md:hover:text-[#fff] transition duration-300 ease-in-out"
+            className="bg-[#E0F780] text-[#080F10] lg:w-fit w-full text-center text-base px-6 py-3 rounded-lg font-medium font-campton md:hover:border md:hover:bg-white md:hover:text-[#143159] transition duration-300 ease-in-out"
           >
             Join our Community
           </Link>

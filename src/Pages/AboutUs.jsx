@@ -20,8 +20,8 @@ const AboutUs = () => {
           <img src={abouthero} alt="" className="w-full" />
         </div>
 
-        <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-          <div className="flex lg:items-center justify-between lg:flex-row flex-col lg:mt-20 mt-10 gap-5">
+        <div className="max-w-7xl mx-auto lg:p-[8] p-5">
+          <div className="flex lg:items-center justify-between lg:flex-row flex-col-reverse lg:mt-20 mt-10 gap-5">
             <div>
               <h1 className="text-[#193D6F] font-campton lg:text-lg font-semibold">
                 Knowledge | Innovation | Empowerment
@@ -39,7 +39,7 @@ const AboutUs = () => {
 
         <div className="bg-[#F2F2F2] lg:mt-16 mt-10">
           <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-            <div className="flex items-center lg:flex-row flex-col-reverse justify-between gap-5 lg:mt-16 mt-7">
+            <div className="flex items-center lg:flex-row flex-col justify-between gap-5 lg:mt-16 mt-7">
               <div>
                 <img src={vision} alt="" />
               </div>
@@ -61,9 +61,9 @@ const AboutUs = () => {
                   <br className="lg:block hidden" />
                   source of inspiration for others.
                 </p>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
+                {/* <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                   Join Our Team
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const AboutUs = () => {
 
         <div className="lg:mt-16">
           <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-            <div className="flex items-center lg:flex-row flex-col justify-between gap-5 lg:mt-16 mt-7">
+            <div className="flex items-center lg:flex-row flex-col-reverse justify-between gap-5 lg:mt-16 mt-7">
               <div className="space-y-5">
                 <h1 className="text-[#193D6F] font-campton font-semibold lg:text-3xl text-xl">
                   Our Mission

@@ -70,12 +70,12 @@ const Projects = () => {
   return (
     <section>
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg lg:mt-12">
+        <h1 className="text-[#193D6F] font-campton text-[1.3rem] font-medium lg:text-[1.5rem] lg:mt-12">
           Our Projects
         </h1>
         <div className="lg:flex items-center justify-between lg:mt-2 mt-1">
           <div>
-            <h1 className="lg:text-4xl text-base font-semibold font-campton">
+            <h1 className="lg:text-[2.5rem] leading-[1.1] text-[1.1rem] font-semibold font-campton">
               Explore Our Successful <br /> Projects
               <div>
                 <svg
@@ -94,17 +94,17 @@ const Projects = () => {
               </div>
             </h1>
           </div>
-          <button className="bg-[#E0F780] lg:block hidden text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton  ease-in-out">
+          <button className="bg-[#E0F780] lg:block hidden text-[#193D6F] px-6 py-3 rounded-lg font-medium text-[1.5rem] font-campton">
             Our Projects
           </button>
         </div>
-        <p className="text-[#000000] font-campton lg:text-lg text-sm lg:font-medium mt-5 max-w-prose">
+        <p className="text-[#000000] font-campton lg:text-[1.2rem] text-[0.9rem] mt-5 max-w-prose">
           Analytical Haven is a hub where businesses and individuals transform
           raw data into actionable insights, build scalable solutions, and
           master strategic execution.
         </p>
-        <button className="bg-[#E0F780] lg:hidden block lg:w-fit w-full lg:mt-0 mt-4 text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
-          our Projects
+        <button className="bg-[#E0F780] lg:hidden block w-full mt-4 text-[#193D6F] text-[1.3rem] py-3 px-2 rounded-lg font-medium font-campton capitalize">
+          our projects
         </button>
 
         <div>

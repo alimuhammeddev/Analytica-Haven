@@ -173,7 +173,7 @@ const CustomersTestimonial = () => {
         <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between lg:mt-10 mt-5">
             <div>
-              <h1 className="lg:text-4xl text-lg font-semibold font-campton lg:text-start text-center">
+              <h1 className="lg:text-4xl text-[1.3rem] font-semibold font-campton lg:text-start text-center">
                 Hear from our Community
               </h1>
               <div>

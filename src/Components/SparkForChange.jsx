@@ -55,7 +55,7 @@ const SparkForChange = () => {
                   <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                   Strenghtens impactful programs
                 </h1>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium mt-3 lg:text-lg font-campton md:hover:bg-transparent md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-400 transition ease-in-out duration-300">
+                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium mt-3 lg:text-lg font-campton md:hover:bg-[#fff] md:hover:text-[#193D6F] md:hover:border md:hover:border-[#fff]-400 transition ease-in-out duration-300">
                   Donate Now
                 </button>
               </div>

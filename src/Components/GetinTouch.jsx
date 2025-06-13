@@ -31,7 +31,7 @@ const GetinTouch = () => {
             </h1>
           </div>
 
-          <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+          <button className="bg-[#E0F780] md:block hidden text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
             Book a call
           </button>
         </div>
@@ -100,7 +100,7 @@ const GetinTouch = () => {
                 ></textarea>
               </div>
 
-              <button className="bg-[#E0F780] text-[#193D6F] w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 font-medium lg:text-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
+              <button className="bg-[#E0F780] text-[#193D6F] w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 font-medium lg:text-lg rounded-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
                 Send Message
               </button>
             </div>

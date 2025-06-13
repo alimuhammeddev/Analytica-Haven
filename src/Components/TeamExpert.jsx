@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  ajao, ali, biga, bisola, charity, favour, fidelis,
-  gift, glory, green, jason, mopelola, musa, otobong, samuel,
+  ajao, ali, biga, charity, favour, fidelis,
+  gift, glory, jason, mopelola, musa, otobong,
 } from '../assets';
 
 const teamMembers = [
@@ -15,9 +15,6 @@ const teamMembers = [
   { name: "Musa Yusuf Bwala", role: "Data Analyst", image: musa },
   { name: "Favour Atikpo", role: "Product Designer", image: favour },
   { name: "Otobong Ekanem", role: "Chef/Food Consultant", image: otobong },
-  { name: "Samuel Nwankwo", role: "Backend Developer", image: samuel },
-  { name: "Bisola Sobowale", role: "Data Analyst", image: bisola },
-  { name: "Green D. Idubamo", role: "Content Writer", image: green },
   { name: "Ajao oluwaseun", role: "Frontend Developer", image: ajao },
   { name: "Gbolagade B. Mopelola", role: "Data Analyst", image: mopelola },
 ];
@@ -50,7 +47,7 @@ const TeamExpert = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="inline-block">
-                <img src={member.image} alt={member.name} className="w-fit" />
+                <img src={member.image} alt={member.name} className="w-fit rounded-t-md" />
                 <div className="bg-white w-full p-3 rounded-b-xl shadow-md">
                   <h2 className="font-campton font-semibold text-sm lg:text-lg text-center">
                     {member.name}
