@@ -243,7 +243,7 @@ const Home = () => {
 
           <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-10 mt-5 gap-7">
             <div className="space-y-5">
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-[80%] lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
                 <img src={trusted} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
@@ -255,7 +255,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-[80%] lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
                 <img src={strategic} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
@@ -268,7 +268,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-[80%] lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
                 <img src={practical} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
