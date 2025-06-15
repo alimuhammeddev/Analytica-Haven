@@ -86,7 +86,7 @@ const OurCommunity = () => {
         <DecorativeSvg />
       </div>
 
-      <div className="p-5 mt-4 md:mt-12 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+      <div className="p-5 mt-4 md:mt-12 flex flex-col lg:flex-row items-center justify-between gap-10">
         <div className="flex-1">
           <h1 className="text-[#050B15] md:text-justify text-center font-campton font-semibold lg:text-3xl text-xl">
             Our Community
@@ -104,6 +104,7 @@ const OurCommunity = () => {
             and the like).
           </p>
 
+          <div className="md:block hidden">
           <div className="flex flex-wrap lg:justify-between justify-center gap-6 mt-6">
             {stats.map((item, index) => (
               <div key={index} className="text-center min-w-[100px]">
@@ -115,6 +116,7 @@ const OurCommunity = () => {
                 </p>
               </div>
             ))}
+          </div>
           </div>
         </div>
 

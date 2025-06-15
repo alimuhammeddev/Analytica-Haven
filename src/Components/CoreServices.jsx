@@ -25,8 +25,8 @@ const CoreServices = () => {
                 Finance Consulting
               </h1>
               <p className="text-[#575959] text-center lg:text-lg mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
-                egestas ullamcorper ipsum nibh quis.
+                Smart strategies. Clear guidance Helping you grow and mange
+                wealth with confidence.
               </p>
             </div>
 
@@ -39,8 +39,8 @@ const CoreServices = () => {
                 Dera Digital Marketing
               </h1>
               <p className="text-[#575959] text-center lg:text-lg mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
-                egestas ullamcorper ipsum nibh quis.
+                Creative, targeted results driven and also helping your brand
+                grow in digital world.
               </p>
             </div>
 
@@ -53,18 +53,19 @@ const CoreServices = () => {
                 Career Development
               </h1>
               <p className="text-[#575959] text-center lg:text-lg mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
-                egestas ullamcorper ipsum nibh quis.
+                Build skills. Unlock potential, helping you move forward with
+                purpose and real progress.
               </p>
             </div>
           </div>
         </div>
-
         <div className="flex justify-center mx-auto lg:mt-5">
           <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-5 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
             Learn More
           </button>
-        </div> <br /><br />
+        </div>{" "}
+        <br />
+        <br />
       </div>
     </section>
   );

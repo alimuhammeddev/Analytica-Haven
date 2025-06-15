@@ -16,6 +16,7 @@ import {
   volunteer,
 } from "../assets";
 import SparkForChange from "../Components/SparkForChange";
+import SparkForChange2 from "../Components/SparkForChange2"
 import Footer from "../Footer"
 
 const Donate = () => {
@@ -36,7 +37,7 @@ const Donate = () => {
             opportunities for <br className="lg:block hidden" /> aspiring tech
             professionals.
           </p>
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
+          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
             Donate Now
           </button>
         </div>
@@ -258,15 +259,19 @@ const Donate = () => {
         <SparkForChange />
       </div>
 
+      <div>
+        <SparkForChange2/>
+      </div>
+
       {/* Desktop version */}
-      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-5 md:block hidden">
+      <div className="max-w-7xl mx-auto p-8 md:block hidden">
         <div>
-            <h1 className="text-[#193D6F] lg:text-4xl text-xl font-campton font-semibold text-center lg:mt-20 mt-10">Testimonials</h1>
+            <h1 className="text-[#193D6F] text-4xl font-campton font-semibold text-center mt-10">Testimonials</h1>
         </div>
 
         <div className="flex lg:flex-row flex-col justify-between lg:gap-10 gap-7 lg:mt-10 mt-5">
             <div className="bg-[#D1D8E2] p-5 w-fit rounded-2xl relative">
-                <h1 className="text-[#000000] lg:text-md mt-2 font-campton">Everytime i donate,i know i am helping someone in need.That is what keeps me coming back.</h1>
+                <h1 className="text-[#000000] lg:text-md mt-2 font-campton">Everytime I donate, I know I am helping someone in need. That is what keeps me coming back.</h1>
                 <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
                     <h1 className="font-campton lg:text-base font-semibold">Lola B, Donor</h1>
                     <img src={testi3} alt="" />
@@ -274,7 +279,7 @@ const Donate = () => {
             </div>
 
             <div className="bg-[#D1D8E2] p-5 my-10 md:my-0 rounded-2xl relative">
-                <h1 className="text-[#000000] lg:text-md mt-2 font-campton">I believe in power of small actions.Donating here means i am contributing to a bigger vision.</h1>
+                <h1 className="text-[#000000] lg:text-md mt-2 font-campton">I believe in power of small actions.Donating here means I am contributing to a bigger vision.</h1>
                 <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
                     <h1 className="font-campton lg:text-base font-semibold">Kola N, First-Time Donor</h1>
                     <img src={testi1} alt="" />
@@ -282,7 +287,7 @@ const Donate = () => {
             </div>
 
             <div className="bg-[#D1D8E2] p-5 w-fit rounded-2xl relative">
-                <h1 className="text-[#000000] lg:text-md mt-2 font-campton">Donating Here gave me a purpose.It isamazing how a simple act of giving can help transform someones’s life.</h1>
+                <h1 className="text-[#000000] lg:text-md mt-2 font-campton">Donating Here gave me a purpose. It isamazing how a simple act of giving can help transform someones’s life.</h1>
                 <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
                     <h1 className="font-campton lg:text-base font-semibold">Zainab K, Supporter</h1>
                     <img src={testi2} alt="" />

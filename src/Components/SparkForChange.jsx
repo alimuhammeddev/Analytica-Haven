@@ -4,36 +4,18 @@ import { Check } from "lucide-react";
 
 const SparkForChange = () => {
   return (
-    <section>
-      <div className="bg-[#193D6F]">
-        <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-          <div className="flex items-center justify-between lg:flex-row flex-col-reverse lg:mt-16 mt-7 lg:mb-10 mb-7 gap-7">
+    <section className="md:block hidden">
+      <div className="bg-[#193D6F] p-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-center flex-row mt-16 mb-10">
             <div>
               <div>
-                <img src={change} alt="" />
-              </div>
-
-              <div className="md:hidden block mt-7 ">
-                <h1 className="text-[#FFFFFF] text-lg font-campton flex items-center gap-3">
-                  <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
-                  Build a better future.
-                </h1>
-                <h1 className="text-[#FFFFFF] text-lg font-campton flex items-center gap-3 my-3">
-                  <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
-                  Drive dynamic solutions
-                </h1>
-                <h1 className="text-[#FFFFFF] text-lg font-campton flex items-center gap-3">
-                  <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
-                  Strenghtens impactful programs
-                </h1>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton mt-3">
-                  Donate Now
-                </button>
+                <img src={change} alt="" className="w-[80%]"/>
               </div>
             </div>
 
-            <div className="space-y-7">
-              <h1 className="font-campton lg:text-3xl text-xl font-semibold text-[#FFFFFF]">
+            <div className="space-y-7 pr-[3rem]">
+              <h1 className="font-campton text-3xl font-semibold text-[#FFFFFF]">
                 Be the Spark for Change.
               </h1>
               <p className="text-[#FFFFFF] font-campton lg:text-lg">
@@ -42,7 +24,7 @@ const SparkForChange = () => {
                 individuals and businesses to reach their full potential.{" "}
                 <br className="lg:block hidden" /> Your donations
               </p>
-              <div className="md:block hidden">
+              <div className="space-y-3">
                 <h1 className="text-[#FFFFFF] text-lg font-campton flex items-center gap-3">
                   <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                   Build a better future.
@@ -55,9 +37,11 @@ const SparkForChange = () => {
                   <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                   Strenghtens impactful programs
                 </h1>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium mt-3 lg:text-lg font-campton md:hover:bg-[#fff] md:hover:text-[#193D6F] md:hover:border md:hover:border-[#fff]-400 transition ease-in-out duration-300">
+                <div>
+                <button className="bg-[#E0F780] text-[#193D6F] px-6 py-3 rounded-lg font-medium mt-3 text-lg font-campton hover:bg-[#fff] hover:text-[#193D6F] transition ease-in-out duration-300">
                   Donate Now
                 </button>
+                </div>
               </div>
             </div>
           </div>

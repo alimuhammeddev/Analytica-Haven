@@ -47,16 +47,16 @@ const Category = () => {
         className="relative bg-[#193D6F] bg-cover bg-center text-white py-[3rem] flex items-center justify-center md:block hidden"
         style={{ backgroundImage: `url(${patternhero})` }}
       >
-        <div className="max-w-7xl mx-auto justify-center lg:p-[8]">
-          <div className="text-center px-4 lg:space-y-7 space-y-4">
-            <h1 className="lg:text-5xl text-2xl font-semibold font-campton">
+        <div className="max-w-7xl mx-auto p-8">
+          <div className="text-center mx-14 space-y-7">
+            <h1 className="text-5xl font-semibold font-campton">
               Explore Blog Categories to Discover Our Insights.
             </h1>
-            <p className="mt-2 lg:text-2xl font-campton">
+            <p className="mt-2 text-2xl font-campton">
               Discover marketing tips,updates,and empowering stories from the
               Analytica Haven Team.
             </p>
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
+            <button className="bg-[#E0F780] text-[#193D6F] px-6 py-2 rounded-lg font-medium text-lg font-campton hover:bg-[#fff] hover:text-[#193d6f] transition ease-in-out duration-300">
               Explore Articles
             </button>
           </div>
@@ -69,7 +69,7 @@ const Category = () => {
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="max-w-7xl mx-auto justify-center">
-          <div className="text-center px-4 lg:space-y-7 space-y-4">
+          <div className="text-center px-4 space-y-4">
             <h1 className="text-2xl font-semibold font-campton py-5">
               The Analytica Blog
             </h1>

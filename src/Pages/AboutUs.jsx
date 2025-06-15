@@ -5,6 +5,7 @@ import { abouthero, company, mission, vision } from "../assets";
 import TeamExpert from "../Components/TeamExpert";
 import OurCommunity from "../Components/OurCommunity";
 import SparkForChange from "../Components/SparkForChange";
+import SparkForChange2 from "../Components/SparkForChange2"
 import CoreServices from "../Components/CoreServices";
 import TalkToUs from "../Components/TalkToUs";
 import GetinTouch from "../Components/GetinTouch";
@@ -110,8 +111,14 @@ const AboutUs = () => {
         <OurCommunity />
       </div>
 
-      <div>
+      {/* Desktop view */}
+      <div className="md:block hidden">
         <SparkForChange />
+      </div>
+
+      {/* Mobile view */}
+      <div className="md:hidden block">
+        <SparkForChange2/>
       </div>
 
       <div>

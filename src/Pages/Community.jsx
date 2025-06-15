@@ -176,7 +176,7 @@ const Community = () => {
             </div>
           </div>
 
-          <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-20 mt-10">
+          <div className="max-w-7xl mx-auto lg:p-[8] p-5 lg:mt-20 mt-10 md:block hidden">
             <div className="grid lg:grid-cols-2 lg:gap-20 gap-10">
               <div className="space-y-10">
                 <h1 className="text-[#050B15] font-campton font-semibold lg:text-3xl text-xl">

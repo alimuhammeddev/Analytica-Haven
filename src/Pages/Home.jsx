@@ -58,7 +58,7 @@ const Home = () => {
           </span>
         </h1>
 
-       {/* Mobile view for hero picture*/}
+        {/* Mobile view for hero picture*/}
         <div className="relative md:hidden block w-full max-w-5xl mx-auto my-5">
           {/* Floating Labels */}
           <span className="absolute top-0 -left-2 bg-[#193D6F] text-white font-normal text-[0.7rem] px-3 py-2 rounded-md">
@@ -163,19 +163,36 @@ const Home = () => {
           />
 
           {/* Team Badge (Overlay Centered) */}
-        <div className="absolute bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-3 rounded-xl shadow-md w-fit">
-          <div className="flex items-center justify-center mb-1">
-            <img src={HeroCircle1} alt="Team Member 1" className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover z-10" />
-            <img src={HeroCircle2} alt="Team Member 2" className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-20" />
-            <img src={HeroCircle3} alt="Team Member 3" className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-30" />
-            <img src={HeroCircle4} alt="Team Member 4" className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-40" />
-            <p className="w-12 h-12 flex items-center justify-center border-2 border-blue-500 rounded-full bg-white text-sm font-semibold -ml-3 z-50">
-              34
+          <div className="absolute bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white p-3 rounded-xl shadow-md w-fit">
+            <div className="flex items-center justify-center mb-1">
+              <img
+                src={HeroCircle1}
+                alt="Team Member 1"
+                className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover z-10"
+              />
+              <img
+                src={HeroCircle2}
+                alt="Team Member 2"
+                className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-20"
+              />
+              <img
+                src={HeroCircle3}
+                alt="Team Member 3"
+                className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-30"
+              />
+              <img
+                src={HeroCircle4}
+                alt="Team Member 4"
+                className="w-12 h-12 border-2 border-blue-500 rounded-full object-cover -ml-3 z-40"
+              />
+              <p className="w-12 h-12 flex items-center justify-center border-2 border-blue-500 rounded-full bg-white text-sm font-semibold -ml-3 z-50">
+                34
+              </p>
+            </div>
+            <p className="text-center font-semibold text-[0.8rem] text-[#828282]">
+              Our Extraordinary Team
             </p>
           </div>
-          <p className="text-center font-semibold text-[0.8rem] text-[#828282]">Our Extraordinary Team</p>
-        </div>
-
         </div>
 
         {/* <div className="flex justify-end hidden">
@@ -226,41 +243,40 @@ const Home = () => {
 
           <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-10 mt-5 gap-7">
             <div className="space-y-5">
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-[80%] lg:p-7 p-5 rounded-lg">
                 <img src={trusted} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Trusted Insights
                   </h1>
                   <p className="text-[#575959] font-campton lg:text-base text-sm">
-                    Lorem ipsum trusted company hendrerit <br /> aliquam
-                    accumsan nisl suspendisse.
+                    Real facts clear truths Helping you stay informed, always.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-[80%] lg:p-7 p-5 rounded-lg">
                 <img src={strategic} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Strategic Advice
                   </h1>
                   <p className="text-[#575959] font-campton lg:text-base text-sm">
-                    Lorem ipsum trusted company hendrerit <br /> aliquam
-                    accumsan nisl suspendisse.
+                    Smart steps,bold moves guilding you towards impactful
+                    decisions.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-fit lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 w-[80%] lg:p-7 p-5 rounded-lg">
                 <img src={practical} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
                     Practical Tools
                   </h1>
                   <p className="text-[#575959] font-campton lg:text-base text-sm">
-                    Lorem ipsum trusted company hendrerit <br /> aliquam
-                    accumsan nisl suspendisse.
+                    Simple,effective, ready to use.Empowering you to act with
+                    confidence.
                   </p>
                 </div>
               </div>

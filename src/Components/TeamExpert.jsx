@@ -47,7 +47,7 @@ const TeamExpert = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="inline-block">
-                <img src={member.image} alt={member.name} className="w-fit rounded-t-md" />
+                <img src={member.image} alt={member.name} className="w-fit rounded-t-xl" />
                 <div className="bg-white w-full p-3 rounded-b-xl shadow-md">
                   <h2 className="font-campton font-semibold text-sm lg:text-lg text-center">
                     {member.name}

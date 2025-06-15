@@ -14,7 +14,7 @@ const ServicesSlider = () => {
       image: projectmgt,
       title: "Project Management",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.",
+        "Stay oganized. Stay on track Turning plans into results, step by step."
     },
     {
       image: processdev,

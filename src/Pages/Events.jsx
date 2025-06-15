@@ -4,19 +4,22 @@ import Header from "../Header";
 import { Link } from "react-router-dom";
 import eventline from "../assets/eventline.svg";
 import eventbottomimg from "../assets/eventbottomimg.svg";
+import event1 from "../assets/event1.svg"; // Import the background image
 import event2 from "../assets/event2.svg";
 import event3 from "../assets/event3.svg";
 import event4 from "../assets/event4.svg";
 import event5 from "../assets/event5.svg";
 import AddEvent from "../Components/AddEvent";
 
-
 const Events = () => {
   return (
     <section className="font-campton">
       <Header />
       {/* Hero section */}
-      <div className="bg-[url(src/assets/event1.svg)] bg-cover bg-no-repeat bg-center text-white">
+      <div 
+        className="bg-cover bg-no-repeat bg-center text-white"
+        style={{ backgroundImage: `url(${event1})` }}
+      >
         <div className="max-w-7xl mx-auto px-4 pt-[4rem]">
           <div className="relative">
             <p className="text-[#E0F780] md:block hidden">
@@ -38,35 +41,37 @@ const Events = () => {
 
             {/* Mobile view */}
             <div>
-              <h2  className="my-[2.5rem] text-[2rem] pr-[3rem] md:hidden block">Explore the programs and events in Our <span className="text-[#E0F780]">Community</span></h2>
+              <h2 className="my-[2.5rem] text-[2rem] pr-[1.5rem] font-semibold md:hidden block">
+                Explore the programs and events in Our <span className="text-[#E0F780]">Community</span>
+              </h2>
             </div>
 
             {/* Desktop view */}
             <div className="md:block hidden">
-            <Link
-              to="/community"
-              className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[5rem] lg:block w-fit hover:bg-[#193D6F] hover:text-white transition-colors duration-300 md:block hidden"
-            >
-              Join Us Now
-            </Link>
-            <div className="flex justify-end items-end pb-3">
-              <img src={eventbottomimg} alt="" className="w-[35%]" />
-            </div>
+              <Link
+                to="/community"
+                className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[5rem] lg:block w-fit hover:bg-[#193D6F] hover:text-white transition-colors duration-300 md:block hidden"
+              >
+                Join Us Now
+              </Link>
+              <div className="flex justify-end items-end pb-3">
+                <img src={eventbottomimg} alt="" className="w-[35%]" />
+              </div>
             </div>
 
-              {/* Mobile view */}
-            <div className="flex items-center justify-center gap-4 pb-[3rem] lg::hidden  md:hidden sm:block">
+            {/* Mobile view */}
+            <div className="flex items-center justify-center gap-2 pb-[3rem] md:hidden block">
               <div>
-              <Link
-              to="/community"
-              className="bg-[#E0F780] px-2 py-2 rounded-md text-[#193D6F] text-[0.5rem]"
-            >
-              Join Us Now
-            </Link>
+                <Link
+                  to="/community"
+                  className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] text-[0.7rem]"
+                >
+                  Join Us Now
+                </Link>
               </div>
-            <div className="w-[70%] mt-5">
-              <img src={eventbottomimg} alt="" className="w-[100%]"/>
-            </div>
+              <div className="w-[60%] mt-5">
+                <img src={eventbottomimg} alt="" className="w-[100%]"/>
+              </div>
             </div>
           </div>
         </div>
@@ -160,7 +165,7 @@ const Events = () => {
         <CommunityEvent />
       </div>
 
-      {/* Foter */}
+      {/* Footer */}
       <Footer/>
     </section>
   );
