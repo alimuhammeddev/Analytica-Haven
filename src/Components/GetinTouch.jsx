@@ -30,10 +30,6 @@ const GetinTouch = () => {
               consultation
             </h1>
           </div>
-
-          {/* <button className="bg-[#E0F780] md:block hidden text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
-            Book a call
-          </button> */}
         </div>
 
         <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-7 mt-10 lg:p-7">
