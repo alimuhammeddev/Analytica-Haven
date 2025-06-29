@@ -1,5 +1,6 @@
 import React from "react";
 import { careerdev, deradigital, financeconsulting } from "../assets";
+import { Link } from "react-router-dom";
 
 const CoreServices = () => {
   return (
@@ -36,7 +37,7 @@ const CoreServices = () => {
                 className="justify-center mx-auto lg:w-20 lg:h-20 w-16 object-contain"
               />
               <h1 className="text-[#080F10] font-campton lg:text-xl text-lg font-semibold text-center mt-4">
-                Dera Digital Marketing
+                Digital Marketing
               </h1>
               <p className="text-[#575959] text-center lg:text-lg mt-3">
                 Creative, targeted results driven and also helping your brand
@@ -59,13 +60,11 @@ const CoreServices = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mx-auto lg:mt-5">
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-5 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
+        <div className="flex justify-center mx-auto lg:my-5">
+          <Link to="./our-project" className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-5 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
             Learn More
-          </button>
-        </div>{" "}
-        <br />
-        <br />
+          </Link>
+        </div>
       </div>
     </section>
   );

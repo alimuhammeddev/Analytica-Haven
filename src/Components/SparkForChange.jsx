@@ -1,18 +1,17 @@
 import React from "react";
 import { change } from "../assets";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SparkForChange = () => {
   return (
     <section className="md:block hidden">
       <div className="bg-[#193D6F] p-10">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-center flex-row mt-16 mb-10">
-            <div>
+          <div className="flex items-center justify-center flex-row mt-16">
               <div>
-                <img src={change} alt="" className="w-[80%]"/>
+                <img src={change} alt="" className="w-[80%]" />
               </div>
-            </div>
 
             <div className="space-y-7 pr-[3rem]">
               <h1 className="font-campton text-3xl font-semibold text-[#FFFFFF]">
@@ -38,9 +37,14 @@ const SparkForChange = () => {
                   Strenghtens impactful programs
                 </h1>
                 <div>
-                <button className="bg-[#E0F780] text-[#193D6F] px-6 py-3 rounded-lg font-medium mt-3 text-lg font-campton hover:bg-[#fff] hover:text-[#193D6F] transition ease-in-out duration-300">
-                  Donate Now
-                </button>
+                  {/* <div className="mt-6">
+                    <Link
+                      to="/donate"
+                      className="bg-[#E0F780] text-[#193D6F] px-6 py-3 rounded-lg font-medium mt-3 text-lg font-campton hover:bg-[#fff] hover:text-[#193D6F] transition ease-in-out duration-300"
+                    >
+                      Donate Now
+                    </Link>
+                  </div> */}
                 </div>
               </div>
             </div>

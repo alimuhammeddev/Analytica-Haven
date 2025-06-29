@@ -16,7 +16,7 @@ const Events = () => {
     <section className="font-campton">
       <Header />
       {/* Hero section */}
-      <div 
+      <div
         className="bg-cover bg-no-repeat bg-center text-white"
         style={{ backgroundImage: `url(${event1})` }}
       >
@@ -42,7 +42,8 @@ const Events = () => {
             {/* Mobile view */}
             <div>
               <h2 className="my-[2.5rem] text-[2rem] pr-[1.5rem] font-semibold md:hidden block">
-                Explore the programs and events in Our <span className="text-[#E0F780]">Community</span>
+                Explore the programs and events in Our{" "}
+                <span className="text-[#E0F780]">Community</span>
               </h2>
             </div>
 
@@ -70,7 +71,7 @@ const Events = () => {
                 </Link>
               </div>
               <div className="w-[60%] mt-5">
-                <img src={eventbottomimg} alt="" className="w-[100%]"/>
+                <img src={eventbottomimg} alt="" className="w-[100%]" />
               </div>
             </div>
           </div>
@@ -83,19 +84,16 @@ const Events = () => {
           <div className="border bg-[#193D6F] md:mx-0 mx-10 p-10 md:w-[30%]">
             <img src={event2} alt="" className="rounded-[20px]" />
           </div>
-          <div className="md:w-[40%] w-[100%] text-center px-5 md:px-0 md:py-0 py-5">
+          <div className="md:w-[40%] w-[100%] px-5 md:px-0 md:py-0 py-5">
             <h2 className="md:text-[#193D6F] text-[#000] md:text-[2rem] text-[1.5rem] font-semibold pb-5">
-              We Build strong Business sectors
+              We Empower Minds, We Equip the Future.
             </h2>
             <p className="md:text-[#575959] text-[#575959] text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit arcu
-              eleifend quis elementum elementum massa facilisiLorem ipsum dolor
-              sit amet, consectetur adipiscing elit arcu eleifend quis elementum
-              elementum massa facilisi rite a paragraph that talks about your
-              company here. You can talk about your company's background,
-              history, mission, vision, or philosophy. Anything that will
-              introduce your brand's persona to your clients. This will help
-              build a connection between
+              At Analytica Haven, our mission is to bridge the gap between data,
+              technology, and real-world impact. We are a learning-driven
+              community focused on equipping individuals with practical tech
+              skills, digital knowledge, and entrepreneurial tools to thrive in
+              today’s fast-paced, innovation-led world.
             </p>
             <p className="text-[#575959] text-justify font-semibold py-5 md:block hidden">
               A better world starts with a caring community.
@@ -112,43 +110,45 @@ const Events = () => {
 
       {/* Events other section 2*/}
       <div className="bg-[#F7F7F7] md:py-[4rem] py-[2rem] text-center">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto font-campton">
           <h2 className="md:text-[#193D6F] text-[#000] md:text-[2rem] text-[1.5rem] font-semibold ">
             What We do for Community
           </h2>
           <p className="md:text-[#575959] text-[#575959] py-[1rem]">
-            ipsum dolor sit amet, consectetur adipiscing elit arcu eleifend quis
-            elementum elementum massa facilisi
+            Explore a vibrant lineup of learning experiences and growth
+            opportunities.
           </p>
           <div className="flex justify-center flex-wrap gap-10 mt-[2rem] md:px-0 px-5">
-            <div className="bg-[#EBF2FE] md:w-[30%]">
-              <img src={event3} alt="" className="w-[100%]" />
-              <p className="text-[1.2rem] font-semibold pt-2">
-                Finance Consulting
+            <div className="bg-[#EBF2FE] space-y-2 md:w-[30%] text-center md:text-left">
+              <img src={event3} alt="" className="w-[100%] rounded-lg" />
+              <p className="text-[1.2rem] font-semibold p-2">
+                Community Projects
               </p>
-              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
-                egestas ullamcorper ipsum nibh quis.
-              </p>
-            </div>
-            <div className="bg-[#EBF2FE] md:w-[30%]">
-              <img src={event4} alt="" className="w-[100%]" />
-              <p className="text-[1.2rem] font-semibold pt-2">
-                Business Market
-              </p>
-              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
-                egestas ullamcorper ipsum nibh quis.
+              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-2">
+                Reflective projects and open discussions on creative burnout,
+                work-life balance, content creation, and the realities of the
+                digital age.
               </p>
             </div>
-            <div className="bg-[#EBF2FE] md:w-[30%]">
-              <img src={event5} alt="" className="w-[100%]" />
-              <p className="text-[1.2rem] font-semibold pt-2">
-                Career Development
+            <div className="bg-[#EBF2FE] space-y-2 md:w-[30%] text-center md:text-left">
+              <img src={event4} alt="" className="w-[100%] rounded-lg" />
+              <p className="text-[1.2rem] font-semibold p-2">
+                Wellness & Lifestyle Events
               </p>
-              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh
-                egestas ullamcorper ipsum nibh quis.
+              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-2">
+                Unique sessions like “ Healthy Eating for Energy ” that promote
+                holistic development body, mind, and brainpower.
+              </p>
+            </div>
+            <div className="bg-[#EBF2FE] space-y-2 md:w-[30%] text-center md:text-left">
+              <img src={event5} alt="" className="w-[100%] rounded-lg" />
+              <p className="text-[1.2rem] font-semibold p-2">
+                Skill-Based Masterclasses
+              </p>
+              <p className="md:text-[#575959] text-[#575959] text-[0.9rem] p-2">
+                Hands-on workshops on Data Analysis, Artificial Intelligence,
+                Excel, Power BI, Digital Marketing, and more tailored for
+                beginners and intermediate learners.
               </p>
             </div>
           </div>
@@ -166,7 +166,7 @@ const Events = () => {
       </div>
 
       {/* Footer */}
-      <Footer/>
+      <Footer />
     </section>
   );
 };

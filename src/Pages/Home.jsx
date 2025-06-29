@@ -17,15 +17,15 @@ import HeroCircle1 from "../assets/hero_circle1.svg";
 import HeroCircle2 from "../assets/hero_circle2.svg";
 import HeroCircle3 from "../assets/hero_circle3.svg";
 import HeroCircle4 from "../assets/hero_circle4.svg";
-import Projects from "../Components/Projects";
+import Project from "../assets/project.svg"
 import ServicesSlider from "../Components/ServicesSlider";
 import OurBlogs from "../Components/OurBlogs";
-import TeamExpert from "../Components/TeamExpert";
 import CustomersTestimonial from "../Components/CustomersTestimonial";
 import LatestContent from "../Components/LatestContent";
 import GetinTouch from "../Components/GetinTouch";
 import FeedBack from "../Components/FeedBack";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -212,7 +212,7 @@ const Home = () => {
         </div> */}
       </div>
 
-      <div className="lg:bg-[#E0EDFE] bg-[#fff] lg:mt-10">
+      <div className="bg-[#fff] lg:my-10 mx-5 rounded-2xl md:shadow-2xl">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
           <h1 className="text-[#193D6F] font-campton lg:text-[1.5rem] text-[1.3rem] lg:mt-10 lg:ml-2 ml-1">
             About us
@@ -236,9 +236,6 @@ const Home = () => {
                 </svg>
               </div>
             </h2>
-            {/* <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 shadow-lg text-sm lg:px-6 px-3 py-3 rounded-lg font-medium lg:text-lg font-campton">
-                Book a call
-              </button> */}
           </div>
 
           <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-10 mt-5 gap-7">
@@ -262,7 +259,7 @@ const Home = () => {
                     Strategic Advice
                   </h1>
                   <p className="text-[#575959] font-campton lg:text-base text-sm">
-                    Smart steps,bold moves guilding you towards impactful
+                    Smart steps, bold moves guilding you towards impactful
                     decisions.
                   </p>
                 </div>
@@ -275,7 +272,7 @@ const Home = () => {
                     Practical Tools
                   </h1>
                   <p className="text-[#575959] font-campton lg:text-base text-sm">
-                    Simple,effective, ready to use.Empowering you to act with
+                    Simple, effective, ready to use. Empowering you to act with
                     confidence.
                   </p>
                 </div>
@@ -358,8 +355,40 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
-        <Projects />
+      <div className="max-w-7xl mx-auto font-campton">
+        <div className="flex md:flex-row flex-col md:justify-center mt-[6rem] mb-[4rem] gap-5">
+          <div className="space-y-[0.45rem] md:space-y-[1rem] flex-1 md:pr-10 md:px-0 px-5">
+            <p className="text-[#193D6F] text-[1.2rem] md:text-[1.5rem] font-medium">Our projects</p>
+            <h2 className="text-[#000] text-[1.5rem] md:text-[2.5rem] font-semibold">Explore Our Successful Projects</h2>
+            <p className="text-[0.9rem] md:text-[1.1rem] leading-7 pt-0 md:pt-7 text-[#000]">
+              Analytical Haven is a hub where businesses and individuals
+              transform raw data into actionable insights, build scalable
+              solutions, and master strategic execution. From empowering learners
+              though a 3-Day AI Masterclass to promoting wellnes with our
+              Healthy Meal Initiative, Analytical Haven has delivered impactful
+              programs like the 7-Day Graphic Design Exprience and creative
+              content development. At Analytica Haven we believe in the power of
+              talents. From innovative tech solutions to creative designs, our
+              professionals have worked on a wide array of projects that span
+              different industries and challenges, by using the latest tools and
+              techniques. We're proud of the incredible projects our talented
+              team has brought to life. Explore our work and see how we drive
+              change.
+            </p>
+            {/* View project for desktop view*/}
+            <div className="pt-[2rem] md:block hidden">
+              <Link to="/our-project" target="_blank" className="text-[#000] bg-[#E0F780] text-[1.2rem] py-3 px-6 rounded-md md:hover:bg-[#193D6F] md:hover:text-[#fff] transition ease-in-out duration-300">View Project</Link>
+            </div>
+            {/* View project for mobile view */}
+            <div className="md:hidden block py-[1rem]">
+              <Link to="/our-project" target="_blank" className="text-[#000] bg-[#E0F780] text-[1.2rem] py-3 px-6 rounded-md text-center block w-full">View Project</Link>
+            </div>
+          </div>
+
+          <div className="flex-1">
+            <img src={Project} alt="Project One" className="md:w-[70%] w-[90%] object-cover px-4 py-3 rounded-sm shadow-2xl mx-auto" />
+          </div>
+        </div>
       </div>
 
       <div>
@@ -368,10 +397,6 @@ const Home = () => {
 
       <div>
         <OurBlogs />
-      </div>
-
-      <div>
-        <TeamExpert />
       </div>
 
       <div>
@@ -385,8 +410,7 @@ const Home = () => {
       <div>
         <GetinTouch />
       </div>
-
-      {/* Add this just before the Footer */}
+      
       <div className="fixed bottom-8 right-0 z-50">
         <FeedBack />
       </div>

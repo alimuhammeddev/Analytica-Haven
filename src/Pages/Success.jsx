@@ -40,7 +40,7 @@ const Success = () => {
               innovation, collaboration, and <br className="lg:block hidden" />{" "}
               success.
             </p>
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-semibold lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
+            <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-semibold lg:text-lg font-campton md:hover:bg-[#fff] md:hover:text-[#193D6F] transition ease-in-out duration-300">
               Be the Change
             </button>
           </div>
@@ -241,15 +241,15 @@ const Success = () => {
                   <Check className="text-[#FFFFFF] bg-[#575959] p-1 rounded-full" />{" "}
                   10+ Years of Experience
                 </h1>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
+                {/* <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
                   Our Case Study
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-5">
+        {/* <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-5">
           <div>
             <h1 className="text-[#193D6F] lg:text-4xl text-xl font-campton font-semibold text-center lg:mt-20 mt-10">
               Testimonials
@@ -296,7 +296,7 @@ const Success = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="lg:mt-20 mt-12">

@@ -1,31 +1,15 @@
 import Header from "../Header";
 import Footer from "../Footer";
-import {
-  blog1,
-  blog2,
-  blog3,
-  blog4,
-  blog5,
-  blog6,
-  patternhero,
-  product,
-} from "../assets";
-import MoreStories from "../Components/MoreStories";
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import { useState, useRef } from "react";
+import { patternhero } from "../assets";
+import blog1 from "../assets/blog1.svg";
+import blog2 from "../assets/blog2.svg";
+import blog3 from "../assets/blog3.svg";
+import blog4 from "../assets/blog4.svg";
+import blog5 from "../assets/blog5.svg";
+import blog6 from "../assets/blog6.svg";
+import { useState, useRef, useEffect } from "react";
 
 const Blog = () => {
-  const tabs = [
-    "All",
-    "Product",
-    "Marketing",
-    "Health Tips",
-    "Company News",
-    "Education",
-  ];
-  const [activeTab, setActiveTab] = useState(0);
-  const tabsRef = useRef(null);
-  const [activeTab2, setActiveTab2] = useState("All"); // Initialize with 'All' or 0 for index
   const categories = [
     "All",
     "Product",
@@ -35,367 +19,259 @@ const Blog = () => {
     "Education Tips",
   ];
 
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeDot, setActiveDot] = useState(0);
+  const tabsRef = useRef(null);
+  const sectionRefs = useRef([]);
+
+  const blogPosts = [
+    {
+      id: 1,
+      image: blog1,
+      category: "EDUCATION",
+      date: "APRIL 22, 2025",
+      title: "Analytica Haven Hosts Successful 3-Day AI Masterclass",
+      description:
+        "The intensive training introduced participants to the fundamentals of Artificial Intelligence through hands-on practical applications.",
+      tab: "Education Tips",
+    },
+    {
+      id: 2,
+      image: blog2,
+      category: "Product Update",
+      date: "APRIL 22, 2025",
+      title: "Analytica Haven Urges Consistency in content Posting",
+      description:
+        "In this thoughtful project, Analytica Haven reflects on the hidden challenges of showing up consistently as a content creator. While the platform encourages regular posting as a path to growth...",
+      tab: "Product",
+    },
+    {
+      id: 3,
+      image: blog3,
+      category: "MARKETING",
+      date: "APRIL 22, 2025",
+      title: "Breaking Into Data Analysis Made Easy",
+      description:
+        "Designed for complete beginners, the training provided hands-on experience with Excel tools and functions—empowering participants with foundational data analysis skills for real-world use.",
+      tab: "Marketing-updates",
+    },
+    {
+      id: 4,
+      image: blog4,
+      category: "Education",
+      date: "APRIL 22, 2025",
+      title: "Analytica Haven Hosts Successful 3-Day AI Masterclass",
+      description:
+        "The intensive training introduced participants to the fundamentals of Artificial Intelligence through hands-on practical applications.",
+      tab: "Education Tips",
+    },
+    {
+      id: 5,
+      image: blog5,
+      category: "EDUCATION",
+      date: "APRIL 22, 2025",
+      title: "Simple nutrition tips and a two-day meal plan to boost energy.",
+      description:
+        "This beginner-friendly session on healthy eating introduces the impact of balanced nutrition on your mood, energy levels, and overall wellness.",
+      tab: "Health Tips",
+    },
+    {
+      id: 6,
+      image: blog6,
+      category: "PRODUCT UPDATE",
+      date: "APRIL 22, 2025",
+      title:
+        "3-Day Intensive Training Empowers Participants to MergeTech Skills",
+      description:
+        "The just-concluded 3-day workshop equipped attendees with practical strategies to combine technical know-how with entrepreneurial thinking setting them on a path to build scalable, future-ready ventures.",
+      tab: "Company News",
+    },
+  ];
+
+  const scrollToSection = (category, index) => {
+    setActiveCategory(category);
+    setActiveDot(index);
+
+    if (category === "All") {
+      window.scrollTo({
+        top: sectionRefs.current[0].offsetTop - 100,
+        behavior: "smooth",
+      });
+      return;
+    }
+
+    const matchingPost = blogPosts.find((post) => post.tab === category);
+    if (matchingPost) {
+      const postElement = document.getElementById(`post-${matchingPost.id}`);
+      if (postElement) {
+        postElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+
+  const BlogPost = ({ post, reverseLayout = false }) => (
+    <div
+      id={`post-${post.id}`}
+      className={`flex justify-between gap-5 lg:gap-10 ${
+        reverseLayout ? "flex-col-reverse lg:flex-row" : "flex-col lg:flex-row"
+      }`}
+      ref={(el) => (sectionRefs.current[post.id] = el)}
+    >
+      <div className="space-y-6 lg:mt-0 mt-5">
+        <div className="flex items-center gap-3">
+          <p className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold uppercase">
+            {post.category}
+          </p>
+          <p className="bg-white text-[#193D6F] text-sm font-campton font-semibold">
+            {post.date}
+          </p>
+        </div>
+        <h2 className="font-campton lg:text-2xl text-lg font-semibold">
+          {post.title}
+        </h2>
+        <p className="font-campton lg:text-lg">{post.description}</p>
+        <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton hover:bg-[#193d6f] hover:text-white transition ease-in-out duration-300">
+          Read More
+        </button>
+      </div>
+      <img
+        src={post.image}
+        alt=""
+        className="lg:mt-0 mt-7 lg:max-w-md w-full rounded-lg shadow-lg"
+      />
+    </div>
+  );
+
   return (
     <section>
-      <div>
-        <Header />
-      </div>
+      <Header />
 
-      {/* Desktop view */}
+      {/* Hero Section */}
       <div
-        className="relative bg-[#193D6F] bg-cover bg-center text-white flex flex-col items-center md:block hidden"
+        className="relative bg-[#193D6F] bg-cover bg-center text-white flex flex-col items-center"
         style={{ backgroundImage: `url(${patternhero})` }}
       >
-        <div className="max-w-7xl mx-auto justify-center lg:p-[8] pt-[3rem]">
-          <div className="text-left px-4 lg:space-y-7 space-y-2">
-            <div className="text-left text-[#E0F780] font-campton lg:text-lg">
+        <div className="max-w-7xl mx-auto w-full justify-center lg:py-8 py-12 px-4">
+          <div className="text-left lg:space-y-7 space-y-2">
+            <div className="text-[#E0F780] font-campton lg:text-lg md:block hidden">
               Home <span className="text-white">{"> Blog/News"}</span>
             </div>
-            <h1 className="lg:text-6xl text-2xl font-semibold font-campton">
+            <h2 className="lg:text-6xl text-2xl font-bold text-center md:text-left font-campton md:border-0 border border-transparent-300 p-3">
               The Analytica Blog
-            </h1>
-            <p className="mt-2 lg:text-2xl font-campton">
+            </h2>
+            <p className="mt-2 lg:text-2xl font-campton text-center md:text-left">
               Update and announcement from Team Analytica !!
             </p>
 
-            {/* Desktop version for the newsletter input field*/}
-            <div className="lg:max-w-lg lg:mt-5 md:block hidden py-[2rem]">
-              <input
-                type="email"
-                className="w-[70%] px-4 py-3 border-2 rounded-l-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold text-black"
-                placeholder="Enter your email"
-                required
-              />
-              <button className="bg-[#E0F780] text-[#193D6F] w-[30%] text-sm px-6 py-3 rounded-r-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border transition ease-in-out duration-300">
-                Subscribe
-              </button>
+            {/* Newsletter Subscription */}
+            <div className="lg:max-w-lg lg:mt-5 py-6">
+              <div className="flex flex-col md:flex-row">
+                <input
+                  type="email"
+                  className="flex-grow px-4 py-3 border-2 rounded-lg md:rounded-r-none focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button className="bg-[#E0F780] text-[#193D6F] md:w-auto px-6 py-3 rounded-lg md:rounded-l-none font-medium lg:text-lg font-campton hover:bg-[#193d6f] hover:text-white hover:border transition ease-in-out duration-300">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/*mobile view for the blog */}
-      <div
-        className="relative bg-[#193D6F] bg-cover bg-center text-white h-[200px] p-5 text-center md:hidden block flex flex-col items-center justify-center"
-        style={{ backgroundImage: `url(${patternhero})` }}
-      >
-        <h1 className="text-2xl font-semibold font-campton py-5">
-          The Analytica Blog
-        </h1>
-        <p className="mt-2 font-campton">
-          Update and announcement from Team Analytica !!
-        </p>
-      </div>
-
-      {/* Mobile version for the newsletter input field*/}
-      <div className="md:hidden block bg-[#fff] m-5">
-        <input
-          type="email"
-          className="w-full px-4 py-3 mt-1 border-2 border-[#DFDFDF] rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none lg:placeholder:font-semibold text-black"
-          placeholder="Enter your email"
-          required
-        />
-        <button className="bg-[#E0F780] text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 px-4 lg:py-2 py-3 rounded-lg font-medium lg:text-lg font-campton">
-          Subscribe
-        </button>
-      </div>
-      {/* Mobile view */}
-      <div className="block lg:hidden">
-        <div className="relative">
-          {/* Scrollable tabs with underline active state */}
-          <div
-            ref={tabsRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide pb-1 px-4 snap-x snap-mandatory mt-5"
-          >
-            {tabs.map((item, index) => (
-              <div
-                key={item}
-                className="snap-start flex flex-col items-center min-w-max"
-                onClick={() => setActiveTab(index)}
-              >
-                <h1
-                  className={`text-center text-[0.9rem] px-3 py-2 cursor-pointer duration-200 font-medium relative bg-[#EFEBFE] rounded-full ${
-                    activeTab === index
-                      ? "text-blue-500 font-semibold"
-                      : "text-gray-600 hover:text-gray-800"
+      {/* Category Tabs */}
+      <div className="max-w-7xl mx-auto px-4 py-6">
+        {/* Desktop View */}
+        <div className="hidden md:block">
+          <div className="border-2 border-[#ABB6F6] bg-[#EFEBFE] rounded-full w-full">
+            <div className="flex justify-center overflow-x-auto scrollbar-hide">
+              {categories.map((item, index) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(item, index)}
+                  className={`px-4 py-2 cursor-pointer duration-300 font-campton font-semibold lg:text-lg whitespace-nowrap ${
+                    activeCategory === item
+                      ? "text-[#0022EC] border-b-2 border-[#0022EC]"
+                      : "text-gray-600 hover:text-blue-500"
                   }`}
                 >
                   {item}
-                  {/* Underline indicator */}
-                  <span
-                    className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-all duration-300 ${
-                      activeTab === index ? "scale-x-100" : "scale-x-0"
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile View */}
+        <div className="md:hidden block">
+          <div className="relative">
+            <div
+              ref={tabsRef}
+              className="flex gap-6 overflow-x-auto scrollbar-hide pb-1 px-4 snap-x snap-mandatory mt-5"
+            >
+              {categories.map((item, index) => (
+                <div
+                  key={item}
+                  className="snap-start flex flex-col items-center min-w-max"
+                  onClick={() => scrollToSection(item, index)}
+                >
+                  <p
+                    className={`text-center text-[0.9rem] px-3 py-2 cursor-pointer duration-200 font-medium relative bg-[#193D6F] rounded-full ${
+                      activeDot === index
+                        ? "text-blue-500 font-semibold"
+                        : "text-[#fff]"
                     }`}
-                  />
-                </h1>
-              </div>
-            ))}
-          </div>
-
-          {/* Dot indicators (optional - remove if not needed) */}
-          <div className="flex justify-center gap-1.5 mt-3">
-            {tabs.map((_, index) => (
-              <div
-                key={index}
-                className={`w-1.5 h-1.5 rounded-full transition-all ${
-                  activeTab === index ? "bg-blue-500" : "bg-gray-300"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Desktop view */}
-      <div className="hidden md:block">
-        <div className="px-2 py-3 border-2 border-[#ABB6F6] bg-[#EFEBFE] rounded-full w-full">
-          <div className="flex lg:grid lg:grid-cols-6 gap-3 overflow-x-auto scrollbar-hide max-w-7xl mx-auto">
-            {categories.map((item) => (
-              <h1
-                key={item}
-                onClick={() => setActiveTab2(item)}
-                className={`text-center cursor-pointer duration-300 font-campton font-semibold lg:text-lg ${
-                  activeTab2 === item
-                    ? "text-[#0022EC] border-b-2 border-[#0022EC] pb-1"
-                    : "text-gray-600 hover:text-blue-500"
-                }`}
-              >
-                {item}
-              </h1>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="lg:mt-16 mt-5">
-        <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-          <div>
-            <h1 className="lg:text-[2rem] text-[1.5rem] font-campton font-semibold md:text-left text-center">
-              Recent Updates
-            </h1>
-            <div className="lg:space-y-28 space-y-5">
-              <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      MARKETING
-                    </h1>
-                    <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                      APRIL 22, 2025
-                    </p>
-                  </div>
-                  <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-                    10 Hillarious Cartoons That Depict Real-Life{" "}
-                    <br className="lg:block hidden" /> Problems of Programmers
-                  </h1>
-                  <p className="font-campton lg:text-lg font-semibold">
-                    Redefined the user acquisition and redesigned the onboarding
-                    experience, <br className="lg:block hidden" /> all within 3
-                    working weeks
+                  >
+                    {item}
+                    <span
+                      className={`absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-all duration-300 ${
+                        activeDot === index ? "scale-x-100" : "scale-x-0"
+                      }`}
+                    />
                   </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                    Read More
-                  </button>
                 </div>
-                <img src={blog1} alt="" className="lg:mt-0 mt-7" />
-              </div>
-
-              <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      EDUCATION TIPS
-                    </h1>
-                    <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                      APRIL 22, 2025
-                    </p>
-                  </div>
-                  <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-                    10 Hillarious Cartoons That Depict Real-Life{" "}
-                    <br className="lg:block hidden" /> Problems of Programmers
-                  </h1>
-                  <p className="font-campton lg:text-lg">
-                    Redefined the user acquisition and redesigned the onboarding
-                    experience, <br className="lg:block hidden" /> all within 3
-                    working weeks
-                  </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                    Read More
-                  </button>
-                </div>
-                <img src={blog2} alt="" className="lg:mt-0 mt-7" />
-              </div>
-
-              <div className="md:block hidden">
-                <div className="flex justify-between gap-7">
-                  <div className="space-y-3 lg:mt-20 mt-10">
-                    <div className="flex items-center gap-3">
-                      <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                        PRODUCT UPDATE
-                      </h1>
-                      <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                        APRIL 22, 2025
-                      </p>
-                    </div>
-                    <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-                      10 Hillarious Cartoons That Depict Real-Life{" "}
-                      <br className="lg:block hidden" /> Problems of Programmers
-                    </h1>
-                    <p className="font-campton lg:text-lg">
-                      Redefined the user acquisition and redesigned the
-                      onboarding experience, <br className="lg:block hidden" />{" "}
-                      all within 3 working weeks
-                    </p>
-                    <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                      Read More
-                    </button>
-                  </div>
-                  <img src={blog3} alt="" className="lg:mt-0 mt-7" />
-                </div>
-              </div>
+              ))}
             </div>
-          </div>
 
-          <div className="lg:mt-28 mt-20">
-            <h1 className="lg:text-2xl text-lg font-campton font-semibold">
-              Weekly Updates
-            </h1>
-            <div className="lg:space-y-28 space-y-5">
-              <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      MARKETING
-                    </h1>
-                    <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                      APRIL 22, 2025
-                    </p>
-                  </div>
-                  <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-                    10 Hillarious Cartoons That Depict Real-Life{" "}
-                    <br className="lg:block hidden" /> Problems of Programmers
-                  </h1>
-                  <p className="font-campton lg:text-lg">
-                    Redefined the user acquisition and redesigned the onboarding
-                    experience, <br className="lg:block hidden" /> all within 3
-                    working weeks
-                  </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                    Read More
-                  </button>
-                </div>
-                <img src={blog4} alt="" className="lg:mt-0 mt-7" />
-              </div>
-
-              <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      EDUCATION TIPS
-                    </h1>
-                    <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                      APRIL 22, 2025
-                    </p>
-                  </div>
-                  <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-                    10 Hillarious Cartoons That Depict Real-Life{" "}
-                    <br className="lg:block hidden" /> Problems of Programmers
-                  </h1>
-                  <p className="font-campton lg:text-lg">
-                    Redefined the user acquisition and redesigned the onboarding
-                    experience, <br className="lg:block hidden" /> all within 3
-                    working weeks
-                  </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                    Read More
-                  </button>
-                </div>
-                <img src={blog5} alt="" className="lg:mt-0 mt-7" />
-              </div>
-
-            <div className="md:block hidden">
-                            <div className="flex justify-between lg:flex-row flex-col-reverse lg:gap-7">
-                <div className="space-y-3 lg:mt-20 mt-10">
-                  <div className="flex items-center gap-3">
-                    <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                      PRODUCT UPDATE
-                    </h1>
-                    <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                      APRIL 22, 2025
-                    </p>
-                  </div>
-                  <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-                    10 Hillarious Cartoons That Depict Real-Life{" "}
-                    <br className="lg:block hidden" /> Problems of Programmers
-                  </h1>
-                  <p className="font-campton lg:text-lg">
-                    Redefined the user acquisition and redesigned the onboarding
-                    experience, <br className="lg:block hidden" /> all within 3
-                    working weeks
-                  </p>
-                  <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                    Read More
-                  </button>
-                </div>
-                <img src={blog6} alt="" className="lg:mt-0 mt-7" />
-              </div>
-            </div>
+            {/* Dot indicators */}
+            <div className="flex justify-center gap-1.5 mt-3">
+              {categories.map((_, index) => (
+                <div
+                  key={index}
+                  className={`w-1.5 h-1.5 rounded-full transition-all ${
+                    activeDot === index ? "bg-blue-500" : "bg-gray-300"
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
-      </div>{" "}
-      <br />
-      <br />
-      <div>
-        <MoreStories />
       </div>
-      <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-28 mt-5">
-        <div className="flex justify-between lg:flex-row flex-col gap-7">
-          <img src={product} alt="" className="lg:mt-0 mt-7 md:hidden block" />
-          <div className="space-y-3 mt-10">
-            <div className="flex items-center gap-3">
-              <h1 className="bg-[#EBF2FE] text-[#193D6F] w-fit p-2 text-sm font-campton font-semibold">
-                PRODUCT UPDATE
-              </h1>
-              <p className="bg-[#ffffff] text-[#193D6F] text-sm font-campton font-semibold">
-                APRIL 22, 2025
-              </p>
-            </div>
-            <h1 className="font-campton lg:text-2xl text-lg font-semibold">
-              10 Hillarious Cartoons That Depict Real-Life{" "}
-              <br className="lg:block hidden" /> Problems of Programmers
-            </h1>
-            <p className="font-campton lg:text-lg">
-              Redefined the user acquisition and redesigned the onboarding
-              experience, <br className="lg:block hidden" /> all within 3
-              working weeks
-            </p>
-            <button className="bg-[#E0F780] lg:hidden block text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-              Read More
-            </button>
-            <div className="flex items-center lg:justify-start justify-center gap-5 mt-2">
-              <h1 className="bg-[#193D6F] text-[#ffffff] p-3 font-campton rounded-md">
-                <ArrowLeft />
-              </h1>
-              <h1 className="bg-[#193D6F] text-[#ffffff] p-3 font-campton rounded-md">
-                1
-              </h1>
-              <h1 className="border border-[#EBF2FE] text-[#193D6F] p-3 font-campton rounded-md">
-                2
-              </h1>
-              <h1 className="border border-[#EBF2FE] text-[#193D6F] p-3 font-campton rounded-md">
-                3
-              </h1>
-              <h1 className="bg-[#193D6F] text-[#ffffff] p-3 font-campton rounded-md">
-                <ArrowRight />
-              </h1>
-            </div>
-          </div>
-          <img src={product} alt="" className="lg:mt-0 mt-7 md:block hidden" />
+
+      {/* Blog Content */}
+      <div className="max-w-7xl mx-auto px-4 py-6">
+        <h1 className="text-2xl lg:text-4xl font-campton font-bold text-center lg:text-left text-[#193D6F] md:mb-10">
+          Recent Updates
+        </h1>
+
+        <div className="space-y-16 lg:space-y-15">
+          <BlogPost post={blogPosts[0]} reverseLayout />
+          <BlogPost post={blogPosts[1]} reverseLayout />
+
+          <h2 className="font-campton font-bold text-2xl lg:text-4xl text-[#193D6F]">
+            Weekly Updates
+          </h2>
+
+          <BlogPost post={blogPosts[2]} reverseLayout />
+          <BlogPost post={blogPosts[3]} reverseLayout />
+          <BlogPost post={blogPosts[4]} reverseLayout />
+          <BlogPost post={blogPosts[5]} reverseLayout />
         </div>
       </div>
-      <div className="lg:mt-20 mt-16">
-        <Footer />
-      </div>
+
+      <Footer />
     </section>
   );
 };

@@ -5,12 +5,12 @@ const GetinTouch = () => {
   return (
     <section>
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg lg:mt-12 mt-5">
+        <h1 className="text-[#193D6F] font-campton font-medium lg:text-[2.5rem] text-[1.2rem] lg:mt-12 mt-5">
           Get in touch
         </h1>
         <div className="lg:flex items-center justify-between lg:mt-2 mt-1">
           <div>
-            <h1 className="lg:text-4xl text-lg font-semibold font-campton">
+            <h1 className="lg:text-4xl text-[1.2rem] font-semibold font-campton">
               Contact us today for free
               <div>
                 <svg
@@ -31,79 +31,37 @@ const GetinTouch = () => {
             </h1>
           </div>
 
-          <button className="bg-[#E0F780] md:block hidden text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+          {/* <button className="bg-[#E0F780] md:block hidden text-[#193D6F] lg:w-fit w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
             Book a call
-          </button>
+          </button> */}
         </div>
 
         <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-7 mt-10 lg:p-7">
-          <div>
+          <div className="flex justify-center items-center">
             <img src={contact} alt="" />
           </div>
 
           <div class="rounded-lg bg-white p-5 shadow-2xl lg:p-12 lg:-mr-8">
-            <div>
+            <div className="mb-5">
               <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg">
                 Get more updates
               </h1>
-              <h1 className="text-[#193D6F] font-campton font-semibold lg:text-2xl text-lg">
+              <h1 className="text-[#193D6F] font-campton font-semibold lg:text-[2rem] text-[1.2rem]">
                 Send Us a Message
               </h1>
             </div>
-            <div class="space-y-4 mt-7">
-              <div>
-                <label class="sr-only" for="name">
-                  Name
-                </label>
-                <input
-                  class="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
-                  placeholder="Name"
-                  type="text"
-                  id="name"
-                />
-              </div>
-
-              <div>
-                <label class="sr-only" for="email">
-                  Email
-                </label>
-                <input
-                  class="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
-                  placeholder="Email address"
-                  type="email"
-                  id="email"
-                />
-              </div>
-
-              <div>
-                <label class="sr-only" for="phone">
-                  Phone
-                </label>
-                <input
-                  class="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
-                  placeholder="Phone Number"
-                  type="tel"
-                  id="phone"
-                />
-              </div>
-
-              <div>
-                <label class="sr-only" for="message">
-                  Message
-                </label>
-
-                <textarea
-                  class="w-full rounded-md lg:border-2 border lg:placeholder:font-medium p-3 text-sm"
-                  placeholder="Message"
-                  rows="8"
-                  id="message"
-                ></textarea>
-              </div>
-
-              <button className="bg-[#E0F780] text-[#193D6F] w-full lg:mt-0 mt-3 text-sm lg:px-6 py-3 px-2 font-medium lg:text-lg rounded-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">
-                Send Message
-              </button>
+         <div className="w-full overflow-hidden rounded-lg">
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeVx9mJKTtwg1anw9qfL-iXTTaHkYjRb61l7r_t3Tgr862oaA/viewform?embedded=true" 
+                width="100%" 
+                height="400" 
+                frameBorder="0"
+                className="min-h-[600px] lg:min-h-[400px]"
+              >
+                Loading…
+              </iframe>
             </div>
+
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
-import React from "react";
+import { Link }from "react-router-dom";
 import Header from "../Header";
 import { patternhero, team } from "../assets";
+import joinusbg from "../assets/joinusbg.svg";
 import Footer from "../Footer";
 
 const JoinCommunity = () => {
@@ -15,12 +16,11 @@ const JoinCommunity = () => {
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="text-center px-4 lg:space-y-7 space-y-4">
-          <h1 className="lg:text-5xl text-2xl font-semibold font-campton">
+          <h2 className="lg:text-5xl text-2xl font-semibold font-campton">
             Empower Your Team With <br className="lg:block hidden" /> Seamless
             Collaboration
-          </h1>
+          </h2>
           <div className="flex md:flex-row flex-col lg:max-w-lg justify-center mx-auto lg:pt-10">
-
             {/* Desktop view*/}
             <input
               type="email"
@@ -51,111 +51,80 @@ const JoinCommunity = () => {
       </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
-        <h1 className="text-[#193d6f] lg:text-3xl text-xl font-campton font-semibold text-center md:mt-10">
+        <h2 className="text-[#193d6f] lg:text-3xl text-xl font-campton font-semibold text-center md:mt-10">
           Join Our Team
-        </h1>
+        </h2>
 
         {/* Desktop view */}
         <div className="md:block hidden">
-        <div className="flex items-center gap-20 mx-auto justify-center mt-7">
-          <div className="space-y-5">
-            <h1 className="text-[#193d6f] text-xl font-campton font-semibold text-center">
-              Knowledge | Innovation | Empowerment
-            </h1>
-            <p className="font-campton text-lg text-gray-600 text-center">
-              Join our team of Talents today! at Analytica Haven,{" "}
-              <br/> where Knowledge meets execution
-            </p>
-            <div className="flex mx-auto justify-center">
-            <button className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium text-lg font-campton hover:bg-[#193D6F] hover:text-[#fff] hover:border hover:border-transparent-400 transition ease-in-out duration-300">
-              Join us
-            </button>
+          <div className="flex items-center gap-20 mx-auto justify-center mt-7">
+            <div className="space-y-5">
+              <h2 className="text-[#193d6f] text-xl font-campton font-semibold text-center">
+                Knowledge | Innovation | Empowerment
+              </h2>
+              <p className="font-campton text-lg text-gray-600 text-center">
+                Join our team of Talents today! at Analytica Haven, <br /> where
+                Knowledge meets execution
+              </p>
+              <div className="flex mx-auto justify-center">
+                <Link
+                  to="/community"
+                  className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium text-lg font-campton hover:bg-[#193D6F] hover:text-[#fff] hover:border hover:border-transparent-400 transition ease-in-out duration-300"
+                >
+                  Join us
+                </Link>
+              </div>
+            </div>
+            <div className="p-4 bg-[#fff] shadow-lg">
+              <img src={team} alt="" />
             </div>
           </div>
-          <div className="p-4 bg-[#fff] shadow-lg">
-          <img src={team} alt=""/>
-          </div>
-        </div>
         </div>
 
         {/* Mobile view */}
         <div className="flex items-center mx-auto justify-center gap-5 flex-col-reverse md:hidden block">
           <div className="">
-            <h1 className="text-[#193d6f] font-campton font-semibold text-center">
+            <h2 className="text-[#193d6f] font-campton font-semibold text-center">
               Knowledge | Innovation | Empowerment
-            </h1>
+            </h2>
             <p className="font-campton text-gray-600 text-center">
               Join our team of Talents today! at Analytica Haven,{" "}
               <br className="lg:block hidden" /> where Knowledge meets execution
             </p>
             <div className="mx-auto justify-center flex">
-            <button className="bg-[#E0F780] text-[#193D6F] w-full text-sm px-4 py-3 rounded-lg font-medium font-campton">
-              Join us
-            </button>
+              <Link
+                to="/community"
+                className="bg-[#E0F780] text-[#193D6F] w-full text-sm px-4 py-3 rounded-lg font-medium font-campton"
+              >
+                Join us
+              </Link>
             </div>
           </div>
-                    <div className="p-4 bg-[#fff] shadow-lg">
-          <img src={team} alt="" />
+          <div className="p-4 bg-[#fff] shadow-lg">
+            <img src={team} alt="" />
           </div>
         </div>
       </div>
 
-      <div className="md:bg-[#899bb5] bg-[#EBF2FE] pb-12">
-        <div className="max-w-xl mx-auto justify-center lg:p-[8] p-5">
-            <h1 className="lg:text-3xl text-xl font-campton font-semibold text-center text-[#193D6F] mt-5">Want to join our community please fill the form below.</h1>
-
-            <div className="bg-white lg:p-10 p-5 lg:mt-10 mt-5 rounded-xl">
-            <form action="#" class="space-y-4 mt-7">
-              <div className="space-y-2">
-                <label for="name">First Name</label>
-                <input
-                  class="w-full rounded-md border-2 p-3 text-sm"
-                  placeholder="First Name"
-                  type="text"
-                  id="name"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label for="name">Last Name</label>
-                <input
-                  class="w-full rounded-md border-2 p-3 text-sm"
-                  placeholder="Last Name"
-                  type="text"
-                  id="name"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label for="email">Email</label>
-                <input
-                  class="w-full rounded-md border-2 p-3 text-sm"
-                  placeholder="Email address"
-                  type="email"
-                  id="email"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label for="email">Talent</label>
-                <input
-                  class="w-full rounded-md border-2 p-3 text-sm"
-                  placeholder="Enter yout Talent"
-                  type="email"
-                  id="email"
-                />
-              </div>
-
-              <div class="mt-4">
-                <a
-                  href="#!"
-                  class=" justify-center w-full bg-[#E0F780] px-5 py-3 font-medium font-campton lg:text-lg transition ease-out duration-500 text-[#080F10] items-center flex gap-2 sm:w-auto md:hover:bg-[#193D6F] md:hover:text-[#fff] md:hover:border md:hover:border-transparent-400 transition ease-in-out duration-300"
-                >
-                  Submit
-                </a>
-              </div>
-            </form>
-            </div>
+      <div
+        className="relative bg-cover bg-center text-white lg:h-[70vh] flex items-center justify-center font-campton"
+        style={{ backgroundImage: `url(${joinusbg})` }}
+      >
+        <div className="max-w-2xl mx-auto lg:p-8 p-5">
+          <h2 className="lg:text-3xl text-xl font-semibold text-center text-[#fff] my-10">
+            Want to join our community please fill the form below.
+          </h2>
+          <div className="w-full overflow-hidden rounded-lg">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeVx9mJKTtwg1anw9qfL-iXTTaHkYjRb61l7r_t3Tgr862oaA/viewform?embedded=true"
+              width="100%"
+              height="400"
+              frameBorder="0"
+              className="min-h-[600px] lg:min-h-[400px]"
+            >
+              Loading…
+            </iframe>
+          </div>
         </div>
       </div>
 

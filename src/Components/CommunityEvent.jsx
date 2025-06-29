@@ -8,7 +8,7 @@ const CommunityEvent = () => {
   return (
     <>
       {/* Events other section 4 */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[3rem] bg-[#F7F7F7] my-[3rem] rounded-lg">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[3rem] bg-[#F7F7F7] my-[3rem] rounded-lg font-campton">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* First column - Featured event */}
           <div className="lg:w-1/2">
@@ -38,7 +38,7 @@ const CommunityEvent = () => {
 
             <div className="mt-5">
               <h2 className="text-2xl font-semibold text-[#193D6F] mb-[2rem]">
-                We work with our Team
+                Our team work photo 
               </h2>
               <p className="text-gray-700 leading-relaxed text-[0.9rem]">
                 Write a paragraph that talks about your company here. You can
@@ -69,7 +69,7 @@ const CommunityEvent = () => {
                   This will help build a connection between you
                 </p>
                 <Link
-                  to="#"
+                  to="/community"
                   className="inline-block px-6 py-2 bg-[#E0F780] text-[#193D6F] hover:text-white rounded-md hover:bg-[#142d52] transition-colors ease-in-out duration-300"
                 >
                   Join Us Now
@@ -94,7 +94,7 @@ const CommunityEvent = () => {
                   This will help build a connection between you
                 </p>
                 <Link
-                  to="#"
+                  to="/community"
                   className="inline-block px-6 py-2 bg-[#E0F780] text-[#193D6F] hover:text-white rounded-md hover:bg-[#142d52] transition-colors ease-in-out duration-300"
                 >
                   Join Us Now
@@ -119,7 +119,7 @@ const CommunityEvent = () => {
                   This will help build a connection between you
                 </p>
                 <Link
-                  to="#"
+                  to="/community"
                   className="inline-block px-6 py-2 bg-[#E0F780] text-[#193D6F] hover:text-white rounded-md hover:bg-[#142d52] transition-colors ease-in-out duration-300"
                 >
                   Join Us Now

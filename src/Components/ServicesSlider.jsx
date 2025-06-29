@@ -20,19 +20,31 @@ const ServicesSlider = () => {
       image: processdev,
       title: "Process Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.",
+        "We design and refine systems for efficiency improving how work gets done, step by step.",
     },
     {
       image: qualityass,
       title: "Quality Assurance",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.",
+        "Committed to excellence at every stage. We ensure all outcomes meet the highest standards.",
+    },
+    {
+      image: processdev,
+      title: "Software Development",
+      description:
+        "Building robust solutions that drive innovation and efficiency, step by step.",
+    },
+    {
+      image: qualityass,
+      title: "Quality Assurance",
+      description:
+        "Committed to excellence at every stage. We ensure all outcomes meet the highest standards.",
     },
     {
       image: projectmgt,
       title: "Human Resources",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit nibh egestas ullamcorper ipsum nibh quis.",
+        "Empowering to excellence at every stage. We ensure all outcomes meet the highest standards."
     },
   ];
 

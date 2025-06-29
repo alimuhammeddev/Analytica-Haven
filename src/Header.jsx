@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Mail, Menu, Phone, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { logo } from "./assets";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -48,7 +49,7 @@ const Header = () => {
               <h1 className="text-[#D9DBE9] text-sm font-campton">Follow us:</h1>
               <div className="flex gap-4">
                 <Link to="https://www.facebook.com/profile.php?id=61576599869851" target="_blank"><FaFacebook className="text-white" /></Link>
-                <Link to="https://x.com/AnalyticaHaven?t=v3TTL38keS25Wqiao6I5ig&s=09" target="_blank"><FaTwitter className="text-white" /></Link>
+                <Link to="https://x.com/AnalyticaHaven?t=v3TTL38keS25Wqiao6I5ig&s=09" target="_blank"><BsTwitterX className="text-white" /></Link>
                 <Link to="https://www.instagram.com/analyticahaven" target="_blank"><FaInstagram className="text-white" /></Link>
                 <Link to="https://www.linkedin.com/company/analytica-haven/" target="_blank"><FaLinkedin className="text-white" /></Link>
               </div>
@@ -70,7 +71,7 @@ const Header = () => {
             <div className="flex items-center gap-3">
               <div className="flex gap-4">
                 <Link to="https://www.facebook.com/profile.php?id=61576599869851" target="_blank"><FaFacebook className="text-white" /></Link>
-                <Link to="https://x.com/AnalyticaHaven?t=v3TTL38keS25Wqiao6I5ig&s=09" target="_blank"><FaTwitter className="text-white" /></Link>
+                <Link to="https://x.com/AnalyticaHaven?t=v3TTL38keS25Wqiao6I5ig&s=09" target="_blank"><BsTwitterX className="text-white" /></Link>
                 <Link to="https://www.instagram.com/analyticahaven" target="_blank"><FaInstagram className="text-white" /></Link>
                 <Link to="https://www.linkedin.com/company/analytica-haven/" target="_blank"><FaLinkedin className="text-white" /></Link>
               </div>

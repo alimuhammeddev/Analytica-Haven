@@ -12,8 +12,8 @@ const AddEvent = () => {
             </h2>
           </div>
 
-          <div className="bg-[#193D6F]">
-            <div className="text-white flex flex-col md:flex-row justify-center pt-[5rem] gap-4">
+          <div className="bg-[#193D6F] py-[4rem]">
+            <div className="text-white flex flex-col md:flex-row justify-center gap-4">
               <div className="space-y-5 flex flex-col justify-end">
                 <p className="bg-[#E6E6E6] px-5 py-2 text-[#000] text-sm text-center">
                   10.00pm
@@ -84,21 +84,13 @@ const AddEvent = () => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-center pt-[2rem] pb-[3rem]">
-              <Link
-                to="#"
-                className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[2rem] block w-fit hover:bg-[#193D6F] hover:text-white hover:border transition-colors duration-300"
-              >
-                Join Us Now
-              </Link>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Mobile view */}
       <section className="md:hidden block">
-        <div className="max-w-7xl mx-auto font-campton">
+        <div className="max-w-7xl mx-auto font-campton py-[2rem]">
           <div>
             <h2 className="text-[#193D6F] text-[1.5rem] font-semibold text-center pt-[2rem] pb-[1rem]">
               Community Event Schedule
@@ -215,14 +207,6 @@ const AddEvent = () => {
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="flex justify-center pt-[1rem] pb-[2rem]">
-              <Link
-                to="#"
-                className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[1rem] block w-fit"
-              >
-                Join Us Now
-              </Link>
             </div>
           </div>
         </div>

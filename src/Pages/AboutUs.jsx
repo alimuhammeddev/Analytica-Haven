@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
+import { Link } from "react-router-dom";
 import { abouthero, company, mission, vision } from "../assets";
 import TeamExpert from "../Components/TeamExpert";
 import OurCommunity from "../Components/OurCommunity";
@@ -62,9 +63,6 @@ const AboutUs = () => {
                   <br className="lg:block hidden" />
                   source of inspiration for others.
                 </p>
-                {/* <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                  Join Our Team
-                </button> */}
               </div>
             </div>
           </div>
@@ -90,9 +88,11 @@ const AboutUs = () => {
                   <br className="lg:block hidden" /> solutions that drive
                   long-term value and impact.
                 </p>
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
+                <div className="mt-5">
+                <Link to="/team" className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                   Join Our Team
-                </button>
+                </Link>
+                </div>
               </div>
 
               <div>
@@ -101,10 +101,6 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="lg:mt-16 mt-10">
-        <TeamExpert />
       </div>
 
       <div>

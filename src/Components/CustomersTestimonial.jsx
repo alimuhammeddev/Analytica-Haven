@@ -174,12 +174,12 @@ const CustomersTestimonial = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between lg:mt-10 mt-5">
             <div>
               <h1 className="lg:text-4xl text-[1.3rem] font-semibold font-campton lg:text-start text-center">
-                Hear from our Community
+                What our great Customers say
               </h1>
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="lg:ml-[260px] ml-[200px] w-16 h-3 lg:w-[200px] lg:h-[14px] -m-2"
+                  className="lg:ml-[300px] ml-[200px] w-16 h-3 lg:w-[200px] lg:h-[14px] -m-2"
                   viewBox="0 0 219 11"
                   fill="none"
                 >
