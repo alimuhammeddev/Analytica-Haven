@@ -318,7 +318,7 @@ const Community = () => {
               <details className="group [&_summary::-webkit-details-marker]:hidden border-b border-[#BDBDBD] lg:mt-10 mt-5">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 pb-6 text-gray-900">
                   <h2 className="lg:text-lg font-campton text-gray-600 flex items-center gap-3">
-                    <span>1.</span>What is this community about?
+                    <span>1.</span>What is this Community about?
                   </h2>
 
                   <svg
@@ -338,17 +338,22 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
+                  Analytica Haven is a community for professionals,newbies to
+                  connect, collaborate, and grow. We help members refine their
+                  career paths, elevate their professional brands, and access
+                  opportunities like job offers, masterclasses, and a dynamic
+                  learning hub. At Analytica Haven, we don’t just build careers,
+                  we build confidence, competence, and community. We also create
+                  a safe space where ambition meets opportunity, and every
+                  member is supported to reach their full potential. Join us and
+                  take the next bold step in your professional journey.
                 </p>
               </details>
 
               <details className="group [&_summary::-webkit-details-marker]:hidden border-b border-[#BDBDBD]">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 pb-6 text-gray-900">
                   <h2 className="lg:text-lg font-campton text-gray-600 flex items-center gap-3">
-                    <span>2.</span>How can i feature my business or services?
+                    <span>2.</span>How can I feature my business or services?
                   </h2>
 
                   <svg
@@ -368,10 +373,12 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
+                  Thank you for your interest in showcasing your business within
+                  the Analytica Haven community! We offer several opportunities
+                  for brands, startups, and service providers to connect with
+                  our vibrant network of professionals and aspiring talents.
+                  such as Community Spotlight, Partner with Us, Advertise in the
+                  Learning Hub, Sponsor an Event, Showcase Your Product or Story
                 </p>
               </details>
 
@@ -398,17 +405,20 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
+                  Yes, Analytica Haven offers mentorship and coaching through
+                  one-on-one guidance, group sessions, and expert-led
+                  masterclasses. Whether you're just starting out or looking to
+                  grow professionally, we connect you with mentors, peer support
+                  groups, and practical learning opportunities to help you build
+                  confidence, sharpen your skills, and achieve your career
+                  goals.
                 </p>
               </details>
 
               <details className="group [&_summary::-webkit-details-marker]:hidden border-b border-[#BDBDBD]">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 pb-6 text-gray-900">
                   <h2 className="lg:text-lg font-campton text-gray-600 flex items-center gap-3">
-                    <span>4.</span>How can i collaborate with the community?
+                    <span>4.</span>How can I collaborate with the community?
                   </h2>
 
                   <svg
@@ -428,17 +438,17 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
+                  To collaborate, just send us a message with what you have in
+                  mind, and we’ll explore the best way to work together. We’re
+                  always open to partnerships that align with growth, learning,
+                  and community support.
                 </p>
               </details>
 
               <details className="group [&_summary::-webkit-details-marker]:hidden border-b border-[#BDBDBD]">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 pb-6 text-gray-900">
                   <h2 className="lg:text-lg font-campton text-gray-600 flex items-center gap-3">
-                    <span>5.</span>What king of content can i expect?
+                    <span>5.</span>What kind of content can I expect?
                   </h2>
 
                   <svg
@@ -458,17 +468,21 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
+                  At Analytica Haven, you can expect a rich mix of content
+                  focused on career growth, data and tech skills, and
+                  professional development. This includes masterclasses, job
+                  alerts, mentorship tips, tool tutorials (like Excel, Ai
+                  masterclass, Ui/Ux, Graphics Design), resume and branding
+                  advice, industry insights, and community spotlights. Whether
+                  you’re a newbie or a pro, there’s always something to learn,
+                  apply, and grow from.
                 </p>
               </details>
 
               <details className="group [&_summary::-webkit-details-marker]:hidden border-b border-[#BDBDBD]">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 pb-6 text-gray-900">
                   <h2 className="lg:text-lg font-campton text-gray-600 flex items-center gap-3">
-                    <span>6.</span>Who is the community for?
+                    <span>6.</span>Who is the Community for?
                   </h2>
 
                   <svg
@@ -488,17 +502,17 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
+                  Analytica Haven is for students, job seekers, career
+                  switchers, and professionals in data, tech, and business who
+                  want to learn, grow, and connect. If you're ambitious and
+                  ready to level up, this community is for you.
                 </p>
               </details>
 
               <details className="group [&_summary::-webkit-details-marker]:hidden border-b border-[#BDBDBD]">
                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 pb-6 text-gray-900">
                   <h2 className="lg:text-lg font-campton text-gray-600 flex items-center gap-3">
-                    <span>7.</span>How can i join the community?
+                    <span>7.</span>How can I join the Community?
                   </h2>
 
                   <svg
@@ -518,10 +532,10 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
+                  You can join the Analytica Haven community by filling out our
+                  registration form or connecting through our official platforms
+                  (like WhatsApp, Telegram, or LinkedIn). Just send a message or
+                  click the join link, and you'll be added to the right group.
                 </p>
               </details>
 
@@ -548,10 +562,11 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
-                  hic veritatis molestias culpa in, recusandae laboriosam neque
-                  aliquid libero nesciunt voluptate dicta quo officiis explicabo
-                  consequuntur distinctio corporis earum similique!
+                  Yes, it is free to join the Analytica Haven community! You’ll
+                  get access to career resources, events, and learning
+                  opportunities at no cost. However, some premium sessions or
+                  programs may require a small fee — but general membership is
+                  completely free.
                 </p>
               </details>
             </div>

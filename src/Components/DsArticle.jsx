@@ -30,7 +30,7 @@ const Article = () => {
             and it was nothing short of transformative. The event, held at its
             innovation lab in Abuja, gathered a vibrant mix of tech enthusiasts,
             beginners, young professionals, and aspiring AI experts from across
-            Nigeria.
+            Nigeria
           </p>
 
           <img src={tips} alt="" className="w-[100%] rounded-xl" />
@@ -119,7 +119,6 @@ const Article = () => {
             </div>
           </div>
 
-
           <div className="space-y-7 text-lg font-campton">
             <p>
               The masterclass kicked off with a warm welcome and an inspiring
@@ -155,9 +154,9 @@ const Article = () => {
               sustainability.
             </p>
             <p className="bg-[#EBF2FE] border-b-4 border-b-[#0022EC] rounded-lg p-10">
-              " I came in curious, and I’m leaving empowered. This masterclass
+              "I came in curious, and I’m leaving empowered. This masterclass
               didn’t just teach me about AI — it taught me how to think
-              differently. "
+              differently."
             </p>
             <p>
               The final day took a creative turn as the focus shifted toward
@@ -171,7 +170,7 @@ const Article = () => {
               Ideas ranged from AI-powered mental health apps to smart farming
               solutions. The judges — a panel of tech professionals and startup
               mentors — were impressed by the innovation and clarity of thought
-              displayed
+              displayed.
             </p>
           </div>
         </div>

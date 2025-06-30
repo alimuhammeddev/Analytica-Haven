@@ -13,7 +13,7 @@ const CustomersTestimonial = () => {
     {
       image: rating,
       description:
-        " “Analytica Haven is a professional, knowledgeable and always ready to go the extra mile.” ",
+         " “Working with Analytica Haven has been a game changer. Their insights are clear, trustworthy and easy to apply.” ",
       profileImg: t1,
       name: "Kristin Watson",
       position: "CEO of Company",
@@ -21,7 +21,7 @@ const CustomersTestimonial = () => {
     {
       image: rating,
       description:
-        " “Analtica Haven’s data tools allowed  us to clearly communicate our progress,helping us expand .” ",
+        " “Analytica Haven brought our vision to life. Their attention to detail and creativity exceeded our expectation. Working with Analytica Haven is a game -changer.” ",
       profileImg: t2,
       name: "Albert Flores",
       position: "CTO of Company",
@@ -29,7 +29,7 @@ const CustomersTestimonial = () => {
     {
       image: rating,
       description:
-        " “Analytica Haven delivers visualization, strategic recommendations, data analysis, and so much more.” ",
+        " “From start to finish their professionalism stood out. The process was smooth, and the result was top-notch. Our digital platform is now more engaging.” ",
       profileImg: t3,
       name: "Michel Smith",
       position: "Ethnographer",
@@ -37,7 +37,7 @@ const CustomersTestimonial = () => {
     {
       image: rating,
       description:
-        " “Analytica Haven is a professional, knowledgeable and always ready to go the extra mile.” ",
+        " “Working with Analytica Haven has been a game changer. Their insights are clear, trustworthy and easy to apply.” ",
       profileImg: t2,
       name: "Dianne Russell",
       position: "Chief Marketing officer",

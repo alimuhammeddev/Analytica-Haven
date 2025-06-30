@@ -13,9 +13,9 @@ import {
   volunteer,
 } from "../assets";
 import SparkForChange from "../Components/SparkForChange";
-import SparkForChange2 from "../Components/SparkForChange2"
-import { HashLink } from 'react-router-hash-link';
-import Footer from "../Footer"
+import SparkForChange2 from "../Components/SparkForChange2";
+import { HashLink } from "react-router-hash-link";
+import Footer from "../Footer";
 
 const Donate = () => {
   return (
@@ -35,16 +35,15 @@ const Donate = () => {
             opportunities for <br className="lg:block hidden" /> aspiring tech
             professionals.
           </p>
-          <div className="my-4">
-            <HashLink to="#account">
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#fff] md:hover:text-[#193D6F] transition ease-in-out duration-300">
-            Donate Now
-          </button>
-          </HashLink>
+          <div>
+            <HashLink to="#account" smooth className="my-4">
+              <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#fff] md:hover:text-[#193D6F] transition ease-in-out duration-300">
+                Donate Now
+              </button>
+            </HashLink>
           </div>
         </div>
       </div>
-
 
       {/* Desktop Screen */}
       <div className="bg-[#E8ECF1] lg:p-10 p-3 md:block hidden">
@@ -109,9 +108,6 @@ const Donate = () => {
               with you donation we can empower and make positive impact in the
               community.
             </p>
-            {/* <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton mt-5 md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
-              Donate Now
-            </button> */}
           </div>
 
           <div>
@@ -191,24 +187,34 @@ const Donate = () => {
       <div id="account" className="bg-[#E8ECF1] lg:p-5 p-3 lg:mt-20 mt-7">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-5">
           <h1 className="text-[#193D6F] lg:text-4xl text-lg font-campton font-semibold text-center">
-            We appreciate your support, please <br className="lg:block hidden"/> send your donation to this
+            We appreciate your support, please{" "}
+            <br className="lg:block hidden" /> send your donation to this
             account below
           </h1>
 
-          
-          <div className="bg-[#ffffff] p-7 lg:mt-12 mt-5 rounded-2xl text-center md:w-[50%] mx-auto">
-            <img src={gtbank} alt="" className="mx-auto"/>
-            <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">Account Name: <span className="font-semibold">Analytica Haven</span></h1>
-            <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">Bank Name: <span className="font-semibold">Guaranty Trust Bank</span></h1>
-            <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">Account No: <span className="font-semibold">0264366562</span></h1>
+          <div id="account" className="bg-[#ffffff] p-7 lg:mt-12 mt-5 rounded-2xl text-center md:w-[50%] mx-auto">
+            <img src={gtbank} alt="" className="mx-auto" />
+            {/* <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">Account Name: <span className="font-semibold">Analytica Haven</span></h1> */}
+            <h2 className="text-[#000000] lg:text-lg mt-2 font-campton">
+              Bank Name: <span className="font-semibold">Guaranty Trust Bank</span>
+            </h2>
+            <h2 className="text-[#000000] lg:text-lg mt-2 font-campton">
+              Account No: <span className="font-semibold">0264388572</span>
+            </h2>
           </div>
 
-          <p className="font-campton text-center lg:text-lg mt-8">Your  generosity drives our vision and uplifts changemakers striving to transform the world together, We truly appreciate <br className="lg:block hidden"/> your support.</p>
-        </div> <br /><br className="lg:block hidden"/>
+          <p className="font-campton text-center lg:text-lg mt-8">
+            Your generosity drives our vision and uplifts changemakers striving
+            to transform the world together, We truly appreciate{" "}
+            <br className="lg:block hidden" /> your support.
+          </p>
+        </div>{" "}
+        <br />
+        <br className="lg:block hidden" />
       </div>
 
-    {/* Mobile Screen */}
-          <div className="bg-[#fff] lg:p-10 p-3 md:hidden block">
+      {/* Mobile Screen */}
+      <div className="bg-[#fff] lg:p-10 p-3 md:hidden block">
         <div className="max-w-7xl mx-auto p-5 space-y-10">
           <div>
             <h1 className="text-[#000000] lg:text-4xl text-xl font-campton font-semibold text-center">
@@ -263,10 +269,9 @@ const Donate = () => {
       </div>
 
       <div>
-        <SparkForChange2/>
+        <SparkForChange2 />
       </div>
 
-    
       <div>
         <Footer />
       </div>

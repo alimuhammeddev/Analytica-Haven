@@ -21,15 +21,15 @@ import { Check } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: <>3 Days AI Masterclass</>,
+    title: <>7 Days Free Graphic Design</>,
     description: (
       <>
-        A successful 3-day intensive training hosted by Analytica Haven,
-        introducing participants to the fundamentals of Artificial Intelligence
-        through hands-on practical applications.
+        An empowering learning experience by Analytica Haven. Equipping
+        creatives with hands-on design skills and tools. Fostering growth,
+        creativity, and community all for free.
       </>
     ),
-    imgAlt: "AI Masterclass workshop image",
+    imgAlt: "7 Days Free Graphic Design",
     imgSrc: project1,
   },
   {
@@ -47,22 +47,22 @@ const projects = [
   },
   {
     id: 3,
-    title: <>Healthy Meal</>,
+    title: <>Free Linkedin Optimization</>,
     description: (
       <>
-        A completed project by Analytica Haven promoting affordable and
-        nutritious meals, focused on healthy living and encouraging
-        healthy eating habits.
+        A career-boosting session by Analytica Haven Helping professionals
+        build standout LinkedIn profiles Unlock visibility, connections, and
+        real opportunities.
       </>
     ),
-    imgAlt: "Healthy meal options image",
+    imgAlt: "Free Linkedin Optimization",
     imgSrc: project3,
   },
 ];
 
 const OurProject = () => {
   return (
-    <section>
+    <section className="font-campton">
       <Header />
 
       <div
@@ -85,40 +85,41 @@ const OurProject = () => {
         <h2>Explore Our Skills and Digital Capabilities</h2>
       </div>
 
-<div className="bg-white">
-  <div className="max-w-7xl mx-auto px-5 py-12 lg:py-20">
-    <div className="space-y-8">
-      {projects.map(({ id, title, description, imgAlt, imgSrc }, idx) => (
-        <div
-          key={id}
-          className={`flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12 px-0 lg:p-12 ${
-            idx === 1 ? 'bg-[#EBF2FE] -mx-5 lg:-mx-[3.2rem] px-5 py-5 lg:py-12 lg:px-24' : 'bg-transparent'
-          }`}
-        >
-          <div className="space-y-6 flex-1 order-2 lg:order-1">
-            <h1 className="text-black font-campton font-semibold text-2xl lg:text-4xl">
-              {title}
-            </h1>
-            <p className="font-campton text-base lg:text-xl text-gray-700">
-              {description}
-            </p>
-            <button className="bg-[#E0F780] hover:bg-[#193D6F] hover:text-white text-[#193D6F] font-medium px-6 py-3 rounded-lg transition-colors duration-300">
-              View Highlight
-            </button>
-          </div>
-          <div className="flex-1 order-1 lg:order-2">
-            <img
-              src={imgSrc}
-              alt={imgAlt}
-              className="md:w-[70%] w-full max-w-[600px] mx-auto rounded-lg shadow-lg object-cover"
-            />
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-5 py-12 lg:py-20">
+          <div className="space-y-8">
+            {projects.map(({ id, title, description, imgAlt, imgSrc }, idx) => (
+              <div
+                key={id}
+                className={`flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12 px-0 lg:p-12 ${
+                  idx === 1
+                    ? "bg-[#EBF2FE] -mx-5 lg:-mx-[3.2rem] px-5 py-5 lg:py-12 lg:px-24"
+                    : "bg-transparent"
+                }`}
+              >
+                <div className="space-y-6 flex-1 order-2 lg:order-1">
+                  <h1 className="text-black font-campton font-semibold text-2xl lg:text-4xl">
+                    {title}
+                  </h1>
+                  <p className="font-campton text-base lg:text-xl text-gray-700">
+                    {description}
+                  </p>
+                  <button className="bg-[#E0F780] hover:bg-[#193D6F] hover:text-white text-[#193D6F] font-medium px-6 py-3 rounded-lg transition-colors duration-300">
+                    View Highlight
+                  </button>
+                </div>
+                <div className="flex-1 order-1 lg:order-2">
+                  <img
+                    src={imgSrc}
+                    alt={imgAlt}
+                    className="md:w-[70%] w-full max-w-[600px] mx-auto rounded-lg shadow-lg object-cover"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</div>
-
+      </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-20 mt-7">
         <div>
@@ -198,7 +199,7 @@ const OurProject = () => {
         </div>
 
         <div className="mx-auto flex justify-center lg:mt-10 mt-7">
-          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
+          <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
             Explore Project
           </button>
         </div>
@@ -251,7 +252,7 @@ const OurProject = () => {
               </p>
 
               <div className="lg:mt-5 mt-3">
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
+                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                   Be a volunteer
                 </button>
               </div>
@@ -292,7 +293,7 @@ const OurProject = () => {
                 <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                 Audience Personas
               </h1>
-              <button className="text-[#193D6F] bg-[#E0F780] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton">
+              <button className="text-[#193D6F] bg-[#E0F780] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                 Learn More
               </button>
             </div>
@@ -319,7 +320,7 @@ const OurProject = () => {
                 <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                 Tagline Development
               </h1>
-              <button className="text-[#193D6F] bg-[#E0F780] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
+              <button className="text-[#193D6F] bg-[#E0F780] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
                 Explore
               </button>
             </div>

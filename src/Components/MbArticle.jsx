@@ -27,10 +27,10 @@ const Article = () => {
             Analytica Haven, a forward-thinking tech and training hub, recently
             concluded a power-packed 3-day Artificial Intelligence Masterclass
             and it was nothing short of transformative. The event, held at its
-            innovation lab in Abuja, gathered a vibrant mix of tech enthusiasts,
+            innovation lab in Lagos, gathered a vibrant mix of tech enthusiasts,
             beginners, young professionals, and aspiring AI experts from across
-            Nigeria. The goal? To demystify artificial intelligence and make its
-            practical application accessible to all, especially those with
+            Nigeria. The goal is to demystify artificial intelligence and make
+            its practical application accessible to all, especially those with
             little to no prior experience.
           </p>
 
@@ -63,7 +63,7 @@ const Article = () => {
             In the words of one participant:
           </span>
           "I came in curious, and I’m leaving empowered. This masterclass didn’t
-          just teach me about AI — it taught me how to think differently."
+          just teach me about AI it taught me how to think differently."
         </p>
 
         <p>
