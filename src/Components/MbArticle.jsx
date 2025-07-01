@@ -65,16 +65,6 @@ const Article = () => {
           "I came in curious, and I’m leaving empowered. This masterclass didn’t
           just teach me about AI it taught me how to think differently."
         </p>
-
-        <p>
-          Day two was all about rolling up sleeves and getting into action.
-          Participants were guided through a hands-on workshop using
-          beginner-friendly tools like Microsoft Excel for data cleaning, Google
-          Colab for Python basics, and even experimented with pre-trained AI
-          models. No prior coding experience? No problem. The instructors
-          patiently walked attendees through each task, ensuring no one was left
-          behind.
-        </p>
         <div className="flex items-center gap-3 my-5">
           <img src={lady} alt="" />
           <div>
@@ -98,6 +88,13 @@ const Article = () => {
                   Breaking Into Data Analysis Made Easy
                 </p>
                 <p className="text-[1rem]">
+                  Day two was all about rolling up sleeves and getting into
+                  action. Participants were guided through a hands-on workshop
+                  using beginner-friendly tools like Microsoft Excel for data
+                  cleaning, Google Colab for Python basics, and even
+                  experimented with pre-trained AI models. No prior coding
+                  experience? No problem. The instructors patiently walked
+                  attendees through each task, ensuring no one was left behind.
                   Redefined the user acquisition and redesigned the onboarding
                   experience, all within 3 working weeks
                 </p>

@@ -165,7 +165,7 @@ const Blog = () => {
 
             {/* Newsletter Subscription */}
             <div className="lg:max-w-lg lg:mt-5 py-6">
-              <div className="flex flex-col md:flex-row">
+              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0">
                 <input
                   type="email"
                   className="flex-grow px-4 py-3 border-2 rounded-lg md:rounded-r-none focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black"
