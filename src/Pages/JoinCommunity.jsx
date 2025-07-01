@@ -91,10 +91,10 @@ const JoinCommunity = () => {
               Join our team of Talents today! at Analytica Haven,{" "}
               <br className="lg:block hidden" /> where Knowledge meets execution
             </p>
-            <div className="mx-auto justify-center flex">
+            <div className="mx-auto justify-center flex mt-5">
               <Link
                 to="/community"
-                className="bg-[#E0F780] text-[#193D6F] w-full text-sm px-4 py-3 rounded-lg font-medium font-campton"
+                className="bg-[#E0F780] text-[#193D6F] w-full text-center text-lg px-4 py-3 rounded-lg font-medium font-campton"
               >
                 Join us
               </Link>
