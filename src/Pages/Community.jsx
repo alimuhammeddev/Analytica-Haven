@@ -338,7 +338,7 @@ const Community = () => {
                 </summary>
 
                 <p className="mt-4 text-sm md:text-lg leading-relaxed text-gray-600 font-campton">
-                  Analytica Haven is a community for professionals,newbies to
+                  Analytica Haven is a community for professionals, newbies to
                   connect, collaborate, and grow. We help members refine their
                   career paths, elevate their professional brands, and access
                   opportunities like job offers, masterclasses, and a dynamic

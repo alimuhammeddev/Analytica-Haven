@@ -97,7 +97,7 @@ const Donate = () => {
       </div>
 
       <div className="max-w-7xl mx-auto lg:px-12 p-5 lg:mt-16 mt-5">
-        <div className="flex lg:flex-row flex-col items-center lg:gap-10 gap-7">
+        <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-10 gap-7">
           <div>
             <h1 className="text-[#193D6F] lg:text-4xl text-xl font-campton font-semibold">
               Your support truly <span className="text-[#000000]">matters</span>{" "}

@@ -88,7 +88,7 @@ const CommunityEvent = () => {
               </div>
               <div className="md:w-2/3">
                 <h2 className="md:text-xl text-[1.5rem] font-semibold text-[#193D6F] mb-2">
-                  Mind Building Games
+                  Community Charity 
                 </h2>
                 <p className="text-gray-600 mb-4 md:text-[0.7rem] text-[0.875rem]">
                   This will help build a connection between you
@@ -113,7 +113,7 @@ const CommunityEvent = () => {
               </div>
               <div className="md:w-2/3">
                 <h2 className="md:text-xl text-[1.5rem] font-semibold text-[#193D6F] mb-2">
-                  Mind Building Games
+                  Business Growth Squad 
                 </h2>
                 <p className="text-gray-600 mb-4 md:text-[0.7rem] text-[0.875rem]">
                   This will help build a connection between you

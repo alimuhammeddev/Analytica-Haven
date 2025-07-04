@@ -92,31 +92,30 @@ const OurCommunity = () => {
             Our Community
           </h1>
           <p className="text-[#000000] font-campton text-[0.9rem] lg:text-lg mt-5">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
+            Analytica Haven is a community for professionals, newbies to connect,
+            collaborate, and grow. We help members refine their career paths,
+            elevate their professional brands, and access opportunities like job
+            offers, masterclasses, and a dynamic learning hub. At Analytica
+            Haven, we don’t just build careers , we build confidence,
+            competence, and community. We also create a safe space where
+            ambition meets opportunity, and every member is supported to reach
+            their full potential. Join us and take the next bold step in your
+            professional journey.
           </p>
 
           <div className="md:block hidden">
-          <div className="flex flex-wrap lg:justify-between justify-center gap-6 mt-6">
-            {stats.map((item, index) => (
-              <div key={index} className="text-center min-w-[100px]">
-                <h1 className="font-campton text-[#193D6F] lg:text-xl font-semibold">
-                  {item.year}
-                </h1>
-                <p className="text-[#000000] font-campton lg:text-lg text-sm">
-                  {item.label}
-                </p>
-              </div>
-            ))}
-          </div>
+            <div className="flex flex-wrap lg:justify-between justify-center gap-6 mt-6">
+              {stats.map((item, index) => (
+                <div key={index} className="text-center min-w-[100px]">
+                  <h1 className="font-campton text-[#193D6F] lg:text-xl font-semibold">
+                    {item.year}
+                  </h1>
+                  <p className="text-[#000000] font-campton lg:text-lg text-sm">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -126,9 +125,9 @@ const OurCommunity = () => {
       </div>
 
       <div className="md:block hidden">
-      <div className="flex justify-end mt-5">
-        <DecorativeSvg />
-      </div>
+        <div className="flex justify-end mt-5">
+          <DecorativeSvg />
+        </div>
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ import blog3 from "../assets/blog3.svg";
 import blog4 from "../assets/blog4.svg";
 import blog5 from "../assets/blog5.svg";
 import blog6 from "../assets/blog6.svg";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 const Blog = () => {
   const categories = [
@@ -126,10 +126,12 @@ const Blog = () => {
             {post.date}
           </p>
         </div>
-        <h2 className="font-campton lg:text-2xl text-lg font-semibold">
+        <h2 className="font-campton lg:text-2xl text-lg font-semibold text-[#000] lg:w-[80%] w-full leading-tight">
           {post.title}
         </h2>
-        <p className="font-campton lg:text-lg">{post.description}</p>
+        <p className="font-campton lg:text-lg lg:w-[80%] w-full">
+          {post.description}
+        </p>
         <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton hover:bg-[#193d6f] hover:text-white transition ease-in-out duration-300">
           Read More
         </button>
@@ -163,21 +165,36 @@ const Blog = () => {
               Update and announcement from Team Analytica !!
             </p>
 
-            {/* Newsletter Subscription */}
-            <div className="lg:max-w-lg lg:mt-5 py-6">
-              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0">
+            {/* Newsletter Subscription for Blog Updates for Desktop*/}
+            <div className="lg:max-w-lg lg:mt-5 py-6 hidden md:block">
+              <div className="flex flex-col md:flex-row space-y-2 md:space-y-0">
                 <input
                   type="email"
                   className="flex-grow px-4 py-3 border-2 rounded-lg md:rounded-r-none focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black"
                   placeholder="Enter your email"
                   required
                 />
-                <button className="bg-[#E0F780] text-[#193D6F] md:w-auto px-6 py-3 rounded-lg md:rounded-l-none font-medium lg:text-lg font-campton hover:bg-[#193d6f] hover:text-white hover:border transition ease-in-out duration-300">
+                <button className="bg-[#E0F780] text-[#193D6F] md:w-fit w-full px-6 py-3 rounded-lg md:rounded-l-none font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-white md:hover:border transition ease-in-out duration-300">
                   Subscribe
                 </button>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Newsletter Subscription for Blog Updates for Mobile */}
+      <div className="max-w-lg px-5 py-6 md:hidden block">
+        <div className="flex flex-col space-y-2">
+          <input
+            type="email"
+            className="flex-grow px-4 py-3 border-2 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-none placeholder:font-semibold text-black"
+            placeholder="Enter your email"
+            required
+          />
+          <button className="bg-[#E0F780] text-[#193D6F] w-full px-6 py-3 rounded-lg font-medium font-campton transition ease-in-out duration-300">
+            Subscribe
+          </button>
         </div>
       </div>
 
@@ -256,11 +273,11 @@ const Blog = () => {
           Recent Updates
         </h1>
 
-        <div className="space-y-16 lg:space-y-15">
+        <div className="space-y-10 lg:space-y-15">
           <BlogPost post={blogPosts[0]} reverseLayout />
           <BlogPost post={blogPosts[1]} reverseLayout />
 
-          <h2 className="font-campton font-bold text-2xl lg:text-4xl text-[#193D6F]">
+          <h2 className="font-campton font-bold text-center md:text-left text-2xl lg:text-4xl text-[#193D6F]">
             Weekly Updates
           </h2>
 

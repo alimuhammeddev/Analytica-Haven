@@ -30,7 +30,7 @@ const Article = () => {
             and it was nothing short of transformative. The event, held at its
             innovation lab in Abuja, gathered a vibrant mix of tech enthusiasts,
             beginners, young professionals, and aspiring AI experts from across
-            Nigeria
+            Nigeria.
           </p>
 
           <img src={tips} alt="" className="w-[100%] rounded-xl" />
@@ -49,7 +49,7 @@ const Article = () => {
               <img src={lady} alt="" />
               <div>
                 <p className="font-campton font-semibold text-lg">
-                  Anita Bellehaman
+                  Anita Favour
                 </p>
                 <p className="font-campton text-lg">
                   Lead Product Specialist, Analytica
@@ -130,34 +130,14 @@ const Article = () => {
               healthcare, finance, marketing, and agriculture. To bring the
               concepts to life, the facilitators engaged attendees in
               interactive sessions, live demonstrations, and simple logic-based
-              games to illustrate how AI "learns" and "makes decisions."Day two
-              was all about rolling up sleeves and getting into action.
-              Participants were guided through a hands-on workshop using
-              beginner-friendly tools like Microsoft Excel for data cleaning,
-              Google Colab for Python basics, and even experimented with
-              pre-trained AI models. No prior coding experience? No problem. The
-              instructors patiently walked attendees through each task, ensuring
-              no one was left behind.
-            </p>
-            <img src={ladysalute} alt="A lady saluting" />
-            <p>
-              The room buzzed with energy as small groups tackled
+              games to illustrate how AI "learns" and "makes decisions." Day two
+              the room buzzed with energy as small groups tackled
               mini-projects—like creating simple AI models to predict weather
               patterns or recognize handwritten digits. For many, it was their
               first experience building anything tech-related, and their
-              excitement was palpable. The final day took a creative turn as the
-              focus shifted toward integrating AI with business ideas.
-              Participants explored how AI could solve local problems,
-              streamline business operations, and even create new startups. A
-              session on “AI for Social Impact” inspired many to think of ways
-              AI could be used in education, agriculture, and even environmental
-              sustainability.
+              excitement was palpable.
             </p>
-            <p className="bg-[#EBF2FE] border-b-4 border-b-[#0022EC] rounded-lg p-10">
-              "I came in curious, and I’m leaving empowered. This masterclass
-              didn’t just teach me about AI — it taught me how to think
-              differently."
-            </p>
+            <img src={ladysalute} alt="A lady saluting" />
             <p>
               The final day took a creative turn as the focus shifted toward
               integrating AI with business ideas. Participants explored how AI
@@ -168,9 +148,29 @@ const Article = () => {
               with a pitch challenge: participants formed teams and presented
               ideas on how they would use AI to tackle real-world problems.
               Ideas ranged from AI-powered mental health apps to smart farming
-              solutions. The judges — a panel of tech professionals and startup
+              solutions. The judges a panel of tech professionals and startup
               mentors — were impressed by the innovation and clarity of thought
               displayed.
+            </p>
+            <p className="bg-[#EBF2FE] border-b-4 border-b-[#0022EC] rounded-lg p-10">
+              "I came in curious, and I’m leaving empowered. This masterclass
+              didn’t just teach me about AI — it taught me how to think
+              differently."
+            </p>
+            <p>
+              <span className="font-semibold block">The Impact</span>
+              By the end of the 3-day experience, participants left
+              with not just new skills, but renewed confidence. For many, the
+              masterclass opened doors to further learning, collaborations, and
+              potential careers in tech. Analytica Haven also provided
+              participants with free access to curated AI resources and
+              mentorship opportunities beyond the event. 
+              <span className="font-semibold block">Conclusion:</span> With the
+              success of this masterclass, Analytica Haven has once again proven
+              its commitment to equipping the next generation with tools for the
+              future. As AI continues to shape the world, programs like this
+              ensure that African talent isn’t just keeping up — it’s leading
+              the way.
             </p>
           </div>
         </div>

@@ -5,7 +5,7 @@ import blog1 from "../assets/blog1.svg";
 import blog2 from "../assets/blog4.svg";
 import blog3 from "../assets/blog5.svg";
 import blog4 from "../assets/blog6.svg";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 const Blog = () => {
   const categories = [
@@ -104,10 +104,10 @@ const Blog = () => {
             {post.date}
           </p>
         </div>
-        <h2 className="font-campton lg:text-2xl text-lg font-semibold">
+        <h2 className="font-campton lg:text-2xl text-lg font-semibold w-full lg:w-[80%] text-[#000]">
           {post.title}
         </h2>
-        <p className="font-campton lg:text-lg">{post.description}</p>
+        <p className="font-campton lg:text-lg w-full lg:w-[80%] text-[#000]">{post.description}</p>
         <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton hover:bg-[#193d6f] hover:text-white transition ease-in-out duration-300">
           Read More
         </button>
@@ -131,13 +131,18 @@ const Blog = () => {
       >
         <div className="max-w-7xl mx-auto w-full justify-center lg:py-8 py-12 px-4">
           <div className="lg:space-y-10 space-y-2 text-center">
-            <h2 className="lg:text-5xl text-2xl font-bold font-campton pt-5 leading-[1.5]">
+            <h2 className="text-5xl font-bold font-campton pt-5 leading-[1.5] lg:block hidden">
               Explore Blog Categories to Discover Our Insightful Update. 
             </h2>
-            <p className="mt-2 lg:text-2xl font-campton">
-              Discover  marketing tips,updates,and empowering stories from the Analytica Haven Team.
+            <h2 className="text-2xl font-bold font-campton px-5 py-3 leading-[1.5] lg:hidden block border border-[#fff]">
+              Explore Blog Categories
+            </h2>
+            <p className="mt-2 lg:text-2xl font-campton md:block hidden">
+              Discover marketing tips, updates, and empowering stories from the Analytica Haven Team
             </p>
-            <p className="mt-2 lg:text-[1.5rem] text-[1.2rem] font-campton bg-[#E0F780] text-[#193D6F] px-4 py-2 rounded-lg w-fit mx-auto md:hover:bg-[#fff] md:hover:text-[#193D6F] transition ease-in-out duration-300 cursor-pointer">Explore Articles</p>
+            <p className="mt-2 font-campton md:hidden block">
+              Tech, Trends & Truths  All in One Place.
+            </p>
           </div>
         </div>
       </div>

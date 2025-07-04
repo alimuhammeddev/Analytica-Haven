@@ -365,7 +365,7 @@ const Home = () => {
               Explore Our Successful Projects
             </h2>
             <p className="text-[0.9rem] md:text-[1.1rem] leading-7 pt-0 md:pt-7 text-[#000]">
-              Analytica Haven is a community for professionals,newbies to
+              Analytica Haven is a community for professionals, newbies to
               connect, collaborate, and grow. We help members refine their
               career paths, elevate their professional brands, and access
               opportunities like job offers, masterclasses, and a

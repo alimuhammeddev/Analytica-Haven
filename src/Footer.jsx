@@ -11,15 +11,16 @@ const Footer = () => {
       {/* Desktop version */}
       <section className="md:block hidden lg:block">
         <div className="bg-[#193D6F] py-10">
-          <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 md:text-justify sm:text-center">
-            <div className="grid lg:grid-cols-4 grid-cols-1 lg:gap-28 gap-10 mt-10">
+          <div className="max-w-7xl mx-auto justify-center p-8 text-justify">
+            <div className="grid grid-cols-4 grid-cols-1 gap-28 mt-10">
               <div className="space-y-5 mx-auto">
                 <img src={logo} alt="" />
-                <p className="text-[#D9DBE9] font-campton lg:text-base font-medium">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.{" "}
+                <p className="text-[#D9DBE9] font-campton text-[0.875rem] font-normal">
+                  Analytica Haven is a community for professionals newbies to
+                  connect, collaborate, and grow. We help members refine their
+                  career paths, elevate their professional brands.
                 </p>
-                <div className="flex items-center space-y-5 gap-5">
+                <div className="flex gap-5">
                   <Link
                     to="https://www.facebook.com/profile.php?id=61576599869851"
                     target="_blank"
@@ -51,7 +52,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <h1 className="text-[#F8F8F8] font-campton lg:text-xl font-semibold lg:mt-5">
+                <h1 className="text-[#F8F8F8] font-campton text-xl font-semibold mt-5">
                   Company
                 </h1>
                 <div className="flex flex-col space-y-3 mt-3">
@@ -89,7 +90,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <h1 className="text-[#F8F8F8] font-campton lg:text-xl font-semibold lg:mt-5">
+                <h1 className="text-[#F8F8F8] font-campton text-xl font-semibold mt-5">
                   Support
                 </h1>
                 <div className="space-y-3 mt-3">
@@ -106,7 +107,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <h1 className="text-[#F8F8F8] font-campton lg:text-xl font-semibold lg:mt-5">
+                <h1 className="text-[#F8F8F8] font-campton text-xl font-semibold mt-5">
                   Contact us
                 </h1>
                 <div className="space-y-3 mt-3">
@@ -125,12 +126,12 @@ const Footer = () => {
 
             <div className="border-[#D9DBE9] border mt-10"></div>
 
-            <div className="flex items-center justify-between lg:flex-row flex-col mt-10 mb-5">
-              <h1 className="text-[#F8F8F8] font-campton font-medium lg:text-lg">
+            <div className="flex items-center justify-between flex-row flex-col mt-10 mb-5">
+              <h1 className="text-[#F8F8F8] font-campton font-medium text-lg">
                 Copyright © 2025
               </h1>
               <div>
-                <h1 className="text-[#F8F8F8] font-campton font-medium lg:text-lg text-center">
+                <h1 className="text-[#F8F8F8] font-campton font-medium text-lg text-center">
                   All Rights Reserved |{" "}
                   <span className="text-[#FFFFFF] font-semibold underline">
                     Terms and Conditions
@@ -156,8 +157,9 @@ const Footer = () => {
                   <img src={logo} alt="" />
                 </div>
                 <p className="text-[#D9DBE9] font-campton font-medium">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.{" "}
+                  Analytica Haven is a community for professionals newbies to
+                  connect, collaborate, and grow. We help members refine their
+                  career paths, elevate their professional brands.
                 </p>
               </div>
               <div className="flex items-center gap-5">
@@ -244,7 +246,7 @@ const Footer = () => {
                   Contact us
                 </h1>
                 <div className="space-y-3 mt-3 flex flex-col">
-                  <p className="text-[#D9DBE9] flex items-center gap-2 ">
+                  <p className="text-[#D9DBE9] flex items-center gap-2">
                     <Mail size={15} /> info@analyticahaven.com
                   </p>
                   <p className="text-[#D9DBE9] flex items-center gap-2 text-base font-campton my-2">
