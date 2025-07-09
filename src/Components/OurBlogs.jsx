@@ -42,20 +42,20 @@ const OurBlogs = () => {
   const blogData = [
     {
       image: Blog4,
-      author: "By Michel John",
-      date: "Jan 17, 2023",
+      author: "Ruth Itepu",
+      date: "Jan 7, 2025",
       title: "How to hire a right business executive for your company",
     },
     {
       image: Blog6,
-      author: "By Sarah Johnson",
-      date: "Feb 28, 2023",
+      author: "Muyiwa Olorunwa",
+      date: "Jan 7, 2025",
       title: "Effective strategies for remote team management",
     },
     {
       image: Blog3,
-      author: "By David Chen",
-      date: "Mar 15, 2023",
+      author: "Charity Hilton",
+      date: "Jan 7, 2025",
       title: "Innovative marketing approaches for startups",
     },
   ];

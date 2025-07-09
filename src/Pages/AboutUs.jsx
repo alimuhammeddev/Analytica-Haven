@@ -19,6 +19,7 @@ const AboutUs = () => {
       <div>
         <Header />
 
+      {/* Desktop version */}
          <div
         className="bg-cover bg-no-repeat bg-center h-[100vh] text-white md:block hidden" 
         style={{ backgroundImage: `url(${abouthero})` }} 
@@ -28,6 +29,8 @@ const AboutUs = () => {
             <span className="block">At Analytica Haven</span>
           </h2>
         </div>
+
+        {/* Mobile version */}
          <div
         className="bg-cover bg-no-repeat bg-center h-80 text-white md:hidden block"
         style={{ backgroundImage: `url(${aboutheromb})` }} 

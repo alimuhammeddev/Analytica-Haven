@@ -34,17 +34,9 @@ const SparkForChange = () => {
                 </h1>
                 <h1 className="text-[#FFFFFF] text-lg font-campton flex items-center gap-3">
                   <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
-                  Strenghtens impactful programs
+                  Strengthens impactful programs
                 </h1>
                 <div>
-                  {/* <div className="mt-6">
-                    <Link
-                      to="/donate"
-                      className="bg-[#E0F780] text-[#193D6F] px-6 py-3 rounded-lg font-medium mt-3 text-lg font-campton hover:bg-[#fff] hover:text-[#193D6F] transition ease-in-out duration-300"
-                    >
-                      Donate Now
-                    </Link>
-                  </div> */}
                 </div>
               </div>
             </div>

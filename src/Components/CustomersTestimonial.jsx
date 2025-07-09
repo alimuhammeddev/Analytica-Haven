@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { rating, t1, t2, t3 } from "../assets";
+import { rating, t1, t2 } from "../assets";
+import fuad from "../assets/fuad-t.svg"
+import ayeni from "../assets/ayeni-t.svg"
 
 const CustomersTestimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,32 +17,32 @@ const CustomersTestimonial = () => {
       description:
          " “Working with Analytica Haven has been a game changer. Their insights are clear, trustworthy and easy to apply.” ",
       profileImg: t1,
-      name: "Kristin Watson",
-      position: "CEO of Company",
+      name: "Babatunde Doherty",
+      position: "CEO, 27th Development",
     },
     {
       image: rating,
       description:
         " “Analytica Haven brought our vision to life. Their attention to detail and creativity exceeded our expectation. Working with Analytica Haven is a game -changer.” ",
-      profileImg: t2,
-      name: "Albert Flores",
-      position: "CTO of Company",
+      profileImg: fuad,
+      name: "Hon. Fuad Atanda Lawal",
+      position: "Executive Chairman, Ikoyi-Obalende LCDA",
     },
     {
       image: rating,
       description:
         " “From start to finish their professionalism stood out. The process was smooth, and the result was top-notch. Our digital platform is now more engaging.” ",
-      profileImg: t3,
-      name: "Michel Smith",
-      position: "Ethnographer",
+      profileImg: ayeni,
+      name: "Adebayo Ayeni",
+      position: "CEO, Fusion Property UK",
     },
     {
       image: rating,
       description:
         " “Working with Analytica Haven has been a game changer. Their insights are clear, trustworthy and easy to apply.” ",
       profileImg: t2,
-      name: "Dianne Russell",
-      position: "Chief Marketing officer",
+      name: "Ganiyat Quadri",
+      position: "CEO, Squeeze",
     },
   ];
 

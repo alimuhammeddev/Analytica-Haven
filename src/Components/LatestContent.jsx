@@ -39,13 +39,15 @@ const LatestContent = () => {
           Partner with us
         </p>
         <h1 className="lg:text-5xl text-xl font-semibold font-campton text-center text-[#FFFFFF] mt-3">
-          Stay Informed with Our Latest <span className="text-[#e0f780]">{" "} Content</span>
+          Stay Informed with Our Latest{" "}
+          <span className="text-[#e0f780]"> Content</span>
         </h1>
         <p className="text-center lg:text-lg text-[#FFFFFF] mt-3">
-          Analytical Haven is a hub where businesses and individuals transform
-          raw data into actionable insights, build scalable{" "}
-          <br className="lg:block hidden" /> solutions, and master strategic
-          execution.
+          Analytica Haven is built on a vision to create a thriving community
+          where knowledge is shared openly, innovation flourishes, and
+          individuals are empowered to achieve their full potential. We aspire
+          to transform challenges into opportunities, ensuring that every
+          success story becomes a source of inspiration for others.
         </p>
         <div className="justify-center mx-auto flex mt-5">
           <Link
