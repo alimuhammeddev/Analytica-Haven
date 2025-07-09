@@ -2,11 +2,12 @@ import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import { abouthero, company, mission, vision } from "../assets";
-import TeamExpert from "../Components/TeamExpert";
+import { company, mission, vision } from "../assets";
+import abouthero from "../assets/aboutherobg.svg";
+import aboutheromb from "../assets/aboutheromb.svg";
 import OurCommunity from "../Components/OurCommunity";
 import SparkForChange from "../Components/SparkForChange";
-import SparkForChange2 from "../Components/SparkForChange2"
+import SparkForChange2 from "../Components/SparkForChange2";
 import CoreServices from "../Components/CoreServices";
 import TalkToUs from "../Components/TalkToUs";
 import GetinTouch from "../Components/GetinTouch";
@@ -18,8 +19,23 @@ const AboutUs = () => {
       <div>
         <Header />
 
-        <div>
-          <img src={abouthero} alt="" className="w-full" />
+         <div
+        className="bg-cover bg-no-repeat bg-center h-[100vh] text-white md:block hidden" 
+        style={{ backgroundImage: `url(${abouthero})` }} 
+        >
+          <h2 className="flex items-center justify-center flex-col text-[3rem] font-bold h-full font-campton">
+            Knowledge Meets Execution 
+            <span className="block">At Analytica Haven</span>
+          </h2>
+        </div>
+         <div
+        className="bg-cover bg-no-repeat bg-center h-80 text-white md:hidden block"
+        style={{ backgroundImage: `url(${aboutheromb})` }} 
+        >
+          <h2 className="flex items-center justify-center flex-col text-[2rem] font-bold h-full font-campton">
+            Knowledge Meets Execution 
+            <span className="block">At Analytica Haven</span>
+          </h2>
         </div>
 
         <div className="max-w-7xl mx-auto lg:p-[8] p-5">
@@ -89,9 +105,12 @@ const AboutUs = () => {
                   long-term value and impact.
                 </p>
                 <div className="mt-5">
-                <Link to="/team" className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                  Join Our Team
-                </Link>
+                  <Link
+                    to="/team"
+                    className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300"
+                  >
+                    Join Our Team
+                  </Link>
                 </div>
               </div>
 
@@ -114,7 +133,7 @@ const AboutUs = () => {
 
       {/* Mobile view */}
       <div className="md:hidden block">
-        <SparkForChange2/>
+        <SparkForChange2 />
       </div>
 
       <div>

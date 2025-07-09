@@ -46,12 +46,34 @@ const Header = () => {
               </h1>
             </div>
             <div className="flex items-center gap-3">
-              <h1 className="text-[#D9DBE9] text-sm font-campton">Follow us:</h1>
+              <h1 className="text-[#D9DBE9] text-sm font-campton">
+                Follow us:
+              </h1>
               <div className="flex gap-4">
-                <Link to="https://www.facebook.com/profile.php?id=61576599869851" target="_blank"><FaFacebook className="text-white" /></Link>
-                <Link to="https://x.com/AnalyticaHaven?t=v3TTL38keS25Wqiao6I5ig&s=09" target="_blank"><BsTwitterX className="text-white" /></Link>
-                <Link to="https://www.instagram.com/analyticahaven" target="_blank"><FaInstagram className="text-white" /></Link>
-                <Link to="https://www.linkedin.com/company/analytica-haven/" target="_blank"><FaLinkedin className="text-white" /></Link>
+                <Link
+                  to="https://www.facebook.com/profile.php?id=61576599869851"
+                  target="_blank"
+                >
+                  <FaFacebook className="text-white" />
+                </Link>
+                <Link
+                  to="https://x.com/AnalyticaHaven?t=v3TTL38keS25Wqiao6I5ig&s=09"
+                  target="_blank"
+                >
+                  <BsTwitterX className="text-white" />
+                </Link>
+                <Link
+                  to="https://www.instagram.com/analyticahaven"
+                  target="_blank"
+                >
+                  <FaInstagram className="text-white" />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/company/analytica-haven/"
+                  target="_blank"
+                >
+                  <FaLinkedin className="text-white" />
+                </Link>
               </div>
             </div>
           </div>
@@ -70,10 +92,30 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-3">
               <div className="flex gap-4">
-                <Link to="https://www.facebook.com/profile.php?id=61576599869851" target="_blank"><FaFacebook className="text-white" /></Link>
-                <Link to="https://x.com/AnalyticaHaven?t=v3TTL38keS25Wqiao6I5ig&s=09" target="_blank"><BsTwitterX className="text-white" /></Link>
-                <Link to="https://www.instagram.com/analyticahaven" target="_blank"><FaInstagram className="text-white" /></Link>
-                <Link to="https://www.linkedin.com/company/analytica-haven/" target="_blank"><FaLinkedin className="text-white" /></Link>
+                <Link
+                  to="https://www.facebook.com/profile.php?id=61576599869851"
+                  target="_blank"
+                >
+                  <FaFacebook className="text-white" />
+                </Link>
+                <Link
+                  to="https://x.com/AnalyticaHaven?t=v3TTL38keS25Wqiao6I5ig&s=09"
+                  target="_blank"
+                >
+                  <BsTwitterX className="text-white" />
+                </Link>
+                <Link
+                  to="https://www.instagram.com/analyticahaven"
+                  target="_blank"
+                >
+                  <FaInstagram className="text-white" />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/company/analytica-haven/"
+                  target="_blank"
+                >
+                  <FaLinkedin className="text-white" />
+                </Link>
               </div>
             </div>
           </div>
@@ -105,11 +147,30 @@ const Header = () => {
                     </span>
                     {desktopCompanyOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</Link>
-                        <Link to="/article" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Article</Link>
-                        <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Success Page</Link>
-                        <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Events & Programs</Link>
-                        <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our Community</Link>
+                        <Link
+                          to="/about-us"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          About Us
+                        </Link>
+                        <Link
+                          to="/success-page"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Success Page
+                        </Link>
+                        <Link
+                          to="/events"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Events & Programs
+                        </Link>
+                        <Link
+                          to="/community"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Our Community
+                        </Link>
                       </div>
                     )}
                   </div>
@@ -131,8 +192,24 @@ const Header = () => {
                     </span>
                     {desktopBlogOpen && (
                       <div className="absolute top-full left-0 mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Blog</Link>
-                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Category</Link>
+                        <Link
+                          to="/blog"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Blog
+                        </Link>
+                        <Link
+                          to="/category"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Category
+                        </Link>
+                        <Link
+                          to="/article"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          Article
+                        </Link>
                       </div>
                     )}
                   </div>
@@ -154,8 +231,18 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex gap-5">
-            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-sm px-5 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out shadow-lg">Donate</Link>
-            <Link to="/join-community" className="bg-white text-[#193D6F] border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out">Join our Community</Link>
+            <Link
+              to="/donate"
+              className="bg-[#E0F780] text-[#193D6F] text-sm px-5 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out shadow-lg"
+            >
+              Donate
+            </Link>
+            <Link
+              to="/join-community"
+              className="bg-white text-[#193D6F] border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-medium lg:text-base font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out"
+            >
+              Join our Community
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -167,7 +254,11 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`absolute top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
+        <div
+          className={`absolute top-0 left-0 h-screen w-screen bg-white z-40 shadow-md transform transition-transform duration-300 ease-in-out ${
+            open ? "translate-x-0" : "-translate-x-full"
+          } md:hidden`}
+        >
           <div className="px-4 py-4 flex justify-between items-center border-b">
             <span className="text-center">
               <Link to="/">
@@ -184,17 +275,43 @@ const Header = () => {
               if (link.name === "COMPANY") {
                 return (
                   <div key={i} className="relative">
-                    <span onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)} className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer">
+                    <span
+                      onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)}
+                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
+                    >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
                     {mobileCompanyOpen && (
                       <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link to="/about-us" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>About Us</Link>
-                        <Link to="/article" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Article</Link>
-                        <Link to="/success-page" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Success Page</Link>
-                        <Link to="/events" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Events & Programs</Link>
-                        <Link to="/community" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Our Community</Link>
+                        <Link
+                          to="/about-us"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={closeAllMenus}
+                        >
+                          About Us
+                        </Link>
+                        <Link
+                          to="/success-page"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={closeAllMenus}
+                        >
+                          Success Page
+                        </Link>
+                        <Link
+                          to="/events"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={closeAllMenus}
+                        >
+                          Events & Programs
+                        </Link>
+                        <Link
+                          to="/community"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={closeAllMenus}
+                        >
+                          Our Community
+                        </Link>
                       </div>
                     )}
                   </div>
@@ -204,14 +321,36 @@ const Header = () => {
               if (link.name === "BLOG") {
                 return (
                   <div key={i} className="relative">
-                    <span onClick={() => setMobileBlogOpen(!mobileBlogOpen)} className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer">
+                    <span
+                      onClick={() => setMobileBlogOpen(!mobileBlogOpen)}
+                      className="flex items-center gap-1 text-sm hover:text-[#176FB9] cursor-pointer"
+                    >
                       {link.name}
                       <ChevronDown size={16} />
                     </span>
                     {mobileBlogOpen && (
                       <div className="mt-2 w-40 bg-white shadow-md rounded-md py-2 z-50">
-                        <Link to="/blog" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Blog</Link>
-                        <Link to="/category" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeAllMenus}>Category</Link>
+                        <Link
+                          to="/blog"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={closeAllMenus}
+                        >
+                          Blog
+                        </Link>
+                        <Link
+                          to="/category"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={closeAllMenus}
+                        >
+                          Category
+                        </Link>
+                        <Link
+                          to="/article"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          onClick={closeAllMenus}
+                        >
+                          Article
+                        </Link>
                       </div>
                     )}
                   </div>
@@ -219,23 +358,39 @@ const Header = () => {
               }
 
               return (
-                <Link key={i} to={link.url} className="hover:text-[#176FB9] transition-colors text-sm" onClick={closeAllMenus}>
+                <Link
+                  key={i}
+                  to={link.url}
+                  className="hover:text-[#176FB9] transition-colors text-sm"
+                  onClick={closeAllMenus}
+                >
                   {link.name}
                 </Link>
               );
             })}
-      
-            <Link to="/donate" className="bg-[#E0F780] text-[#193D6F] text-center px-6 py-3 text-sm rounded-lg font-semibold font-campton" onClick={closeAllMenus}>
+
+            <Link
+              to="/donate"
+              className="bg-[#E0F780] text-[#193D6F] text-center px-6 py-3 text-sm rounded-lg font-semibold font-campton"
+              onClick={closeAllMenus}
+            >
               Donate
             </Link>
-            <Link to="/join-community" className="bg-white text-[#193D6F] text-center border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-semibold font-campton" onClick={closeAllMenus}>
+            <Link
+              to="/join-community"
+              className="bg-white text-[#193D6F] text-center border-[#193D6F] border text-sm px-6 py-3 rounded-lg font-semibold font-campton"
+              onClick={closeAllMenus}
+            >
               Join our Community
             </Link>
           </nav>
         </div>
 
         {open && (
-          <div className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden" onClick={() => setOpen(false)} />
+          <div
+            className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden"
+            onClick={() => setOpen(false)}
+          />
         )}
       </header>
 

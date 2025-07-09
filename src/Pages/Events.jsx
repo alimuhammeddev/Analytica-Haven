@@ -61,8 +61,8 @@ const Events = () => {
             </div>
 
             {/* Mobile view */}
-            <div className="flex items-center justify-center gap-2 pb-[3rem] md:hidden block">
-              <div>
+            <div className="flex items-center justify-center gap-2 pb-[3rem]">
+              <div className="md:hidden block">
                 <Link
                   to="/community"
                   className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] text-[0.7rem]"
@@ -70,7 +70,7 @@ const Events = () => {
                   Join Us Now
                 </Link>
               </div>
-              <div className="w-[60%] mt-5">
+              <div className="w-[60%] mt-5 md:hidden block">
                 <img src={eventbottomimg} alt="" className="w-[100%]" />
               </div>
             </div>
