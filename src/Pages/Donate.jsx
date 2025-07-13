@@ -119,7 +119,7 @@ const Donate = () => {
             How you can help?
           </h1>
           <p className="text-center text-[#65676A] lg:text-lg lg:mt-5 mt-2 font-campton">
-            At Analytical Haven, we believe that power of compassion and{" "}
+            At Analytica Haven, we believe that power of compassion and{" "}
             <br className="lg:block hidden" />
             generosity can create meaningful changes in the world, your support{" "}
             <br className="lg:block hidden" />
@@ -149,7 +149,7 @@ const Donate = () => {
                   Monetary Donations
                 </h1>
                 <p className="text-[#000000] lg:text-lg mt-2 font-campton">
-                  Analytical Haven welcomes partnerships with corporations that
+                  Analytica Haven welcomes partnerships with corporations that
                   share.
                 </p>
               </div>

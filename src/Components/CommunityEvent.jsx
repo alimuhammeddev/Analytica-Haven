@@ -1,4 +1,4 @@
-import event6 from "../assets/event6.svg";
+//import event6 from "../assets/event6.svg";
 import event7 from "../assets/event7.svg";
 import event8 from "../assets/event8.svg";
 import event9 from "../assets/event9.svg";
@@ -11,7 +11,7 @@ const CommunityEvent = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[3rem] bg-[#F7F7F7] my-[3rem] rounded-lg font-campton">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* First column - Featured event */}
-          <div className="lg:w-1/2">
+          {/* <div className="lg:w-1/2">
             <h2 className="text-[#193D6F] text-[1.5rem] md:text-[2rem] font-semibold mb-5 md:block hidden">
               Community Reflection
             </h2>
@@ -48,24 +48,24 @@ const CommunityEvent = () => {
                 and them, that hopefully leads into a working relationship.
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Second column - Event cards */}
-          <div className="lg:w-1/2 space-y-2">
+          <div className="lg:w-full space-y-2">
             {/* Event card 1 */}
-            <div className="flex flex-col md:text-justify text-center md:flex-row gap-6 p-6 bg-[#EBF2FE] rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="flex flex-col items-center md:text-justify text-center md:flex-row gap-6 p-6 bg-[#EBF2FE] rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="md:w-1/3">
                 <img
                   src={event7}
                   alt="Mind Building Games"
-                  className="md:w-full md:h-full object-cover rounded-lg w-[50%] h-[50%] mx-auto md:mx-0"
+                  className="w-full object-cover rounded-lg"
                 />
               </div>
               <div className="md:w-2/3">
-                <h2 className="md:text-xl text-[1.5rem] font-semibold text-[#193D6F] mb-2">
+                <h2 className="md:text-3xl text-[1.2rem] font-semibold text-[#193D6F] mb-2">
                   Mind Building Games
                 </h2>
-                <p className="text-gray-600 mb-4 md:text-[0.7rem] text-[0.875rem]">
+                <p className="text-gray-600 mb-4 md:text-[1.5rem] text-[1.2rem]">
                   This will help build a connection between you
                 </p>
                 <Link
@@ -78,19 +78,19 @@ const CommunityEvent = () => {
             </div>
 
             {/* Event card 2 */}
-            <div className="flex flex-col md:text-justify text-center md:flex-row gap-6 p-6 bg-[#EBF2FE] rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="flex flex-col items-center md:text-justify text-center md:flex-row gap-6 p-6 bg-[#EBF2FE] rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="md:w-1/3">
                 <img
                   src={event8}
                   alt="Mind Building Games"
-                  className="md:w-full md:h-full object-cover rounded-lg w-[50%] h-[50%] mx-auto md:mx-0"
+                  className="w-full object-cover rounded-lg"
                 />
               </div>
               <div className="md:w-2/3">
-                <h2 className="md:text-xl text-[1.5rem] font-semibold text-[#193D6F] mb-2">
+                <h2 className="md:text-3xl text-[1.2rem] font-semibold text-[#193D6F] mb-2">
                   Community Charity 
                 </h2>
-                <p className="text-gray-600 mb-4 md:text-[0.7rem] text-[0.875rem]">
+                <p className="text-gray-600 mb-4 md:text-[1.5rem] text-[1.2rem]">
                   This will help build a connection between you
                 </p>
                 <Link
@@ -103,19 +103,19 @@ const CommunityEvent = () => {
             </div>
 
             {/* Event card 3 */}
-            <div className="flex flex-col md:text-justify text-center md:flex-row gap-6 p-6 bg-[#EBF2FE] rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="flex flex-col items-center md:text-justify text-center md:flex-row gap-6 p-6 bg-[#EBF2FE] rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="md:w-1/3">
                 <img
                   src={event9}
                   alt="Mind Building Games"
-                  className="md:w-full md:h-full object-cover rounded-lg w-[50%] h-[50%] mx-auto md:mx-0"
+                  className="w-full object-cover rounded-lg"
                 />
               </div>
               <div className="md:w-2/3">
-                <h2 className="md:text-xl text-[1.5rem] font-semibold text-[#193D6F] mb-2">
+                <h2 className="md:text-3xl text-[1.2rem] font-semibold text-[#193D6F] mb-2">
                   Business Growth Squad 
                 </h2>
-                <p className="text-gray-600 mb-4 md:text-[0.7rem] text-[0.875rem]">
+                <p className="text-gray-600 mb-4 md:text-[1.5rem] text-[1.2rem]">
                   This will help build a connection between you
                 </p>
                 <Link
