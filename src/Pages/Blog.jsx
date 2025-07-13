@@ -8,6 +8,7 @@ import blog4 from "../assets/blog4.svg";
 import blog5 from "../assets/blog5.svg";
 import blog6 from "../assets/blog6.svg";
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const categories = [
@@ -126,15 +127,20 @@ const Blog = () => {
             {post.date}
           </p>
         </div>
-        <h2 className="font-campton lg:text-2xl text-lg font-semibold text-[#000] lg:w-[80%] w-full leading-tight">
+        <h2 className="font-campton lg:text-2xl text-lg font-bold text-[#000] lg:w-[80%] w-full leading-tight">
           {post.title}
         </h2>
         <p className="font-campton lg:text-lg lg:w-[80%] w-full">
           {post.description}
         </p>
-        <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton hover:bg-[#193d6f] hover:text-white transition ease-in-out duration-300">
-          Read More
-        </button>
+        <div>
+          <Link
+            to="/article"
+            className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-2 px-4 rounded-lg font-medium lg:text-lg font-campton hover:bg-[#193d6f] hover:text-white transition ease-in-out duration-300"
+          >
+            Read More
+          </Link>
+        </div>
       </div>
       <img
         src={post.image}

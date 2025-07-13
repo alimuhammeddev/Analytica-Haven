@@ -14,6 +14,9 @@ import Community from "./Pages/Community";
 import Team from './Pages/Team'
 import ContactUs from './Pages/ContactUs'
 import JoinCommunity from './Pages/JoinCommunity'
+import Highlight1 from './Components/Highlight1'
+import Highlight2 from './Components/Highlight2'
+import Highlight3 from './Components/Highlight3'
 
 const App = () => {
   return (
@@ -33,6 +36,9 @@ const App = () => {
         <Route path="team" element={<Team />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="join-community" element={<JoinCommunity />} />
+        <Route path="/highlight1" element={<Highlight1/>}/>
+        <Route path="/highlight2" element={<Highlight2/>}/>
+        <Route path="/highlight3" element={<Highlight3/>}/>
       </Routes>
     </div>
   )

@@ -17,6 +17,7 @@ import project2 from "../assets/project2.svg";
 import project3 from "../assets/project3.svg";
 import projectsister from "../assets/projectsister.svg";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -26,35 +27,46 @@ const projects = [
       <>
         An empowering learning experience by Analytica Haven. Equipping
         creatives with hands-on design skills and tools. Fostering growth,
-        creativity, and community all for free.
+        creativity, and community all for free. At Analytica Haven, we believe
+        design should be accessible to everyone, that is why we offer a 7 days
+        free hands-on graphics design training.
       </>
     ),
-    imgAlt: "7 Days Free Graphic Design",
+    link: "/highlight1", // Changed to string path
+    imgAlt: "7 DAYS FREE GRAPHICS DESIGN BOOT CAMP",
     imgSrc: project1,
   },
   {
     id: 2,
-    title: <>Content Creation</>,
+    title: <>Transform Your Project </>,
     description: (
       <>
-        When it feels like a chore: A reflective internal project by Analytica
-        Haven exploring the challenges of consistent content creation. This
-        piece sheds light on creative burnout.
+        Transform project management game is an interactive data-informed
+        simulation developed by Analytica Haven to help individuals build
+        practical project management skills. It's not just about ticking boxes
+        or following timelines, it's about clarity, flow, and results. The game
+        immerses users in real-world scenarios, encouraging strategic teamwork.
       </>
     ),
+    link: "/highlight2", // Changed to string path
     imgAlt: "Content creation process image",
     imgSrc: project2,
   },
   {
     id: 3,
-    title: <>Free Linkedin Optimization</>,
+    title: <>Excel For Data Analysis</>,
     description: (
       <>
-        A career-boosting session by Analytica Haven Helping professionals
-        build standout LinkedIn profiles Unlock visibility, connections, and
-        real opportunities.
+        Excel for Data Analysis is a hands-on learning initiative by Analytica
+        Haven designed to empower individuals with practical data analysis
+        skills using Microsoft Excel. This project demystifies Excel’s powerful
+        analytical tools, turning spreadsheets into storytelling tools for
+        informed decision-making. Through workshops, live sessions, and
+        downloadable resources, participants have gained skills in data sorting,
+        pivot tables, and charting.
       </>
     ),
+    link: "/highlight3", // Changed to string path
     imgAlt: "Free Linkedin Optimization",
     imgSrc: project3,
   },
@@ -70,9 +82,9 @@ const OurProject = () => {
         style={{ backgroundImage: `url(${patternhero})` }}
       >
         <div className="text-center px-4 lg:space-y-7 space-y-4">
-          <h1 className="lg:text-6xl text-xl font-semibold font-campton border-2 border-transparent-500 p-3">
+          <h2 className="lg:text-6xl text-xl font-semibold font-campton border-2 border-transparent-500 p-3">
             Transforming ideas into Action
-          </h1>
+          </h2>
           <p className="mt-2 lg:text-2xl font-campton">
             Explore how Analytica Haven empower change,
             <br className="lg:block hidden" />
@@ -88,44 +100,51 @@ const OurProject = () => {
       <div className="bg-white">
         <div className="max-w-7xl mx-auto px-5 py-12 lg:py-20">
           <div className="space-y-8">
-            {projects.map(({ id, title, description, imgAlt, imgSrc }, idx) => (
-              <div
-                key={id}
-                className={`flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12 px-0 lg:p-12 ${
-                  idx === 1
-                    ? "bg-[#EBF2FE] -mx-5 lg:-mx-[3.2rem] px-5 py-5 lg:py-12 lg:px-24"
-                    : "bg-transparent"
-                }`}
-              >
-                <div className="space-y-6 flex-1 order-2 lg:order-1">
-                  <h1 className="text-black font-campton font-semibold text-2xl lg:text-4xl">
-                    {title}
-                  </h1>
-                  <p className="font-campton text-base lg:text-xl text-gray-700">
-                    {description}
-                  </p>
-                  <button className="bg-[#E0F780] hover:bg-[#193D6F] hover:text-white text-[#193D6F] font-medium px-6 py-3 rounded-lg transition-colors duration-300">
-                    View Highlight
-                  </button>
+            {projects.map(
+              ({ id, title, description, imgAlt, imgSrc, link }, idx) => (
+                <div
+                  key={id}
+                  className={`flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12 px-0 lg:p-12 ${
+                    idx === 1
+                      ? "bg-[#EBF2FE] -mx-5 lg:-mx-[3.2rem] px-5 py-5 lg:py-12 lg:px-24"
+                      : "bg-transparent"
+                  }`}
+                >
+                  <div className="space-y-6 flex-1 order-2 lg:order-1">
+                    <h2 className="text-black font-campton font-bold text-2xl lg:text-4xl">
+                      {title}
+                    </h2>
+                    <p className="font-campton text-base lg:text-xl text-gray-700">
+                      {description}
+                    </p>
+                    <div className="pt-5">
+                      <Link
+                        to={link}
+                        className="bg-[#E0F780] hover:bg-[#193D6F] hover:text-white text-[#193D6F] font-medium px-6 py-3 rounded-lg transition-colors duration-300"
+                      >
+                        View Highlight
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex-1 order-1 lg:order-2">
+                    <img
+                      src={imgSrc}
+                      alt={imgAlt}
+                      className="md:w-[70%] w-full max-w-[600px] mx-auto rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
                 </div>
-                <div className="flex-1 order-1 lg:order-2">
-                  <img
-                    src={imgSrc}
-                    alt={imgAlt}
-                    className="md:w-[70%] w-full max-w-[600px] mx-auto rounded-lg shadow-lg object-cover"
-                  />
-                </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-20 mt-7">
         <div>
-          <h1 className="lg:text-[2rem] font-campton text-[1.5rem] font-semibold text-center text-[#080F10]">
+          <h2 className="lg:text-[2rem] font-campton text-[1.5rem] font-semibold text-center text-[#080F10]">
             Our Core Digital Capabilities
-          </h1>
+          </h2>
           <p className="text-center font-campton text-[#575959] lg:text-lg mt-2">
             Work With Us to Drive Innovation
           </p>
@@ -134,9 +153,9 @@ const OurProject = () => {
         <div className="flex items-center justify-between flex-wrap lg:flex-row flex-col lg:gap-16 gap-7 lg:mt-16 mt-8">
           <div className="space-y-3">
             <img src={data4impact} alt="" className="mx-auto lg:w-fit w-16" />
-            <h1 className="lg:text-xl font-campton font-semibold text-center">
+            <h2 className="lg:text-xl font-campton font-semibold text-center">
               Data4Impact
-            </h1>
+            </h2>
             <p className="text-[#575959] font-campton lg:text-lg text-center">
               Helping NGOs use data to make better <br /> decisions and tell
               their stories.
@@ -145,9 +164,9 @@ const OurProject = () => {
 
           <div className="space-y-3">
             <img src={ux4her} alt="" className="mx-auto lg:w-fit w-16" />
-            <h1 className="lg:text-xl font-campton font-semibold text-center">
+            <h2 className="lg:text-xl font-campton font-semibold text-center">
               UX4Her
-            </h1>
+            </h2>
             <p className="text-[#575959] font-campton lg:text-lg text-center">
               Young designers teamed up to redesign <br /> safety apps for
               women.
@@ -156,9 +175,9 @@ const OurProject = () => {
 
           <div className="space-y-3">
             <img src={devboot} alt="" className="mx-auto lg:w-fit w-16" />
-            <h1 className="lg:text-xl font-campton font-semibold text-center">
+            <h2 className="lg:text-xl font-campton font-semibold text-center">
               DevBoot Studio
-            </h1>
+            </h2>
             <p className="text-[#575959] font-campton lg:text-lg text-center">
               We build MVPs with new developers <br /> and help startups grow.
             </p>
@@ -166,9 +185,9 @@ const OurProject = () => {
 
           <div className="space-y-3">
             <img src={havenhack} alt="" className="mx-auto lg:w-fit w-16" />
-            <h1 className="lg:text-xl font-campton font-semibold text-center">
+            <h2 className="lg:text-xl font-campton font-semibold text-center">
               Haven Hack 2025
-            </h1>
+            </h2>
             <p className="text-[#575959] font-campton lg:text-lg text-center">
               A tech challenge where teams solve real <br /> problems in 48
               hours.
@@ -177,9 +196,9 @@ const OurProject = () => {
 
           <div className="space-y-3">
             <img src={agrotech} alt="" className="mx-auto lg:w-fit w-16" />
-            <h1 className="lg:text-xl font-campton font-semibold text-center">
+            <h2 className="lg:text-xl font-campton font-semibold text-center">
               AgroTech Connect
-            </h1>
+            </h2>
             <p className="text-[#575959] font-campton lg:text-lg text-center">
               Tech-driven price insights for local farmers <br /> And community
               at large
@@ -188,9 +207,9 @@ const OurProject = () => {
 
           <div className="space-y-3">
             <img src={code4teens} alt="" className="mx-auto lg:w-fit w-16" />
-            <h1 className="lg:text-xl font-campton font-semibold text-center">
+            <h2 className="lg:text-xl font-campton font-semibold text-center">
               Code4Teens
-            </h1>
+            </h2>
             <p className="text-[#575959] font-campton lg:text-lg text-center">
               Teens learn to build websites and apps <br /> through fun weekend
               sessions.
@@ -206,7 +225,10 @@ const OurProject = () => {
       </div>
 
       <div className="bg-[#EBF2FE]">
-        <div className="max-w-7xl mx-auto justify-center p-6 lg:mt-20 mt-7">
+        <div className="max-w-7xl mx-auto p-6 md:py-10 md:px-6 lg:mt-20 mt-7">
+          <h2 className="font-campton text-[#000] font-bold lg:text-[2rem] text-[1.5rem] text-center ">
+            Safe Sisterhood Companionship Forum
+          </h2>
           <div className="flex lg:mt-10 mt-5 lg:flex-row flex-col gap-10">
             <div className="flex flex-col lg:flex-row gap-5">
               <div className="flex-1">
@@ -218,7 +240,7 @@ const OurProject = () => {
               </div>
               <div className="flex-1 overflow-hidden rounded-xl shadow-lg">
                 <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSeVx9mJKTtwg1anw9qfL-iXTTaHkYjRb61l7r_t3Tgr862oaA/viewform?embedded=true"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLScwAikbCGqb9s5VycFyEqGhtmg1qNZxv8E8rpZkSMh56mtqTA/viewform?embedded=true"
                   width="100%"
                   height="400"
                   frameBorder="0"
@@ -229,33 +251,19 @@ const OurProject = () => {
               </div>
             </div>
             <div className="flex-1 space-y-5 lg:mt-0 mt-5">
-              <h1 className="font-campton text-[#000] font-semibold lg:text-[2rem] text-[1.5rem]">
-                Safe Sisterhood Companionship App
-              </h1>
-              <p>
-                Women's Companionship App .This app empowers women to{" "}
-                <br className="lg:block hidden" /> find trusted companions
-                tailored to their specific needs and{" "}
-                <br className="lg:block hidden" />
-                lifestyles. It makes it easy to connect with like-minded{" "}
-                <br className="lg:block hidden" />
-                individuals based on shared interests, preferences, and{" "}
-                <br className="lg:block hidden" />
-                availability, fostering meaningful connections and a sense of{" "}
-                <br className="lg:block hidden" />
-                security. Whether seeking friendship, travel buddies, event{" "}
-                <br className="lg:block hidden" />
-                partners, or supportive communities, this platform is{" "}
-                <br className="lg:block hidden" /> designed to prioritize
-                women's safety, comfort, and <br className="lg:block hidden" />{" "}
-                empowerment at every step.
+              <h2 className="font-campton text-[#000] font-semibold lg:text-[1.5rem] text-[1.2rem]">
+                Be a Part Of This Forum
+              </h2>
+              <p className="w-[100%] md:w-[80%]">
+                Safe Sisterhood is a private, supportive space created
+                exclusively for women to openly discuss health, sexuality, and
+                gender related experiences without fear of judgment. It’s a
+                community that fosters trust, empathy, and empowerment—where
+                every voice is heard, every story is respected, and every woman
+                is encouraged to grow, heal, and connect. Whether you're seeking
+                advice, sharing your journey, or simply looking for a safe place
+                to belong, Safe Sisterhood is here for you.
               </p>
-
-              <div className="lg:mt-5 mt-3">
-                <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                  Be a volunteer
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -264,9 +272,9 @@ const OurProject = () => {
       <div className="md:block hidden">
         <div className="max-w-7xl mx-auto justify-center p-5 lg:mt-20 mt-7 md:block hidden">
           <div>
-            <h1 className="lg:text-3xl text-xl font-campton font-semibold text-center">
+            <h2 className="lg:text-3xl text-xl font-campton font-semibold text-center">
               Our Exclusive Expert Support
-            </h1>
+            </h2>
           </div>
           <div className="flex items-center justify-between lg:flex-row flex-col lg:mt-16 mt-7 lg:mb-10 mb-7 lg:gap-16 gap-7">
             <div>
@@ -274,55 +282,49 @@ const OurProject = () => {
             </div>
 
             <div className="space-y-5">
-              <h1 className="font-campton lg:text-3xl text-xl font-semibold text-[#080F10]">
+              <h2 className="font-campton lg:text-3xl text-xl font-semibold text-[#080F10]">
                 Brand & Business Strategy
-              </h1>
+              </h2>
               <p className="text-[#575959] font-campton lg:text-lg">
                 Building brands with smart, scalable business Where creative
                 vision meets strategic execution.
               </p>
-              <h1 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
+              <h2 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
                 <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                 Research & Insight
-              </h1>
-              <h1 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
+              </h2>
+              <h2 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
                 <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                 Purpose & Vision
-              </h1>
-              <h1 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
+              </h2>
+              <h2 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
                 <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                 Audience Personas
-              </h1>
-              <button className="text-[#193D6F] bg-[#E0F780] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                Learn More
-              </button>
+              </h2>
             </div>
           </div>
 
           <div className="flex items-center justify-between lg:flex-row flex-col-reverse lg:mt-16 mt-7 lg:mb-10 mb-7 lg:gap-16 gap-7">
             <div className="space-y-5">
-              <h1 className="font-campton lg:text-3xl text-xl font-semibold text-[#080F10]">
+              <h2 className="font-campton lg:text-3xl text-xl font-semibold text-[#080F10]">
                 Verbal identity systems
-              </h1>
+              </h2>
               <p className="text-[#575959] font-campton lg:text-lg">
                 Crafting a consistent tone that connects, resonates, and give
                 your brand a voice people recognize and remember.
               </p>
-              <h1 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
+              <h2 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
                 <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                 Brand Personality
-              </h1>
-              <h1 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
+              </h2>
+              <h2 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
                 <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                 Brand story & Manifesto
-              </h1>
-              <h1 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
+              </h2>
+              <h2 className="text-[#080F10] text-lg font-campton flex items-center gap-3">
                 <Check className="text-[#193D6F] bg-[#E0F780] p-1 rounded-full" />{" "}
                 Tagline Development
-              </h1>
-              <button className="text-[#193D6F] bg-[#E0F780] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
-                Explore
-              </button>
+              </h2>
             </div>
 
             <div>
@@ -342,28 +344,29 @@ const OurProject = () => {
           {/* Testimonial 1 */}
           <div className="space-y-3 border-2 border-[#193D6F] p-5 rounded-xl hover:shadow-lg transition-shadow duration-300">
             <p className="text-base lg:text-lg font-campton italic text-gray-700">
-              "Working with Analytica Haven transformed our product strategy The
-              support and insights we received were simply outstanding plus
-              "They us helped gain our stand,."
+              "Wow, what an incredible week of Excel knowledge! Day 7 is packed
+              with powerful advanced functions and data integration techniques.
+              You've covered so much ground, and this summary is a fantastic
+              resource."
             </p>
-            <h1 className="text-blue-700 font-campton text-xl lg:text-2xl font-semibold">
-              Mango farm Ltd
-            </h1>
+            <h2 className="text-blue-700 font-campton text-xl lg:text-2xl font-semibold">
+              Certified Accountatant
+            </h2>
             <p className="text-base lg:text-lg font-campton text-gray-600">
-              Bola Peter
+              Henry Emenike
             </p>
           </div>
 
           {/* Testimonial 2  */}
           <div className="space-y-3 border-2 border-[#193D6F] p-5 rounded-xl hover:shadow-lg transition-shadow duration-300">
             <p className="text-base lg:text-lg font-campton italic text-gray-700">
-              "Analytica Haven is incredible, this initiative deserves greater
+              ""Analytica Haven is incredible, this initiative deserves greater
               visibility and reach, as it has the potential to empower more
               individual ,and create lasting impact across communities."
             </p>
-            <h1 className="text-blue-700 font-campton text-xl lg:text-2xl font-semibold">
+            <h2 className="text-blue-700 font-campton text-xl lg:text-2xl font-semibold">
               UI/UX Designer
-            </h1>
+            </h2>
             <p className="text-base lg:text-lg font-campton text-gray-600">
               Faith Akan
             </p>
@@ -371,15 +374,15 @@ const OurProject = () => {
           {/* Testimonial 3 */}
           <div className="space-y-3 border-2 border-[#193D6F] p-5 rounded-xl hover:shadow-lg transition-shadow duration-300">
             <p className="text-base lg:text-lg font-campton italic text-gray-700">
-              "As a startup, finding the right talent is crucial. Analytica
-              Haven not only simplified our hiring process but also connected us
-              with skilled professionals who truly fit our mission."
+              "It is wa a very educational session with analytica Haven.I learnt
+              a lot and will be implementing all of them. Thank you for creating
+              such an amazing opportunity to learn."
             </p>
-            <h1 className="text-blue-700 font-campton text-xl lg:text-2xl font-semibold">
-              Backend Developer
-            </h1>
+            <h2 className="text-blue-700 font-campton text-xl lg:text-2xl font-semibold">
+              Virtual Assistant
+            </h2>
             <p className="text-base lg:text-lg font-campton text-gray-600">
-              Precious Ana
+              Henrietta Okereke
             </p>
           </div>
         </div>

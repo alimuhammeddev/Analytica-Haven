@@ -41,7 +41,7 @@ const Events = () => {
 
             {/* Mobile view */}
             <div>
-              <h2 className="my-[2.5rem] text-[2rem] pr-[1.5rem] font-semibold md:hidden block">
+              <h2 className="my-[2.5rem] text-[2rem] pr-[1.5rem] font-bold md:hidden block">
                 Explore the programs and events in Our{" "}
                 <span className="text-[#E0F780]">Community</span>
               </h2>

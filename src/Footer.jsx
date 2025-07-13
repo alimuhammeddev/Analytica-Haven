@@ -12,7 +12,7 @@ const Footer = () => {
       <section className="md:block hidden lg:block">
         <div className="bg-[#193D6F] py-10">
           <div className="max-w-7xl mx-auto justify-center p-8 text-justify">
-            <div className="grid grid-cols-4 grid-cols-1 gap-28 mt-10">
+            <div className="grid md:grid-cols-4 grid-cols-1 gap-28 mt-10">
               <div className="space-y-5 mx-auto">
                 <img src={logo} alt="" />
                 <p className="text-[#D9DBE9] font-campton text-[0.875rem] font-normal">
@@ -247,10 +247,10 @@ const Footer = () => {
                 </h1>
                 <div className="space-y-3 mt-3 flex flex-col">
                   <p className="text-[#D9DBE9] flex items-center gap-2">
-                    <Mail size={15} /> info@analyticahaven.com
+                    <Mail size={15} /> analyticahaven@gmail.com
                   </p>
                   <p className="text-[#D9DBE9] flex items-center gap-2 text-base font-campton my-2">
-                    <Phone size={15} /> (+234)90-223-4556
+                    <Phone size={15} /> (+234)-816-888-4379
                   </p>
                   <p className="text-[#D9DBE9] flex items-center gap-2 text-base font-campton">
                     <MapPin size={15} /> Lagos, Nigeria.

@@ -35,7 +35,7 @@ const AboutUs = () => {
         className="bg-cover bg-no-repeat bg-center h-80 text-white md:hidden block"
         style={{ backgroundImage: `url(${aboutheromb})` }} 
         >
-          <h2 className="flex items-center justify-center flex-col text-[2rem] font-bold h-full font-campton">
+          <h2 className="flex items-center justify-center flex-col text-[1.5rem] font-bold h-full font-campton">
             Knowledge Meets Execution 
             <span className="block">At Analytica Haven</span>
           </h2>
@@ -139,7 +139,7 @@ const AboutUs = () => {
         <SparkForChange2 />
       </div>
 
-      <div>
+      <div className="pb-5">
         <CoreServices />
       </div>
 

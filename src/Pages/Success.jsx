@@ -8,18 +8,61 @@ import {
   mary,
   patternhero,
   paul,
+  tolu,
   peter,
   successhero,
-  testi4,
-  testi5,
-  testi6,
-  tolu,
   vector,
 } from "../assets";
 import { Check } from "lucide-react";
 import Footer from "../Footer";
 
 const Success = () => {
+  const testimonials = [
+    {
+      id: 1,
+      image: emma,
+      name: "Emma Paul",
+      company: "Techie Solution",
+      testimonial: "Emma startup, techie solution was able to grow His business after participating in one of Analytica Haven Mentorship programs."
+    },
+    {
+      id: 2,
+      image: tolu,
+      name: "Tolu Adebayo",
+      company: "Green Tech Innovation",
+      testimonial: "Tolu turned her freelance digital marketing business into a fully-fledged after attending series of workshops at Analytica Haven."
+    },
+    {
+      id: 3,
+      image: mary,
+      name: "Mary Anababa",
+      company: "Ojo Digital Market",
+      testimonial: "Through the networking and events organized by Analytica Haven, Mary was able to secure funding for Her Business."
+    },
+    {
+      id: 4,
+      image: maro,
+      name: "Tinubu Oluwajuwon",
+      company: "Data Tafa.co",
+      testimonial: "I never imagined I'd teach others how to use data tools. Analytica Haven made that possible. And am very grateful."
+    },
+    {
+      id: 5,
+      image: paul,
+      name: "Timileyin Ojo",
+      company: "Startup Spotlight",
+      testimonial: "As a startup, finding the right career path and tools was difficult, until Analytica Haven stepped in. And made the process easy."
+    },
+    {
+      id: 6,
+      image: peter,
+      name: "Favour Peter",
+      company: "Ojo Digital Market",
+      testimonial: "Favour's breakthrough came after attending Analytica Haven's networking events, where she connected with the right partners."
+    }
+  ];
+
+
   return (
     <section>
       <div>
@@ -33,7 +76,7 @@ const Success = () => {
         >
           <div className="text-center px-4 lg:space-y-7 space-y-4">
             <h1 className="lg:text-6xl text-xl font-semibold font-campton border-2 border-transparent-500 p-3">
-              Transforming ideas into impart
+              Transforming ideas into impact
             </h1>
             <p className="mt-2 lg:text-2xl font-campton">
               Discover how Analytica Haven is shaping the future through
@@ -82,84 +125,26 @@ const Success = () => {
               ,learning and impact from our vibrant community
             </p>
 
-            <div className="flex flex-wrap gap-6 lg:mt-16 mt-5">
-              <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
-                <img src={emma} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
-                  Emma Paul
-                </h1>
-                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Techie Solution</h2>
-                <p className="text-[#65676A] md:text-[14px] text-[12px]">
-                  Precious startup, techie solution was able to grow His
-                  business after ,participating in one of Analytica Haven
-                  Mentorship programs
-                </p>
-              </div>
-
-              <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">  
-                <img src={tolu} alt="" className="w-[100%] h-50"/>
-                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
-                  Tolu Adebayo
-                </h1>
-                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">
-                  Green Tech Innovation
-                </h2>
-                <p className="text-[#65676A] md:text-[14px] text-[12px]">
-                  Sandra turned her freelance digital marketing business into a
-                  fully-fledged after attending series of workshops at Analytica
-                  Haven .
-                </p>
-              </div>
-
-              <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
-                <img src={mary} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
-                  Mary Anababa
-                </h1>
-                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Ojo Digital Market</h2>
-                <p className="text-[#65676A] md:text-[14px] text-[12px]">
-                  Throuh the networking and events organized by Analytica Haven
-                  Tolu was able to secure funding for Her Business.
-                </p>
-              </div>
-
-              <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
-                <img src={maro} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
-                  Maro Salat
-                </h1>
-                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Data Tafa.co</h2>
-                <p className="text-[#65676A] md:text-[14px] text-[12px]">
-                  I never imagined I'd teach others how to use data tools.
-                  Analytica Haven made that possible. And am very grateful.
-                </p>
-              </div>
-
-              <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
-                <img src={paul} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
-                  Paul Rose
-                </h1>
-                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Startup Spotlight</h2>
-                <p className="text-[#65676A] md:text-[14px] text-[12px]">
-                  As a startup, finding the right career path and tools was
-                  difficult,until Analytica Haven stepped in. And make the
-                  process easy.
-                </p>
-              </div>
-
-              <div className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
-                <img src={peter} alt="" className="w-full h-50"/>
-                <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
-                  Peter Favour
-                </h1>
-                <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">Ojo Digital Market</h2>
-                <p className="text-[#65676A] md:text-[14px] text-[12px]">
-                  Tolu’s breakthrough came after attending Analytica Haven’s
-                  networking events,where she connected with the right partners.
-                </p>
-              </div>
-            </div>
+                <div className="flex flex-wrap gap-6 lg:mt-16 mt-5">
+                  {testimonials.map((testimonial) => (
+                    <div key={testimonial.id} className="w-full sm:w-[48%] lg:w-[32%] p-4 space-y-2">
+                      <img 
+                        src={testimonial.image} 
+                        alt={`${testimonial.name} - ${testimonial.company}`} 
+                        className="w-full h-50"
+                      />
+                      <h1 className="lg:text-[24px] text-[18px] font-campton font-semibold">
+                        {testimonial.name}
+                      </h1>
+                      <h2 className="lg:text-lg font-campton md:text-[16px] text-[14px]">
+                        {testimonial.company}
+                      </h2>
+                      <p className="text-[#65676A] md:text-[14px] text-[12px]">
+                        {testimonial.testimonial}
+                      </p>
+                    </div>
+                  ))}
+                </div>
 
             <div className="flex lg:flex-row flex-col justify-between gap-5">
               <div className="max-w-7xl mx-auto justify-center lg:p-8 p-3 lg:mt-16 mt-5 text-center md:hidden block">
@@ -223,7 +208,7 @@ const Success = () => {
                   The core mission behind our work
                 </h1>
                 <p className="text-[#575959] font-campton lg:text-base">
-                  At Analtical Haven, our mission is to empower communities and
+                  At Analtica Haven, our mission is to empower communities and
                   organisations though <br className="lg:block hidden" /> the
                   transformative power of data.We strive to provide accessible,
                   actionable insights <br className="lg:block hidden" /> and
@@ -241,62 +226,11 @@ const Success = () => {
                   <Check className="text-[#FFFFFF] bg-[#575959] p-1 rounded-full" />{" "}
                   10+ Years of Experience
                 </h1>
-                {/* <button className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] md:hover:border md:hover:border-[#fff]-500 transition ease-in-out duration-300">
-                  Our Case Study
-                </button> */}
               </div>
             </div>
           </div>
         </div>
 
-        {/* <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-5">
-          <div>
-            <h1 className="text-[#193D6F] lg:text-4xl text-xl font-campton font-semibold text-center lg:mt-20 mt-10">
-              Testimonials
-            </h1>
-          </div>
-
-          <div className="flex lg:flex-row flex-col justify-between lg:gap-10 gap-7 lg:mt-10 mt-5">
-            <div className="bg-[#D1D8E2] p-5 w-fit rounded-2xl my-5 relative">
-              <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">
-                Thanks to Analytica Haven, we were able to make informed
-                decision that reduced poverty in our connunity 40%
-              </h1>
-              <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
-                <h1 className="font-campton lg:text-base font-semibold">
-                  Mark Smith
-                </h1>
-                <img src={testi4} alt="" />
-              </div>
-            </div>
-
-            <div className="bg-[#D1D8E2] p-5 w-fit rounded-2xl my-5 relative">
-              <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">
-                Analtica Haven’s data tools allowed us to clearly communicate
-                our progress,helping us expand .
-              </h1>
-              <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
-                <h1 className="font-campton lg:text-base font-semibold">
-                  Ahmed Bolu
-                </h1>
-                <img src={testi5} alt="" />
-              </div>
-            </div>
-
-            <div className="bg-[#D1D8E2] p-5 w-fit rounded-2xl my-5 relative">
-              <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">
-                Analytica data insights helped us improve our health
-                interventionss by 30%their suoort has been invaluable.
-              </h1>
-              <div className="flex items-center gap-5 mx-auto justify-center absolute top-[90%] right-10">
-                <h1 className="font-campton lg:text-base font-semibold">
-                  Precious Mike
-                </h1>
-                <img src={testi6} alt="" />
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       <div className="lg:mt-20 mt-12">

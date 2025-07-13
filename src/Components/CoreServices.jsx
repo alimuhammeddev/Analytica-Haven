@@ -60,11 +60,11 @@ const CoreServices = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mx-auto mt-0 lg:my-5 p-10 lg:p-5">
+        {/* <div className="flex justify-center mx-auto mt-0 lg:my-5 p-10 lg:p-5">
           <Link to="./our-project" className="bg-[#E0F780] text-[#193D6F] text-sm lg:px-6 py-3 px-5 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193d6f] md:hover:text-[#fff] transition ease-in-out duration-300">
             Learn More
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

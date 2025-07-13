@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { rating, t1, t2 } from "../assets";
+import { rating } from "../assets";
+import doherty from "../assets/doherty-t.svg"
+import steeze from "../assets/steeze-t.svg"
 import fuad from "../assets/fuad-t.svg"
 import ayeni from "../assets/ayeni-t.svg"
 
@@ -16,7 +18,7 @@ const CustomersTestimonial = () => {
       image: rating,
       description:
          " “Working with Analytica Haven has been a game changer. Their insights are clear, trustworthy and easy to apply.” ",
-      profileImg: t1,
+      profileImg: doherty,
       name: "Babatunde Doherty",
       position: "CEO, 27th Development",
     },
@@ -40,7 +42,7 @@ const CustomersTestimonial = () => {
       image: rating,
       description:
         " “Working with Analytica Haven has been a game changer. Their insights are clear, trustworthy and easy to apply.” ",
-      profileImg: t2,
+      profileImg: steeze,
       name: "Ganiyat Quadri",
       position: "CEO, Squeeze",
     },

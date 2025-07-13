@@ -9,6 +9,13 @@ import {
   testi4,
 } from "../assets";
 import BlueLine from "../assets/underblueline.svg";
+import popular1 from "../assets/popular1.svg"
+import popular2 from "../assets/popular2.svg"
+import popular3 from "../assets/popular3.svg"
+import popular4 from "../assets/popular4.svg"
+import popular5 from "../assets/popular5.svg"
+import popular6 from "../assets/popular6.svg"
+import popular7 from "../assets/popular7.svg"
 import OurCommunity from "../Components/OurCommunity";
 import { FaMessage } from "react-icons/fa6";
 import Footer from "../Footer";
@@ -173,125 +180,123 @@ const Community = () => {
           </div>
 
           <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-20 mt-10 space-y-5 lg:text-lg text-sm">
-            <h1 className="text-[#050B15] font-campton font-semibold lg:text-3xl text-xl">
+            <h2 className="text-[#050B15] font-campton font-semibold lg:text-3xl text-xl">
               Popular Topics
-            </h1>
+            </h2>
 
             <div>
               <div className="flex items-center justify-between lg:mt-12 mt-7">
                 <div className="flex items-center gap-5">
-                  <img src={testi4} alt="" />
-                  <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
-                    What is the difference between a UI designer and a UX
-                    designer?
-                  </h1>
-                </div>
-                <div className="flex items-center gap-1">
-                  <FaMessage />
-                  <h1 className="font-campton text-gray-600">10</h1>
-                </div>
-              </div>
-              <h1 className="border mt-2"></h1>
-            </div>
-
-            <div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-5">
-                  <img src={testi4} alt="" />
-                  <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
+                  <img src={popular1} alt="Popular topic 1" className="rounded-full w-12 h-12"/>
+                  <h2 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
                     What does the future with Artificial Intelligence look like?
-                  </h1>
+                  </h2>
                 </div>
                 <div className="flex items-center gap-1">
                   <FaMessage />
-                  <h1 className="font-campton text-gray-600">10</h1>
+                  <h2 className="font-campton text-gray-600">10</h2>
                 </div>
               </div>
-              <h1 className="border mt-2"></h1>
+              <h2 className="border mt-2"></h2>
             </div>
 
             <div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-5">
-                  <img src={testi4} alt="" />
-                  <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
-                    Web3 and Blockchain, What!?!
-                  </h1>
+                  <img src={popular2} alt="Popular topic 2"className="rounded-full w-12 h-12"/>
+                  <h2 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
+                    What is the difference between web3 and block chain?
+                  </h2>
                 </div>
                 <div className="flex items-center gap-1">
                   <FaMessage />
-                  <h1 className="font-campton text-gray-600">10</h1>
+                  <h2 className="font-campton text-gray-600">10</h2>
                 </div>
               </div>
-              <h1 className="border mt-2"></h1>
+              <h2 className="border mt-2"></h2>
             </div>
 
             <div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-5">
-                  <img src={testi4} alt="" />
-                  <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
-                    How to start Tech Startup company?
-                  </h1>
+                  <img src={popular3} alt="Popular topic 3" className="rounded-full w-12 h-12"/>
+                  <h2 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
+                    Is it essential to be a hacker to learn Cybersecurit. Whats your take?
+                  </h2>
                 </div>
                 <div className="flex items-center gap-1">
                   <FaMessage />
-                  <h1 className="font-campton text-gray-600">10</h1>
+                  <h2 className="font-campton text-gray-600">10</h2>
                 </div>
               </div>
-              <h1 className="border mt-2"></h1>
+              <h2 className="border mt-2"></h2>
             </div>
 
             <div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-5">
-                  <img src={testi4} alt="" />
-                  <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
-                    Is Remote Work & Freelancing the best form of working in
-                    2025?
-                  </h1>
+                  <img src={popular4} alt="Popular topic 4" className="rounded-full w-12 h-12"/>
+                  <h2 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
+                    What is the difference between Software developer and  Software eengineer?
+                  </h2>
                 </div>
                 <div className="flex items-center gap-1">
                   <FaMessage />
-                  <h1 className="font-campton text-gray-600">10</h1>
+                  <h2 className="font-campton text-gray-600">10</h2>
                 </div>
               </div>
-              <h1 className="border mt-2"></h1>
+              <h2 className="border mt-2"></h2>
             </div>
 
             <div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-5">
-                  <img src={testi4} alt="" />
-                  <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
-                    Is it essential to be a hacker to learn Cybersecurity?
-                  </h1>
+                  <img src={popular5} alt="Popular topic 5" className="rounded-full w-12 h-12"/>
+                  <h2 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
+                    What is the difference between API and SDK any idea?
+                  </h2>
                 </div>
                 <div className="flex items-center gap-1">
                   <FaMessage />
-                  <h1 className="font-campton text-gray-600">10</h1>
+                  <h2 className="font-campton text-gray-600">10</h2>
                 </div>
               </div>
-              <h1 className="border mt-2"></h1>
+              <h2 className="border mt-2"></h2>
             </div>
 
             <div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-5">
-                  <img src={testi4} alt="" />
-                  <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
-                    What is the difference between API and SDK?
-                  </h1>
+                  <img src={popular6} alt="Popular topic 6" className="rounded-full w-12 h-12"/>
+                  <h2 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
+                    Remote work and freelancing which is the best form working  in 2025?
+                  </h2>
                 </div>
                 <div className="flex items-center gap-1">
                   <FaMessage />
-                  <h1 className="font-campton text-gray-600">10</h1>
+                  <h2 className="font-campton text-gray-600">10</h2>
                 </div>
               </div>
-              <h1 className="border mt-2"></h1>
+              <h2 className="border mt-2"></h2>
             </div>
 
             <div>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-5">
+                  <img src={popular7} alt="Popular topic 7" className="rounded-full w-12 h-12"/>
+                  <h2 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
+                    How to start a tech company ?
+                  </h2>
+                </div>
+                <div className="flex items-center gap-1">
+                  <FaMessage />
+                  <h2 className="font-campton text-gray-600">10</h2>
+                </div>
+              </div>
+              <h2 className="border mt-2"></h2>
+            </div>
+
+            {/* <div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-5">
                   <img src={testi4} alt="" />
@@ -306,7 +311,7 @@ const Community = () => {
                 </div>
               </div>
               <h1 className="border mt-2"></h1>
-            </div>
+            </div> */}
           </div>
 
           <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-12 mt-10 space-y-5">
