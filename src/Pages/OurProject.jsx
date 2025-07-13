@@ -32,7 +32,7 @@ const projects = [
         free hands-on graphics design training.
       </>
     ),
-    link: "/highlight1", // Changed to string path
+    link: "/highlight1",
     imgAlt: "7 DAYS FREE GRAPHICS DESIGN BOOT CAMP",
     imgSrc: project1,
   },
@@ -48,7 +48,7 @@ const projects = [
         immerses users in real-world scenarios, encouraging strategic teamwork.
       </>
     ),
-    link: "/highlight2", // Changed to string path
+    link: "/highlight2",
     imgAlt: "Content creation process image",
     imgSrc: project2,
   },
@@ -66,7 +66,7 @@ const projects = [
         pivot tables, and charting.
       </>
     ),
-    link: "/highlight3", // Changed to string path
+    link: "/highlight3",
     imgAlt: "Free Linkedin Optimization",
     imgSrc: project3,
   },

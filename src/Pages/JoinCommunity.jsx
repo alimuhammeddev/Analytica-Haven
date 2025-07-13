@@ -69,7 +69,7 @@ const JoinCommunity = () => {
               <div className="flex mx-auto justify-center">
                 <Link
                   to="/community"
-                  className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium text-lg font-campton hover:bg-[#193D6F] hover:text-[#fff] hover:border hover:border-transparent-400 transition ease-in-out duration-300"
+                  className="bg-[#E0F780] text-[#193D6F] text-sm px-6 py-2 rounded-lg font-medium md:text-lg font-campton hover:bg-[#193D6F] hover:text-[#fff] hover:border hover:border-transparent-400 transition ease-in-out duration-300"
                 >
                   Join us
                 </Link>
@@ -82,7 +82,7 @@ const JoinCommunity = () => {
         </div>
 
         {/* Mobile view */}
-        <div className="flex items-center mx-auto justify-center gap-5 flex-col-reverse md:hidden block">
+        <div className="flex items-center mx-auto justify-center gap-5 flex-col-reverse md:hidden">
           <div className="">
             <h2 className="text-[#193d6f] font-campton font-semibold text-center">
               Knowledge | Innovation | Empowerment

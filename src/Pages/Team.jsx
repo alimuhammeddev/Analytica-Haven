@@ -4,7 +4,6 @@ import underyellowline from "../assets/underyellowline.svg";
 import TeamExpert from "../Components/TeamExpert";
 import CustomersTestimonial from "../Components/CustomersTestimonial";
 import LatestContent from "../Components/LatestContent";
-import GetinTouch from "../Components/GetinTouch";
 import Footer from "../Footer";
 
 const Team = () => {

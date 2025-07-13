@@ -81,14 +81,14 @@ const Events = () => {
       {/* Events other section 1*/}
       <div className="max-w-7xl mx-auto md:my-[6rem] my-[2rem]">
         <div className="flex flex-col md:flex-row justify-center">
-            <h2 className="text-[#193D6F] text-center text-[#000] text-[1.2rem] font-semibold pb-5 w-[100%] px-5 md:hidden block">
+            <h2 className="text-center text-[#000] text-[1.2rem] font-semibold pb-5 w-[100%] px-5 md:hidden block">
               We Empower Minds, We Equip the Future.
             </h2>
           <div className="border bg-[#193D6F] md:mx-0 mx-10 p-10 md:w-[30%]">
             <img src={event2} alt="" className="rounded-[20px]" />
           </div>
           <div className="md:w-[40%] w-[100%] px-5 md:px-10 py-5 md:bg-[#ebf2fe]">
-            <h2 className="text-[#193D6F] text-[#000] text-[1.5rem] text-[1.2rem] font-semibold pb-5 md:block hidden">
+            <h2 className="text-[#000] md:text-[1.5rem] text-[1.2rem] font-semibold pb-5 md:block hidden">
               We Empower Minds,
               <span className="block">We Equip the Future.</span>
             </h2>
@@ -104,7 +104,7 @@ const Events = () => {
             </p>
             <Link
               to="/community"
-              className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[2rem] block w-fit hover:bg-[#193D6F] hover:text-white transition-colors duration-300 md:block hidden"
+              className="bg-[#E0F780] px-3 py-2 rounded-md text-[#193D6F] mt-[2rem] w-fit hover:bg-[#193D6F] hover:text-white transition-colors duration-300 md:block hidden"
             >
               Join Us Now
             </Link>

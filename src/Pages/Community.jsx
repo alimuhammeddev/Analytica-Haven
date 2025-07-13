@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Header from "../Header";
 import {
   communityhero,
@@ -6,7 +5,6 @@ import {
   help,
   learn,
   question,
-  testi4,
 } from "../assets";
 import BlueLine from "../assets/underblueline.svg";
 import popular1 from "../assets/popular1.svg"
@@ -19,29 +17,13 @@ import popular7 from "../assets/popular7.svg"
 import OurCommunity from "../Components/OurCommunity";
 import { FaMessage } from "react-icons/fa6";
 import Footer from "../Footer";
-import JoinSuccess from "../Components/JoinSuccess";
 
 const Community = () => {
-  const [showJoinSuccess, setShowJoinSuccess] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowJoinSuccess(false);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <section>
       <div>
         <Header />
       </div>
-
-      {showJoinSuccess ? (
-        <JoinSuccess />
-      ) : (
-        <>
           <div className="max-w-7xl mx-auto justify-center lg:p-8 p-5 font-campton">
             {/* Desktop View */}
             <h1 className="lg:text-6xl text-xl font-semibold lg:mt-20 mt-7 text-center font-campton md:block hidden">
@@ -295,23 +277,6 @@ const Community = () => {
               </div>
               <h2 className="border mt-2"></h2>
             </div>
-
-            {/* <div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-5">
-                  <img src={testi4} alt="" />
-                  <h1 className="font-campton text-gray-600 lg:text-lg pr-3 md:pr-0">
-                    What is the difference between a software developer and a
-                    software engineer?
-                  </h1>
-                </div>
-                <div className="flex items-center gap-1">
-                  <FaMessage />
-                  <h1 className="font-campton text-gray-600">10</h1>
-                </div>
-              </div>
-              <h1 className="border mt-2"></h1>
-            </div> */}
           </div>
 
           <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5 lg:mt-12 mt-10 space-y-5">
@@ -580,8 +545,6 @@ const Community = () => {
           <div className="mt-10">
             <Footer />
           </div>
-        </>
-      )}
     </section>
   );
 };

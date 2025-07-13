@@ -126,7 +126,7 @@ const Footer = () => {
 
             <div className="border-[#D9DBE9] border mt-10"></div>
 
-            <div className="flex items-center justify-between flex-row flex-col mt-10 mb-5">
+            <div className="flex items-center justify-between flex-col mt-10 mb-5">
               <h1 className="text-[#F8F8F8] font-campton font-medium text-lg">
                 Copyright © 2025
               </h1>

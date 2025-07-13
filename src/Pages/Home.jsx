@@ -109,7 +109,7 @@ const Home = () => {
           </div>
 
           {/* Mobile view */}
-          <div className="md:hidden block flex flex-col justify-center ">
+          <div className="md:hidden flex flex-col justify-center ">
             <input
               type="email"
               className="w-full px-4 py-3 border border-gray-500 rounded-lg focus:ring-2 focus:ring-[#193D6F] focus:outline-2 focus:outline-gray-300 lg:placeholder:font-medium lg:place placeholder:text-sm"
