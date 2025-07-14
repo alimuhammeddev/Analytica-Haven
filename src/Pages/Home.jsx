@@ -123,21 +123,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <div className="hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <path
-              d="M0 0C22.0914 0 40 17.9086 40 40H0V0Z"
-              fill="#E0F780"
-              fill-opacity="0.7"
-            />
-          </svg>
-        </div> */}
 
         {/* Desktop view  for hero picture*/}
         <div className="relative md:block hidden w-full max-w-5xl mx-auto mt-10">
@@ -195,21 +180,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <div className="flex justify-end hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-          >
-            <path
-              d="M40 40C17.9086 40 0 22.0914 0 0H40V40Z"
-              fill="#E0F780"
-              fill-opacity="0.7"
-            />
-          </svg>
-        </div> */}
       </div>
 
       <div className="bg-[#fff] lg:my-10 mx-5 rounded-2xl md:shadow-2xl">
@@ -377,23 +347,25 @@ const Home = () => {
             </p>
             {/* View project for desktop view*/}
             <div className="pt-[2rem] md:block hidden">
-              <Link
-                to="/our-project"
+              <a
+                href="/our-project"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#000] bg-[#E0F780] text-[1.2rem] py-3 px-6 rounded-md md:hover:bg-[#193D6F] md:hover:text-[#fff] transition ease-in-out duration-300"
               >
                 View Project
-              </Link>
+              </a>
             </div>
             {/* View project for mobile view */}
             <div className="md:hidden block py-[1rem]">
-              <Link
-                to="/our-project"
+              <a
+                href="/our-project"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#000] bg-[#E0F780] text-[1.2rem] py-3 px-6 rounded-md text-center block w-full"
               >
                 View Project
-              </Link>
+              </a>
             </div>
           </div>
 
