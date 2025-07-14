@@ -24,14 +24,12 @@ const BlogCard = ({ image, author, date, title }) => (
       <h2 className="text-[#080F10] text-lg font-campton font-semibold mt-2 mb-4">
         {title}
       </h2>
-      <a
-        href="/blog"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        to="/blog"
         className="bg-[#E0F780] px-4 py-2 md:w-fit w-full rounded-md font-campton hover:text-white hover:bg-[#193D6F] transition-colors duration-300"
       >
         Learn More
-      </a>
+      </Link>
     </div>
   </div>
 );
@@ -86,14 +84,12 @@ const OurBlogs = () => {
             </div>
           </div>
 
-          <a
-            href="/blog"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/blog"
             className="bg-[#E0F780] text-[#193D6F] md:block hidden lg:w-fit w-full lg:mt-0 mt-4 text-sm lg:px-6 py-3 px-2 rounded-lg font-medium lg:text-lg font-campton md:hover:bg-[#193D6F] md:hover:text-[#fff] transition duration-300 ease-in-out"
           >
             Browse our Resources
-          </a>
+          </Link>
         </div>
 
         {/* Desktop grid */}

@@ -347,25 +347,21 @@ const Home = () => {
             </p>
             {/* View project for desktop view*/}
             <div className="pt-[2rem] md:block hidden">
-              <a
-                href="/our-project"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/our-project"
                 className="text-[#000] bg-[#E0F780] text-[1.2rem] py-3 px-6 rounded-md md:hover:bg-[#193D6F] md:hover:text-[#fff] transition ease-in-out duration-300"
               >
                 View Project
-              </a>
+              </Link>
             </div>
             {/* View project for mobile view */}
             <div className="md:hidden block py-[1rem]">
-              <a
-                href="/our-project"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/our-project"
                 className="text-[#000] bg-[#E0F780] text-[1.2rem] py-3 px-6 rounded-md text-center block w-full"
               >
                 View Project
-              </a>
+              </Link>
             </div>
           </div>
 
