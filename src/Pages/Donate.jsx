@@ -255,7 +255,7 @@ const Donate = () => {
                 Expand Outreach
               </h1>
               <p className="text-center text-[#65676A] lg:text-lg font-campton">
-                With Your Support,we can expand our outreach reaching more
+                With Your Support, we can expand our outreach reaching more
                 aspiring innovators and entrepreneurs worldwide.
               </p>
             </div>
