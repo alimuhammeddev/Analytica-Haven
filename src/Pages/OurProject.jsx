@@ -22,52 +22,38 @@ import { Link } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    title: <>7 Days Free Graphic Design</>,
+    title: <>PERSONAL BRANDING</>,
     description: (
       <>
-        An empowering learning experience by Analytica Haven. Equipping
-        creatives with hands-on design skills and tools. Fostering growth,
-        creativity, and community all for free. At Analytica Haven, we believe
-        design should be accessible to everyone, that is why we offer a 7 days
-        free hands-on graphics design training.
+        At Analytica Haven, we believe personal branding is not just a career tool but a lifelong asset. This session empowered participants to recognize their uniqueness and begin the journey of showcasing their selves with purpose and confidence.The session was highly interactive, with real-world examples and practical exercises that allowed participants to connect theory with application. By the end, attendees gained clarity on how to align their personal values with their professional aspirations and present themselves as distinctive brands in their respective fields.
       </>
     ),
     link: "/highlight1",
-    imgAlt: "7 DAYS FREE GRAPHICS DESIGN BOOT CAMP",
+    imgAlt: "Personal branding image",
     imgSrc: project1,
   },
   {
     id: 2,
-    title: <>Transform Your Project </>,
+    title: <>MASTERING INTERVIEW</>,
     description: (
       <>
-        Transform project management game is an interactive data-informed
-        simulation developed by Analytica Haven to help individuals build
-        practical project management skills. It's not just about ticking boxes
-        or following timelines, it's about clarity, flow, and results. The game
-        immerses users in real-world scenarios, encouraging strategic teamwork.
+        In today’s competitive career landscape, having the right qualifications is only half the journey, confidence during interviews often makes the real difference. At Analytica Haven’s Bootcamp, Ms Japheth Phinaobian Praise took our participants on an interactive and transformative session on Mastering Interview Confidence. This was necessary to help equip them with the skills and mindset needed to excel in job interviews and professional conversations.
       </>
     ),
     link: "/highlight2",
-    imgAlt: "Content creation process image",
+    imgAlt: "Mastering Interview",
     imgSrc: project2,
   },
   {
     id: 3,
-    title: <>Excel For Data Analysis</>,
+    title: <>CRAFTING IMPACTFUL CV</>,
     description: (
       <>
-        Excel for Data Analysis is a hands-on learning initiative by Analytica
-        Haven designed to empower individuals with practical data analysis
-        skills using Microsoft Excel. This project demystifies Excel’s powerful
-        analytical tools, turning spreadsheets into storytelling tools for
-        informed decision-making. Through workshops, live sessions, and
-        downloadable resources, participants have gained skills in data sorting,
-        pivot tables, and charting.
+        At Analytica Haven, we believe interview confidence is a skill that can be learned and mastered. This session empowered attendees to step into opportunities with the assurance that they can not only answer questions effectively but also present themselves as the best fit for the role.
       </>
     ),
     link: "/highlight3",
-    imgAlt: "Free Linkedin Optimization",
+    imgAlt: "Crafting Impactful CV",
     imgSrc: project3,
   },
 ];
@@ -104,7 +90,7 @@ const OurProject = () => {
               ({ id, title, description, imgAlt, imgSrc, link }, idx) => (
                 <div
                   key={id}
-                  className={`flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12 px-0 lg:p-12 ${
+                  className={`flex flex-col lg:flex-row gap-8 lg:gap-12 px-0 lg:p-12 ${
                     idx === 1
                       ? "bg-[#EBF2FE] -mx-5 lg:-mx-[3.2rem] px-5 py-5 lg:py-12 lg:px-24"
                       : "bg-transparent"

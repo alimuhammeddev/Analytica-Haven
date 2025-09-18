@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Blog4 from "../assets/blog4.svg";
-import Blog6 from "../assets/blog6.svg";
+import Blog4 from "../assets/blog5.svg";
+import Blog6 from "../assets/blog4.svg";
 import Blog3 from "../assets/blog3.svg";
 import { BsCalendar, BsPerson } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -41,21 +41,21 @@ const OurBlogs = () => {
   const blogData = [
     {
       image: Blog4,
-      author: "Ruth Itepu",
-      date: "Jan 7, 2025",
-      title: "How to hire a right business executive for your company",
+      author: "Mrs Fatima Yuguda",
+      date: "Aug 2, 2025",
+      title: "Helping you stay informed and Empowered",
     },
     {
       image: Blog6,
-      author: "Muyiwa Olorunwa",
-      date: "Jan 7, 2025",
-      title: "Effective strategies for remote team management",
+      author: "Japheth Praise",
+      date: "Aug 8, 2025",
+      title: "Insights, tips and tools to help you grow",
     },
     {
       image: Blog3,
-      author: "Charity Hilton",
-      date: "Jan 7, 2025",
-      title: "Innovative marketing approaches for startups",
+      author: "Omowonuola",
+      date: "Aug 17, 2025",
+      title: "Your source for smart, insightful Data Analysis",
     },
   ];
 

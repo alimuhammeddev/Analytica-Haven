@@ -2,9 +2,9 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { patternhero } from "../assets";
 import blog1 from "../assets/blog1.svg";
-import blog2 from "../assets/blog4.svg";
-import blog3 from "../assets/blog5.svg";
-import blog4 from "../assets/blog6.svg";
+import blog2 from "../assets/blog2.svg";
+import blog3 from "../assets/blog4.svg";
+import blog4 from "../assets/blog5.svg";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -28,42 +28,41 @@ const Blog = () => {
       id: 1,
       image: blog1,
       category: "EDUCATION",
-      date: "APRIL 22, 2025",
-      title: "Analytica Haven Hosts Successful 3-Day AI Masterclass",
+      date: "JULY 30, 2025",
+      title: "Analytica Haven just hosted a bootcamp on Personal branding.",
       description:
-        "The intensive training introduced participants to the fundamentals of Artificial Intelligence through hands-on practical applications.",
+        "At Analytica Haven, we believe personal branding is more than a buzzword, it’s the bridge between potential and opportunity. Recently, we hosted a Personal Branding Bootcamp, a transformative learning experience.",
       tab: "Education Tips",
     },
     {
       id: 2,
       image: blog2,
-      category: "Education",
-      date: "APRIL 22, 2025",
-      title: "Analytica Haven Hosts Successful 3-Day AI Masterclass",
+      category: "Education Tips",
+      date: "AUG 9, 2025",
+      title: "Analytica Haven’s Building Emotional Intelligence Bootcamp.",
       description:
-        "The intensive training introduced participants to the fundamentals of Artificial Intelligence through hands-on practical applications.",
+        "At Analytica Haven, we understand that success is not only about technical skills but also about the ability to connect, empathize, and lead with awareness. ",
       tab: "Education Tips",
     },
     {
       id: 3,
       image: blog3,
-      category: "EDUCATION",
-      date: "APRIL 22, 2025",
-      title: "Simple nutrition tips and a two-day meal plan to boost energy.",
+      category: "Education Tips",
+      date: "AUG 8, 2025",
+      title: "Mastering Interview Confidence with Analytica Haven",
       description:
-        "This beginner-friendly session on healthy eating introduces the impact of balanced nutrition on your mood, energy levels, and overall wellness.",
-      tab: "Health Tips",
+        "At Analytica Haven, we know that interviews are more than just questions and answers they are opportunities to showcase confidence, clarity, and potential. To support professionals and job seekers",
+      tab: "Education Tips",
     },
     {
       id: 4,
       image: blog4,
-      category: "PRODUCT UPDATE",
-      date: "APRIL 22, 2025",
-      title:
-        "3-Day Intensive Training Empowers Participants to MergeTech Skills",
+      category: "Marketing",
+      date: "AUG 2, 2025",
+      title: "Crafting Impactful CVs and Resume with Analytica Haven",
       description:
-        "The just-concluded 3-day workshop equipped attendees with practical strategies to combine technical know-how with entrepreneurial thinking setting them on a path to build scalable, future-ready ventures.",
-      tab: "Company News",
+        "At Analytica Haven, we believe that a CV or resume is more than a document, it’s a personal brand statement that opens doors to opportunity. To help professionals and job seekers stand out, we recently hosted a Bootcamp on Crafting Impactful CVs and Resumes,",
+      tab: "Marketing-updates",
     },
   ];
 

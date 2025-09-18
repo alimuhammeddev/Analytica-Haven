@@ -30,61 +30,61 @@ const Blog = () => {
       id: 1,
       image: blog1,
       category: "EDUCATION",
-      date: "APRIL 22, 2025",
-      title: "Analytica Haven Hosts Successful 3-Day AI Masterclass",
+      date: "JULY 30, 2025",
+      title: "Analytica Haven just hosted a bootcamp on Personal branding.",
       description:
-        "The intensive training introduced participants to the fundamentals of Artificial Intelligence through hands-on practical applications.",
+        "At Analytica Haven, we believe personal branding is more than a buzzword, it’s the bridge between potential and opportunity. Recently, we hosted a Personal Branding Bootcamp, a transformative learning experience.",
       tab: "Education Tips",
     },
     {
       id: 2,
       image: blog2,
       category: "Product Update",
-      date: "APRIL 22, 2025",
-      title: "Analytica Haven Urges Consistency in content Posting",
+      date: "AUG 9, 2025",
+      title: "Analytica Haven’s Building Emotional Intelligence Bootcamp.",
       description:
-        "In this thoughtful project, Analytica Haven reflects on the hidden challenges of showing up consistently as a content creator. While the platform encourages regular posting as a path to growth...",
+        "At Analytica Haven, we understand that success is not only about technical skills but also about the ability to connect, empathize, and lead with awareness. ",
       tab: "Product",
     },
     {
       id: 3,
       image: blog3,
-      category: "MARKETING",
-      date: "APRIL 22, 2025",
-      title: "Breaking Into Data Analysis Made Easy",
+      category: "Education Tips",
+      date: "AUG 17, 2025",
+      title: "Digital Growth Series Unlocking the future with Analytica Haven.",
       description:
-        "Designed for complete beginners, the training provided hands-on experience with Excel tools and functions—empowering participants with foundational data analysis skills for real-world use.",
-      tab: "Marketing-updates",
+        "At Analytica Haven, our Digital Growth Series is more than just a program, it’s a movement to equip individuals and businesses with the tools to thrive in today’s fast-paced digital landscape.",
+      tab: "Education Tips",
     },
     {
       id: 4,
       image: blog4,
       category: "Education",
-      date: "APRIL 22, 2025",
-      title: "Analytica Haven Hosts Successful 3-Day AI Masterclass",
+      date: "AUG 8, 2025",
+      title: "Mastering Interview Confidence with Analytica Haven",
       description:
-        "The intensive training introduced participants to the fundamentals of Artificial Intelligence through hands-on practical applications.",
+        "At Analytica Haven, we know that interviews are more than just questions and answers they are opportunities to showcase confidence, clarity, and potential. To support professionals and job seekers",
       tab: "Education Tips",
     },
     {
       id: 5,
       image: blog5,
-      category: "EDUCATION",
-      date: "APRIL 22, 2025",
-      title: "Simple nutrition tips and a two-day meal plan to boost energy.",
+      category: "Marketing",
+      date: "AUG 2, 2025",
+      title: "Crafting Impactful CVs and Resume with Analytica Haven",
       description:
-        "This beginner-friendly session on healthy eating introduces the impact of balanced nutrition on your mood, energy levels, and overall wellness.",
-      tab: "Health Tips",
+        "At Analytica Haven, we believe that a CV or resume is more than a document, it’s a personal brand statement that opens doors to opportunity. To help professionals and job seekers stand out, we recently hosted a Bootcamp on Crafting Impactful CVs and Resumes,",
+      tab: "Marketing-updates",
     },
     {
       id: 6,
       image: blog6,
       category: "PRODUCT UPDATE",
-      date: "APRIL 22, 2025",
+      date: "AUG 22, 2025",
       title:
-        "3-Day Intensive Training Empowers Participants to MergeTech Skills",
+        "The Four-Week Portfolio Challenge Showcasing Skills with Analytica Haven",
       description:
-        "The just-concluded 3-day workshop equipped attendees with practical strategies to combine technical know-how with entrepreneurial thinking setting them on a path to build scalable, future-ready ventures.",
+        "At Analytica Haven, we understand that a strong portfolio is one of the most powerful tools for personal and professional growth. To help individuals showcase their skills with confidence, we recently launched the Four-Week",
       tab: "Company News",
     },
   ];
@@ -258,7 +258,6 @@ const Blog = () => {
               ))}
             </div>
 
-            {/* Dot indicators */}
             <div className="flex justify-center gap-1.5 mt-3">
               {categories.map((_, index) => (
                 <div
@@ -273,7 +272,6 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Blog Content */}
       <div className="max-w-7xl mx-auto px-4 py-6">
         <h1 className="text-2xl lg:text-4xl font-campton font-bold text-center lg:text-left text-[#193D6F] md:mb-10">
           Recent Updates

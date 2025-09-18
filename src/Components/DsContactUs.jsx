@@ -61,7 +61,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="text-[#000] flex flex-row items-center justtify-center gap-8 px-16 py-16">
+      <div className="text-[#000] flex flex-row items-center justtify-center gap-8 py-16 max-w-7xl mx-auto">
         <div className="space-y-5 w-full">
           <h2 className="font-campton text-4xl font-semibold">
             Contact us here
