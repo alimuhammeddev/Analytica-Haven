@@ -41,21 +41,21 @@ const OurBlogs = () => {
   const blogData = [
     {
       image: Blog4,
-      author: "Mrs Fatima Yuguda",
+      author: "By Fatima Yuguda",
       date: "Aug 2, 2025",
       title: "Helping you stay informed and Empowered",
     },
     {
       image: Blog6,
-      author: "Japheth Praise",
+      author: "By Japheth Praise",
       date: "Aug 8, 2025",
       title: "Insights, tips and tools to help you grow",
     },
     {
       image: Blog3,
-      author: "Omowonuola",
+      author: "By Omowonuola Fagbemi",
       date: "Aug 17, 2025",
-      title: "Your source for smart, insightful Data Analysis",
+      title: "Your source for social media strategies visibility",
     },
   ];
 

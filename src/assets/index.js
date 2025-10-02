@@ -129,6 +129,13 @@ import leaders from "./leaders.png";
 import dera from "./dera.png";
 import project from "./project.png";
 import change2 from "./change2.svg"
+import articlehero from "./articlehero.svg"
+import cohort from "./cohort.svg"
+import prayer from "./prayer.svg"
+import vendor from "./vendor.svg"
+import challenge from "./challenge.svg"
+import screenshot from "./screenshot.svg"
+
 
 export {
     logo,
@@ -262,4 +269,10 @@ export {
     dera,
     project,
     change2,
+    articlehero,
+    cohort,
+    prayer,
+    vendor,
+    challenge,
+    screenshot,
 };

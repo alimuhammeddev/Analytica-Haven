@@ -1,13 +1,7 @@
 import Header from "../Header";
-import { lady } from "../assets";
-import tips from "../assets/tips.svg";
-import blog1 from "../assets/blog3.svg";
-import blog2 from "../assets/blog6.svg";
-import blog3 from "../assets/blog4.svg";
-import ladysalute from "../assets/ladysalute.svg";
-import { BsCalendar, BsPerson } from "react-icons/bs";
 import MoreStories from "../Components/MoreStories";
 import Footer from "../Footer";
+import { challenge, cohort, prayer, screenshot, vendor } from "../assets";
 
 const Article = () => {
   return (
@@ -16,164 +10,87 @@ const Article = () => {
         <Header />
       </div>
 
-      <div className="max-w-6xl mx-auto lg:p-[8] mt-20">
+
+      <div className="max-w-7xl mx-auto lg:p-[8] lg:mt-20 -mt-28 p-4">
         <div className="space-y-5">
-          <p className="font-campton text-base">
-            Product Updates April 22, 2025
-          </p>
-          <h2 className="font-campton text-[#193D6F] text-[3rem] font-bold text-center pt-[3rem] px-[5rem]">
-            Analytica Haven Hosts Successful 3-Day AI Masterclass
-          </h2>
-          <p className="font-campton text-[1.1rem] leading-7">
-            Analytica Haven, a forward-thinking tech and training hub, recently
-            concluded a power-packed 3-day Artificial Intelligence Masterclass —
-            and it was nothing short of transformative. The event, held at its
-            innovation lab in Abuja, gathered a vibrant mix of tech enthusiasts,
-            beginners, young professionals, and aspiring AI experts from across
-            Nigeria.
-          </p>
-
-          <img src={tips} alt="" className="w-[100%] rounded-xl" />
-
-          <p className="font-campton text-gray-500 text-center">
-            Top Ten Marketing Tips for your Company
+          <p className="font-campton text-lg font-semibold text-gray-500">
+            Latest News
           </p>
         </div>
 
-        <div className="grid grid-cols-2 mt-20 gap-0">
+        <div className="lg:mt-20 mt-5 flex flex-col lg:flex-row gap-10">
           <div className="space-y-7">
-            <h2 className="font-campton text-2xl font-semibold text-left">
-              Read this text
-            </h2>
-            <div className="flex items-center gap-3">
-              <img src={lady} alt="" />
+            <div className="flex lg:flex-row flex-col gap-5 bg-gray-50 p-5 rounded-md">
+              <img src={challenge} alt="" />
               <div>
-                <p className="font-campton font-semibold text-lg">
-                  Anita Favour
-                </p>
-                <p className="font-campton text-lg">
-                  Lead Product Specialist, Analytica
-                </p>
+                <h1 className="text-[#193d6f] text-lg font-semibold">Analytica Haven Concludes 4-Week Portfolio Challenge</h1>
+                <h2 className="text-gray-500">Analytica Haven has successfully concluded its 4-Week Portfolio Challenge, an initiative designed to help aspiring designers</h2>
+                <p className="text-[#193d6f] font-medium">Read More...</p>
+                <div className="flex gap-10">
+                  <h1 className="text-gray-400">Latest News</h1>
+                  <p className="text-gray-400">22 August 2025</p>
+                </div>
               </div>
             </div>
 
-            <div className="inline-block">
-              <img src={blog1} alt="" className="w-full rounded-lg" />
-              <div className="bg-[#F9F9F9] p-4">
-                <div className="flex items-center justify-between">
-                  <p className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </p>
-                  <p className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </p>
+            <div className="flex lg:flex-row flex-col gap-5 bg-[#ebf2fe] p-5 rounded-md">
+              <img src={cohort} alt="" />
+              <div>
+                <h1 className="text-[#193d6f] text-lg font-semibold">Analytica Haven Skills Training: First Cohort Launch</h1>
+                <h2 className="text-gray-500">On Aug 2025, Analytica Haven successfully launched the First Cohort of its flagship training program designed to help participants.</h2>
+                <p className="text-[#193d6f] font-medium">Read More...</p>
+                <div className="flex gap-10">
+                  <h1 className="text-gray-400">Latest News</h1>
+                  <p className="text-gray-400">30 August 2025</p>
                 </div>
-                <p className="text-[#080F10] font-campton font-semibold mt-2">
-                  How to hire a right business executive for your company
-                </p>
-                <button className="bg-[#E0F780] text-[#193D6F] p-2 rounded-md font-campton mt-2 md:hover:bg-[#193D6F] md:hover:text-[#fff] transition ease-in-out duration-300">
-                  Learn More
-                </button>
               </div>
             </div>
 
-            <div className="inline-block">
-              <img src={blog2} alt="" className="w-full rounded-lg" />
-
-              <div className="bg-[#F9F9F9] p-4">
-                <div className="flex items-center justify-between">
-                  <p className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </p>
-                  <p className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </p>
+            <div className="flex lg:flex-row flex-col gap-5 bg-gray-50 p-5 rounded-md">
+              <img src={prayer} alt="" />
+              <div>
+                <h1 className="text-[#193d6f] text-lg font-semibold">Analytica Haven hosted a 15 day prayer retreat  September 5, 2025</h1>
+                <h2 className="text-gray-500">A time set apart for spiritual renewal, reflection, and deeper fellowship. The retreat created space for</h2>
+                <p className="text-[#193d6f] font-medium">Read More...</p>
+                <div className="flex gap-10">
+                  <h1 className="text-gray-400">Latest News</h1>
+                  <p className="text-gray-400">5 september 2025</p>
                 </div>
-                <p className="text-[#080F10] font-campton font-semibold mt-2">
-                  How to hire a right business executive for your company
-                </p>
-                <button className="bg-[#E0F780] text-[#193D6F] p-2 rounded-md font-campton mt-2 md:hover:bg-[#193D6F] md:hover:text-[#fff] transition ease-in-out duration-300">
-                  Learn More
-                </button>
               </div>
             </div>
 
-            <div className="inline-block">
-              <img src={blog3} alt="" className="w-full rounded-lg" />
-              <div className="bg-[#F9F9F9] p-4">
-                <div className="flex items-center justify-between">
-                  <p className="flex items-center gap-1 font-campton text-sm">
-                    <BsPerson /> By Michel John
-                  </p>
-                  <p className="flex items-center gap-1 font-campton text-sm">
-                    <BsCalendar /> Jan 17, 2023
-                  </p>
+            <div className="flex lg:flex-row flex-col gap-5 bg-gray-50 p-5 rounded-md">
+              <img src={vendor} alt="" />
+              <div>
+                <h1 className="text-[#193d6f] text-lg font-semibold">Welcome to the Analytica Haven Vendors Hub 2 days  training</h1>
+                <h2 className="text-gray-500">Connecting local vendors with buyers, growth, and endless opportunities while building stronger communities</h2>
+                <p className="text-[#193d6f] font-medium">Read More...</p>
+                <div className="flex gap-10">
+                  <h1 className="text-gray-400">Latest News</h1>
+                  <p className="text-gray-400">8 October 2025</p>
                 </div>
-                <p className="text-[#080F10] font-campton font-semibold mt-2">
-                  How to hire a right business executive for your company
-                </p>
-                <button className="bg-[#E0F780] text-[#193D6F] p-2 rounded-md font-campton mt-2 md:hover:bg-[#193D6F] md:hover:text-[#fff] transition ease-in-out duration-300">
-                  Learn More
-                </button>
               </div>
             </div>
           </div>
 
-          <div className="space-y-7 text-lg font-campton">
-            <p>
-              The masterclass kicked off with a warm welcome and an inspiring
-              keynote address from Analytica Haven’s founder, who emphasized the
-              importance of digital upskilling and AI literacy in Africa’s
-              future economy. Participants were introduced to the core concepts
-              of Artificial Intelligence — from machine learning and neural
-              networks to real-world AI applications in industries like
-              healthcare, finance, marketing, and agriculture. To bring the
-              concepts to life, the facilitators engaged attendees in
-              interactive sessions, live demonstrations, and simple logic-based
-              games to illustrate how AI "learns" and "makes decisions." Day two
-              the room buzzed with energy as small groups tackled
-              mini-projects—like creating simple AI models to predict weather
-              patterns or recognize handwritten digits. For many, it was their
-              first experience building anything tech-related, and their
-              excitement was palpable.
-            </p>
-            <img src={ladysalute} alt="A lady saluting" />
-            <p>
-              The final day took a creative turn as the focus shifted toward
-              integrating AI with business ideas. Participants explored how AI
-              could solve local problems, streamline business operations, and
-              even create new startups. A session on “AI for Social Impact”
-              inspired many to think of ways AI could be used in education,
-              agriculture, and even environmental sustainability. The day ended
-              with a pitch challenge: participants formed teams and presented
-              ideas on how they would use AI to tackle real-world problems.
-              Ideas ranged from AI-powered mental health apps to smart farming
-              solutions. The judges a panel of tech professionals and startup
-              mentors — were impressed by the innovation and clarity of thought
-              displayed.
-            </p>
-            <p className="bg-[#EBF2FE] border-b-4 border-b-[#0022EC] rounded-lg p-10">
-              "I came in curious, and I’m leaving empowered. This masterclass
-              didn’t just teach me about AI — it taught me how to think
-              differently."
-            </p>
-            <p>
-              <span className="font-semibold block">The Impact</span>
-              By the end of the 3-day experience, participants left
-              with not just new skills, but renewed confidence. For many, the
-              masterclass opened doors to further learning, collaborations, and
-              potential careers in tech. Analytica Haven also provided
-              participants with free access to curated AI resources and
-              mentorship opportunities beyond the event. 
-              <span className="font-semibold block">Conclusion:</span> With the
-              success of this masterclass, Analytica Haven has once again proven
-              its commitment to equipping the next generation with tools for the
-              future. As AI continues to shape the world, programs like this
-              ensure that African talent isn’t just keeping up — it’s leading
-              the way.
-            </p>
+          <div className="bg-[#ebf2fe] p-5">
+            <h1 className="text-gray-700 text-xl font-medium text-center">In their own words</h1>
+            <p className="text-center">Sharing Growth And Impact</p>
+            <img src={screenshot} alt="" className="mx-auto mt-7"/>
+            <h1 className="mt-10 text-center">The training sessions were practical and inspiring. I left with real skills I could use immediately in my work.”</h1>
+            <p className="text-center">— Michael O., Training Participant</p>
           </div>
         </div>
+      </div>
+
+      <div className="bg-[#ebf2fe] p-10 max-w-7xl mx-auto lg:mt-20 mt-10">
+        <h1 className="text-[#193d6f] font-semibold text-center text-2xl">Why It Matters</h1>
+        <p className="text-center mt-5">The first cohort gave participants hands-on learning experiences with a globally recognized certificate upon completion. Our world-class courseware and industry-standard curriculum ensured that learners were not only gaining theoretical knowledge but also practical, job-ready skills. Beyond the  course work, participant benefited from mentorship sessions,peer collaboration, and real word projects built their confidence</p>
+      </div>
+
+      <div className="max-w-7xl mx-auto lg:mt-20 mt-10">
+        <h1 className="text-[#193d6f] font-semibold text-center text-2xl">Impact</h1>
+        <p className="text-center mt-5">This cohort welcomed learners from diverse backgrounds, united by a common goal: to grow their skills and advance their careers. Early feedback has been overwhelmingly positive, with participants highlighting the accessibility, mentorship, and practical focus of the program.Many reported that the training boosted their confidence to pursue new opportunities, from freelancing and entrepreneurship to applying for jobs</p>
       </div>
 
       <div className="mt-10">
