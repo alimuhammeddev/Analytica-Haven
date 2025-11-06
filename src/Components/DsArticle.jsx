@@ -15,7 +15,7 @@ const Article = () => {
       <div className="max-w-7xl mx-auto lg:p-[8] lg:mt-20 mt-5 p-4">
         <div className="space-y-5">
           <p className="font-campton lg:text-lg lg:font-semibold text-gray-500">
-            Products Upadtes October 14, 2025
+            Products Updates October 14, 2025
           </p>
         </div>
 
