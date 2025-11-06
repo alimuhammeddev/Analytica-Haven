@@ -5,10 +5,15 @@ import {
   agrotech,
   businessstrategy,
   code4teens,
+  cohort,
+  contentcreation,
   data4impact,
   devboot,
+  graphicdesign,
   havenhack,
+  linkedin,
   patternhero,
+  portfolio,
   ux4her,
   verbalidentity,
 } from "../assets";
@@ -55,6 +60,66 @@ const projects = [
     link: "/highlight3",
     imgAlt: "Crafting Impactful CV",
     imgSrc: project3,
+  },
+  {
+    id: 4,
+    title: <>Analytica Haven First Cohort Launch</>,
+    description: (
+      <>
+        On Aug 2025, Analytica Haven successfully launched the First Cohort of its flagship training program designed to help participants.
+      </>
+    ),
+    link: "/highlight4",
+    imgAlt: "Analytica Haven First Cohort Launch",
+    imgSrc: cohort,
+  },
+  {
+    id: 5,
+    title: <>Analytica Haven Portfolio Challenge</>,
+    description: (
+      <>
+        Analytica Haven has successfully concluded its 4-Week Portfolio Challenge, an initiative designed to help aspiring designers
+      </>
+    ),
+    link: "/highlight5",
+    imgAlt: "Analytica Haven Portfolio Challenge",
+    imgSrc: portfolio,
+  },
+  {
+    id: 6,
+    title: <>7Days Free Graphic Design</>,
+    description: (
+      <>
+        An empowering learning experience by Analytica Haven. Equipping creatives with hands, on design skills and tools fostering growth,creativity.
+      </>
+    ),
+    link: "/highlight6",
+    imgAlt: "7Days Free Graphic Design",
+    imgSrc: graphicdesign,
+  },
+  {
+    id: 7,
+    title: <>Content Creation.</>,
+    description: (
+      <>
+        When it feels like a chore : A reflective internal project by Analytica Haven exploring the challenges of consistent content creation.This piece sheds light on creative burnout.
+      </>
+    ),
+    link: "/highlight7",
+    imgAlt: "Content Creation.",
+    imgSrc: contentcreation,
+  },
+  {
+    id: 8,
+    title: <>Free Linkedin Optimization</>,
+    description: (
+      <>
+        A career, boosting session by Analytica Haven Helping professional build standout LinkedIn profiles Unlock visibility, connections, and real opportunities.
+      </>
+    ),
+    link: "/highlight8",
+    imgAlt: "Free Linkedin Optimization",
+    imgSrc: linkedin,
   },
 ];
 

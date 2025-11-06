@@ -135,6 +135,25 @@ import prayer from "./prayer.svg"
 import vendor from "./vendor.svg"
 import challenge from "./challenge.svg"
 import screenshot from "./screenshot.svg"
+import linkedin from "./linkedin.svg"
+import contentcreation from "./contentcreation.svg"
+import graphicdesign from "./graphicdesign.svg"
+import portfolio from "./portfolio.svg" 
+import sisterhood from "./sisterhood.svg"
+import techwomenfest from "./techwomenfest.svg"
+import fintechweek from "./fintechweek.svg"
+import moonshot from "./moonshot.svg"
+import ai from "./ai.svg"
+import mergetech from "./mergetech.svg"
+import healthymeal from "./healthymeal.svg"
+import techweeklagos from "./techweeklagos.svg"
+import techwomen from "./techwomen.svg"
+import fintechweek1 from "./fintechweek1.svg"
+import moonshot1 from "./moonshot1.svg"
+import emotionalintelligence from "./emotionalintelligence.svg"
+import personalbranding from "./personalbranding.svg"
+import safesister from "./safesister.svg"
+import cohort1 from "./cohort1.svg"
 
 
 export {
@@ -275,4 +294,23 @@ export {
     vendor,
     challenge,
     screenshot,
+    linkedin,
+    contentcreation,
+    graphicdesign,
+    portfolio,
+    sisterhood,
+    techwomenfest,
+    fintechweek,
+    moonshot,
+    ai,
+    mergetech,
+    healthymeal,
+    techweeklagos,
+    techwomen,
+    fintechweek1,
+    moonshot1,
+    emotionalintelligence,
+    personalbranding,
+    safesister,
+    cohort1,
 };

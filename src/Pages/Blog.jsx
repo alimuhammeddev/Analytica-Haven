@@ -1,12 +1,12 @@
 import Header from "../Header";
 import Footer from "../Footer";
-import { patternhero } from "../assets";
-import blog1 from "../assets/blog1.svg";
+import { ai, contentcreation, fintechweek, healthymeal, mergetech, moonshot, patternhero, sisterhood, techwomenfest } from "../assets";
 import blog2 from "../assets/blog2.svg";
 import blog3 from "../assets/blog3.svg";
 import blog4 from "../assets/blog4.svg";
 import blog5 from "../assets/blog5.svg";
 import blog6 from "../assets/blog6.svg";
+import project1 from "../assets/project1.svg";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -28,16 +28,36 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      image: blog1,
+      image: techwomenfest,
       category: "EDUCATION",
-      date: "JULY 30, 2025",
-      title: "Analytica Haven just hosted a bootcamp on Personal branding.",
+      date: "OCTOBER 11, 2025",
+      title: "Analytica Haven at TECH WOMEN FEST Lagos “25",
       description:
-        "At Analytica Haven, we believe personal branding is more than a buzzword, it’s the bridge between potential and opportunity. Recently, we hosted a Personal Branding Bootcamp, a transformative learning experience.",
+        "This year's Fintech Week Abuja 2025 was a melting pot of innovation, collaboration, and bold ideas shaping the future of digital finance  and Analytica Haven Nigeria (AHN) proudly stood at the center of it all.",
       tab: "Education Tips",
     },
     {
       id: 2,
+      image: fintechweek,
+      category: "EDUCATION",
+      date: "OCTOBER 18, 2025",
+      title: "Analytica Haven at FINTECH Week “25",
+      description:
+        "Analytica Haven joined innovators, founders, and digital leaders at Moonshot by TechCabal 2025 a landmark tech conference held at the Eko Convention Centre, Lagos. The event, themed “Building Momentum,” brought together voices shaping Africa’s digital future.",
+      tab: "Education Tips",
+    },
+    {
+      id: 3,
+      image: moonshot,
+      category: "Product Update",
+      date: "OCTOBER 24, 2025",
+      title: "Analytica Haven at Moonshot by TechCabal 2025",
+      description:
+        "At Analytica Haven, we understand that success is not only about technical skills but also about the ability to connect, empathize, and lead with awareness.",
+      tab: "Product",
+    },
+    {
+      id: 4,
       image: blog2,
       category: "Product Update",
       date: "AUG 9, 2025",
@@ -47,7 +67,7 @@ const Blog = () => {
       tab: "Product",
     },
     {
-      id: 3,
+      id: 5,
       image: blog3,
       category: "Education Tips",
       date: "AUG 17, 2025",
@@ -57,7 +77,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 4,
+      id: 6,
       image: blog4,
       category: "Education",
       date: "AUG 8, 2025",
@@ -67,7 +87,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 5,
+      id: 7,
       image: blog5,
       category: "Marketing",
       date: "AUG 2, 2025",
@@ -77,7 +97,7 @@ const Blog = () => {
       tab: "Marketing-updates",
     },
     {
-      id: 6,
+      id: 8,
       image: blog6,
       category: "PRODUCT UPDATE",
       date: "AUG 22, 2025",
@@ -86,6 +106,72 @@ const Blog = () => {
       description:
         "At Analytica Haven, we understand that a strong portfolio is one of the most powerful tools for personal and professional growth. To help individuals showcase their skills with confidence, we recently launched the Four-Week",
       tab: "Company News",
+    },
+    {
+      id: 9,
+      image: sisterhood,
+      category: "Education",
+      date: "JULY 30, 2025",
+      title:
+        "Safe Sisterhood Hosts 15 Days of Prayer Retreat",
+      description:
+        "In a heartfelt move to strengthen faith, unity, and purpose among women, Safe Sisterhood has announced the successful hosting of its 15 Days of Prayer Retreat, a spiritually enriching experience dedicated to reflection, renewal, and revival.",
+      tab: "Company News",
+    },
+    {
+      id: 10,
+      image: project1,
+      category: "Education",
+      date: "JULY 30, 2025",
+      title:
+        "Analytica Haven just hosted a bootcamp on Personal branding.",
+      description:
+        "At Analytica Haven, we believe personal branding is more than a buzzword, it's the bridge between potential and opportunity. Recently, we hosted a Personal Branding Bootcamp, a transformative learning experience.",
+      tab: "Education Tips",
+    },
+    {
+      id: 11,
+      image: ai,
+      category: "Education",
+      date: "APRIL 22, 2025",
+      title:
+        "Analytica Haven Hosts Successful 3-Day AI Masterclass",
+      description:
+        "At Analytica Haven, we understand that a strong portfolio is one of the most powerful tools for personal and professional growth. To help individuals showcase their skills with confidence, we recently launched the Four-Week",
+      tab: "Education Tips",
+    },
+    {
+      id: 11,
+      image: contentcreation,
+      category: "Education",
+      date: "AUG 9, 2025",
+      title:
+        "Analytica Haven Urges Consistency in content Posting",
+      description:
+        "In this thoughtful project, Analytica Haven reflects on the hidden challenges of showing up consistently as a content creator. While the platform encourages regular posting as a path to growth...",
+      tab: "Education Tips",
+    },
+    {
+      id: 12,
+      image: healthymeal,
+      category: "Education",
+      date: "APRIL 22, 2025",
+      title:
+        "Simple nutrition tips and a two-day meal plan to boost energy.",
+      description:
+        "Redefined the user acquisition and redesigned the onboarding experience,all within 3 working weeks of intensive training which gave participate knowledge and understanding.",
+      tab: "Education Tips",
+    },
+    {
+      id: 13,
+      image: mergetech,
+      category: "Education",
+      date: "APRIL 22, 2025",
+      title:
+        "3-Day Intensive Training Empowers Participants to Merge Tech Skills",
+      description:
+        "The just-concluded 3-day workshop equipped attendees with practical strategies to combine technical know-how with entrepreneurial thinking setting them on a path to build scalable, future-ready ventures.",
+      tab: "Education Tips",
     },
   ];
 
@@ -280,15 +366,23 @@ const Blog = () => {
         <div className="space-y-10 lg:space-y-15">
           <BlogPost post={blogPosts[0]} reverseLayout />
           <BlogPost post={blogPosts[1]} reverseLayout />
+          <BlogPost post={blogPosts[2]} reverseLayout />
 
           <h2 className="font-campton font-bold text-center md:text-left text-2xl lg:text-4xl text-[#193D6F]">
             Weekly Updates
           </h2>
 
-          <BlogPost post={blogPosts[2]} reverseLayout />
           <BlogPost post={blogPosts[3]} reverseLayout />
           <BlogPost post={blogPosts[4]} reverseLayout />
           <BlogPost post={blogPosts[5]} reverseLayout />
+          <BlogPost post={blogPosts[6]} reverseLayout />
+          <BlogPost post={blogPosts[7]} reverseLayout />
+          <BlogPost post={blogPosts[8]} reverseLayout />
+          <BlogPost post={blogPosts[9]} reverseLayout />
+          <BlogPost post={blogPosts[10]} reverseLayout />
+          <BlogPost post={blogPosts[11]} reverseLayout />
+          <BlogPost post={blogPosts[12]} reverseLayout />
+          <BlogPost post={blogPosts[13]} reverseLayout />
         </div>
       </div>
 
