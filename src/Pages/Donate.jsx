@@ -192,13 +192,13 @@ const Donate = () => {
           </h1>
 
           <div id="account" className="bg-[#ffffff] p-7 lg:mt-12 mt-5 rounded-2xl text-center md:w-[50%] mx-auto">
-            <img src={gtbank} alt="" className="mx-auto" />
-            {/* <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">Account Name: <span className="font-semibold">Analytica Haven</span></h1> */}
+            <img src={gtbank} alt="" className="mx-auto w-10" />
+            <h1 className="text-[#000000] lg:text-lg mt-2 font-campton">Account Name: <span className="font-semibold">Analytica Haven Hub</span></h1>
             <h2 className="text-[#000000] lg:text-lg mt-2 font-campton">
-              Bank Name: <span className="font-semibold">Guaranty Trust Bank</span>
+              Bank Name: <span className="font-semibold">Kuda Bank</span>
             </h2>
             <h2 className="text-[#000000] lg:text-lg mt-2 font-campton">
-              Account No: <span className="font-semibold">0264388572</span>
+              Account No: <span className="font-semibold">3002942659</span>
             </h2>
           </div>
 
