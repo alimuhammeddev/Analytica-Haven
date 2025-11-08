@@ -82,7 +82,7 @@ const projects = [
       </>
     ),
     link: "/highlight5",
-    imgAlt: "Analytica Haven Portfolio Challenge",
+    imgAlt: "Analytica Haven Portfolio Challenge",
     imgSrc: portfolio,
   },
   {

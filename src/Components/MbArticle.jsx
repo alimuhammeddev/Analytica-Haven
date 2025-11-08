@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cohort1, emotionalintelligence, fintechweek1, moonshot1, personalbranding, safesister } from "../assets";
+import { cohort1, emotionalintelligence, fintechweek1, moonshot1, personalbranding, portfolio1, safesister } from "../assets";
 
 const Article = () => {
   // Define state for each article's expansion
@@ -126,6 +126,122 @@ const Article = () => {
             <div className="flex items-center gap-20 lg:mt-20 mt-1">
               <h1 className="text-gray-500 lg:text-lg">Latest News</h1>
               <h2 className="text-gray-500 lg:text-lg">5 September 2025</h2>
+            </div>
+          </div>
+        </div>
+
+        {/* Porfolio Challenge */}
+        <div className="flex lg:flex-row flex-col lg:gap-16 gap-5 mt-16">
+          <img src={portfolio1} alt="" className="lg:w-[40%]" />
+          <div>
+            <h1 className="lg:text-3xl font-bold text-xl">Reflections on four-weeks portfolio challenge</h1>
+            <h2 className="lg:text-lg lg:mt-5 text-gray-500">
+              At Analytica Haven, we understand that a strong portfolio is one of the most powerful tools for personal and professional growth.
+              {expanded.personal && (
+                <span>
+                  {" "}
+                  Four-Week Portfolio Challenge – Documentation
+
+
+                  Our Four Week Portfolio Challenge, hosted by Analytica Haven, is a structured program designed to guide participants through the process of creating, organizing, and presenting a professional portfolio. The challenge runs for four weeks and is conducted entirely online via Telegram.
+
+                  The program is open to participants across various skill areas including:
+
+                  Graphics Design & Video Editing
+
+                  Frontend / Backend Development
+
+                  Cybersecurity
+
+                  Project Management
+
+                  Virtual Assistance (VA)
+
+                  Product Design
+
+                  Data Analytics
+
+                  UI/UX Design
+
+                  Culinary
+
+                  Digital Marketing/ SMM / Content writing
+
+
+                  The goal of the challenge is to help participants compile their skills, experiences, and project work into a portfolio that meets professional standards and can be used to pursue employment or freelance opportunities.
+
+
+
+
+                  Our Objectives
+
+                  By the end of the challenge, participants will be able to
+
+                  📍Develop an effective portfolio tailored to their skill area.
+
+                  📍Document and present their work in a structured format.
+
+                  📍Showcase achievements and completed projects with clarity.
+
+                  📍Use their portfolio as a tool to attract clients, employers, or collaborators.
+
+
+                  Weekly Breakdown
+
+                  Week 1: Foundation and set up
+
+                  Choosing the right platform (e.g., PDF, website, GitHub, Behance, LinkedIn).
+
+                  Introduction and about me section.
+
+                  Week 2: Students were tasked with selecting their Best Work
+
+                  Add 2–3 projects with descriptions, images, and results
+
+                  Get feedback from peers/mentors in the group.
+
+                  Week 3: Skills, Tools & Presentation Polish
+
+                  Focus: Strengthening Profile
+
+                  • Add a Skills & Tools section that matches your niche (e.g., Excel, SQL, Figma, Canva, Trello, Python).
+
+                  • Refine layout: consistent fonts, colors, and spacing.
+
+                  • Add extras: testimonials, downloadable CV, “Why Work With Me.”
+
+                  • Test links and mobile view.
+
+                  Week Four: Marks the final stage of the Four-Week Portfolio Challenge.
+
+                  At this stage, participants are expected to finalize, refine, and submit their completed portfolios for review.
+
+                  All previous weeks’ of lessons organization, documentation, structure, and design, come together in this final phase.
+
+                  The goal for this week is to produce a fully functional, professional, and presentable portfolio that accurately reflects your skills, completed projects, and professional identity.
+
+                  Final Note
+                  By the end of Week Four, participants should be able to:
+
+                  Finalize their portfolio layout and structure.
+
+                  Present their work with clarity and visual coherence.
+
+                  Include all relevant sections such as contact details, project documentation, and portfolio links.
+
+                  Demonstrate readiness to share their portfolio with potential employers or clients.
+                </span>
+              )}
+              <span
+                onClick={() => toggleExpand("personal")}
+                className="text-[#193D6F] font-bold cursor-pointer"
+              >
+                {expanded.personal ? " See Less..." : " Read More..."}
+              </span>
+            </h2>
+            <div className="flex items-center gap-20 lg:mt-20 mt-1">
+              <h1 className="text-gray-500 lg:text-lg">Latest News</h1>
+              <h2 className="text-gray-500 lg:text-lg">22 August 2025</h2>
             </div>
           </div>
         </div>

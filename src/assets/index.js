@@ -154,6 +154,7 @@ import emotionalintelligence from "./emotionalintelligence.svg"
 import personalbranding from "./personalbranding.svg"
 import safesister from "./safesister.svg"
 import cohort1 from "./cohort1.svg"
+import portfolio1 from "./portfolio1.svg"
 
 
 export {
@@ -313,4 +314,5 @@ export {
     personalbranding,
     safesister,
     cohort1,
+    portfolio1,
 };
