@@ -6,7 +6,13 @@ import blog3 from "../assets/blog3.svg";
 import blog4 from "../assets/blog4.svg";
 import blog5 from "../assets/blog5.svg";
 import blog6 from "../assets/blog6.svg";
+import digitalcom from "../assets/digitalcom.svg";
+import cv from "../assets/cv.svg";
+import interview from "../assets/interview.svg";
+import digital from "../assets/digital.svg";
 import project1 from "../assets/project1.svg";
+import project5 from "../assets/project5.svg";
+import project6 from "../assets/project6.svg";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -28,6 +34,66 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      image: blog5,
+      category: "EDUCATION",
+      date: "MARCH 2, 2026",
+      title: "Growth Mindset for Career Acceleration & Continous Development",
+      description:
+        "The final session centered on the role of mindset in shaping career outcomes. Participants were introduced to the concept of a growth mindset by the speaker Elizabeth Owoade. She said the belief that abilities and skills can be developed through efforts and consistent learning.",
+      tab: "Education Tips",
+    },
+    {
+      id: 2,
+      image: blog4,
+      category: "EDUCATION",
+      date: "MARCH 1, 2026",
+      title: "Productivity Systems & High Performance Work Habits",
+      description:
+        "This session was facilitated by Ajube Beverly and it challenged the common belief in individuals that productivity is about doing more. Instead, participants learned that true productivity is about doing what matters in most effectively and consistently ways.",
+      tab: "Education Tips",
+    },
+    {
+      id: 3,
+      image: blog3,
+      category: "EDUCATION",
+      date: "FEBRUARY 27, 2026",
+      title: "Career Adaptability & Thriving in Fast- Changing Work Environments",
+      description:
+        "In an ever-evolving work environment, adaptability stood out as one of the most critical skills discussed in this session.",
+      tab: "Education Tips",
+    },
+    {
+      id: 4,
+      image: project6,
+      category: "EDUCATION",
+      date: "FEBRUARY 26, 2026",
+      title: "Persuasive Communication & Professional Influence",
+      description:
+        "This session focused on helping participants understand that influence is not about authority, it’s about how effectively you can  communicate your ideas. A central theme was persuasion through clarity and confidence. ",
+      tab: "Education Tips",
+    },
+    {
+      id: 5,
+      image: project5,
+      category: "EDUCATION",
+      date: "FEBRUARY 25, 2026",
+      title: "Strategic Workplace Relationship & professional Networking",
+      description:
+        "During this session, participants were reminded that career growth is deeply connected to the quality of relationships they build with audience or Professionals.",
+      tab: "Education Tips",
+    },
+    {
+      id: 6,
+      image: digitalcom,
+      category: "EDUCATION",
+      date: "FEBRUARY 24, 2026",
+      title: "Professional & Digital Communication",
+      description:
+        "The session on Professional & Digital Communication was facilitated by Gift Uneh Apeh and it emphasized a simple truth: clarity is power. Participants explored how communication goes beyond just words and how it should reflect professionalism, emotional intelligence, and attention to detail.",
+      tab: "Education Tips",
+    },
+    {
+      id: 7,
       image: techwomenfest,
       category: "EDUCATION",
       date: "OCTOBER 11, 2025",
@@ -37,7 +103,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 2,
+      id: 8,
       image: fintechweek,
       category: "EDUCATION",
       date: "OCTOBER 18, 2025",
@@ -47,7 +113,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 3,
+      id: 9,
       image: moonshot,
       category: "Product Update",
       date: "OCTOBER 24, 2025",
@@ -57,7 +123,7 @@ const Blog = () => {
       tab: "Product",
     },
     {
-      id: 4,
+      id: 10,
       image: blog2,
       category: "Product Update",
       date: "AUG 9, 2025",
@@ -67,8 +133,8 @@ const Blog = () => {
       tab: "Product",
     },
     {
-      id: 5,
-      image: blog3,
+      id: 11,
+      image: digital,
       category: "Education Tips",
       date: "AUG 17, 2025",
       title: "Digital Growth Series Unlocking the future with Analytica Haven.",
@@ -77,8 +143,8 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 6,
-      image: blog4,
+      id: 12,
+      image: interview,
       category: "Education",
       date: "AUG 8, 2025",
       title: "Mastering Interview Confidence with Analytica Haven",
@@ -87,8 +153,8 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 7,
-      image: blog5,
+      id: 13,
+      image: cv,
       category: "Marketing",
       date: "AUG 2, 2025",
       title: "Crafting Impactful CVs and Resume with Analytica Haven",
@@ -97,7 +163,7 @@ const Blog = () => {
       tab: "Marketing-updates",
     },
     {
-      id: 8,
+      id: 14,
       image: blog6,
       category: "PRODUCT UPDATE",
       date: "AUG 22, 2025",
@@ -108,7 +174,7 @@ const Blog = () => {
       tab: "Company News",
     },
     {
-      id: 9,
+      id: 15,
       image: sisterhood,
       category: "Education",
       date: "JULY 30, 2025",
@@ -119,7 +185,7 @@ const Blog = () => {
       tab: "Company News",
     },
     {
-      id: 10,
+      id: 16,
       image: project1,
       category: "Education",
       date: "JULY 30, 2025",
@@ -130,7 +196,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 11,
+      id: 17,
       image: ai,
       category: "Education",
       date: "APRIL 22, 2025",
@@ -141,7 +207,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 11,
+      id: 18,
       image: contentcreation,
       category: "Education",
       date: "AUG 9, 2025",
@@ -152,7 +218,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 12,
+      id: 19,
       image: healthymeal,
       category: "Education",
       date: "APRIL 22, 2025",
@@ -163,7 +229,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 13,
+      id: 20,
       image: mergetech,
       category: "Education",
       date: "APRIL 22, 2025",
