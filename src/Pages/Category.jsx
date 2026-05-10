@@ -3,8 +3,14 @@ import Footer from "../Footer";
 import { patternhero } from "../assets";
 import blog1 from "../assets/blog1.svg";
 import blog2 from "../assets/blog2.svg";
-import blog3 from "../assets/blog4.svg";
-import blog4 from "../assets/blog5.svg";
+import blog3 from "../assets/blog3.svg";
+import blog4 from "../assets/blog4.svg";
+import blog5 from "../assets/blog5.svg";
+import cv from "../assets/cv.svg";
+import interview from "../assets/interview.svg";
+import digitalcom from "../assets/digitalcom.svg";
+import project5 from "../assets/project5.svg";
+import project6 from "../assets/project6.svg";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -26,6 +32,66 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      image: blog5,
+      category: "EDUCATION",
+      date: "MARCH 2, 2026",
+      title: "Growth Mindset for Career Acceleration & Continous Development",
+      description:
+        "The final session centered on the role of mindset in shaping career outcomes. Participants were introduced to the concept of a growth mindset by the speaker Elizabeth Owoade. She said the belief that abilities and skills can be developed through efforts and consistent learning.",
+      tab: "Education Tips",
+    },
+    {
+      id: 2,
+      image: blog4,
+      category: "EDUCATION",
+      date: "MARCH 1, 2026",
+      title: "Productivity Systems & High Performance Work Habits",
+      description:
+        "This session was facilitated by Ajube Beverly and it challenged the common belief in individuals that productivity is about doing more. Instead, participants learned that true productivity is about doing what matters in most effectively and consistently ways.",
+      tab: "Education Tips",
+    },
+    {
+      id: 3,
+      image: blog3,
+      category: "EDUCATION",
+      date: "FEBRUARY 27, 2026",
+      title: "Career Adaptability & Thriving in Fast- Changing Work Environments",
+      description:
+        "In an ever-evolving work environment, adaptability stood out as one of the most critical skills discussed in this session.",
+      tab: "Education Tips",
+    },
+    {
+      id: 4,
+      image: project6,
+      category: "EDUCATION",
+      date: "FEBRUARY 26, 2026",
+      title: "Persuasive Communication & Professional Influence",
+      description:
+        "This session focused on helping participants understand that influence is not about authority, it’s about how effectively you can  communicate your ideas. A central theme was persuasion through clarity and confidence. ",
+      tab: "Education Tips",
+    },
+    {
+      id: 5,
+      image: project5,
+      category: "EDUCATION",
+      date: "FEBRUARY 25, 2026",
+      title: "Strategic Workplace Relationship & professional Networking",
+      description:
+        "During this session, participants were reminded that career growth is deeply connected to the quality of relationships they build with audience or Professionals.",
+      tab: "Education Tips",
+    },
+    {
+      id: 6,
+      image: digitalcom,
+      category: "EDUCATION",
+      date: "FEBRUARY 24, 2026",
+      title: "Professional & Digital Communication",
+      description:
+        "The session on Professional & Digital Communication was facilitated by Gift Uneh Apeh and it emphasized a simple truth: clarity is power. Participants explored how communication goes beyond just words and how it should reflect professionalism, emotional intelligence, and attention to detail.",
+      tab: "Education Tips",
+    },
+    {
+      id: 7,
       image: blog1,
       category: "EDUCATION",
       date: "JULY 30, 2025",
@@ -35,7 +101,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 2,
+      id: 8,
       image: blog2,
       category: "Education Tips",
       date: "AUG 9, 2025",
@@ -45,8 +111,8 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 3,
-      image: blog3,
+      id: 9,
+      image: interview,
       category: "Education Tips",
       date: "AUG 8, 2025",
       title: "Mastering Interview Confidence with Analytica Haven",
@@ -55,8 +121,8 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 4,
-      image: blog4,
+      id: 10,
+      image: cv,
       category: "Marketing",
       date: "AUG 2, 2025",
       title: "Crafting Impactful CVs and Resume with Analytica Haven",
@@ -229,6 +295,12 @@ const Blog = () => {
           <BlogPost post={blogPosts[1]} reverseLayout />
           <BlogPost post={blogPosts[2]} reverseLayout />
           <BlogPost post={blogPosts[3]} reverseLayout />
+          <BlogPost post={blogPosts[4]} reverseLayout />
+          <BlogPost post={blogPosts[5]} reverseLayout />
+          <BlogPost post={blogPosts[6]} reverseLayout />
+          <BlogPost post={blogPosts[7]} reverseLayout />
+          <BlogPost post={blogPosts[8]} reverseLayout />
+          <BlogPost post={blogPosts[9]} reverseLayout />
         </div>
       </div>
 
