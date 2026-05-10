@@ -155,6 +155,7 @@ import personalbranding from "./personalbranding.svg"
 import safesister from "./safesister.svg"
 import cohort1 from "./cohort1.svg"
 import portfolio1 from "./portfolio1.svg"
+import project4 from "./project4.svg";
 
 
 export {
@@ -315,4 +316,5 @@ export {
     safesister,
     cohort1,
     portfolio1,
+    project4,
 };

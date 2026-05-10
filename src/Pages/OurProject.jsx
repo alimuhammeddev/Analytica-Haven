@@ -21,16 +21,138 @@ import project1 from "../assets/project1.svg";
 import project2 from "../assets/project2.svg";
 import project3 from "../assets/project3.svg";
 import projectsister from "../assets/projectsister.svg";
+import project4 from "../assets/project4.svg";
+import project5 from "../assets/project5.svg";
+import project6 from "../assets/project6.svg";
+import project7 from "../assets/project7.svg";
+import project8 from "../assets/project8.svg";
+import project9 from "../assets/project9.svg";
 import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const projects = [
   {
     id: 1,
+    title: <>GROWTH MINDSET FOR CAREER ACCELERATION &CONTINUOUS DEVELOPMENT</>,
+    description: (
+      <>
+        The final session centered on the role of mindset in shaping career
+        outcomes. Participants were introduced to the concept of a growth
+        mindset by the speaker Elizabeth Owoade. She said the belief that
+        abilities and skills can be developed through efforts and consistent
+        learning. This contrasted with a fixed mindset, which limits growth by
+        avoiding challenges and fearing failure.
+      </>
+    ),
+    link: "/highlight1",
+    imgAlt: "Growth mindset image",
+    imgSrc: project9,
+  },
+  {
+    id: 2,
+    title: <>PRODUCTIVITY SYSTEM AND HIGH PERFORMANCE WORK HABITS</>,
+    description: (
+      <>
+        This session was facilitated by Ajube Beverly and it challenged the
+        common belief in individuals that productivity is about doing more.
+        Instead, participants learned that true productivity is about doing what
+        matters in most effectively and consistently ways. <br /> A major focus
+        was on building systems rather than relying on motivation. Systems
+        create structure, reduce decision fatigue, and help maintain consistency
+        even on low-energy days.
+      </>
+    ),
+    link: "/highlight1",
+    imgAlt: "Productivity system image",
+    imgSrc: project8,
+  },
+  {
+    id: 3,
+    title: (
+      <>CAREER ADAPTABILITY & THRIVING IN FAST-CHANGING WORK ENVIRONMENTS</>
+    ),
+    description: (
+      <>
+        In an ever-evolving work environment, adaptability stood out as one of
+        the most critical skills discussed in this session. <br /> All our
+        Participants explored how change, in terms of technological,
+        organizational, or personal way is inevitable. The difference lies in
+        how individuals responds to it.
+      </>
+    ),
+    link: "/highlight1",
+    imgAlt: "Career Adaptability image",
+    imgSrc: project7,
+  },
+  {
+    id: 4,
+    title: <>PERSUASIVE COMMUNICATION AND PROFESIONAL INFLUENCE</>,
+    description: (
+      <>
+        This session focused on helping participants understand that influence
+        is not about authority, it’s about how effectively you can communicate
+        your ideas. A central theme was persuasion through clarity and
+        confidence. <br /> Participants learned that people are more likely to
+        support ideas that are clearly structured, relatable, and
+        solution-oriented in any organization they find themselves.
+      </>
+    ),
+    link: "/highlight1",
+    imgAlt: "Persuasive communication image",
+    imgSrc: project6,
+  },
+  {
+    id: 5,
+    title: <>STRATEGIC WORKPLACE RELATIONSHIP & PROFESSIONAL NETWORKING</>,
+    description: (
+      <>
+        During this session, participants were reminded that career growth is
+        deeply connected to the quality of relationships they build with
+        audience or Professionals. <br /> A major focus was shifting from
+        transactional networking to intentional relationship building. Instead
+        of connecting only when there is a need, our attendees also l learned
+        that the value of consistently nurturing relationships through
+        authenticity, support, and mutual value is key in the online space and
+        daily life.
+      </>
+    ),
+    link: "/highlight1",
+    imgAlt: "Strategic workplace image",
+    imgSrc: project5,
+  },
+  {
+    id: 6,
+    title: <>PROFESSIONAL & DIGITAL COMMUNICATION</>,
+    description: (
+      <>
+        The session on Professional & Digital Communication was facilitated by
+        Gift Uneh Apeh and it emphasized a simple truth: clarity is power.
+        Participants explored how communication goes beyond just words and how
+        it should reflect professionalism, emotional intelligence, and attention
+        to detail. <br /> One key takeaway was the importance of intentional
+        communication. In digital spaces where tone can easily be
+        misinterpreted, relaying messages clearly and choosing words carefully
+        can prevent misunderstandings and help build trust.
+      </>
+    ),
+    link: "/highlight1",
+    imgAlt: "Professional & Digital Communication image",
+    imgSrc: project4,
+  },
+  {
+    id: 7,
     title: <>PERSONAL BRANDING</>,
     description: (
       <>
-        At Analytica Haven, we believe personal branding is not just a career tool but a lifelong asset. This session empowered participants to recognize their uniqueness and begin the journey of showcasing their selves with purpose and confidence.The session was highly interactive, with real-world examples and practical exercises that allowed participants to connect theory with application. By the end, attendees gained clarity on how to align their personal values with their professional aspirations and present themselves as distinctive brands in their respective fields.
+        At Analytica Haven, we believe personal branding is not just a career
+        tool but a lifelong asset. This session empowered participants to
+        recognize their uniqueness and begin the journey of showcasing their
+        selves with purpose and confidence.The session was highly interactive,
+        with real-world examples and practical exercises that allowed
+        participants to connect theory with application. By the end, attendees
+        gained clarity on how to align their personal values with their
+        professional aspirations and present themselves as distinctive brands in
+        their respective fields.
       </>
     ),
     link: "/highlight1",
@@ -38,11 +160,17 @@ const projects = [
     imgSrc: project1,
   },
   {
-    id: 2,
+    id: 8,
     title: <>MASTERING INTERVIEW</>,
     description: (
       <>
-        In today’s competitive career landscape, having the right qualifications is only half the journey, confidence during interviews often makes the real difference. At Analytica Haven’s Bootcamp, Ms Japheth Phinaobian Praise took our participants on an interactive and transformative session on Mastering Interview Confidence. This was necessary to help equip them with the skills and mindset needed to excel in job interviews and professional conversations.
+        In today’s competitive career landscape, having the right qualifications
+        is only half the journey, confidence during interviews often makes the
+        real difference. At Analytica Haven’s Bootcamp, Ms Japheth Phinaobian
+        Praise took our participants on an interactive and transformative
+        session on Mastering Interview Confidence. This was necessary to help
+        equip them with the skills and mindset needed to excel in job interviews
+        and professional conversations.
       </>
     ),
     link: "/highlight2",
@@ -50,11 +178,14 @@ const projects = [
     imgSrc: project2,
   },
   {
-    id: 3,
+    id: 9,
     title: <>CRAFTING IMPACTFUL CV</>,
     description: (
       <>
-        At Analytica Haven, we believe interview confidence is a skill that can be learned and mastered. This session empowered attendees to step into opportunities with the assurance that they can not only answer questions effectively but also present themselves as the best fit for the role.
+        At Analytica Haven, we believe interview confidence is a skill that can
+        be learned and mastered. This session empowered attendees to step into
+        opportunities with the assurance that they can not only answer questions
+        effectively but also present themselves as the best fit for the role.
       </>
     ),
     link: "/highlight3",
@@ -62,11 +193,12 @@ const projects = [
     imgSrc: project3,
   },
   {
-    id: 4,
+    id: 10,
     title: <>Analytica Haven First Cohort Launch</>,
     description: (
       <>
-        On Aug 2025, Analytica Haven successfully launched the First Cohort of its flagship training program designed to help participants.
+        On Aug 2025, Analytica Haven successfully launched the First Cohort of
+        its flagship training program designed to help participants.
       </>
     ),
     link: "/highlight4",
@@ -74,11 +206,12 @@ const projects = [
     imgSrc: cohort,
   },
   {
-    id: 5,
+    id: 11,
     title: <>Analytica Haven Portfolio Challenge</>,
     description: (
       <>
-        Analytica Haven has successfully concluded its 4-Week Portfolio Challenge, an initiative designed to help aspiring designers
+        Analytica Haven has successfully concluded its 4-Week Portfolio
+        Challenge, an initiative designed to help aspiring designers
       </>
     ),
     link: "/highlight5",
@@ -86,11 +219,13 @@ const projects = [
     imgSrc: portfolio,
   },
   {
-    id: 6,
+    id: 12,
     title: <>7Days Free Graphic Design</>,
     description: (
       <>
-        An empowering learning experience by Analytica Haven. Equipping creatives with hands, on design skills and tools fostering growth,creativity.
+        An empowering learning experience by Analytica Haven. Equipping
+        creatives with hands, on design skills and tools fostering
+        growth,creativity.
       </>
     ),
     link: "/highlight6",
@@ -98,11 +233,13 @@ const projects = [
     imgSrc: graphicdesign,
   },
   {
-    id: 7,
+    id: 13,
     title: <>Content Creation.</>,
     description: (
       <>
-        When it feels like a chore : A reflective internal project by Analytica Haven exploring the challenges of consistent content creation.This piece sheds light on creative burnout.
+        When it feels like a chore : A reflective internal project by Analytica
+        Haven exploring the challenges of consistent content creation.This piece
+        sheds light on creative burnout.
       </>
     ),
     link: "/highlight7",
@@ -110,11 +247,13 @@ const projects = [
     imgSrc: contentcreation,
   },
   {
-    id: 8,
+    id: 14,
     title: <>Free Linkedin Optimization</>,
     description: (
       <>
-        A career, boosting session by Analytica Haven Helping professional build standout LinkedIn profiles Unlock visibility, connections, and real opportunities.
+        A career, boosting session by Analytica Haven Helping professional build
+        standout LinkedIn profiles Unlock visibility, connections, and real
+        opportunities.
       </>
     ),
     link: "/highlight8",
@@ -150,14 +289,14 @@ const OurProject = () => {
 
       <div className="bg-white">
         <div className="max-w-7xl mx-auto px-5 py-12 lg:py-20">
-          <div className="space-y-8">
+          <div className="lg:space-y-20 space-y-10">
             {projects.map(
               ({ id, title, description, imgAlt, imgSrc, link }, idx) => (
                 <div
                   key={id}
-                  className={`flex flex-col lg:flex-row gap-8 lg:gap-12 px-0 lg:p-12 ${
+                  className={`flex flex-col lg:flex-row gap-8 lg:gap-12 px-0 ${
                     idx === 1
-                      ? "bg-[#EBF2FE] -mx-5 lg:-mx-[3.2rem] px-5 py-5 lg:py-12 lg:px-24"
+                      ? "py-5 lg:py-2"
                       : "bg-transparent"
                   }`}
                 >
@@ -185,7 +324,7 @@ const OurProject = () => {
                     />
                   </div>
                 </div>
-              )
+              ),
             )}
           </div>
         </div>
