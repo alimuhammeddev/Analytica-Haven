@@ -36,7 +36,7 @@ const Blog = () => {
       id: 1,
       image: blog5,
       category: "EDUCATION",
-      date: "MARCH 2, 2026",
+      date: "APRIL 13, 2026",
       title: "Growth Mindset for Career Acceleration & Continous Development",
       description:
         "The final session centered on the role of mindset in shaping career outcomes. Participants were introduced to the concept of a growth mindset by the speaker Elizabeth Owoade. She said the belief that abilities and skills can be developed through efforts and consistent learning.",
@@ -46,7 +46,7 @@ const Blog = () => {
       id: 2,
       image: blog4,
       category: "EDUCATION",
-      date: "MARCH 1, 2026",
+      date: "APRIL 13, 2026",
       title: "Productivity Systems & High Performance Work Habits",
       description:
         "This session was facilitated by Ajube Beverly and it challenged the common belief in individuals that productivity is about doing more. Instead, participants learned that true productivity is about doing what matters in most effectively and consistently ways.",
@@ -56,7 +56,7 @@ const Blog = () => {
       id: 3,
       image: blog3,
       category: "EDUCATION",
-      date: "FEBRUARY 27, 2026",
+      date: "APRIL 13, 2026",
       title: "Career Adaptability & Thriving in Fast- Changing Work Environments",
       description:
         "In an ever-evolving work environment, adaptability stood out as one of the most critical skills discussed in this session.",
@@ -66,7 +66,7 @@ const Blog = () => {
       id: 4,
       image: project6,
       category: "EDUCATION",
-      date: "FEBRUARY 26, 2026",
+      date: "APRIL 13, 2026",
       title: "Persuasive Communication & Professional Influence",
       description:
         "This session focused on helping participants understand that influence is not about authority, it’s about how effectively you can  communicate your ideas. A central theme was persuasion through clarity and confidence. ",
@@ -76,7 +76,7 @@ const Blog = () => {
       id: 5,
       image: project5,
       category: "EDUCATION",
-      date: "FEBRUARY 25, 2026",
+      date: "APRIL 13, 2026",
       title: "Strategic Workplace Relationship & professional Networking",
       description:
         "During this session, participants were reminded that career growth is deeply connected to the quality of relationships they build with audience or Professionals.",
@@ -86,7 +86,7 @@ const Blog = () => {
       id: 6,
       image: digitalcom,
       category: "EDUCATION",
-      date: "FEBRUARY 24, 2026",
+      date: "APRIL 13, 2026",
       title: "Professional & Digital Communication",
       description:
         "The session on Professional & Digital Communication was facilitated by Gift Uneh Apeh and it emphasized a simple truth: clarity is power. Participants explored how communication goes beyond just words and how it should reflect professionalism, emotional intelligence, and attention to detail.",
