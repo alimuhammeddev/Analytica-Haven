@@ -41,21 +41,21 @@ const OurBlogs = () => {
   const blogData = [
     {
       image: Blog4,
-      author: "By Fatima Yuguda",
-      date: "Aug 2, 2025",
-      title: "Helping you stay informed and Empowered",
+      author: "Elizabeth Owoade",
+      date: "Mar 02, 2026",
+      title: "Growth Mindset for Career Acceleration",
     },
     {
       image: Blog6,
-      author: "By Japheth Praise",
-      date: "Aug 8, 2025",
-      title: "Insights, tips and tools to help you grow",
+      author: "Ajube Bewelyn",
+      date: "Mar 01, 2026",
+      title: "Productivity Systems & High Performance Work Habits",
     },
     {
       image: Blog3,
-      author: "By Omowonuola Fagbemi",
-      date: "Aug 17, 2025",
-      title: "Your source for social media strategies visibility",
+      author: "Ngene Deborah",
+      date: "Feb 27, 2026",
+      title: "Career Adaptability & Thriving in Fast",
     },
   ];
 
