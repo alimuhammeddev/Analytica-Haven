@@ -47,7 +47,7 @@ const OurBlogs = () => {
     },
     {
       image: Blog6,
-      author: "Ajube Bewelyn",
+      author: "Ajube Bevelyn",
       date: "Mar 01, 2026",
       title: "Productivity Systems & High Performance Work Habits",
     },
