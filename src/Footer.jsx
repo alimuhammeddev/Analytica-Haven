@@ -112,10 +112,10 @@ const Footer = () => {
                 </h1>
                 <div className="space-y-3 mt-3">
                   <p className="text-[#D9DBE9] flex items-center gap-2 text-base font-campton">
-                    <Phone size={15} /> (+234)90-223-4556
+                    <Phone size={15} /> (+234)81-6022-8045
                   </p>
                   <p className="text-[#D9DBE9] flex items-center gap-2 text-base font-campton">
-                    <Mail size={15} /> info@analyticahaven.com
+                    <Mail size={15} /> analyticahaven@gmail.com
                   </p>
                   <p className="text-[#D9DBE9] flex items-center gap-2 text-base font-campton">
                     <MapPin size={15} /> Lagos, Nigeria.
@@ -126,9 +126,9 @@ const Footer = () => {
 
             <div className="border-[#D9DBE9] border mt-10"></div>
 
-            <div className="flex items-center justify-between flex-col mt-10 mb-5">
+            <div className="flex items-center justify-between mt-10 mb-5">
               <h1 className="text-[#F8F8F8] font-campton font-medium text-lg">
-                Copyright © 2025
+                Copyright © 2026
               </h1>
               <div>
                 <h1 className="text-[#F8F8F8] font-campton font-medium text-lg text-center">
@@ -250,7 +250,7 @@ const Footer = () => {
                     <Mail size={15} /> analyticahaven@gmail.com
                   </p>
                   <p className="text-[#D9DBE9] flex items-center gap-2 text-base font-campton my-2">
-                    <Phone size={15} /> (+234)-816-888-4379
+                    <Phone size={15} /> (+234)81-6022-8045
                   </p>
                   <p className="text-[#D9DBE9] flex items-center gap-2 text-base font-campton">
                     <MapPin size={15} /> Lagos, Nigeria.
@@ -263,7 +263,7 @@ const Footer = () => {
 
             <div className="flex items-center justify-between flex-col mt-10 mb-5">
               <h1 className="text-[#F8F8F8] font-campton font-medium">
-                Copyright © 2025
+                Copyright © 2026
               </h1>
               <div>
                 <h1 className="text-[#F8F8F8] font-campton font-medium text-center">

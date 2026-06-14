@@ -157,6 +157,7 @@ import safesister from "./safesister.svg"
 import cohort1 from "./cohort1.svg"
 import portfolio1 from "./portfolio1.svg"
 import project4 from "./project4.svg";
+import deborah from "./deborah.jpg";
 
 
 export {
@@ -319,4 +320,5 @@ export {
     portfolio1,
     project4,
     logo2,
+    deborah,
 };

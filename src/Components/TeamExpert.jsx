@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  ajao, ali, biga, charity, favour, fidelis,
+  ajao, ali, biga, charity, deborah, favour, fidelis,
   gift, glory, jason, mopelola, musa, otobong,
 } from '../assets';
 
@@ -12,11 +12,11 @@ const teamMembers = [
   { name: "Glory Isi Abohi", role: "Product Designer", image: glory },
   { name: "Ali Muhammed", role: "Frontend Developer", image: ali },
   { name: "Jason Amadiegwu", role: "Creative Director", image: jason },
-  { name: "Musa Yusuf Bwala", role: "Data Analyst", image: musa },
   { name: "Favour Atikpo", role: "Product Designer", image: favour },
   { name: "Otobong Ekanem", role: "Chef/Food Consultant", image: otobong },
   { name: "Ajao oluwaseun", role: "Frontend Developer", image: ajao },
   { name: "Gbolagade B. Mopelola", role: "Data Analyst", image: mopelola },
+   { name: "Gbolagade B. Mopelola", role: "Data Analyst", image: deborah },
 ];
 
 const TeamExpert = () => {

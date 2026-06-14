@@ -38,11 +38,11 @@ const Header = () => {
           <div className="max-w-7xl mx-auto px-4 relative flex items-center justify-between">
             <div className="flex items-center gap-3">
               <h1 className="text-[#D9DBE9] flex items-center gap-2 text-sm font-campton">
-                <Phone size={15} /> (+234)90-223-4556
+                <Phone size={15} /> (+234)81-6022-8045
               </h1>
               <div className="w-px h-4 bg-white opacity-100"></div>
               <h1 className="text-[#D9DBE9] flex items-center gap-2 text-sm font-campton">
-                <Mail size={15} /> info@analyticahaven.com
+                <Mail size={15} /> analyticahaven@gmail.com
               </h1>
             </div>
             <div className="flex items-center gap-3">
