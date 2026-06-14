@@ -1,8 +1,19 @@
 import React from "react";
 import {
-  ajao, ali, biga, charity, deborah, favour, fidelis,
-  gift, glory, jason, mopelola, musa, otobong,
-} from '../assets';
+  ajao,
+  ali,
+  biga,
+  charity,
+  deborah,
+  favour,
+  fidelis,
+  gift,
+  glory,
+  jason,
+  mopelola,
+  musa,
+  otobong,
+} from "../assets";
 
 const teamMembers = [
   { name: "Omowonuola Fagbemi", role: "Founder", image: biga },
@@ -15,8 +26,7 @@ const teamMembers = [
   { name: "Favour Atikpo", role: "Product Designer", image: favour },
   { name: "Otobong Ekanem", role: "Chef/Food Consultant", image: otobong },
   { name: "Ajao oluwaseun", role: "Frontend Developer", image: ajao },
-  { name: "Gbolagade B. Mopelola", role: "Data Analyst", image: mopelola },
-   { name: "Gbolagade B. Mopelola", role: "Data Analyst", image: deborah },
+  { name: "Gbolagade B. Mopelola", role: "Data Analyst", image: deborah },
 ];
 
 const TeamExpert = () => {
@@ -47,7 +57,11 @@ const TeamExpert = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="inline-block">
-                <img src={member.image} alt={member.name} className="w-fit rounded-t-xl" />
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-fit rounded-t-xl"
+                />
                 <div className="bg-white w-full p-3 rounded-b-xl shadow-md">
                   <h2 className="font-campton font-semibold text-sm lg:text-lg text-center">
                     {member.name}
