@@ -27,6 +27,8 @@ import project6 from "../assets/project6.svg";
 import project7 from "../assets/project7.svg";
 import project8 from "../assets/project8.svg";
 import project9 from "../assets/project9.svg";
+import oneyear from "../assets/oneyear.svg";
+import build2 from "../assets/build2.svg";
 import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -141,6 +143,48 @@ const projects = [
   },
   {
     id: 7,
+    title: <>1 YEAR ANNIVERSARY AND GRADUATION</>,
+    description: (
+      <>
+        Over the past year, we have empowered aspiring leaders with valuable
+        knowledge, practical skills, mentorship, and opportunities for growth.
+        Our 1 Year Anniversary and Graduation Ceremony marks a significant
+        milestone celebrating the achievements, resilience, and transformation
+        of participants who successfully completed the program. <br /> The event
+        brought together graduates, mentors, facilitators, partners, and
+        supporters to reflect on a year filled with learning, innovation,
+        collaboration, and personal development. From leadership training and
+        digital empowerment to career growth and community impact, the journey
+        has been both inspiring and transformative
+      </>
+    ),
+    link: "/highlight1",
+    imgAlt: "1 Year Anniversary and Graduation image",
+    imgSrc: oneyear,
+  },
+  {
+    id: 8,
+    title: <>BUILD 2 SCALE PROGRAM</>,
+    description: (
+      <>
+        The Build 2 Scale Program – Cohort 2 is designed to equip aspiring
+        entrepreneurs, innovators, and changemakers with the practical skills,
+        mentorship, and strategic guidance needed to transform ideas into
+        scalable and impactful ventures. <br /> Building on the success of the first
+        cohort, Cohort 2 brings together passionate participants committed to
+        innovation, leadership, business growth, and community impact. Through
+        interactive sessions, hands-on learning, mentorship opportunities, and
+        collaborative experiences, participants gain valuable insights into
+        building sustainable solutions in today’s evolving digital and business
+        landscape
+      </>
+    ),
+    link: "/highlight1",
+    imgAlt: "Professional & Digital Communication image",
+    imgSrc: build2,
+  },
+  {
+    id: 9,
     title: <>PERSONAL BRANDING</>,
     description: (
       <>
@@ -160,7 +204,7 @@ const projects = [
     imgSrc: project1,
   },
   {
-    id: 8,
+    id: 10,
     title: <>MASTERING INTERVIEW</>,
     description: (
       <>
@@ -178,7 +222,7 @@ const projects = [
     imgSrc: project2,
   },
   {
-    id: 9,
+    id: 11,
     title: <>CRAFTING IMPACTFUL CV</>,
     description: (
       <>
@@ -193,7 +237,7 @@ const projects = [
     imgSrc: project3,
   },
   {
-    id: 10,
+    id: 12,
     title: <>Analytica Haven First Cohort Launch</>,
     description: (
       <>
@@ -206,7 +250,7 @@ const projects = [
     imgSrc: cohort,
   },
   {
-    id: 11,
+    id: 13,
     title: <>Analytica Haven Portfolio Challenge</>,
     description: (
       <>
@@ -219,7 +263,7 @@ const projects = [
     imgSrc: portfolio,
   },
   {
-    id: 12,
+    id: 14,
     title: <>7Days Free Graphic Design</>,
     description: (
       <>
@@ -233,7 +277,7 @@ const projects = [
     imgSrc: graphicdesign,
   },
   {
-    id: 13,
+    id: 15,
     title: <>Content Creation.</>,
     description: (
       <>
@@ -247,7 +291,7 @@ const projects = [
     imgSrc: contentcreation,
   },
   {
-    id: 14,
+    id: 16,
     title: <>Free Linkedin Optimization</>,
     description: (
       <>
@@ -295,9 +339,7 @@ const OurProject = () => {
                 <div
                   key={id}
                   className={`flex flex-col lg:flex-row gap-8 lg:gap-12 px-0 ${
-                    idx === 1
-                      ? "py-5 lg:py-2"
-                      : "bg-transparent"
+                    idx === 1 ? "py-5 lg:py-2" : "bg-transparent"
                   }`}
                 >
                   <div className="space-y-6 flex-1 order-2 lg:order-1">

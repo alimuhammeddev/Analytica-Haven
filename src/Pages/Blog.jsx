@@ -1,6 +1,16 @@
 import Header from "../Header";
 import Footer from "../Footer";
-import { ai, contentcreation, fintechweek, healthymeal, mergetech, moonshot, patternhero, sisterhood, techwomenfest } from "../assets";
+import {
+  ai,
+  contentcreation,
+  fintechweek,
+  healthymeal,
+  mergetech,
+  moonshot,
+  patternhero,
+  sisterhood,
+  techwomenfest,
+} from "../assets";
 import blog2 from "../assets/blog2.svg";
 import blog3 from "../assets/blog3.svg";
 import blog4 from "../assets/blog4.svg";
@@ -13,6 +23,13 @@ import digital from "../assets/digital.svg";
 import project1 from "../assets/project1.svg";
 import project5 from "../assets/project5.svg";
 import project6 from "../assets/project6.svg";
+import mentalhealth from "../assets/mentalhealth.svg";
+import oneyear from "../assets/oneyear.svg";
+import build2 from "../assets/build2.svg";
+import shecode from "../assets/shecode.svg";
+import saveseat from "../assets/saveseat.svg";
+import skill from "../assets/skill.svg";
+import days from "../assets/days.svg";
 import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -57,7 +74,8 @@ const Blog = () => {
       image: blog3,
       category: "EDUCATION",
       date: "APRIL 13, 2026",
-      title: "Career Adaptability & Thriving in Fast- Changing Work Environments",
+      title:
+        "Career Adaptability & Thriving in Fast- Changing Work Environments",
       description:
         "In an ever-evolving work environment, adaptability stood out as one of the most critical skills discussed in this session.",
       tab: "Education Tips",
@@ -94,6 +112,76 @@ const Blog = () => {
     },
     {
       id: 7,
+      image: oneyear,
+      category: "EDUCATION",
+      date: "FEB 7, 2026",
+      title: "1 Year Anniversary and Graduation",
+      description:
+        "Celebrating Growth, Impart, Learning, and the Journey of Emerging Leaders The event brought together graduates, mentors, facilitators, partners, and supporters to reflect on a year filled with learning, innovation, collaboration, and personal development. ",
+      tab: "Education Tips",
+    },
+    {
+      id: 8,
+      image: build2,
+      category: "EDUCATION",
+      date: "MARCH 15, 2026",
+      title: "Build 2 Scale Program",
+      description:
+        "The Build 2 Scale program is designed to equip participants with the skills, knowledge, and strategies needed to take their business ideas from concept to scalable ventures. Through a combination of workshops, mentorship, and hands-on projects, participants will learn how to validate their ideas, develop a business model, and implement growth strategies.",
+      tab: "Education Tips",
+    },
+    {
+      id: 9,
+      image: shecode,
+      category: "EDUCATION",
+      date: "MARCH 15, 2026",
+      title: "She Codes, She Nutures She Does it All",
+      description:
+        "Celebrating the strength, softness, and brilliance of mothers who balance everything and still show up with love. In a world where balancing multiples roles can be overwhelming Mothers continue to show resilience",
+      tab: "Education Tips",
+    },
+    {
+      id: 10,
+      image: saveseat,
+      category: "EDUCATION",
+      date: "MARCH 15, 2026",
+      title: "We Saved You a Seat",
+      description:
+        "We saved you a seat is a reminder that no one should be left out of important conversations, opportunities, or spaces for growth. It reflects the value of inclusion, community, and shared progress",
+      tab: "Education Tips",
+    },
+    {
+      id: 11,
+      image: skill,
+      category: "EDUCATION",
+      date: "MARCH 15, 2026",
+      title: "How To Make Money With Your Creative Skills",
+      description:
+        "Many people possess creative skills such as design, writing, crafting, content creation, and visual storytelling, but struggle to turn them into income. The truth is, creativity is valuable and it can be monetized in multiple ways",
+      tab: "Education Tips",
+    },
+    {
+      id: 12,
+      image: days,
+      category: "EDUCATION",
+      date: "MARCH 7, 2026",
+      title: "Navigating Your First 90 Days in Tech & Leveraging Visibility",
+      description:
+        "The first 90 days in tech can feel overwhelming, especially when you are still learning your path and trying to understand the industry. This stage is important because it sets the foundation for your growth, confidence, and direction.",
+      tab: "Education Tips",
+    },
+    {
+      id: 13,
+      image: mentalhealth,
+      category: "EDUCATION",
+      date: "MARCH 2, 2026",
+      title: "Mental Health and Emotional Mastery Thriving in a Complex World",
+      description:
+        "Understanding your emotions is the first steps to building resilience in today’s fast-changing world. And by learning to regulate we can improve relationship",
+      tab: "Education Tips",
+    },
+    {
+      id: 14,
       image: techwomenfest,
       category: "EDUCATION",
       date: "OCTOBER 11, 2025",
@@ -103,7 +191,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 8,
+      id: 15,
       image: fintechweek,
       category: "EDUCATION",
       date: "OCTOBER 18, 2025",
@@ -113,7 +201,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 9,
+      id: 16,
       image: moonshot,
       category: "Product Update",
       date: "OCTOBER 24, 2025",
@@ -123,7 +211,7 @@ const Blog = () => {
       tab: "Product",
     },
     {
-      id: 10,
+      id: 17,
       image: blog2,
       category: "Product Update",
       date: "AUG 9, 2025",
@@ -133,7 +221,7 @@ const Blog = () => {
       tab: "Product",
     },
     {
-      id: 11,
+      id: 18,
       image: digital,
       category: "Education Tips",
       date: "AUG 17, 2025",
@@ -143,7 +231,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 12,
+      id: 19,
       image: interview,
       category: "Education",
       date: "AUG 8, 2025",
@@ -153,7 +241,7 @@ const Blog = () => {
       tab: "Education Tips",
     },
     {
-      id: 13,
+      id: 20,
       image: cv,
       category: "Marketing",
       date: "AUG 2, 2025",
@@ -163,7 +251,7 @@ const Blog = () => {
       tab: "Marketing-updates",
     },
     {
-      id: 14,
+      id: 21,
       image: blog6,
       category: "PRODUCT UPDATE",
       date: "AUG 22, 2025",
@@ -174,62 +262,57 @@ const Blog = () => {
       tab: "Company News",
     },
     {
-      id: 15,
+      id: 22,
       image: sisterhood,
       category: "Education",
       date: "JULY 30, 2025",
-      title:
-        "Safe Sisterhood Hosts 15 Days of Prayer Retreat",
+      title: "Safe Sisterhood Hosts 15 Days of Prayer Retreat",
       description:
         "In a heartfelt move to strengthen faith, unity, and purpose among women, Safe Sisterhood has announced the successful hosting of its 15 Days of Prayer Retreat, a spiritually enriching experience dedicated to reflection, renewal, and revival.",
       tab: "Company News",
     },
     {
-      id: 16,
+      id: 23,
       image: project1,
       category: "Education",
       date: "JULY 30, 2025",
-      title:
-        "Analytica Haven just hosted a bootcamp on Personal branding.",
+      title: "Analytica Haven just hosted a bootcamp on Personal branding.",
       description:
         "At Analytica Haven, we believe personal branding is more than a buzzword, it's the bridge between potential and opportunity. Recently, we hosted a Personal Branding Bootcamp, a transformative learning experience.",
       tab: "Education Tips",
     },
     {
-      id: 17,
+      id: 24,
       image: ai,
       category: "Education",
       date: "APRIL 22, 2025",
-      title:
-        "Analytica Haven Hosts Successful 3-Day AI Masterclass",
+      title: "Analytica Haven Hosts Successful 3-Day AI Masterclass",
       description:
         "At Analytica Haven, we understand that a strong portfolio is one of the most powerful tools for personal and professional growth. To help individuals showcase their skills with confidence, we recently launched the Four-Week",
       tab: "Education Tips",
     },
     {
-      id: 18,
+      id: 25,
       image: contentcreation,
       category: "Education",
       date: "AUG 9, 2025",
-      title:
-        "Analytica Haven Urges Consistency in content Posting",
+      title: "Analytica Haven Urges Consistency in content Posting",
       description:
         "In this thoughtful project, Analytica Haven reflects on the hidden challenges of showing up consistently as a content creator. While the platform encourages regular posting as a path to growth...",
       tab: "Education Tips",
     },
     {
-      id: 19,
+      id: 26,
       image: healthymeal,
       category: "Education",
       date: "APRIL 22, 2025",
-      title:
-        "Simple nutrition tips and a two-day meal plan to boost energy.",
+      title: "Simple nutrition tips and a two-day meal plan to boost energy.",
       description:
         "Redefined the user acquisition and redesigned the onboarding experience,all within 3 working weeks of intensive training which gave participate knowledge and understanding.",
       tab: "Education Tips",
     },
     {
-      id: 20,
+      id: 27,
       image: mergetech,
       category: "Education",
       date: "APRIL 22, 2025",
@@ -449,6 +532,19 @@ const Blog = () => {
           <BlogPost post={blogPosts[11]} reverseLayout />
           <BlogPost post={blogPosts[12]} reverseLayout />
           <BlogPost post={blogPosts[13]} reverseLayout />
+          <BlogPost post={blogPosts[14]} reverseLayout />
+          <BlogPost post={blogPosts[15]} reverseLayout />
+          <BlogPost post={blogPosts[16]} reverseLayout />
+          <BlogPost post={blogPosts[17]} reverseLayout />
+          <BlogPost post={blogPosts[18]} reverseLayout />
+          <BlogPost post={blogPosts[19]} reverseLayout />
+          <BlogPost post={blogPosts[20]} reverseLayout />
+          <BlogPost post={blogPosts[21]} reverseLayout />
+          <BlogPost post={blogPosts[22]} reverseLayout />
+          <BlogPost post={blogPosts[23]} reverseLayout />
+          <BlogPost post={blogPosts[24]} reverseLayout />
+          <BlogPost post={blogPosts[25]} reverseLayout />
+          <BlogPost post={blogPosts[26]} reverseLayout />
         </div>
       </div>
 

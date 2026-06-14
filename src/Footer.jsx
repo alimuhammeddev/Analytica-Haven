@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { logo } from "./assets";
+import { logo2 } from "./assets";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa6";
@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="max-w-7xl mx-auto justify-center p-8 text-justify">
             <div className="grid md:grid-cols-4 grid-cols-1 gap-28 mt-10">
               <div className="space-y-5 mx-auto">
-                <img src={logo} alt="" />
+                <img src={logo2} alt="" className="w-16"/>
                 <p className="text-[#D9DBE9] font-campton text-[0.875rem] font-normal">
                   Analytica Haven is a community for professionals newbies to
                   connect, collaborate, and grow. We help members refine their
@@ -154,7 +154,7 @@ const Footer = () => {
             <div className="grid grid-cols-1 gap-10 mt-10">
               <div className="space-y-5">
                 <div>
-                  <img src={logo} alt="" />
+                  <img src={logo2} alt="" className="w-16"/>
                 </div>
                 <p className="text-[#D9DBE9] font-campton font-medium">
                   Analytica Haven is a community for professionals newbies to

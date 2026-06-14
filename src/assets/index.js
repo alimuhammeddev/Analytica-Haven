@@ -1,4 +1,5 @@
 import logo from './logo.png';
+import logo2 from './logo2.png';
 import hero from './hero.png';
 import practical from './practical.png';
 import strategic from './strategic.png';
@@ -317,4 +318,5 @@ export {
     cohort1,
     portfolio1,
     project4,
+    logo2,
 };
