@@ -182,7 +182,7 @@ const Home = () => {
 
       </div>
 
-      <div className="bg-[#fff] lg:my-10 mx-5 rounded-2xl md:shadow-2xl">
+      <div className="bg-[#fff] lg:my-10 mx-5 rounded-2xl">
         <div className="max-w-7xl mx-auto justify-center lg:p-[8] p-5">
           <h1 className="text-[#193D6F] font-campton lg:text-[1.5rem] text-[1.3rem] lg:mt-10 lg:ml-2 ml-1">
             About us
@@ -210,7 +210,7 @@ const Home = () => {
 
           <div className="flex lg:flex-row flex-col-reverse items-center justify-between lg:mt-10 mt-5 gap-7">
             <div className="space-y-5">
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
                 <img src={trusted} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
@@ -222,7 +222,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
                 <img src={strategic} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">
@@ -235,7 +235,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="bg-[#f9f9f9] shadow-lg flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
+              <div className="bg-[#f9f9f9] flex items-center gap-5 md:w-[80%] w-full lg:p-7 p-5 rounded-lg">
                 <img src={practical} alt="" className="lg:w-fit w-20" />
                 <div>
                   <h1 className="text-[#080F10] lg:text-xl text-base font-semibold font-campton">

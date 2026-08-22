@@ -25,8 +25,6 @@ const teamMembers = [
   { name: "Jason Amadiegwu", role: "Creative Director", image: jason },
   { name: "Favour Atikpo", role: "Product Designer", image: favour },
   { name: "Otobong Ekanem", role: "Chef/Food Consultant", image: otobong },
-  { name: "Ajao oluwaseun", role: "Frontend Developer", image: ajao },
-  { name: "Gbolagade B. Mopelola", role: "Data Analyst", image: deborah },
 ];
 
 const TeamExpert = () => {
@@ -62,7 +60,7 @@ const TeamExpert = () => {
                   alt={member.name}
                   className="w-fit rounded-t-xl"
                 />
-                <div className="bg-white w-full p-3 rounded-b-xl shadow-md">
+                <div className="bg-white w-full p-3 rounded-b-xl">
                   <h2 className="font-campton font-semibold text-sm lg:text-lg text-center">
                     {member.name}
                   </h2>

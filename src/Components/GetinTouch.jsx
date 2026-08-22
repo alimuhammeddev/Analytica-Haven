@@ -37,7 +37,7 @@ const GetinTouch = () => {
             <img src={contact} alt="" />
           </div>
 
-          <div class="rounded-lg bg-white p-5 shadow-2xl lg:p-12 lg:-mr-8">
+          <div class="rounded-lg bg-white p-5 shadow-lg lg:p-12 lg:-mr-8">
             <div className="mb-5">
               <h1 className="text-[#193D6F] font-campton font-medium lg:text-lg">
                 Get more updates
